@@ -1,0 +1,52 @@
+          {% if scan_results %}
+          <div align="center" >
+            <h3>{{ scan_results.totals.sell|format_isk_human }} <small>estimated sell value</small></h3>
+            <h3>{{ scan_results.totals.buy|format_isk_human }} <small>estimated buy value</small></h3>
+          </div>
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th width="10%"></th>
+                <th width="10%">Count</th>
+                <th width="40%">Item</th>
+                <td style="text-align:right">
+                  Single Sell Value<br />
+                  Single Buy Value
+                </td>
+                <td style="text-align:right">
+                  Sell Value<br />
+                  Buy Value
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+            {% for item in scan_results.line_items %}
+              <tr>
+                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_64.png" \></a></td>
+                <td>{{ item.count }}</td>
+                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank">{{ item.typeName }}</a></td>
+                <td style="text-align:right">
+                  {{ item.sell.avg|format_isk }}<br />
+                  {{ item.buy.avg|format_isk }}
+                </td>
+                <td style="text-align:right">
+                  {{ item.totals.sell|format_isk }}<br />
+                  {{ item.totals.buy|format_isk }}
+                </td>
+              </tr>
+            {% else %}
+            {% endfor %}
+              <tr style="background-color: #F9F9F9;">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total Sell Value<br />
+                  Total Buy Value</td>
+                <th style="text-align:right">
+                  {{ scan_results.totals.sell|format_isk }}<br />
+                  {{ scan_results.totals.buy|format_isk }}
+                </th>
+              </tr>
+            </tbody>
+          </table>
+          {% endif %}

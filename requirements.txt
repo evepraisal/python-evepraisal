@@ -1,0 +1,4 @@
+humanize
+mysql-connector-repackaged
+pylibmc
+flask
