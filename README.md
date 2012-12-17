@@ -1,6 +1,6 @@
 Ship Scan Cost Estimator
 ========================
-Tool to use in Eve Online for evaluating the value of a ship's cargo based on cargo scan results.
+Tool to use in Eve Online for evaluating the value of a ship's cargo based on cargo scan results. [Shown here](http://sudorandom.com/cargoscanner).
 
 Requirements
 ============
