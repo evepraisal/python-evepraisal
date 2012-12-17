@@ -39,20 +39,21 @@
                    function(data) {
             $('#result_container').html(data);
           }).error(function() { 
-              alert("Could not connect to server."); 
+              alert("Server responded with an error.");   
           });
           return false;
         });
+
         $("#scan_result").bind('paste', function(e) {
             setTimeout(function() {
                 $('#scan_result_form').submit();
             }, 0);
         });
       });
-    </script>
+    </script> 
   </head>
   <body>
-
+    <a href="https://github.com/sudorandom/cargoscanner"><img style="position: absolute; top: 0; right: 0; z-index:2000; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
