@@ -9,8 +9,7 @@ import xml.etree.ElementTree as ET
 import humanize
 import locale
 
-from flask import Flask, request, session, g, redirect, url_for, abort, \
-     render_template, flash, _app_ctx_stack
+from flask import Flask, request, render_template, _app_ctx_stack
 
 # configuration
 DEBUG = True
