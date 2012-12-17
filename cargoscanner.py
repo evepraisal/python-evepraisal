@@ -38,6 +38,7 @@ def memcache_type_key(typeId):
 
 
 def get_cache():
+    "Returns memcache client instance"
     top = _app_ctx_stack.top
     if not hasattr(top, 'memcache'):
         top.memcache = memcache.Client(['127.0.0.1:11211'], debug=0)
@@ -45,6 +46,7 @@ def get_cache():
 
 
 def get_cached_values(typeIds):
+    "Get Cached values given the typeId"
     mc = get_cache()
     found = {}
     not_found = []
@@ -60,12 +62,17 @@ def get_cached_values(typeIds):
 
 
 def set_cache_value(typeId, value):
+    "Set cache value."
     mc = get_cache()
     key = memcache_type_key(typeId)
     mc.set(key, value)
 
 
 def get_market_values(typeIds):
+    """
+        Takes list of typeIds. Returns dict of pricing details with typeId as
+        the key. Calls out to the eve-central.
+    """
     if len(typeIds) == 0:
         return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
@@ -116,7 +123,7 @@ def parse_scan_items(scan_result):
 
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
-    # - Format name, quantity (string manipulation)
+    "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
     results = parse_scan_items(request.form.get('scan_result', ''))
     found, not_found = get_cached_values(results.keys())
     prices = dict(found.items() + get_market_values(not_found).items())
@@ -144,6 +151,7 @@ def estimate_cost():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    "Index. Renders HTML."
     return render_template('index.html')
 
 
