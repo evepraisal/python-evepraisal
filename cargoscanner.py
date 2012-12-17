@@ -7,6 +7,7 @@ import json
 import urllib2
 import xml.etree.ElementTree as ET
 import humanize
+import locale
 
 from flask import Flask, request, session, g, redirect, url_for, abort, \
      render_template, flash, _app_ctx_stack
@@ -19,11 +20,12 @@ TYPES = json.loads(open('data/types.json').read())
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+locale.setlocale(locale.LC_ALL, 'en_US')
 
 
 @app.template_filter('format_isk')
 def format_isk(value):
-    return "{:,.2f} ISK".format(value)
+    return "%s ISK" % locale.format("%.2f", value, grouping=True)
 
 
 @app.template_filter('format_isk_human')
@@ -64,6 +66,8 @@ def set_cache_value(typeId, value):
 
 
 def get_market_values(typeIds):
+    if len(typeIds) == 0:
+        return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
     url = "%s/marketstat?typeid=%s" % (app.config['MARKET_URL'], typeIds_str)
     response = urllib2.urlopen(url).read()
@@ -113,7 +117,7 @@ def parse_scan_items(scan_result):
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
     # - Format name, quantity (string manipulation)
-    results = parse_scan_items(request.form['scan_result'])
+    results = parse_scan_items(request.form.get('scan_result', ''))
     found, not_found = get_cached_values(results.keys())
     prices = dict(found.items() + get_market_values(not_found).items())
     totals = {'sell': 0, 'buy': 0, 'all': 0}

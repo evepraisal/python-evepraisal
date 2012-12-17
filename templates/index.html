@@ -34,7 +34,7 @@
     <script>
        $(function() {
         $("#scan_result_form").submit(function() {
-          $.post("estimate",
+          $.post("{{ url_for('estimate_cost') }}",
                    {scan_result: $('#scan_result').val()}, 
                    function(data) {
             $('#result_container').html(data);
@@ -69,7 +69,7 @@
     <div class="container">
       <div class="row">
         <div class="span5">
-          <form action="estimate" method="post" class="well" id="scan_result_form">
+          <form action="{{ url_for('estimate_cost') }}" method="post" class="well" id="scan_result_form">
             <label><h2>Scan Result</h2></label>
             <textarea class="input-block-level" id="scan_result" name="scan_result" rows="20" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
             <p class="pull-right">protip: ctrl+a,  ctrl+c,  ctrl+v</p>
