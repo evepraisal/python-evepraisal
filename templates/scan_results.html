@@ -19,6 +19,20 @@
               </tr>
             </thead>
             <tbody>
+            {% for count, line in scan_results.bad_line_items %}
+              <tr class="error">
+                <td>{{ count }}</td>
+                <td><span class="nowrap">{{ line }}</a></span></td>
+                <td style="text-align:right">
+                  <span class="nowrap">unknown</span><br />
+                  <span class="nowrap">unknown</span>
+                </td>
+                <td style="text-align:right">
+                  <span class="nowrap">unknown</span><br />
+                  <span class="nowrap">unknown</span>
+                </td>
+              </tr>
+            {% endfor %}
             {% for item in scan_results.line_items %}
               <tr>
                 <td>{{ item.count }}</td>

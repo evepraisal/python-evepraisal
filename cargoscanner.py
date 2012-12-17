@@ -130,7 +130,10 @@ def get_market_values_2(typeIds):
 
 
 def parse_scan_items(scan_result):
-    "Takes a scan result and returns {'name': {details}, ...} "
+    """
+        Takes a scan result and returns:
+            {'name': {details}, ...}, [(2, 'bad name')]
+    """
     lines = scan_result.splitlines()
     lines = [line.strip() for line in scan_result.splitlines() if line.strip()]
 
@@ -142,25 +145,30 @@ def parse_scan_items(scan_result):
         except ValueError:
             count, name = 1, line
         name = name.lower()
+        # Copies are not found through this database at the moment...
+        name = name.replace(' (original)', '')
         if name in results:
             results[name] += count
         else:
             results[name] = count
 
     typed_results = {}
+    bad_lines = []
     for name, count in results.iteritems():
         details = app.config['TYPES'].get(name)
         if details:
             typed_results[details['typeID']] = \
                 dict(details.items() + [('count', count)])
+        else:
+            bad_lines.append((count, name))
 
-    return typed_results
+    return typed_results, bad_lines
 
 
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
     "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
-    results = parse_scan_items(request.form.get('scan_result', ''))
+    results, bad_lines = parse_scan_items(request.form.get('scan_result', ''))
     found, not_found = get_cached_values(results.keys())
     try:
         fresh_data = get_market_values(not_found)
@@ -181,6 +189,7 @@ def estimate_cost():
         key=lambda k: -k['totals']['all'])
     scan_results = {
         'totals': totals,
+        'bad_line_items': bad_lines,
         'line_items': sorted_line_items,
     }
     if request.form.get('load_full'):
