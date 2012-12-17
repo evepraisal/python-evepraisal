@@ -13,7 +13,6 @@ from flask import Flask, request, render_template, _app_ctx_stack
 
 # configuration
 DEBUG = True
-MARKET_URL = 'http://api.eve-central.com/api'
 MEMCACHE_PREFIX = 'cargoscanner'
 TYPES = json.loads(open('data/types.json').read())
 
@@ -75,7 +74,7 @@ def get_market_values(typeIds):
     if len(typeIds) == 0:
         return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
-    url = "%s/marketstat?typeid=%s" % (app.config['MARKET_URL'], typeIds_str)
+    url = "http://api.eve-central.com/api/marketstat?typeid=%s" % typeIds_str
     response = urllib2.urlopen(url).read()
     stats = ET.fromstring(response).findall("./marketstat/type")
     market_prices = {}
@@ -89,6 +88,44 @@ def get_market_values(typeIds):
             v[stat_type] = props
         set_cache_value(k, v)
         market_prices[k] = v
+    return market_prices
+
+
+def get_market_values_2(typeIds):
+    """
+        Takes list of typeIds. Returns dict of pricing details with typeId as
+        the key. Calls out to the eve-marketdata.
+        Example Return Value:
+        {
+            21574:{
+             'all': {'avg': 254.83},
+             'buy': {'avg': 5434414.43},
+             'sell': {'avg': 10552957.04}}
+        }
+    """
+    if len(typeIds) == 0:
+        return {}
+    typeIds_str = ','.join(str(x) for x in typeIds)
+    url = "http://api.eve-marketdata.com/api/item_prices2.json?char_name=magerawr&type_ids=%s&buysell=a" % typeIds_str
+    response = json.loads(urllib2.urlopen(url).read())
+
+    market_prices = {}
+    for row in response['emd']['result']:
+        row = row['row']
+        k = int(row['typeID'])
+        if k not in market_prices:
+            market_prices[k] = {}
+        if row['buysell'] == 's':
+            market_prices[k]['sell'] = {'avg': float(row['price'])}
+        elif row['buysell'] == 'b':
+            market_prices[k]['buy'] = {'avg': float(row['price'])}
+
+    for typeId, prices in market_prices.iteritems():
+        avg = (prices['buy']['avg'] + prices['buy']['avg']) / 2
+        market_prices[typeId]['all'] = {'avg': avg}
+
+    for typeId, prices in prices.iteritems():
+        set_cache_value(typeId, prices)
     return market_prices
 
 
@@ -125,7 +162,11 @@ def estimate_cost():
     "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
     results = parse_scan_items(request.form.get('scan_result', ''))
     found, not_found = get_cached_values(results.keys())
-    prices = dict(found.items() + get_market_values(not_found).items())
+    try:
+        fresh_data = get_market_values(not_found)
+    except:
+        fresh_data = get_market_values_2(not_found)
+    prices = dict(found.items() + fresh_data.items())
     totals = {'sell': 0, 'buy': 0, 'all': 0}
     for typeId, price_data in prices.iteritems():
         price_data = dict(price_data.items() + results[typeId].items())
