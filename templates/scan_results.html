@@ -6,7 +6,6 @@
           <table class="table table-condensed">
             <thead>
               <tr>
-                <th width="10%"></th>
                 <th width="10%">Count</th>
                 <th width="40%">Item</th>
                 <td style="text-align:right">
@@ -22,9 +21,8 @@
             <tbody>
             {% for item in scan_results.line_items %}
               <tr>
-                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_64.png" \></a></td>
                 <td>{{ item.count }}</td>
-                <td><span class="nowrap"><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank">{{ item.typeName }}</a></span></td>
+                <td><span class="nowrap"><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }}</a></span></td>
                 <td style="text-align:right">
                   <span class="nowrap">{{ item.sell.avg|format_isk }}</span><br />
                   <span class="nowrap">{{ item.buy.avg|format_isk }}</span>
@@ -37,7 +35,6 @@
             {% else %}
             {% endfor %}
               <tr style="background-color: #F9F9F9;">
-                <td></td>
                 <td></td>
                 <td></td>
                 <td>Total Sell Value<br />
