@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <!-- Le styles -->
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <style>
+    <style> 
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
@@ -21,6 +21,15 @@
       .nowrap {
         white-space: nowrap;
       }
+
+      table.tablesorter thead tr .header {
+        background-color: #F9F9F9;
+        cursor: pointer;
+      }
+
+      table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+        background-color: #DDD;
+      }​
       
     </style>
 
@@ -71,19 +80,24 @@
       <div class="row">
         <div class="span5">
           <form action="{{ url_for('estimate_cost') }}" method="post" class="well" id="scan_result_form">
-            <label><h2>Scan Result</h2></label>
+            <label><h2>Paste Scan Result</h2></label>
             <textarea class="input-block-level" id="scan_result" name="scan_result" rows="20" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
             <p class="pull-right">protip: ctrl+a,  ctrl+c,  ctrl+v</p>
             <input type="hidden" name="load_full" value="1"/>
             <button type="reset" class="btn">Reset</button>
             <button type="submit" id="scan_result_submit" class="btn btn-primary">Submit</button>
           </form>
-          <p align="center">Created by <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. Feel free to send me questions, suggestions or ISK</p>
         </div>
         <div class="span7" id="result_container">
+          {% if error %}
+            <div class="alert alert-error">
+            <strong>Error:</strong> {{ error }}
+          </div>
+          {% endif %}
           {% include "scan_results.html" %}
         </div>
       </div>
     </div>
+    <footer><p align="center">Created by <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. Feel free to send me questions, suggestions or ISK</p></footer>
   </body>
 </html>

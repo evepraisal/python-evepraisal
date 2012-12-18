@@ -1,21 +1,23 @@
           {% if scan_results %}
-          <div align="center" >
+          <h2>Scan Result <small> {% if scan_results.scan_id %}Scan #{{ scan_results.scan_id }} <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">[Permanent Link]{% endif %}</a> </small></h2>
+          <div style="padding-left:5%">
+            {% if scan_results.created %}<p><small>Created {{ scan_results.created|relative_time}}</small><p> {% endif %}
             <h3>{{ scan_results.totals.sell|format_isk_human }} <small>estimated sell value</small></h3>
             <h3>{{ scan_results.totals.buy|format_isk_human }} <small>estimated buy value</small></h3>
           </div>
-          <table class="table table-condensed">
+          <table id="scan_results" class="table table-condensed tablesorter">
             <thead>
               <tr>
-                <th width="10%">Count</th>
-                <th width="40%">Item</th>
-                <td style="text-align:right">
-                  Single Sell Value<br />
-                  Single Buy Value
-                </td>
-                <td style="text-align:right">
+                <th class="header" width="10%">#</th>
+                <th class="header" width="40%">Item</th>
+                <th class="header" style="text-align:right">
+                  <span class="nowrap">Single Sell Value</span><br />
+                  <span class="nowrap">Single Buy Value</span>
+                </th>
+                <th class="header" style="text-align:right">
                   Sell Value<br />
                   Buy Value
-                </td>
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -34,7 +36,7 @@
               </tr>
             {% endfor %}
             {% for item in scan_results.line_items %}
-              <tr>
+              <tr onclick="CCPEVE.showMarketDetails({{ item.typeID }})">
                 <td>{{ item.count }}</td>
                 <td><span class="nowrap"><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }}</a></span></td>
                 <td style="text-align:right">
@@ -48,16 +50,21 @@
               </tr>
             {% else %}
             {% endfor %}
+            </tbody>
+            <tfoot>
               <tr style="background-color: #F9F9F9;">
                 <td></td>
                 <td></td>
-                <td>Total Sell Value<br />
-                  Total Buy Value</td>
+                <td><span class="nowrap">Total Sell Value</span><br />
+                  <span class="nowrap">Total Buy Value</span></td>
                 <th style="text-align:right">
                   <span class="nowrap">{{ scan_results.totals.sell|format_isk }}</span><br />
                   <span class="nowrap">{{ scan_results.totals.buy|format_isk }}</span>
                 </th>
               </tr>
-            </tbody>
+            </tfoot>
           </table>
+          <script>
+            window.history.pushState('Object', 'Title', '/estimate/{{ scan_results.scan_id }}');
+          </script>
           {% endif %}

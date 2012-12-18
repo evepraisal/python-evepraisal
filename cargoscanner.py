@@ -5,9 +5,12 @@
 import memcache
 import json
 import urllib2
+import time
+import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
+import os
 
 from flask import Flask, request, render_template, _app_ctx_stack
 
@@ -19,6 +22,10 @@ TYPES = json.loads(open('data/types.json').read())
 app = Flask(__name__)
 app.config.from_object(__name__)
 locale.setlocale(locale.LC_ALL, 'en_US')
+try:
+    os.makedirs('data/scans')
+except OSError:
+    pass
 
 
 @app.template_filter('format_isk')
@@ -29,6 +36,11 @@ def format_isk(value):
 @app.template_filter('format_isk_human')
 def format_isk_human(value):
     return "%s ISK" % humanize.intword(value, format='%.2f')
+
+
+@app.template_filter('relative_time')
+def relative_time(past):
+    return humanize.naturaltime(datetime.datetime.fromtimestamp(past))
 
 
 def memcache_type_key(typeId):
@@ -129,6 +141,36 @@ def get_market_values_2(typeIds):
     return market_prices
 
 
+def get_current_scan_id():
+    scan_id_file = "data/current_scan_id.dat"
+    if not os.path.exists(scan_id_file):
+        with open(scan_id_file, 'w') as f:
+            f.write('1')
+        return 0
+
+    with open(scan_id_file, 'r+') as f:
+        scan_id = int(f.read())
+        f.seek(0)
+        f.write(str(scan_id + 1))
+        return scan_id
+
+
+def save_scan(scan_id, scan_result):
+    with open("data/scans/%s" % scan_id, 'w') as f:
+        f.write(json.dumps(scan_result))
+
+
+def load_scan(scan_id):
+    try:
+        int(scan_id)
+    except:
+        return
+    scan_file = "data/scans/%s" % scan_id
+    if os.path.exists(scan_file):
+        with open(scan_file) as f:
+            return json.loads(f.read())
+
+
 def parse_scan_items(scan_result):
     """
         Takes a scan result and returns:
@@ -191,8 +233,27 @@ def estimate_cost():
         'totals': totals,
         'bad_line_items': bad_lines,
         'line_items': sorted_line_items,
+        'created': time.time(),
     }
-    if request.form.get('load_full'):
+    if len(sorted_line_items) > 0:
+        scan_id = get_current_scan_id()
+        scan_results['scan_id'] = scan_id
+        save_scan(scan_id, scan_results)
+    return display_scan_result(scan_results,
+        full_page=request.form.get('load_full'))
+
+
+@app.route('/estimate/<scan_id>', methods=['GET'])
+def display_scan(scan_id):
+    scan_results = load_scan(scan_id)
+    if scan_results:
+        return display_scan_result(scan_results, full_page=True)
+    else:
+        return render_template('index.html', error="Scan Not Found")
+
+
+def display_scan_result(scan_results, full_page=False):
+    if full_page:
         return render_template('index.html', scan_results=scan_results)
     else:
         return render_template('scan_results.html', scan_results=scan_results)
