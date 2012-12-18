@@ -208,10 +208,16 @@ def parse_scan_items(scan_result):
     return typed_results, bad_lines
 
 
+def is_from_igb():
+    return request.headers.get('User-Agent', '').find("EVE-IGB") != -1
+
+
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
     "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
-    results, bad_lines = parse_scan_items(request.form.get('scan_result', ''))
+    raw_scan = request.form.get('scan_result', '')
+    from_igb = is_from_igb()
+    results, bad_lines = parse_scan_items(raw_scan)
     found, not_found = get_cached_values(results.keys())
     try:
         fresh_data = get_market_values(not_found)
@@ -231,10 +237,12 @@ def estimate_cost():
     sorted_line_items = sorted(results.values(),
         key=lambda k: -k['totals']['all'])
     scan_results = {
+        'from_igb': from_igb,
         'totals': totals,
         'bad_line_items': bad_lines,
         'line_items': sorted_line_items,
         'created': time.time(),
+        'raw_scan': raw_scan,
     }
     if len(sorted_line_items) > 0:
         scan_id = get_current_scan_id()
@@ -255,9 +263,11 @@ def display_scan(scan_id):
 
 def display_scan_result(scan_results, full_page=False):
     if full_page:
-        return render_template('index.html', scan_results=scan_results)
+        return render_template('index.html', scan_results=scan_results,
+            from_igb=is_from_igb())
     else:
-        return render_template('scan_results.html', scan_results=scan_results)
+        return render_template('scan_results.html', scan_results=scan_results,
+            from_igb=is_from_igb())
 
 
 @app.route('/', methods=['GET', 'POST'])
