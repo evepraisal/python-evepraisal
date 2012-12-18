@@ -18,6 +18,7 @@ from flask import Flask, request, render_template, _app_ctx_stack
 DEBUG = True
 MEMCACHE_PREFIX = 'cargoscanner'
 TYPES = json.loads(open('data/types.json').read())
+USER_AGENT = 'CargoScanner/1.0 +http://sudorandom.com/cargoscanner'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -88,7 +89,9 @@ def get_market_values(typeIds):
         return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
     url = "http://api.eve-central.com/api/marketstat?typeid=%s" % typeIds_str
-    response = urllib2.urlopen(url).read()
+    request = urllib2.Request(url)
+    request.add_header('User-Agent', app.config['USER_AGENT'])
+    response = urllib2.build_opener().open(request).read()
     stats = ET.fromstring(response).findall("./marketstat/type")
     market_prices = {}
     for marketstat in stats:
@@ -120,7 +123,9 @@ def get_market_values_2(typeIds):
         return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
     url = "http://api.eve-marketdata.com/api/item_prices2.json?char_name=magerawr&type_ids=%s&buysell=a" % typeIds_str
-    response = json.loads(urllib2.urlopen(url).read())
+    request = urllib2.Request(url)
+    request.add_header('User-Agent', app.config['USER_AGENT'])
+    response = json.loads(urllib2.build_opener().open(request).read())
 
     market_prices = {}
     for row in response['emd']['result']:
