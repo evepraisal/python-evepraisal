@@ -82,7 +82,7 @@
               </tr>
             </tfoot>
           </table>
-          {% if scan_results.scan_id %}
+          {% if scan_results.scan_id and not from_igb %}
           <script>
             window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
           </script>

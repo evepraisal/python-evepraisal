@@ -36,7 +36,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
     <script>
-       $(function() {
+      $(function() {
         $("#scan_result_form").submit(function() {
           var scan_textarea = $("#scan_result");
           var scan_submit = $("#scan_result_submit");
@@ -56,7 +56,7 @@
               // Enable form components
               scan_textarea.removeAttr("disabled").removeClass("disabled");
               scan_submit.removeAttr("disabled").removeClass("disabled");
-              alert("Server responded with an error.");   
+              alert("Server responded with an error.");
             });
           return false;
         });
@@ -91,7 +91,7 @@
         <div class="span5">
           <h2>Paste Scan Result</h2>
           <form action="{{ url_for('estimate_cost') }}" method="post" class="well" id="scan_result_form">
-            <textarea class="input-block-level" id="scan_result" name="scan_result" rows="20" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
+            <textarea class="input-block-level" id="scan_result" name="scan_result" rows="10" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
             <label class="checkbox pull-right">
               <input id="scan_autosubmit" type="checkbox"> autosubmit on paste
             </label>
