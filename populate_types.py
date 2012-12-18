@@ -11,17 +11,24 @@ from reverence import blue
 
 
 if __name__ == '__main__':
-    eve_path = '/Applications/EVE Online.app/Contents/Resources/EVE Online.app/Contents/Resources/transgaming/c_drive/Program Files/CCP/EVE'
-    # eve_path = 'C:\\Program Files\\CCP\\EVE\\'
-    # eve_path = 'C:\\Program Files (x86)\\CCP\\EVE\\'
-    eve = blue.EVE()
+
+    EVEPATH = '/Applications/EVE Online.app/Contents/Resources/EVE Online.app/Contents/Resources/transgaming/c_drive/Program Files/CCP/EVE'
+    # EVEPATH = "C:/EVE"
+
+    eve = blue.EVE(EVEPATH)
     cfg = eve.getconfigmgr()
     all_types = {}
+
+    public_market_groups = []
+    for groupID, published in cfg.invgroups.Select('groupID', 'published'):
+        if published:
+            public_market_groups.append(groupID)
+
     for (typeID, groupID, typeName) in cfg.invtypes.Select('typeID',
                                                     'groupID', 'typeName'):
-        all_types[typeName.strip().lower()] = {'typeID': typeID,
-                                               'groupID': groupID,
-                                               'typeName': typeName}
-
+        if groupID in public_market_groups:
+            all_types[typeName.strip().lower()] = {'typeID': typeID,
+                                                   'groupID': groupID,
+                                                   'typeName': typeName}
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))
