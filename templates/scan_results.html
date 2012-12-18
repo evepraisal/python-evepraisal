@@ -1,7 +1,8 @@
           {% if scan_results %}
-          <h2>Scan Result <small> {% if scan_results.scan_id %}Scan #{{ scan_results.scan_id }} <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">[Permanent Link]{% endif %}</a> </small></h2>
+          <h3>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>Created {{ scan_results.created|relative_time}}</small> {% endif %} </small></h3>
           <div style="padding-left:5%">
-            {% if scan_results.created %}<p><small>Created {{ scan_results.created|relative_time}}</small><p> {% endif %}
+            <p>{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}
+            </p>
             <h3>{{ scan_results.totals.sell|format_isk_human }} <small>estimated sell value</small></h3>
             <h3>{{ scan_results.totals.buy|format_isk_human }} <small>estimated buy value</small></h3>
           </div>
@@ -36,7 +37,7 @@
               </tr>
             {% endfor %}
             {% for item in scan_results.line_items %}
-              <tr onclick="CCPEVE.showMarketDetails({{ item.typeID }})">
+              <tr class="line-item-row" onclick="CCPEVE.showMarketDetails({{ item.typeID }})">
                 <td>{{ item.count }}</td>
                 <td><span class="nowrap"><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }}</a></span></td>
                 <td style="text-align:right">
@@ -54,9 +55,9 @@
             <tfoot>
               <tr style="background-color: #F9F9F9;">
                 <td></td>
-                <td></td>
                 <td><span class="nowrap">Total Sell Value</span><br />
                   <span class="nowrap">Total Buy Value</span></td>
+                <td></td>
                 <th style="text-align:right">
                   <span class="nowrap">{{ scan_results.totals.sell|format_isk }}</span><br />
                   <span class="nowrap">{{ scan_results.totals.buy|format_isk }}</span>
