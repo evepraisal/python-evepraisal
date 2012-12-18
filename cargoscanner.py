@@ -75,7 +75,8 @@ def set_cache_value(typeId, value):
     "Set cache value."
     mc = get_cache()
     key = memcache_type_key(typeId)
-    mc.set(key, value)
+    # Cache for up to 2 hours
+    mc.set(key, value, time=2 * 60 * 60)
 
 
 def get_market_values(typeIds):
