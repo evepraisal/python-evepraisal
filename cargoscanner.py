@@ -178,16 +178,17 @@ def parse_scan_items(scan_result):
             {'name': {details}, ...}, [(2, 'bad name')]
     """
     lines = scan_result.splitlines()
-    lines = [line.strip() for line in scan_result.splitlines() if line.strip()]
+    lines = [line.replace('\t', '').strip() \
+                for line in scan_result.splitlines() if line.strip()]
 
     results = {}
     for line in lines:
         try:
             count, name = line.split(' ', 1)
-            count = int(count)
+            count = int(count.strip())
         except ValueError:
             count, name = 1, line
-        name = name.lower()
+        name = name.lower().strip()
         # Copies are not found through this database at the moment...
         name = name.replace(' (original)', '')
         if name in results:
