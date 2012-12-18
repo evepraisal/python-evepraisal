@@ -66,7 +66,7 @@ def get_cached_values(typeIds):
         if obj:
             found[typeId] = obj
         else:
-            print("Cache Miss. typeId: %s" % typeId)
+            print("Cache Miss. typeId: %s, %s" % (typeId, key))
             not_found.append(typeId)
     return found, not_found
 
@@ -137,7 +137,7 @@ def get_market_values_2(typeIds):
         avg = (prices['buy']['avg'] + prices['buy']['avg']) / 2
         market_prices[typeId]['all'] = {'avg': avg}
 
-    for typeId, prices in prices.iteritems():
+    for typeId, prices in market_prices.iteritems():
         set_cache_value(typeId, prices)
     return market_prices
 

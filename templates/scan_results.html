@@ -82,7 +82,9 @@
               </tr>
             </tfoot>
           </table>
+          {% if scan_results.scan_id %}
           <script>
             window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
           </script>
+          {% endif %}
           {% endif %}
