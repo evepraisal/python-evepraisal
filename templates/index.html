@@ -38,14 +38,21 @@
     <script>
        $(function() {
         $("#scan_result_form").submit(function() {
+          var scan_textarea = $("#scan_result");
+          var scan_submit = $("#scan_result_submit");
+          scan_textarea.attr("disabled", "disabled").addClass("disabled");
+          scan_submit.attr("disabled", "disabled").addClass("disabled");
           $.post("{{ url_for('estimate_cost') }}",
                    {scan_result: $('#scan_result').val()}, 
                    function(data) {
             $('#result_container').html(data);
-            // $(window).scrollTop($('#result_container').position().top)
-            $('#scan_result').val('')
+            scan_textarea.val('')
+            scan_textarea.removeAttr("disabled").removeClass("disabled");
+            scan_submit.removeAttr("disabled").removeClass("disabled");
           }).error(function() { 
-              alert("Server responded with an error.");   
+            scan_textarea.removeAttr("disabled").removeClass("disabled");
+            scan_submit.removeAttr("disabled").removeClass("disabled");
+            alert("Server responded with an error.");   
           });
           return false;
         });
