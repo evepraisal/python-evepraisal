@@ -65,6 +65,6 @@
             </tfoot>
           </table>
           <script>
-            window.history.pushState('Object', 'Title', '/estimate/{{ scan_results.scan_id }}');
+            window.history.pushState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
           </script>
           {% endif %}
