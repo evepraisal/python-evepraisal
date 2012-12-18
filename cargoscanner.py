@@ -228,6 +228,7 @@ def estimate_cost():
     try:
         fresh_data = get_market_values(not_found)
     except:
+        print "ERROR: Could not get price data from Eve-Central: %s" % not_found
         fresh_data = get_market_values_2(not_found)
     prices = dict(found.items() + fresh_data.items())
     totals = {'sell': 0, 'buy': 0, 'all': 0}
