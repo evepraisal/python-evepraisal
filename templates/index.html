@@ -40,20 +40,24 @@
         $("#scan_result_form").submit(function() {
           var scan_textarea = $("#scan_result");
           var scan_submit = $("#scan_result_submit");
+          // Disable form components
           scan_textarea.attr("disabled", "disabled").addClass("disabled");
           scan_submit.attr("disabled", "disabled").addClass("disabled");
           $.post("{{ url_for('estimate_cost') }}",
-                   {scan_result: $('#scan_result').val()}, 
-                   function(data) {
-            $('#result_container').html(data);
-            scan_textarea.val('')
-            scan_textarea.removeAttr("disabled").removeClass("disabled");
-            scan_submit.removeAttr("disabled").removeClass("disabled");
-          }).error(function() { 
-            scan_textarea.removeAttr("disabled").removeClass("disabled");
-            scan_submit.removeAttr("disabled").removeClass("disabled");
-            alert("Server responded with an error.");   
-          });
+            {scan_result: scan_textarea.val()}, 
+            function(data) {
+              scan_textarea.val('');
+              // Enable form components
+              scan_textarea.removeAttr("disabled").removeClass("disabled");
+              scan_submit.removeAttr("disabled").removeClass("disabled");
+              // Populate results
+              $('#result_container').html(data);
+            }).error(function() {
+              // Enable form components
+              scan_textarea.removeAttr("disabled").removeClass("disabled");
+              scan_submit.removeAttr("disabled").removeClass("disabled");
+              alert("Server responded with an error.");   
+            });
           return false;
         });
 
