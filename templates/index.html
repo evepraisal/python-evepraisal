@@ -21,9 +21,13 @@
       .nowrap {
         white-space: nowrap;
       }
-      tr.line-item-row {
-        cursor: pointer;
-      }      
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      div.scan-result-area {
+        padding: 0 20px;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -88,9 +92,9 @@
     <div class="container">
       <div class="row">
         <div class="span5">
-          <h2>Paste Scan Result</h2>
+          <h4>Paste Scan Result</h4>
           <form action="{{ url_for('estimate_cost') }}" method="post" class="well" id="scan_result_form">
-            <textarea class="input-block-level" id="scan_result" name="scan_result" rows="10" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
+            <textarea class="input-block-level" id="scan_result" name="scan_result" rows="5" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
             <label class="checkbox pull-right">
               <input id="scan_autosubmit" type="checkbox"> autosubmit on paste
             </label>

@@ -18,17 +18,32 @@ if __name__ == '__main__':
     eve = blue.EVE(EVEPATH)
     cfg = eve.getconfigmgr()
     all_types = {}
+    # Row(groupID:65,categoryID:7,groupName:Stasis Web,description:Reduces max speed of a target ship.,useBasePrice:False,allowManufacture:True,allowRecycler:True,anchored:False,anchorable:False,fittableNonSingleton:False,published:True,iconID:0,groupNameID:63625,dataID:16671837)
+    # for t in cfg.typesByMarketGroups:
+    #     for tt in t:
+    #         print tt
+    # #     if group.groupID == 65:
+    # #         print group
+
+    # exit()
 
     public_market_groups = []
     for groupID, published in cfg.invgroups.Select('groupID', 'published'):
         if published:
             public_market_groups.append(groupID)
 
-    for (typeID, groupID, typeName) in cfg.invtypes.Select('typeID',
-                                                    'groupID', 'typeName'):
+    # Groups that don't appear in the market
+    nonMarketGroups = [314]
+
+    for (typeID, groupID, typeName, marketGroupID, volume) in cfg.invtypes.Select('typeID',
+                                                    'groupID', 'typeName', 'marketGroupID', 'volume'):
         if groupID in public_market_groups:
+            hasMarket = marketGroupID is not None
             all_types[typeName.strip().lower()] = {'typeID': typeID,
                                                    'groupID': groupID,
-                                                   'typeName': typeName}
+                                                   'typeName': typeName,
+                                                   'volume': volume,
+                                                   'market': hasMarket,
+                                                   }
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))

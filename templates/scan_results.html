@@ -1,36 +1,34 @@
           {% if scan_results %}
-          <h3>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>Created {{ scan_results.created|relative_time}}</small> {% endif %} 
-          {% if scan_results.raw_scan %}<a href="#raw_scan_modal" role="button" class="btn btn-link" data-toggle="modal">View Raw</a>{% endif%}</small>
-          </h3>
-          {% if scan_results.raw_scan %}
-          <!-- RawScan Modal -->
-          <div id="raw_scan_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_scan_modal" aria-hidden="true">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h3 id="myModalLabel">Raw Scan Result</h3>
+          <div>
+            <h4>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
+            {% if scan_results.raw_scan %}<a href="#raw_scan_modal" data-toggle="modal">View Raw</a>{% endif%}</small>
+            </h4>
+            {% if scan_results.raw_scan %}
+            <!-- RawScan Modal -->
+            <div id="raw_scan_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_scan_modal" aria-hidden="true">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Raw Scan Result</h3>
+              </div>
+              <div class="modal-body">
+                <p><pre>{{ scan_results.raw_scan }}</pre></p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+              </div>
             </div>
-            <div class="modal-body">
-              <p><pre>{{ scan_results.raw_scan }}</pre></p>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-            </div>
-          </div>
-          {% endif%}
-          <div style="padding-left:5%">
-            <p>{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}
-            </p>
-            <h3>{{ scan_results.totals.sell|format_isk_human }} <small>estimated sell value</small></h3>
-            <h3>{{ scan_results.totals.buy|format_isk_human }} <small>estimated buy value</small></h3>
+            {% endif%}
+            <h4><span class="nowrap">{{ scan_results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ scan_results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
+            <p class="nowrap">{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}</p>
           </div>
           <table id="scan_results" class="table table-hover table-condensed">
             <thead>
-              <tr>
+              <tr style="background-color: #F9F9F9;">
                 <th class="header" width="10%">#</th>
                 <th class="header" width="40%">Item</th>
                 <th class="header" style="text-align:right">
-                  <span class="nowrap">Single Sell Value</span><br />
-                  <span class="nowrap">Single Buy Value</span>
+                  Single Sell Value<br />
+                  Single Buy Value
                 </th>
                 <th class="header" style="text-align:right">
                   Sell Value<br />
@@ -42,7 +40,7 @@
             {% for line in scan_results.bad_line_items %}
               <tr class="error">
                 <td></td>
-                <td><span class="nowrap">{{ line }}</a></span></td>
+                <td><span class="nowrap">{{ line }}</span></td>
                 <td style="text-align:right">
                   <span class="nowrap">unknown</span><br />
                   <span class="nowrap">unknown</span>
@@ -56,7 +54,7 @@
             {% for item in scan_results.line_items %}
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
                 <td>{{ item.count }}</td>
-                <td><span class="nowrap"><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }}</a></span></td>
+                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }} </a></td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
                   <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span>
