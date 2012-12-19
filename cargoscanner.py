@@ -250,7 +250,6 @@ def estimate_cost():
         results[typeId] = price_data
         results[typeId]['totals'] = {}
         for total_key in ['sell', 'buy', 'all']:
-            print total_key
             _total = price_data[total_key]['price'] * price_data['count']
             results[typeId]['totals'][total_key] = _total
             totals[total_key] += _total
