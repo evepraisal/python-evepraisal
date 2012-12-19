@@ -84,11 +84,19 @@ def get_market_values(typeIds):
     """
         Takes list of typeIds. Returns dict of pricing details with typeId as
         the key. Calls out to the eve-central.
+
+        Example Return Value:
+        {
+            21574:{
+             'all': {'avg': 254.83, 'min': 254.83, 'max': 254.83, 'price': 254.83},
+             'buy': {'avg': 5434414.43, 'min': 5434414.43, 'max': 5434414.43, 'price': 5434414.43},
+             'sell': {'avg': 10552957.04, 'min': 10552957.04, 'max': 10552957.04, 'price': 10552957.04}
+        }
     """
     if len(typeIds) == 0:
         return {}
     typeIds_str = ','.join(str(x) for x in typeIds)
-    url = "http://api.eve-central.com/api/marketstat?typeid=%s" % typeIds_str
+    url = "http://api.eve-central.com/api/marketstat?typeid=%s&usesystem=30000142" % typeIds_str
     request = urllib2.Request(url)
     request.add_header('User-Agent', app.config['USER_AGENT'])
     response = urllib2.build_opener().open(request).read()
@@ -99,11 +107,14 @@ def get_market_values(typeIds):
         v = {}
         for stat_type in ['sell', 'buy', 'all']:
             props = {}
-            for stat in marketstat.find('%s' % stat_type):
+            for stat in marketstat.find(stat_type):
                 props[stat.tag] = float(stat.text)
             v[stat_type] = props
-        set_cache_value(k, v)
+        v['all']['price'] = v['all']['avg']
+        v['buy']['price'] = v['buy']['max']
+        v['sell']['price'] = v['sell']['min']
         market_prices[k] = v
+        set_cache_value(k, v)
     return market_prices
 
 
@@ -114,9 +125,9 @@ def get_market_values_2(typeIds):
         Example Return Value:
         {
             21574:{
-             'all': {'avg': 254.83},
-             'buy': {'avg': 5434414.43},
-             'sell': {'avg': 10552957.04}}
+             'all': {'avg': 254.83, 'min': 254.83, 'max': 254.83, 'price': 254.83},
+             'buy': {'avg': 5434414.43, 'min': 5434414.43, 'max': 5434414.43, 'price': 5434414.43},
+             'sell': {'avg': 10552957.04, 'min': 10552957.04, 'max': 10552957.04, 'price': 10552957.04}
         }
     """
     if len(typeIds) == 0:
@@ -134,15 +145,17 @@ def get_market_values_2(typeIds):
         if k not in market_prices:
             market_prices[k] = {}
         if row['buysell'] == 's':
-            market_prices[k]['sell'] = {'avg': float(row['price'])}
+            price = float(row['price'])
+            market_prices[k]['sell'] = {'avg': price, 'min': price, 'max': price}
         elif row['buysell'] == 'b':
-            market_prices[k]['buy'] = {'avg': float(row['price'])}
+            price = float(row['price'])
+            market_prices[k]['buy'] = {'avg': price, 'min': price, 'max': price}
 
     for typeId, prices in market_prices.iteritems():
-        avg = (prices['buy']['avg'] + prices['buy']['avg']) / 2
-        market_prices[typeId]['all'] = {'avg': avg}
-
-    for typeId, prices in market_prices.iteritems():
+        avg = (prices['sell']['avg'] + prices['buy']['avg']) / 2
+        market_prices[typeId]['all'] = {'avg': avg, 'min': avg, 'max': avg, 'price': avg}
+        market_prices[typeId]['buy']['price'] = market_prices[typeId]['buy']['max']
+        market_prices[typeId]['sell']['price'] = market_prices[typeId]['sell']['min']
         set_cache_value(typeId, prices)
     return market_prices
 
@@ -237,7 +250,8 @@ def estimate_cost():
         results[typeId] = price_data
         results[typeId]['totals'] = {}
         for total_key in ['sell', 'buy', 'all']:
-            _total = price_data[total_key]['avg'] * price_data['count']
+            print total_key
+            _total = price_data[total_key]['price'] * price_data['count']
             results[typeId]['totals'][total_key] = _total
             totals[total_key] += _total
 
