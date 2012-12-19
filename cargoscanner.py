@@ -200,31 +200,64 @@ def parse_scan_items(scan_result):
                 for line in scan_result.splitlines() if line.strip()]
 
     results = {}
-    for line in lines:
-        try:
-            count, name = line.split(' ', 1)
-            count = int(count.strip())
-        except ValueError:
-            count, name = 1, line
-        name = name.lower().strip()
-        # Copies are not found through this database at the moment...
-        name = name.replace(' (original)', '')
-        if name in results:
-            results[name] += count
-        else:
-            results[name] = count
-
-    typed_results = {}
     bad_lines = []
-    for name, count in results.iteritems():
-        details = app.config['TYPES'].get(name)
-        if details:
-            typed_results[details['typeID']] = \
-                dict(details.items() + [('count', count)])
-        else:
-            bad_lines.append((count, name))
 
-    return typed_results, bad_lines
+    def _add_type(name, count):
+        details = app.config['TYPES'].get(name)
+        if not details:
+            return False
+        if details['typeID'] in results:
+            results[details['typeID']]['count'] += count
+        else:
+            results[details['typeID']] = details.copy()
+            results[details['typeID']]['count'] = count
+        return True
+
+    for line in lines:
+        fmt_line = line.lower().replace(' (original)', '')
+
+        # aiming for the format "Cargo Scanner II"
+        if _add_type(fmt_line, 1):
+            continue
+
+        # aiming for the format "2 Cargo Scanner II"
+        try:
+            count, name = fmt_line.split(' ', 1)
+            count = int(count.strip())
+            if _add_type(name, count):
+                continue
+        except ValueError:
+            pass
+
+        # aiming for the format
+        # "800mm Repeating Artillery II, Republic Fleet EMP L"
+        if ',' in fmt_line:
+            item, item2 = fmt_line.rsplit(',', 1)
+            _add_type(item2.strip(), 1)
+            if _add_type(item.strip(), 1):
+                continue
+
+        # aiming for the format "Hornet x5"
+        try:
+            if 'x' in fmt_line:
+                item, count = fmt_line.rsplit('x', 1)
+                if _add_type(item.strip(), int(count.strip())):
+                    continue
+        except ValueError:
+            pass
+
+        # aiming for the format "[panther, my pimp panther]"
+        try:
+            if '[' in fmt_line and ']' in fmt_line:
+                item, _ = fmt_line.strip('[').split(',', 1)
+                if _add_type(item.strip(), 1):
+                    continue
+        except ValueError:
+            pass
+
+        bad_lines.append(line)
+
+    return results, bad_lines
 
 
 def is_from_igb():

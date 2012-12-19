@@ -39,9 +39,9 @@
               </tr>
             </thead>
             <tbody>
-            {% for count, line in scan_results.bad_line_items %}
+            {% for line in scan_results.bad_line_items %}
               <tr class="error">
-                <td>{{ count }}</td>
+                <td></td>
                 <td><span class="nowrap">{{ line }}</a></span></td>
                 <td style="text-align:right">
                   <span class="nowrap">unknown</span><br />
