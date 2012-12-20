@@ -37,6 +37,15 @@ class EveType(object):
         self.props = props or {}
         self.pricing_info = pricing_info or {}
 
+    def estimated_value(self):
+        if not self.pricing_info:
+            return 0
+        sell_avg = self.pricing_info.get('sell', {}).get('avg', 0)
+        buy_avg = self.pricing_info.get('buy', {}).get('avg', 0)
+        if buy_avg or sell_avg == 0.0:
+            return max(sell_avg, buy_avg)
+        return (sell_avg + buy_avg) / 2
+
     def is_market_item(self):
         return self.props.get('market', False) == True
 
@@ -44,6 +53,7 @@ class EveType(object):
         return {
             'typeID': self.type_id,
             'count': self.count,
+            'volume': self.props.get('volume'),
             'typeName': self.props.get('typeName'),
             'groupID': self.props.get('groupID'),
             'totals': self.pricing_info.get('totals'),
@@ -58,6 +68,7 @@ class EveType(object):
             {
                 'typeName': d.get('typeName'),
                 'groupID': d.get('groupID'),
+                'volume': d.get('volume')
             },
             {
                 'totals': d.get('totals'),
@@ -86,8 +97,12 @@ def format_isk_human(value):
 
 @app.template_filter('format_volume')
 def format_volume(value):
+    if value < 0.01:
+        return "%.4f" % value
+    if value < 1:
+        return "%.2f" % value
     try:
-        return humanize.intcomma(value)
+        return humanize.intcomma(int(value))
     except:
         return ""
 
@@ -150,7 +165,7 @@ def get_market_values(eve_types):
     if len(eve_types) == 0:
         return {}
     typeIds_str = ','.join(str(x.type_id) for x in eve_types)
-    url = "http://api.eve-central.com/api/marketstat?typeid=%s" % typeIds_str
+    url = "http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=%s" % typeIds_str
     try:
         request = urllib2.Request(url)
         request.add_header('User-Agent', app.config['USER_AGENT'])
@@ -368,8 +383,7 @@ def estimate_cost():
                 new_unpopulated_types.append(eve_type)
         unpopulated_types = new_unpopulated_types
 
-    sorted_eve_types = sorted(eve_types,
-        key=lambda k: -k.pricing_info.get('totals', {}).get('all', 0))
+    sorted_eve_types = sorted(eve_types, key=lambda k: -k.estimated_value())
     displayable_line_items = []
     for eve_type in sorted_eve_types:
         displayable_line_items.append(eve_type.to_dict())

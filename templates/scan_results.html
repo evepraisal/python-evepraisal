@@ -1,17 +1,17 @@
           {% if scan_results %}
           <div>
-            <h4>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
-            {% if scan_results.raw_scan %}<a href="#raw_scan_modal" data-toggle="modal">View Raw</a>{% endif%}</small>
-            </h4>
+            <p>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
+            {% if scan_results.raw_scan %}<a href="#raw-scan-modal" data-toggle="modal">View Raw</a>{% endif%}</small>
+            </p>
             {% if scan_results.raw_scan %}
             <!-- RawScan Modal -->
-            <div id="raw_scan_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_scan_modal" aria-hidden="true">
+            <div id="raw-scan-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw-scan-modal" aria-hidden="true">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3 id="myModalLabel">Raw Scan Result</h3>
+                <h3>Raw Scan Result</h3>
               </div>
               <div class="modal-body">
-                <p><pre>{{ scan_results.raw_scan }}</pre></p>
+                <textarea class="input-block-level" rows="10">{{ scan_results.raw_scan }}</textarea>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
@@ -21,11 +21,11 @@
             <h4><span class="nowrap">{{ scan_results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ scan_results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
             <p class="nowrap">{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}</p>
           </div>
-          <table id="scan_results" class="table table-hover table-condensed">
+          <table id="scan_results" class="table table-condensed">
             <thead>
-              <tr style="background-color: #F9F9F9;">
-                <th class="header" width="10%">#</th>
-                <th class="header" width="40%">Item</th>
+              <tr>
+                <!-- <th class="header" style="width: 10%;">#</th> -->
+                <th class="header" style="width: 90%">Item</th>
                 <th class="header" style="text-align:right">Single</th>
                 <th class="header" style="text-align:right">Totals</th>
               </tr>
@@ -33,26 +33,18 @@
             <tbody>
             {% for line in scan_results.bad_line_items %}
               <tr class="error">
-                <td></td>
-                <td><span class="nowrap">{{ line }}</span></td>
-                <td style="text-align:right">
-                  <span class="nowrap">unknown</span><br />
-                  <span class="nowrap">unknown</span>
-                </td>
-                <td style="text-align:right">
-                  <span class="nowrap">unknown</span><br />
-                  <span class="nowrap">unknown</span>
-                </td>
+                <!-- <td></td> -->
+                <td colspan="3">{{ line }}</td>
               </tr>
             {% endfor %}
             {% for item in scan_results.line_items %}
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
-                <td>{{ item.count }}</td>
-                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" \> {{ item.typeName }} </a></td>
+                <!-- <td>{{ item.count }}</td> -->
+                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> {{ item.typeName }}</a> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume }}m<sup>3</sup>]</small></td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
                   <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span>
-                </td>
+                </td> 
                 <td style="text-align:right">
                   <span class="nowrap">{{ item.totals.sell|format_isk }}</span><br />
                   <span class="nowrap">{{ item.totals.buy|format_isk }}</span>
@@ -62,8 +54,8 @@
             {% endfor %}
             </tbody>
             <tfoot>
-              <tr style="background-color: #F9F9F9;">
-                <td></td>
+              <tr>
+                <!-- <td></td> -->
                 <td><span class="nowrap">Total Sell Value</span><br />
                   <span class="nowrap">Total Buy Value</span></td>
                 <td></td>

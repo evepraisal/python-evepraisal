@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <title>Ship Scan Cost Estimator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="A tool to use with Eve Online to give more detailed information about cargo scans. Usefull for pirates, gankers and curious weirdos.">
+
     <!-- Le styles -->
     <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootswatch/2.1.1/cyborg/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap-responsive.min.css') }}" rel="stylesheet">
+    
     <style> 
       body {
         padding-top: 0px;
       }
       .row-highlight tr {
-        background-color: #DDD;
+        /*background-color: #DDD;*/
       }
       .row-notpublished tr {
-        background-color: #FFC0CB;
+        /*background-color: #FFC0CB;*/
       }
       .nowrap {
         white-space: nowrap;
@@ -24,6 +28,9 @@
       .container {
         padding-left: 10px;
         padding-right: 10px;
+      }
+      p.footer{
+        text-align:center;
       }
       div.scan-result-area {
         padding: 0 20px;
@@ -97,19 +104,20 @@
   <body>
     <div class="navbar">
       <div class="navbar-inner">
-        <a class="brand" href="#">Ship Scan Cost Estimator</a>
-          <ul class="nav">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><label style="margin-left:10px;" class="checkbox"><input id="scan-hide-buttons" type="checkbox"> hide buttons</label></li>
-                <li><label style="margin-left:10px;" class="checkbox"><input id="scan-autosubmit" type="checkbox"> autosubmit on paste</label></li>
-              </ul>
-            </li>
-          </ul>
-        
+        <a class="brand" href="{{ url_for('index') }}">Ship Scan Cost Estimator</a>
+        <ul class="nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><label style="margin-left:10px;" class="checkbox"><input id="scan-hide-buttons" type="checkbox"> hide buttons</label></li>
+              <li><label style="margin-left:10px;" class="checkbox"><input id="scan-autosubmit" type="checkbox"> autosubmit on paste</label></li>
+            </ul>
+          </li>
+          <li><a href="#help-modal" data-toggle="modal">Help</a></li>
+        </ul>
       </div><!-- /.navbar-inner -->
     </div><!-- /.navbar -->
+
     <div class="container">
       <div class="row">
         <div class="span5">
@@ -135,6 +143,27 @@
         </div>
       </div>
     </div>
-    <footer><p align="center">Created by <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. Feel free to send me questions, suggestions or ISK. Source is available on <a href="https://github.com/sudorandom/cargoscanner">github</a>.</p></footer>
+
+    <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_scan_modal" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>Help</h3>
+      </div>
+      <div class="modal-body">
+        <h4>What is this?</h4>
+        <p>This is a tool for Eve Online. There's a module in the game that allows you to scan ship's cargo hold called <a href="http://wiki.eveonline.com/en/wiki/Cargo_Scanner_I">Cargo Scanner I</a>. It's one of the few tools that a ganker or pirate needs to determine whether a possible target is worth it. When you use the module against a locked target, you'll get a listing of everything in the cargo hold of that target along with a count of how many of that item there are. That's it. It's then up to you to make a quick decision on the value of that cargo hold. This tool allows you to copy/paste the cargo scan result and it will give you a readout of the cargo with estimated prices pulled from one of the several API-accessable market scan aggregators. This will give you the ability to quickly price-check an engire cargo hold with a few clicks.</p>
+
+        <h4>Why would I use this?</h4>
+        <p>You scan a drake full of original blueprints that you weren't able to quickly see because you sorting through the tabacco, spirits, exotic dancers, T1 planetary comodaties, livestock, garbage, scrap metal, and other random junk you're likely to find in the cargo hold. This tool will allow you to quickly see what's valuable and a rough estimate of how valueable everything is so the few seconds that you have to decide to commit won't be wasted messing messing around with eve's UI. This tool also happens to be pretty decent at doing quick price checks. It currently is known to work with cargo scan results and EFT-formatted blocks.</p>
+
+        <h4>Problems/More Questions?</h4>
+        <p>Feel free to send me an in-game mail. My character name is <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+
+    <footer><p class="footer">Created by <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. Feel free to send me questions, suggestions or ISK. Source is available on <a href="https://github.com/sudorandom/cargoscanner">github</a>.</p></footer>
   </body>
 </html>
