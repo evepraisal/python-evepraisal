@@ -37,14 +37,12 @@ class EveType(object):
         self.props = props or {}
         self.pricing_info = pricing_info or {}
 
-    def estimated_value(self):
+    def representative_value(self):
         if not self.pricing_info:
             return 0
-        sell_avg = self.pricing_info.get('sell', {}).get('avg', 0)
-        buy_avg = self.pricing_info.get('buy', {}).get('avg', 0)
-        if buy_avg or sell_avg == 0.0:
-            return max(sell_avg, buy_avg)
-        return (sell_avg + buy_avg) / 2
+        sell_price = self.pricing_info.get('sell', {}).get('price', 0)
+        buy_price = self.pricing_info.get('buy', {}).get('price', 0)
+        return max(sell_price, buy_price)
 
     def is_market_item(self):
         return self.props.get('market', False) == True
@@ -383,7 +381,7 @@ def estimate_cost():
                 new_unpopulated_types.append(eve_type)
         unpopulated_types = new_unpopulated_types
 
-    sorted_eve_types = sorted(eve_types, key=lambda k: -k.estimated_value())
+    sorted_eve_types = sorted(eve_types, key=lambda k: -k.representative_value())
     displayable_line_items = []
     for eve_type in sorted_eve_types:
         displayable_line_items.append(eve_type.to_dict())
