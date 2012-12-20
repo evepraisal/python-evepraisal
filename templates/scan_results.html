@@ -26,14 +26,8 @@
               <tr style="background-color: #F9F9F9;">
                 <th class="header" width="10%">#</th>
                 <th class="header" width="40%">Item</th>
-                <th class="header" style="text-align:right">
-                  Single Sell Value<br />
-                  Single Buy Value
-                </th>
-                <th class="header" style="text-align:right">
-                  Sell Value<br />
-                  Buy Value
-                </th>
+                <th class="header" style="text-align:right">Single</th>
+                <th class="header" style="text-align:right">Totals</th>
               </tr>
             </thead>
             <tbody>
@@ -80,9 +74,9 @@
               </tr>
             </tfoot>
           </table>
-          {% if scan_results.scan_id and not from_igb %}
-          <script>
-            window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
-          </script>
-          {% endif %}
+            {% if scan_results.scan_id and not from_igb %}
+            <script>
+              window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
+            </script>
+            {% endif %}
           {% endif %}

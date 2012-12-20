@@ -18,14 +18,6 @@ if __name__ == '__main__':
     eve = blue.EVE(EVEPATH)
     cfg = eve.getconfigmgr()
     all_types = {}
-    # Row(groupID:65,categoryID:7,groupName:Stasis Web,description:Reduces max speed of a target ship.,useBasePrice:False,allowManufacture:True,allowRecycler:True,anchored:False,anchorable:False,fittableNonSingleton:False,published:True,iconID:0,groupNameID:63625,dataID:16671837)
-    # for t in cfg.typesByMarketGroups:
-    #     for tt in t:
-    #         print tt
-    # #     if group.groupID == 65:
-    # #         print group
-
-    # exit()
 
     public_market_groups = []
     for groupID, published in cfg.invgroups.Select('groupID', 'published'):

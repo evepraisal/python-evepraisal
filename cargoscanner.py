@@ -341,7 +341,6 @@ def get_invalid_values(eve_types):
 def estimate_cost():
     "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
     raw_scan = request.form.get('scan_result', '')
-    from_igb = is_from_igb()
     eve_types, bad_lines = parse_scan_items(raw_scan)
 
     # Populate types with pricing data
@@ -375,7 +374,7 @@ def estimate_cost():
     for eve_type in sorted_eve_types:
         displayable_line_items.append(eve_type.to_dict())
     scan_results = {
-        'from_igb': from_igb,
+        'from_igb': is_from_igb(),
         'totals': totals,
         'bad_line_items': bad_lines,
         'line_items': displayable_line_items,
@@ -396,7 +395,8 @@ def display_scan(scan_id):
     if scan_results:
         return display_scan_result(scan_results, full_page=True)
     else:
-        return render_template('index.html', error="Scan Not Found")
+        return render_template('index.html', error="Scan Not Found",
+            from_igb=is_from_igb())
 
 
 def display_scan_result(scan_results, full_page=False):
@@ -411,7 +411,7 @@ def display_scan_result(scan_results, full_page=False):
 @app.route('/', methods=['GET', 'POST'])
 def index():
     "Index. Renders HTML."
-    return render_template('index.html')
+    return render_template('index.html', from_igb=is_from_igb())
 
 
 if __name__ == '__main__':
