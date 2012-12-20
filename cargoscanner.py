@@ -99,12 +99,12 @@ def format_isk_human(value):
 def format_volume(value):
     try:
         if value < 0.01:
-            return "%.4f" % value
+            return "%.4fm<sup>3</sup>" % value
         if value < 1:
-            return "%.2f" % value
-        return humanize.intcomma(int(value))
+            return "%.2fm<sup>3</sup>" % value
+        return "%sm<sup>3</sup>" % humanize.intcomma(int(value))
     except:
-        return "unknown"
+        return "unknown m<sup>3</sup>"
 
 
 @app.template_filter('relative_time')

@@ -40,7 +40,7 @@
             {% for item in scan_results.line_items %}
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
                 <!-- <td>{{ item.count }}</td> -->
-                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> {{ item.typeName }}</a> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume }}m<sup>3</sup>]</small></td>
+                <td><a href="http://eve-central.com/home/quicklook.html?typeid={{ item.typeID }}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> {{ item.typeName }}</a> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small></td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
                   <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span>
