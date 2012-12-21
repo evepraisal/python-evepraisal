@@ -19,23 +19,23 @@ if __name__ == '__main__':
     cfg = eve.getconfigmgr()
     all_types = {}
 
-    public_market_groups = []
-    for groupID, published in cfg.invgroups.Select('groupID', 'published'):
-        if published:
-            public_market_groups.append(groupID)
+    # public_market_groups = []
+    # for groupID, published in cfg.invgroups.Select('groupID', 'published'):
+    #     if published:
+    #         public_market_groups.append(groupID)
 
     # Groups that don't appear in the market
     nonMarketGroups = [314]
 
     for (typeID, groupID, typeName, marketGroupID, volume) in cfg.invtypes.Select('typeID',
                                                     'groupID', 'typeName', 'marketGroupID', 'volume'):
-        if groupID in public_market_groups:
-            hasMarket = marketGroupID is not None
-            all_types[typeName.strip().lower()] = {'typeID': typeID,
-                                                   'groupID': groupID,
-                                                   'typeName': typeName,
-                                                   'volume': volume,
-                                                   'market': hasMarket,
-                                                   }
+        # if groupID in public_market_groups:
+        hasMarket = marketGroupID is not None
+        all_types[typeName.strip().lower()] = {'typeID': typeID,
+                                               'groupID': groupID,
+                                               'typeName': typeName,
+                                               'volume': volume,
+                                               'market': hasMarket,
+                                               }
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))

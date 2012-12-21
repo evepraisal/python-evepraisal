@@ -35,6 +35,13 @@
       div.scan-result-area {
         padding: 0 20px;
       }
+      span.warning-message {
+        color: #B94A48;
+      }
+      span.warning-message a {
+        color: #B94A48;
+        font-weight: bold;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -122,7 +129,7 @@
       <div class="row">
         <div class="span5">
           <h4>Paste Scan Result</h4>
-          <form action="{{ url_for('estimate_cost') }}" method="post" class="well well-small" id="scan_result_form">
+          <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="scan_result_form">
             <textarea class="input-block-level" id="scan_result" name="scan_result" rows="5" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
             <input type="hidden" name="load_full" value="1"/>
             <div class="controls">
@@ -139,7 +146,14 @@
             <strong>Error:</strong> {{ error }}
           </div>
           {% endif %}
-          {% include "scan_results.html" %}
+          {% if scan_results %}
+            {% include "scan_results.html" %}
+          {% else %}
+            <h4>What do I do?</h4>
+            <p>
+              Scan down a ship using a cargo scanner, click a result in the scan result list that pops up, hit <strong>CTRL + A, hit CTRL + C</strong>, then click on the box in this page and hit <strong>CTRL + V</strong>. It will then give you a readout with more detail in place of this text.
+            </p>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -155,6 +169,21 @@
 
         <h4>Why would I use this?</h4>
         <p>You scan a drake full of original blueprints that you weren't able to quickly see because you sorting through the tabacco, spirits, exotic dancers, T1 planetary comodaties, livestock, garbage, scrap metal, and other random junk you're likely to find in the cargo hold. This tool will allow you to quickly see what's valuable and a rough estimate of how valueable everything is so the few seconds that you have to decide to commit won't be wasted messing messing around with eve's UI. This tool also happens to be pretty decent at doing quick price checks. It currently is known to work with cargo scan results and EFT-formatted blocks.</p>
+
+        <h4>What formats are currently supported?</h5>
+        <ul>
+          <li>Cargo Scanner</li>
+          <li>EFT Format</li>
+          <li>D-Scan</li>
+          <li>Item Listings: "12 Tritanium" or just "Tritanium"</li>
+        </ul>
+
+        <h4>Caveats/Known Issues</h4>
+        <ul>
+          <li>There's no reliable way to get prices of blueprint copies (BPCs). Due to this, I don't even try to guess a price for them.</li>
+          <li>Capital and Supercapital ship prices are currently not supported. Since this was a tool original meant for ship scanning, you're unlikely to see an avatar sitting inside of a rhea. Because of this, I haven't dealt with the issue. However, some people like to use it for price checks and so eventually Capitals/Super Capitals will need a price tag on them. This will likely be done using the minerals needed to construct each ship and ~maybe~ a percentage addition to make the price more realistic.</li>
+        </ul>
+
 
         <h4>Problems/More Questions?</h4>
         <p>Feel free to send me an in-game mail. My character name is <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>.</p>

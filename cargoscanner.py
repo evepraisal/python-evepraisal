@@ -40,8 +40,8 @@ class EveType(object):
     def representative_value(self):
         if not self.pricing_info:
             return 0
-        sell_price = self.pricing_info.get('sell', {}).get('price', 0)
-        buy_price = self.pricing_info.get('buy', {}).get('price', 0)
+        sell_price = self.pricing_info.get('totals', {}).get('sell', 0)
+        buy_price = self.pricing_info.get('totals', {}).get('buy', 0)
         return max(sell_price, buy_price)
 
     def is_market_item(self):
@@ -111,6 +111,15 @@ def relative_time(past):
         return humanize.naturaltime(datetime.datetime.fromtimestamp(past))
     except:
         return ""
+
+
+@app.template_filter('bpc_count')
+def bpc_count(bad_lines):
+    c = 0
+    for line in bad_lines:
+        if '(copy)' in line.lower():
+            c += 1
+    return c
 
 
 def memcache_type_key(typeId):
@@ -269,8 +278,7 @@ def parse_scan_items(scan_result):
             {'name': {details}, ...}, [(2, 'bad name')]
     """
     lines = scan_result.splitlines()
-    lines = [line.replace('\t', '').strip() \
-                for line in scan_result.splitlines() if line.strip()]
+    lines = [line.strip() for line in scan_result.splitlines() if line.strip()]
 
     results = {}
     bad_lines = []
@@ -293,11 +301,11 @@ def parse_scan_items(scan_result):
         if _add_type(fmt_line, 1):
             continue
 
-        # aiming for the format "2 Cargo Scanner II"
+        # aiming for the format "2 Cargo Scanner II" and "2x Cargo Scanner II"
         try:
             count, name = fmt_line.split(' ', 1)
-            count = int(count.strip())
-            if _add_type(name, count):
+            count = int(count.replace('x', '').strip())
+            if _add_type(name.strip(), count):
                 continue
         except ValueError:
             pass
@@ -323,6 +331,17 @@ def parse_scan_items(scan_result):
         try:
             if '[' in fmt_line and ']' in fmt_line:
                 item, _ = fmt_line.strip('[').split(',', 1)
+                if _add_type(item.strip(), 1):
+                    continue
+        except ValueError:
+            pass
+
+        # aiming for format "PERSON'S NAME\tShipType\tdistance"
+
+        try:
+            # print "TAB COUNT", fmt_line.count("\t")
+            if fmt_line.count("\t") == 2:
+                _, item, _ = fmt_line.split("\t", 2)
                 if _add_type(item.strip(), 1):
                     continue
         except ValueError:
