@@ -12,6 +12,7 @@ import humanize
 import locale
 import random
 import os
+import sqlite3
 
 from flask import Flask, request, render_template, _app_ctx_stack
 
@@ -20,10 +21,16 @@ DEBUG = True
 MEMCACHE_PREFIX = 'cargoscanner'
 TYPES = json.loads(open('data/types.json').read())
 USER_AGENT = 'CargoScanner/1.0 +http://sudorandom.com/cargoscanner'
+SCAN_DB = 'data/scans.db'
 
 app = Flask(__name__)
 app.config.from_object(__name__)
 locale.setlocale(locale.LC_ALL, 'en_US')
+if not os.path.exists(app.config['SCAN_DB']):
+    conn = sqlite3.connect(app.config['SCAN_DB'])
+    with conn:
+        cur = conn.cursor()
+        cur.execute("CREATE TABLE Scans(Id INTEGER PRIMARY KEY, Data TEXT, Created INTEGER)")
 try:
     os.makedirs('data/scans')
 except OSError:
@@ -251,23 +258,15 @@ def get_market_values_2(eve_types):
         return {}
 
 
-def get_current_scan_id():
-    scan_id_file = "data/current_scan_id.dat"
-    if not os.path.exists(scan_id_file):
-        with open(scan_id_file, 'w') as f:
-            f.write('1')
-        return 0
-
-    with open(scan_id_file, 'r+') as f:
-        scan_id = int(f.read())
-        f.seek(0)
-        f.write(str(scan_id + 1))
-        return scan_id
-
-
-def save_scan(scan_id, scan_result):
-    with open("data/scans/%s" % scan_id, 'w') as f:
-        f.write(json.dumps(scan_result, indent=2))
+def save_scan(scan_result):
+    conn = sqlite3.connect(app.config['SCAN_DB'])
+    with conn:
+        cur = conn.cursor()
+        data = json.dumps(scan_result, indent=2)
+        cur.execute("""INSERT INTO Scans(Data, Created)
+                       VALUES (?, strftime('%s','now'));""", (data, ))
+        conn.commit()
+        return cur.lastrowid
 
 
 def load_scan(scan_id):
@@ -275,16 +274,20 @@ def load_scan(scan_id):
         int(scan_id)
     except:
         return
-    scan_file = "data/scans/%s" % scan_id
-    if os.path.exists(scan_file):
-        with open(scan_file) as f:
-            return json.loads(f.read())
+    conn = sqlite3.connect(app.config['SCAN_DB'])
+    with conn:
+        cur = conn.cursor()
+        cur.execute("SELECT Data From Scans WHERE id=?;", (scan_id, ))
+        conn.commit()
+        scan_data = cur.fetchone()
+        if scan_data:
+            return json.loads(scan_data[0])
 
 
 def parse_scan_items(scan_result):
     """
         Takes a scan result and returns:
-            {'name': {details}, ...}, [(2, 'bad name')]
+            {'name': {details}, ...}, ['bad line']
     """
     lines = scan_result.splitlines()
     lines = [line.strip() for line in scan_result.splitlines() if line.strip()]
@@ -337,19 +340,22 @@ def parse_scan_items(scan_result):
             pass
 
         # aiming for the format "[panther, my pimp panther]"
-        try:
-            if '[' in fmt_line and ']' in fmt_line:
-                item, _ = fmt_line.strip('[').split(',', 1)
-                if _add_type(item.strip(), 1):
-                    continue
-        except ValueError:
-            pass
+        if '[' in fmt_line and ']' in fmt_line and fmt_line.count(",") > 0:
+            item, _ = fmt_line.strip('[').split(',', 1)
+            if _add_type(item.strip(), 1):
+                continue
 
         # aiming for format "PERSON'S NAME\tShipType\tdistance"
+        if fmt_line.count("\t") == 2:
+            _, item, _ = fmt_line.split("\t", 2)
+            if _add_type(item.strip(), 1):
+                continue
+
+        # aiming for format "Item Name\tCount..."
         try:
-            if fmt_line.count("\t") == 2:
-                _, item, _ = fmt_line.split("\t", 2)
-                if _add_type(item.strip(), 1):
+            if fmt_line.count("\t") > 1:
+                item, count, _ = fmt_line.split("\t", 2)
+                if _add_type(item.strip(), int(count.strip())):
                     continue
         except ValueError:
             pass
@@ -422,9 +428,8 @@ def estimate_cost():
         'raw_scan': raw_scan,
     }
     if len(sorted_eve_types) > 0:
-        scan_id = get_current_scan_id()
+        scan_id = save_scan(scan_results)
         scan_results['scan_id'] = scan_id
-        save_scan(scan_id, scan_results)
     return display_scan_result(scan_results,
         full_page=request.form.get('load_full'))
 
@@ -433,6 +438,7 @@ def estimate_cost():
 def display_scan(scan_id):
     scan_results = load_scan(scan_id)
     if scan_results:
+        scan_results['scan_id'] = scan_id
         return display_scan_result(scan_results, full_page=True)
     else:
         return render_template('index.html', error="Scan Not Found",
