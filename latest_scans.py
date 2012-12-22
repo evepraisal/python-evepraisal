@@ -1,5 +1,6 @@
 import sqlite3
-import time
+import humanize
+import datetime
 
 if __name__ == "__main__":
     conn = sqlite3.connect('data/scans.db')
@@ -10,5 +11,5 @@ if __name__ == "__main__":
             _id, _timestamp = result
             _created = "unknown"
             if _timestamp:
-                _created = time.ctime(_timestamp)
-            print("scan_id: %s, created: %s" % (_id, _created)) 
+                _created = humanize.naturaltime(datetime.datetime.fromtimestamp(_timestamp))
+            print("scan_id: %s, created: %s" % (_id, _created))
