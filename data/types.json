@@ -4382,11 +4382,73 @@
     "typeName": "350mm Carbide Railgun I"
   }, 
   "thanatos": {
-    "volume": 13095000.0, 
     "typeID": 23911, 
+    "volume": 13095000.0, 
+    "typeName": "Thanatos", 
+    "components": [
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21009, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21013, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21017, 
+        "quantity": 8
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21019, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21021, 
+        "quantity": 6
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21023, 
+        "quantity": 6
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21029, 
+        "quantity": 55
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21035, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21037, 
+        "quantity": 9
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 24558, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 24560, 
+        "quantity": 10
+      }
+    ], 
     "groupID": 547, 
-    "market": true, 
-    "typeName": "Thanatos"
+    "market": true
   }, 
   "improved mindflood booster": {
     "volume": 1.0, 
@@ -4417,11 +4479,88 @@
     "typeName": "Command Processor I"
   }, 
   "ragnarok": {
-    "volume": 100000000.0, 
     "typeID": 23773, 
+    "volume": 100000000.0, 
+    "typeName": "Ragnarok", 
+    "components": [
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21009, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21011, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21013, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21017, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21019, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21021, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21023, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21025, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21035, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 21037, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 24545, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 24547, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 24556, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 24558, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 23773, 
+        "materialTypeID": 24560, 
+        "quantity": 500
+      }
+    ], 
     "groupID": 30, 
-    "market": true, 
-    "typeName": "Ragnarok"
+    "market": true
   }, 
   "capital hybrid collision accelerator i": {
     "volume": 1000.0, 
@@ -16961,11 +17100,73 @@
     "typeName": "Crates of Planetary Vehicles"
   }, 
   "hel": {
-    "volume": 51000000.0, 
     "typeID": 22852, 
+    "volume": 51000000.0, 
+    "typeName": "Hel", 
+    "components": [
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21009, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21013, 
+        "quantity": 75
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21017, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21019, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21021, 
+        "quantity": 150
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21023, 
+        "quantity": 150
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21025, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21029, 
+        "quantity": 525
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21035, 
+        "quantity": 75
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 21037, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 24558, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 22852, 
+        "materialTypeID": 24560, 
+        "quantity": 200
+      }
+    ], 
     "groupID": 659, 
-    "market": true, 
-    "typeName": "Hel"
+    "market": true
   }, 
   "capital warhead flare catalyst i blueprint": {
     "volume": 0.01, 
@@ -28238,11 +28439,73 @@
     "typeName": "Angel Ship Log 343873495"
   }, 
   "aeon": {
-    "volume": 62000000.0, 
     "typeID": 23919, 
+    "volume": 62000000.0, 
+    "typeName": "Aeon", 
+    "components": [
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21009, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21013, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21017, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21019, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21021, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21023, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21025, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21029, 
+        "quantity": 450
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21035, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 21037, 
+        "quantity": 150
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 24558, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23919, 
+        "materialTypeID": 24560, 
+        "quantity": 200
+      }
+    ], 
     "groupID": 659, 
-    "market": true, 
-    "typeName": "Aeon"
+    "market": true
   }, 
   "rogue drone convoy": {
     "volume": 19000000.0, 
@@ -30107,11 +30370,73 @@
     "typeName": "Khanid Ext Keycard"
   }, 
   "revenant": {
-    "volume": 62000000.0, 
     "typeID": 3514, 
+    "volume": 62000000.0, 
+    "typeName": "Revenant", 
+    "components": [
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21009, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21013, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21017, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21019, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21021, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21023, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21025, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21029, 
+        "quantity": 350
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21035, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 21037, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 24558, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3514, 
+        "materialTypeID": 24560, 
+        "quantity": 200
+      }
+    ], 
     "groupID": 659, 
-    "market": true, 
-    "typeName": "Revenant"
+    "market": true
   }, 
   "minecore harvester": {
     "volume": 2.0, 
@@ -37695,11 +38020,68 @@
     "typeName": "Serpentis Junkie"
   }, 
   "moros": {
-    "volume": 17550000.0, 
     "typeID": 19724, 
+    "volume": 17550000.0, 
+    "typeName": "Moros", 
+    "components": [
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21009, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21011, 
+        "quantity": 30
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21013, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21017, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21019, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21021, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21023, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21035, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21037, 
+        "quantity": 30
+      }, 
+      {
+        "typeID": 19724, 
+        "materialTypeID": 21039, 
+        "quantity": 30
+      }
+    ], 
     "groupID": 485, 
-    "market": true, 
-    "typeName": "Moros"
+    "market": true
   }, 
   "core scanner probe i blueprint": {
     "volume": 0.01, 
@@ -48132,11 +48514,73 @@
     "typeName": "Women's 'Impress' Skirt (matte red)"
   }, 
   "archon": {
-    "volume": 13950000.0, 
     "typeID": 23757, 
+    "volume": 13950000.0, 
+    "typeName": "Archon", 
+    "components": [
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21009, 
+        "quantity": 6
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21013, 
+        "quantity": 3
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21017, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21019, 
+        "quantity": 9
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21021, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21023, 
+        "quantity": 4
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21029, 
+        "quantity": 44
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21035, 
+        "quantity": 3
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 21037, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 24558, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23757, 
+        "materialTypeID": 24560, 
+        "quantity": 10
+      }
+    ], 
     "groupID": 547, 
-    "market": true, 
-    "typeName": "Archon"
+    "market": true
   }, 
   "improved 'guise' cloaking device ii blueprint": {
     "volume": 0.01, 
@@ -54313,11 +54757,73 @@
     "typeName": "Large F-S9 Regolith Shield Induction"
   }, 
   "nidhoggur": {
-    "volume": 11250000.0, 
     "typeID": 24483, 
+    "volume": 11250000.0, 
+    "typeName": "Nidhoggur", 
+    "components": [
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21009, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21013, 
+        "quantity": 5
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21017, 
+        "quantity": 6
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21019, 
+        "quantity": 3
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21021, 
+        "quantity": 8
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21023, 
+        "quantity": 8
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21029, 
+        "quantity": 48
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21035, 
+        "quantity": 6
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 21037, 
+        "quantity": 3
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 24558, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 24483, 
+        "materialTypeID": 24560, 
+        "quantity": 10
+      }
+    ], 
     "groupID": 547, 
-    "market": true, 
-    "typeName": "Nidhoggur"
+    "market": true
   }, 
   "'hooligan' heavy ion blaster i blueprint": {
     "volume": 0.01, 
@@ -74018,11 +74524,73 @@
     "typeName": "Crates of OP Insecticide"
   }, 
   "wyvern": {
-    "volume": 53000000.0, 
     "typeID": 23917, 
+    "volume": 53000000.0, 
+    "typeName": "Wyvern", 
+    "components": [
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21009, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21013, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21017, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21019, 
+        "quantity": 75
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21021, 
+        "quantity": 50
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21023, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21025, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21029, 
+        "quantity": 375
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21035, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 21037, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 24558, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23917, 
+        "materialTypeID": 24560, 
+        "quantity": 200
+      }
+    ], 
     "groupID": 659, 
-    "market": true, 
-    "typeName": "Wyvern"
+    "market": true
   }, 
   "missile guidance system rig i blueprint": {
     "volume": 0.01, 
@@ -81508,11 +82076,73 @@
     "typeName": "R.S. Officer's Alpha Passcard"
   }, 
   "nyx": {
-    "volume": 58200000.0, 
     "typeID": 23913, 
+    "volume": 58200000.0, 
+    "typeName": "Nyx", 
+    "components": [
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21009, 
+        "quantity": 125
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21013, 
+        "quantity": 125
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21017, 
+        "quantity": 150
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21019, 
+        "quantity": 125
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21021, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21023, 
+        "quantity": 75
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21025, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21029, 
+        "quantity": 625
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21035, 
+        "quantity": 125
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 21037, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 24558, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 23913, 
+        "materialTypeID": 24560, 
+        "quantity": 200
+      }
+    ], 
     "groupID": 659, 
-    "market": true, 
-    "typeName": "Nyx"
+    "market": true
   }, 
   "medium core defense field purger ii": {
     "volume": 10.0, 
@@ -82222,11 +82852,73 @@
     "typeName": "Sample of Septicemic Agent"
   }, 
   "naglfar": {
-    "volume": 15500000.0, 
     "typeID": 19722, 
+    "volume": 15500000.0, 
+    "typeName": "Naglfar", 
+    "components": [
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21009, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21011, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21013, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21017, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21019, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21021, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21023, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21035, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21037, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21039, 
+        "quantity": 40
+      }, 
+      {
+        "typeID": 19722, 
+        "materialTypeID": 21041, 
+        "quantity": 20
+      }
+    ], 
     "groupID": 485, 
-    "market": true, 
-    "typeName": "Naglfar"
+    "market": true
   }, 
   "compressed gelidus": {
     "volume": 100.0, 
@@ -89985,11 +90677,73 @@
     "typeName": "Marauder Protector"
   }, 
   "chimera": {
-    "volume": 11925000.0, 
     "typeID": 23915, 
+    "volume": 11925000.0, 
+    "typeName": "Chimera", 
+    "components": [
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21009, 
+        "quantity": 4
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21013, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21017, 
+        "quantity": 4
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21019, 
+        "quantity": 5
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21021, 
+        "quantity": 4
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21023, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21029, 
+        "quantity": 37
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21035, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 21037, 
+        "quantity": 5
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 24558, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 23915, 
+        "materialTypeID": 24560, 
+        "quantity": 10
+      }
+    ], 
     "groupID": 547, 
-    "market": true, 
-    "typeName": "Chimera"
+    "market": true
   }, 
   "federation navy iron charge s": {
     "volume": 0.0025, 
@@ -112805,11 +113559,88 @@
     "typeName": "LCO Minmatar Bunker"
   }, 
   "avatar": {
-    "volume": 155000000.0, 
     "typeID": 11567, 
+    "volume": 155000000.0, 
+    "typeName": "Avatar", 
+    "components": [
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21009, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21011, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21013, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21017, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21019, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21021, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21023, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21025, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21035, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 21037, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 24545, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 24547, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 24556, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 24558, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 11567, 
+        "materialTypeID": 24560, 
+        "quantity": 500
+      }
+    ], 
     "groupID": 30, 
-    "market": true, 
-    "typeName": "Avatar"
+    "market": true
   }, 
   "induced multispectral ecm i": {
     "volume": 5.0, 
@@ -114191,11 +115022,73 @@
     "typeName": "Freki"
   }, 
   "phoenix": {
-    "volume": 16250000.0, 
     "typeID": 19726, 
+    "volume": 16250000.0, 
+    "typeName": "Phoenix", 
+    "components": [
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21009, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21011, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21013, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21017, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21019, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21021, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21023, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21035, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21037, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21039, 
+        "quantity": 40
+      }, 
+      {
+        "typeID": 19726, 
+        "materialTypeID": 21041, 
+        "quantity": 30
+      }
+    ], 
     "groupID": 485, 
-    "market": true, 
-    "typeName": "Phoenix"
+    "market": true
   }, 
   "large group of tourists": {
     "volume": 500.0, 
@@ -128275,11 +129168,68 @@
     "typeName": "Fusion Reactor Unit Blueprint"
   }, 
   "revelation": {
-    "volume": 18500000.0, 
     "typeID": 19720, 
+    "volume": 18500000.0, 
+    "typeName": "Revelation", 
+    "components": [
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21009, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21011, 
+        "quantity": 30
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21013, 
+        "quantity": 20
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21017, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21019, 
+        "quantity": 30
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21021, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21023, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21025, 
+        "quantity": 10
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21035, 
+        "quantity": 15
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21037, 
+        "quantity": 25
+      }, 
+      {
+        "typeID": 19720, 
+        "materialTypeID": 21039, 
+        "quantity": 30
+      }
+    ], 
     "groupID": 485, 
-    "market": true, 
-    "typeName": "Revelation"
+    "market": true
   }, 
   "lco gallente lookout": {
     "volume": 0.0, 
@@ -130039,11 +130989,88 @@
     "typeName": "Datacore - Mechanical Engineering"
   }, 
   "erebus": {
-    "volume": 145500000.0, 
     "typeID": 671, 
+    "volume": 145500000.0, 
+    "typeName": "Erebus", 
+    "components": [
+      {
+        "typeID": 671, 
+        "materialTypeID": 21009, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21011, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21013, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21017, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21019, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21021, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21023, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21025, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21035, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 21037, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 24545, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 24547, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 24556, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 24558, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 671, 
+        "materialTypeID": 24560, 
+        "quantity": 500
+      }
+    ], 
     "groupID": 30, 
-    "market": true, 
-    "typeName": "Erebus"
+    "market": true
   }, 
   "malediction blueprint": {
     "volume": 0.01, 
@@ -137137,11 +138164,88 @@
     "typeName": "Metadrones - MH-C-1 - N"
   }, 
   "leviathan": {
-    "volume": 132500000.0, 
     "typeID": 3764, 
+    "volume": 132500000.0, 
+    "typeName": "Leviathan", 
+    "components": [
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21009, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21013, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21017, 
+        "quantity": 200
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21019, 
+        "quantity": 400
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21021, 
+        "quantity": 100
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21023, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21025, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21035, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21037, 
+        "quantity": 300
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 21041, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 24545, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 24547, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 24556, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 24558, 
+        "quantity": 500
+      }, 
+      {
+        "typeID": 3764, 
+        "materialTypeID": 24560, 
+        "quantity": 500
+      }
+    ], 
     "groupID": 30, 
-    "market": true, 
-    "typeName": "Leviathan"
+    "market": true
   }, 
   "militia 180mm reinforced steel plates": {
     "volume": 0.01, 

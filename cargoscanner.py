@@ -104,6 +104,8 @@ def format_isk_human(value):
 @app.template_filter('format_volume')
 def format_volume(value):
     try:
+        if value == 0:
+            return "0m<sup>3</sup>"
         if value < 0.01:
             return "%.4fm<sup>3</sup>" % value
         if value < 1:
@@ -373,13 +375,68 @@ def get_invalid_values(eve_types):
     invalid_items = {}
     for eve_type in eve_types:
         if eve_type.props.get('market') == False:
-            price_info = {}
             zeroed_price = {'avg': 0, 'min': 0, 'max': 0, 'price': 0}
-            price_info['buy'] = zeroed_price
-            price_info['sell'] = zeroed_price
-            price_info['all'] = zeroed_price
+            price_info = {
+                'buy': zeroed_price.copy(),
+                'sell': zeroed_price.copy(),
+                'all': zeroed_price.copy(),
+            }
             invalid_items[eve_type.type_id] = price_info
     return invalid_items
+
+
+def get_componentized_values(eve_types):
+    componentized_items = {}
+    for eve_type in eve_types:
+        if 'components' in eve_type.props:
+            component_types = [EveType(c['materialTypeID'], c['quantity'])
+                for c in eve_type.props['components']]
+
+            populate_market_values(component_types, methods=[get_cached_values,
+                get_market_values, get_market_values_2])
+            zeroed_price = {'avg': 0, 'min': 0, 'max': 0, 'price': 0}
+            complete_price_data = {
+                'buy': zeroed_price.copy(),
+                'sell': zeroed_price.copy(),
+                'all': zeroed_price.copy(),
+            }
+            for component in component_types:
+                for market_type in ['buy', 'sell', 'all']:
+                    for stat in ['avg', 'min', 'max', 'price']:
+                        complete_price_data[market_type][stat] += \
+                            component.pricing_info[market_type][stat] * component.count
+            componentized_items[eve_type.type_id] = complete_price_data
+
+    return componentized_items
+
+
+def populate_market_values(eve_types, methods=None):
+    unpopulated_types = list(eve_types)
+    if methods is None:
+        methods = [get_invalid_values, get_cached_values,
+            get_componentized_values, get_market_values, get_market_values_2]
+    for pricing_method in methods:
+        if len(unpopulated_types) == 0:
+            break
+        # returns a dict with {type_id: pricing_info}
+        prices = pricing_method(unpopulated_types)
+        app.logger.debug("Found %s/%s items using method: %s", len(prices),
+            len(unpopulated_types), pricing_method)
+        new_unpopulated_types = []
+        for eve_type in unpopulated_types:
+            if eve_type.type_id in prices:
+                pdata = prices[eve_type.type_id]
+                pdata['totals'] = {
+                    'volume': eve_type.props.get('volume', 0) * eve_type.count
+                }
+                for total_key in ['sell', 'buy', 'all']:
+                    _total = pdata[total_key]['price'] * eve_type.count
+                    pdata['totals'][total_key] = _total
+                eve_type.pricing_info = pdata
+            else:
+                new_unpopulated_types.append(eve_type)
+        unpopulated_types = new_unpopulated_types
+    return eve_types
 
 
 @app.route('/estimate', methods=['POST'])
@@ -389,31 +446,13 @@ def estimate_cost():
     eve_types, bad_lines = parse_scan_items(raw_scan)
 
     # Populate types with pricing data
-    unpopulated_types = list(eve_types)
-    totals = {'sell': 0, 'buy': 0, 'all': 0}
-    # Randomize which pricing API to try first (spread the love around)
-    market_apis = [get_market_values, get_market_values_2]
-    random.shuffle(market_apis)
-    for pricing_method in [get_invalid_values, get_cached_values] + market_apis:
-        if len(unpopulated_types) == 0:
-            break
-        # returns a dict with type_id: pricing_info
-        prices = pricing_method(unpopulated_types)
-        app.logger.debug("Found %s/%s items using method: %s", len(prices),
-            len(unpopulated_types), pricing_method)
-        new_unpopulated_types = []
-        for eve_type in unpopulated_types:
-            if eve_type.type_id in prices:
-                pdata = prices[eve_type.type_id]
-                pdata['totals'] = {}
-                for total_key in ['sell', 'buy', 'all']:
-                    _total = pdata[total_key]['price'] * eve_type.count
-                    pdata['totals'][total_key] = _total
-                    totals[total_key] += _total
-                eve_type.pricing_info = pdata
-            else:
-                new_unpopulated_types.append(eve_type)
-        unpopulated_types = new_unpopulated_types
+    populate_market_values(eve_types)
+
+    # calculate the totals
+    totals = {'sell': 0, 'buy': 0, 'all': 0, 'volume': 0}
+    for t in eve_types:
+        for total_key in ['sell', 'buy', 'all', 'volume']:
+            totals[total_key] += t.pricing_info['totals'][total_key]
 
     sorted_eve_types = sorted(eve_types, key=lambda k: -k.representative_value())
     displayable_line_items = []

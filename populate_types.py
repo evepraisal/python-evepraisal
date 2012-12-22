@@ -17,25 +17,34 @@ if __name__ == '__main__':
 
     eve = blue.EVE(EVEPATH)
     cfg = eve.getconfigmgr()
+
     all_types = {}
+    for (typeID, groupID, typeName, marketGroupID, volume) in \
+            cfg.invtypes.Select('typeID', 'groupID', 'typeName',
+                'marketGroupID', 'volume'):
+        print("Populating info for: %s" % typeName)
 
-    # public_market_groups = []
-    # for groupID, published in cfg.invgroups.Select('groupID', 'published'):
-    #     if published:
-    #         public_market_groups.append(groupID)
-
-    # Groups that don't appear in the market
-    nonMarketGroups = [314]
-
-    for (typeID, groupID, typeName, marketGroupID, volume) in cfg.invtypes.Select('typeID',
-                                                    'groupID', 'typeName', 'marketGroupID', 'volume'):
-        # if groupID in public_market_groups:
         hasMarket = marketGroupID is not None
-        all_types[typeName.strip().lower()] = {'typeID': typeID,
-                                               'groupID': groupID,
-                                               'typeName': typeName,
-                                               'volume': volume,
-                                               'market': hasMarket,
-                                               }
+        d = {
+                'typeID': typeID,
+                'groupID': groupID,
+                'typeName': typeName,
+                'volume': volume,
+                'market': hasMarket,
+            }
+
+        # super, carrier, titan, dread
+        if groupID in [659, 547, 30, 485] and typeID in cfg.invtypematerials:
+            components = []
+            for typeID, materialTypeID, component_quantity in cfg.invtypematerials[typeID]:
+                components.append({
+                                    'typeID': typeID,
+                                    'materialTypeID': materialTypeID,
+                                    'quantity': component_quantity,
+                                })
+
+            d['components'] = components
+        all_types[typeName.strip().lower()] = d
+
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))
