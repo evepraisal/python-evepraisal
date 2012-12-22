@@ -10,6 +10,7 @@ import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
+import random
 import os
 
 from flask import Flask, request, render_template, _app_ctx_stack
@@ -171,8 +172,16 @@ def get_market_values(eve_types):
     """
     if len(eve_types) == 0:
         return {}
-    typeIds_str = ','.join(str(x.type_id) for x in eve_types)
-    url = "http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=%s" % typeIds_str
+    typeids = ["typeid=" + str(x.type_id) for x in eve_types]
+    # Forge (for jita): 10000002
+    # Metropolis (for hek): 10000042
+    # Heimatar (for rens): 10000030
+    # Sinq Laison region (for dodixie): 10000032
+    # Domain (for amarr): 10000043
+    regions = ['regionlimit=10000002', 'regionlimit=10000042',
+        'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
+    query_str = '&'.join(regions + typeids)
+    url = "http://api.eve-central.com/api/marketstat?%s" % query_str
     try:
         request = urllib2.Request(url)
         request.add_header('User-Agent', app.config['USER_AGENT'])
@@ -337,9 +346,7 @@ def parse_scan_items(scan_result):
             pass
 
         # aiming for format "PERSON'S NAME\tShipType\tdistance"
-
         try:
-            # print "TAB COUNT", fmt_line.count("\t")
             if fmt_line.count("\t") == 2:
                 _, item, _ = fmt_line.split("\t", 2)
                 if _add_type(item.strip(), 1):
@@ -378,8 +385,10 @@ def estimate_cost():
     # Populate types with pricing data
     unpopulated_types = list(eve_types)
     totals = {'sell': 0, 'buy': 0, 'all': 0}
-    for pricing_method in [get_invalid_values, get_cached_values,
-            get_market_values, get_market_values_2]:
+    # Randomize which pricing API to try first (spread the love around)
+    market_apis = [get_market_values, get_market_values_2]
+    random.shuffle(market_apis)
+    for pricing_method in [get_invalid_values, get_cached_values] + market_apis:
         if len(unpopulated_types) == 0:
             break
         # returns a dict with type_id: pricing_info

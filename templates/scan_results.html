@@ -59,7 +59,7 @@
                 </span></td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
-                  <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span>
+                  <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.buy.avg|format_isk }}{% endif %}</span>
                 </td> 
                 <td style="text-align:right">
                   <span class="nowrap">{{ item.totals.sell|format_isk }}</span><br />
