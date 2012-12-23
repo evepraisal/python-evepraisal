@@ -2,7 +2,6 @@
 """
     An Eve Online Cargo Scanner
 """
-import memcache
 import json
 import urllib2
 import time
@@ -10,31 +9,44 @@ import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
-import random
 import os
 import sqlite3
 
-from flask import Flask, request, render_template, _app_ctx_stack
+from flask import Flask, request, render_template, url_for, redirect
+from flask.ext.cache import Cache
 
 # configuration
 DEBUG = True
-MEMCACHE_PREFIX = 'cargoscanner'
 TYPES = json.loads(open('data/types.json').read())
 USER_AGENT = 'CargoScanner/1.0 +http://sudorandom.com/cargoscanner'
 SCAN_DB = 'data/scans.db'
+CACHE_TYPE = 'memcached'
+CACHE_KEY_PREFIX = 'cargoscanner'
+CACHE_MEMCACHED_SERVERS = ['127.0.0.1:11211']
+CACHE_DEFAULT_TIMEOUT = 10 * 60
+TEMPLATE = 'default'
 
+cache = Cache()
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.config.from_pyfile('application.cfg', silent=True)
 locale.setlocale(locale.LC_ALL, 'en_US')
 if not os.path.exists(app.config['SCAN_DB']):
     conn = sqlite3.connect(app.config['SCAN_DB'])
     with conn:
         cur = conn.cursor()
-        cur.execute("CREATE TABLE Scans(Id INTEGER PRIMARY KEY, Data TEXT, Created INTEGER)")
+        cur.execute("""CREATE TABLE Scans(Id INTEGER PRIMARY KEY,
+                                          Data TEXT,
+                                          Created INTEGER,
+                                          SellValue REAL,
+                                          BuyValue REAL)
+        """)
+        conn.commit()
 try:
     os.makedirs('data/scans')
 except OSError:
     pass
+cache.init_app(app)
 
 
 # EveType(type_id, count, props)
@@ -133,37 +145,20 @@ def bpc_count(bad_lines):
 
 
 def memcache_type_key(typeId):
-    return "%s:prices:%s" % (app.config['MEMCACHE_PREFIX'], typeId)
-
-
-def get_cache():
-    "Returns memcache client instance"
-    top = _app_ctx_stack.top
-    if not hasattr(top, 'memcache'):
-        top.memcache = memcache.Client(['127.0.0.1:11211'], debug=0)
-    return top.memcache
+    return "prices:%s" % typeId
 
 
 def get_cached_values(eve_types):
     "Get Cached values given the eve_types"
-    mc = get_cache()
     found = {}
     for eve_type in eve_types:
         key = memcache_type_key(eve_type.type_id)
-        obj = mc.get(key)
+        obj = cache.get(key)
         if obj:
             found[eve_type.type_id] = obj
         else:
             app.logger.warning("Cache Miss. type_id: %s, %s", eve_type.type_id, key)
     return found
-
-
-def set_cache_value(typeId, value):
-    "Set cache value."
-    mc = get_cache()
-    key = memcache_type_key(typeId)
-    # Cache for up to 2 hours
-    mc.set(key, value, time=10 * 60 * 60)
 
 
 def get_market_values(eve_types):
@@ -209,7 +204,9 @@ def get_market_values(eve_types):
             v['buy']['price'] = v['buy']['max']
             v['sell']['price'] = v['sell']['min']
             market_prices[k] = v
-            set_cache_value(k, v)
+
+            # Cache for up to 10 hours
+            cache.set(memcache_type_key(k), v, timeout=10 * 60 * 60)
         return market_prices
     except urllib2.HTTPError:
         return {}
@@ -254,7 +251,9 @@ def get_market_values_2(eve_types):
             market_prices[typeId]['all'] = {'avg': avg, 'min': avg, 'max': avg, 'price': avg}
             market_prices[typeId]['buy']['price'] = market_prices[typeId]['buy']['max']
             market_prices[typeId]['sell']['price'] = market_prices[typeId]['sell']['min']
-            set_cache_value(typeId, prices)
+
+            # Cache for up to 10 hours
+            cache.set(memcache_type_key(typeId), prices, timeout=10 * 60 * 60)
         return market_prices
     except urllib2.HTTPError:
         return {}
@@ -265,8 +264,10 @@ def save_scan(scan_result):
     with conn:
         cur = conn.cursor()
         data = json.dumps(scan_result, indent=2)
-        cur.execute("""INSERT INTO Scans(Data, Created)
-                       VALUES (?, strftime('%s','now'));""", (data, ))
+        cur.execute("""INSERT INTO Scans(Data, Created, BuyValue, SellValue)
+                       VALUES (?, strftime('%s','now'), ?, ?);""",
+                       (data, scan_result['totals']['buy'],
+                        scan_result['totals']['sell']))
         conn.commit()
         return cur.lastrowid
 
@@ -406,6 +407,9 @@ def get_componentized_values(eve_types):
                         complete_price_data[market_type][stat] += \
                             component.pricing_info[market_type][stat] * component.count
             componentized_items[eve_type.type_id] = complete_price_data
+            # Cache for up to 10 hours
+            cache.set(memcache_type_key(eve_type.type_id), complete_price_data,
+                timeout=10 * 60 * 60)
 
     return componentized_items
 
@@ -469,28 +473,47 @@ def estimate_cost():
     if len(sorted_eve_types) > 0:
         scan_id = save_scan(scan_results)
         scan_results['scan_id'] = scan_id
-    return display_scan_result(scan_results,
-        full_page=request.form.get('load_full'))
+    return render_template('scan_results.html', scan_results=scan_results,
+        from_igb=is_from_igb(), full_page=request.form.get('load_full'))
 
 
-@app.route('/estimate/<scan_id>', methods=['GET'])
+@app.route('/estimate/<int:scan_id>', methods=['GET'])
 def display_scan(scan_id):
     scan_results = load_scan(scan_id)
+    error = None
+    status = 200
     if scan_results:
         scan_results['scan_id'] = scan_id
-        return display_scan_result(scan_results, full_page=True)
     else:
-        return render_template('index.html', error="Scan Not Found",
-            from_igb=is_from_igb())
+        error = "Scan Not Found"
+        status = 404
+    return render_template('scan_results.html', scan_results=scan_results,
+     error=error, from_igb=is_from_igb(), full_page=True), status
 
 
-def display_scan_result(scan_results, full_page=False):
-    if full_page:
-        return render_template('index.html', scan_results=scan_results,
-            from_igb=is_from_igb())
-    else:
-        return render_template('scan_results.html', scan_results=scan_results,
-            from_igb=is_from_igb())
+@app.route('/latest/', defaults={'limit': 20})
+@app.route('/latest/limit/<int:limit>')
+# @cache.cached(timeout=60)
+def latest(limit):
+    print "EXECUTED THIS"
+    if limit > 1000:
+        return redirect(url_for('latest', limit=1000))
+    conn = sqlite3.connect('data/scans.db')
+    results = []
+    with conn:
+        cur = conn.cursor()
+        cur.execute("""SELECT Id, Created, BuyValue, SellValue FROM Scans
+                       ORDER BY Created DESC, Id DESC
+                       LIMIT ?;""", (limit, ))
+        for result in cur.fetchall():
+            _id, _timestamp, buy_value, sell_value = result
+            results.append({
+                    'scan_id': _id,
+                    'created': _timestamp,
+                    'buy_value': buy_value,
+                    'sell_value': sell_value,
+                })
+    return render_template('latest.html', listing=results)
 
 
 @app.route('/', methods=['GET', 'POST'])

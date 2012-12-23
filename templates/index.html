@@ -1,118 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Ship Scan Cost Estimator</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A tool to use with Eve Online to give more detailed information about cargo scans. Usefull for pirates, gankers and curious weirdos.">
-
-    <!-- Le styles -->
-    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link href="https://netdna.bootstrapcdn.com/bootswatch/2.1.1/cyborg/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ url_for('static', filename='bootstrap-responsive.min.css') }}" rel="stylesheet">
-    
-    <style> 
-      body {
-        padding-top: 0px;
-      }
-      .row-highlight tr {
-        /*background-color: #DDD;*/
-      }
-      .row-notpublished tr {
-        /*background-color: #FFC0CB;*/
-      }
-      .nowrap {
-        white-space: nowrap;
-      }
-      .container {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      p.footer{
-        text-align:center;
-      }
-      div.scan-result-area {
-        padding: 0 20px;
-      }
-      span.warning-message {
-        color: #B94A48;
-      }
-      span.warning-message a {
-        color: #B94A48;
-        font-weight: bold;
-      }
-    </style>
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
-    <script>
-      $(function() {
-        $("#scan_result_form").submit(function() {
-          var scan_textarea = $("#scan_result");
-          var scan_submit = $("#scan_result_submit");
-          // Disable form components
-          scan_textarea.attr("disabled", "disabled").addClass("disabled");
-          scan_submit.attr("disabled", "disabled").addClass("disabled");
-          $.post("{{ url_for('estimate_cost') }}",
-            {scan_result: scan_textarea.val()}, 
-            function(data) {
-              scan_textarea.val('');
-              // Enable form components
-              scan_textarea.removeAttr("disabled").removeClass("disabled");
-              scan_submit.removeAttr("disabled").removeClass("disabled");
-              // Populate results
-              $('#result_container').html(data);
-            }).error(function() {
-              // Enable form components
-              scan_textarea.removeAttr("disabled").removeClass("disabled");
-              scan_submit.removeAttr("disabled").removeClass("disabled");
-              alert("Server responded with an error.");
-            });
-          return false;
-        });
-
-        $("#scan_result").bind('paste', function(e) {
-          if($('#scan-autosubmit:checked').length > 0) {
-            setTimeout(function() {
-              $('#scan_result_form').submit();
-            }, 0);
-          }
-        });
-
-        function toggle_scan_buttons() {
-          if ($("#scan-hide-buttons").is(':checked'))
-          {
-            $('#scan-buttons').hide();
-          } else {
-            $('#scan-buttons').show();
-          }
-        }
-        $("#scan-hide-buttons").click(function(e) { toggle_scan_buttons(); });
-
-        $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
-            e.stopPropagation();
-        });
-
-        {% if from_igb %}
-          $('#scan-hide-buttons').prop('checked', true);
-          $('#scan-autosubmit').prop('checked', true);
-          toggle_scan_buttons();
-        {% endif %}
-      });
-    </script> 
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <a class="brand" href="{{ url_for('index') }}">Ship Scan Cost Estimator</a>
-        <ul class="nav">
+{% extends "layout.%s.html"|format(config.TEMPLATE) %}
+{% block extra_menu_items %}
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -120,10 +7,8 @@
               <li><label style="margin-left:10px;" class="checkbox"><input id="scan-autosubmit" type="checkbox"> autosubmit on paste</label></li>
             </ul>
           </li>
-          <li><a href="#help-modal" data-toggle="modal">Help</a></li>
-        </ul>
-      </div><!-- /.navbar-inner -->
-    </div><!-- /.navbar -->
+{% endblock %}
+{% block body %}
 
     <div class="container">
       <div class="row">
@@ -146,55 +31,14 @@
             <strong>Error:</strong> {{ error }}
           </div>
           {% endif %}
-          {% if scan_results %}
-            {% include "scan_results.html" %}
-          {% else %}
+          {% block scan_results %}
             <h4>What do I do?</h4>
             <p>
               Scan down a ship using a cargo scanner, click a result in the scan result list that pops up, hit <strong>CTRL + A, hit CTRL + C</strong>, then click on the box in this page and hit <strong>CTRL + V</strong>. It will then give you a readout with more detail in place of this text.
             </p>
-          {% endif %}
+
+            {% endblock %}
         </div>
       </div>
     </div>
-
-    <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_scan_modal" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3>Help</h3>
-      </div>
-      <div class="modal-body">
-        <h4>What is this?</h4>
-        <p>This is a tool for Eve Online. There's a module in the game that allows you to scan ship's cargo hold called <a href="http://wiki.eveonline.com/en/wiki/Cargo_Scanner_I">Cargo Scanner I</a>. It's one of the few tools that a ganker or pirate needs to determine whether a possible target is worth it. When you use the module against a locked target, you'll get a listing of everything in the cargo hold of that target along with a count of how many of that item there are. That's it. It's then up to you to make a quick decision on the value of that cargo hold. This tool allows you to copy/paste the cargo scan result and it will give you a readout of the cargo with estimated prices pulled from one of the several API-accessable market scan aggregators. This will give you the ability to quickly price-check an engire cargo hold with a few clicks.</p>
-
-        <h4>Why would I use this?</h4>
-        <p>You scan a drake full of original blueprints that you weren't able to quickly see because you sorting through the tabacco, spirits, exotic dancers, T1 planetary comodaties, livestock, garbage, scrap metal, and other random junk you're likely to find in the cargo hold. This tool will allow you to quickly see what's valuable and a rough estimate of how valueable everything is so the few seconds that you have to decide to commit won't be wasted messing messing around with eve's UI. This tool also happens to be pretty decent at doing quick price checks. It currently is known to work with cargo scan results and EFT-formatted blocks.</p>
-
-        <h4>What formats are currently supported?</h5>
-        <ul>
-          <li>Cargo Scanner</li>
-          <li>EFT Format</li>
-          <li>D-Scan</li>
-          <li>Item Listings: "12 Tritanium" or just "Tritanium"</li>
-        </ul>
-
-        <h4>How are prices calculated?</h5>
-        <p>Prices are pulled from <a href="http://eve-central.com/">Eve-Central.com</a> and (as a backup) <a href="http://eve-marketdata.com/">Eve-Marketdata.com</a>. The pricing is limited to the following regions: Forge, Metropolis, Heimatar, Sinq Laison region, Domain. This is because each of these regions has a large market hub. Capital ship prices are set by the sum of their component parts.</p>
-
-        <h4>Caveats/Known Issues</h4>
-        <ul>
-          <li>There's no reliable way to get prices of blueprint copies (BPCs). Due to this, I don't even try to guess a price for them.</li>
-        </ul>
-
-
-        <h4>Problems/More Questions?</h4>
-        <p>Feel free to send me an in-game mail. My character name is <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>.</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
-      </div>
-    </div>
-
-    <footer><p class="footer">Created by <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. Feel free to send me questions, suggestions or ISK. Source is available on <a href="https://github.com/sudorandom/cargoscanner">github</a>.</p></footer>
-  </body>
-</html>
+{% endblock %}

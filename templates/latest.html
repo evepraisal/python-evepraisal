@@ -1,0 +1,30 @@
+{% extends "layout.%s.html"|format(config.TEMPLATE) %}
+{% block title %}Latest Scan Results{% endblock %}
+{% block body %}
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h4>Latest Scan Results</h4>
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th class="header">Id</th>
+                <th class="header" style="text-align:right">Created</th>
+                <th class="header" style="text-align:right">Sell Value</th>
+                <th class="header" style="text-align:right">Buy Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in listing %}
+              <tr>
+                <td><a href="{{ url_for('display_scan', scan_id=item.scan_id) }}">#{{ item.scan_id }}</a></td>
+                <td style="text-align:right">{{ item.created|relative_time }}</td>
+                <td style="text-align:right"><small>({{ item.sell_value|format_isk_human }})</small> {{ item.sell_value|format_isk }}</td>
+                <td style="text-align:right"><small>({{ item.buy_value|format_isk_human }})</small> {{ item.buy_value|format_isk }}</td>
+              </tr>
+              {% endfor %}
+          </table>
+        </div>
+      </div>
+    </div>
+{% endblock %}
