@@ -107,6 +107,8 @@ def format_isk(value):
 
 @app.template_filter('format_isk_human')
 def format_isk_human(value):
+    if value is None:
+        return ""
     try:
         return "%s ISK" % humanize.intword(value, format='%.2f')
     except:

@@ -11,7 +11,9 @@
                 <th class="header">Id</th>
                 <th class="header" style="text-align:right">Created</th>
                 <th class="header" style="text-align:right">Sell Value</th>
+                <th class="header"></th>
                 <th class="header" style="text-align:right">Buy Value</th>
+                <th class="header"></th>
               </tr>
             </thead>
             <tbody>
@@ -19,8 +21,10 @@
               <tr>
                 <td><a href="{{ url_for('display_scan', scan_id=item.scan_id) }}">#{{ item.scan_id }}</a></td>
                 <td style="text-align:right">{{ item.created|relative_time }}</td>
-                <td style="text-align:right"><small>({{ item.sell_value|format_isk_human }})</small> {{ item.sell_value|format_isk }}</td>
-                <td style="text-align:right"><small>({{ item.buy_value|format_isk_human }})</small> {{ item.buy_value|format_isk }}</td>
+                <td style="text-align:right">{{ item.sell_value|format_isk }}</td>
+                <td><small>{{ item.sell_value|format_isk_human }}</small></td>
+                <td style="text-align:right">{{ item.buy_value|format_isk }}</td>
+                <td><small>{{ item.buy_value|format_isk_human }}</small></td>
               </tr>
               {% endfor %}
           </table>
