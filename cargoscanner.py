@@ -301,6 +301,8 @@ def parse_scan_items(scan_result):
     bad_lines = []
 
     def _add_type(name, count):
+        if name == '':
+            return False
         details = app.config['TYPES'].get(name)
         if not details:
             return False
