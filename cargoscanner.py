@@ -493,9 +493,8 @@ def display_scan(scan_id):
 
 @app.route('/latest/', defaults={'limit': 20})
 @app.route('/latest/limit/<int:limit>')
-# @cache.cached(timeout=60)
+@cache.cached(timeout=60)
 def latest(limit):
-    print "EXECUTED THIS"
     if limit > 1000:
         return redirect(url_for('latest', limit=1000))
     conn = sqlite3.connect('data/scans.db')
