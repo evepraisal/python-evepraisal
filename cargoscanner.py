@@ -158,8 +158,6 @@ def get_cached_values(eve_types):
         obj = cache.get(key)
         if obj:
             found[eve_type.type_id] = obj
-        else:
-            app.logger.warning("Cache Miss. type_id: %s, %s", eve_type.type_id, key)
     return found
 
 
