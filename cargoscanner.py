@@ -491,6 +491,7 @@ def estimate_cost():
 
 
 @app.route('/estimate/<int:scan_id>', methods=['GET'])
+@cache.cached(timeout=600)
 def display_scan(scan_id):
     scan_results = load_scan(scan_id)
     error = None
