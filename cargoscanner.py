@@ -323,7 +323,7 @@ def parse_scan_items(scan_result):
         # aiming for the format "2 Cargo Scanner II" and "2x Cargo Scanner II"
         try:
             count, name = fmt_line.split(' ', 1)
-            count = int(count.replace('x', '').strip())
+            count = int(count.replace('x', '').strip().replace(',', ''))
             if _add_type(name.strip(), count):
                 continue
         except ValueError:
@@ -341,7 +341,7 @@ def parse_scan_items(scan_result):
         try:
             if 'x' in fmt_line:
                 item, count = fmt_line.rsplit('x', 1)
-                if _add_type(item.strip(), int(count.strip())):
+                if _add_type(item.strip(), int(count.strip().replace(',', ''))):
                     continue
         except ValueError:
             pass
@@ -362,7 +362,7 @@ def parse_scan_items(scan_result):
         try:
             if fmt_line.count("\t") > 1:
                 item, count, _ = fmt_line.split("\t", 2)
-                if _add_type(item.strip(), int(count.strip())):
+                if _add_type(item.strip(), int(count.strip().replace(',', ''))):
                     continue
         except ValueError:
             pass
