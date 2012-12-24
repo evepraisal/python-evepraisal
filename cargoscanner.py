@@ -353,7 +353,7 @@ def parse_scan_items(scan_result):
                 continue
 
         # aiming for format "PERSON'S NAME\tShipType\tdistance"
-        if fmt_line.count("\t") > 2:
+        if fmt_line.count("\t") > 1:
             _, item, _ = fmt_line.split("\t", 2)
             if _add_type(item.strip(), 1):
                 continue

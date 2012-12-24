@@ -3,5 +3,5 @@
 build
 dist
 *.swp
-data/scans
+data/scans.db
 data/current_scan_id.dat
