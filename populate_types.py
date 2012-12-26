@@ -44,7 +44,18 @@ if __name__ == '__main__':
                                 })
 
             d['components'] = components
-        all_types[typeName.strip().lower()] = d
+        name_lower = typeName.lower()
+        all_types[name_lower] = d
+        # Create a stub for blueprint copies
+        if name_lower.endswith(' blueprint'):
+            copy_name = typeName + ' (Copy)'
+            all_types[copy_name.lower()] = {
+                'typeID': typeID,
+                'groupID': groupID,
+                'typeName': copy_name,
+                'volume': volume,
+                'market': False,
+            }
 
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))

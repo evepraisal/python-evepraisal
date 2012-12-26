@@ -9,17 +9,18 @@ import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
-import os
-import sqlite3
 
 from flask import Flask, request, render_template, url_for, redirect
 from flask.ext.cache import Cache
+
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text,\
+    Float, select, desc
 
 # configuration
 DEBUG = True
 TYPES = json.loads(open('data/types.json').read())
 USER_AGENT = 'CargoScanner/1.0 +http://sudorandom.com/cargoscanner'
-SCAN_DB = 'data/scans.db'
+SQLALCHEMY_DATABASE_URI = 'sqlite:///data/scans.db'
 CACHE_TYPE = 'memcached'
 CACHE_KEY_PREFIX = 'cargoscanner'
 CACHE_MEMCACHED_SERVERS = ['127.0.0.1:11211']
@@ -30,32 +31,32 @@ cache = Cache()
 app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_pyfile('application.cfg', silent=True)
+
+engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], convert_unicode=True)
+metadata = MetaData(bind=engine)
+scans = Table('Scans', metadata,
+    Column('Id', Integer, primary_key=True),
+    Column('Data', Text),
+    Column('Created', Integer),
+    Column('SellValue', Float),
+    Column('BuyValue', Float)
+)
+
 locale.setlocale(locale.LC_ALL, 'en_US')
-if not os.path.exists(app.config['SCAN_DB']):
-    conn = sqlite3.connect(app.config['SCAN_DB'])
-    with conn:
-        cur = conn.cursor()
-        cur.execute("""CREATE TABLE Scans(Id INTEGER PRIMARY KEY,
-                                          Data TEXT,
-                                          Created INTEGER,
-                                          SellValue REAL,
-                                          BuyValue REAL)
-        """)
-        conn.commit()
-try:
-    os.makedirs('data/scans')
-except OSError:
-    pass
+metadata.create_all(bind=engine)
 cache.init_app(app)
 
 
-# EveType(type_id, count, props)
-class EveType(object):
+class EveType():
     def __init__(self, type_id, count, props=None, pricing_info=None):
         self.type_id = type_id
         self.count = count
         self.props = props or {}
         self.pricing_info = pricing_info or {}
+        self.market = self.props.get('market', False)
+        self.volume = self.props.get('volume', 0)
+        self.type_name = self.props.get('typeName', 0)
+        self.group_id = self.props.get('groupID')
 
     def representative_value(self):
         if not self.pricing_info:
@@ -71,9 +72,10 @@ class EveType(object):
         return {
             'typeID': self.type_id,
             'count': self.count,
-            'volume': self.props.get('volume'),
-            'typeName': self.props.get('typeName'),
-            'groupID': self.props.get('groupID'),
+            'market': self.market,
+            'volume': self.volume,
+            'typeName': self.type_name,
+            'groupID': self.group_id,
             'totals': self.pricing_info.get('totals'),
             'sell': self.pricing_info.get('sell'),
             'buy': self.pricing_info.get('buy'),
@@ -260,31 +262,21 @@ def get_market_values_2(eve_types):
 
 
 def save_scan(scan_result):
-    conn = sqlite3.connect(app.config['SCAN_DB'])
-    with conn:
-        cur = conn.cursor()
-        data = json.dumps(scan_result, indent=2)
-        cur.execute("""INSERT INTO Scans(Data, Created, BuyValue, SellValue)
-                       VALUES (?, strftime('%s','now'), ?, ?);""",
-                       (data, scan_result['totals']['buy'],
-                        scan_result['totals']['sell']))
-        conn.commit()
-        return cur.lastrowid
+    data = json.dumps(scan_result, indent=2)
+    result = scans.insert().values(Data=data, Created=int(time.time()),
+        BuyValue=scan_result['totals']['buy'],
+        SellValue=scan_result['totals']['sell']).execute()
+    return result.inserted_primary_key[0]
 
 
 def load_scan(scan_id):
     try:
-        int(scan_id)
+        scan_id = int(scan_id)
     except:
         return
-    conn = sqlite3.connect(app.config['SCAN_DB'])
-    with conn:
-        cur = conn.cursor()
-        cur.execute("SELECT Data From Scans WHERE id=?;", (scan_id, ))
-        conn.commit()
-        scan_data = cur.fetchone()
-        if scan_data:
-            return json.loads(scan_data[0])
+
+    data = select([scans.c.Data], scans.c.Id == scan_id).execute().first()[0]
+    return json.loads(data)
 
 
 def parse_scan_items(scan_result):
@@ -314,11 +306,12 @@ def parse_scan_items(scan_result):
     for line in lines:
         fmt_line = line.lower().replace(' (original)', '')
 
-        # aiming for the format "Cargo Scanner II"
+        # aiming for the format "Cargo Scanner II" (Basic Listing)
         if _add_type(fmt_line, 1):
             continue
 
         # aiming for the format "2 Cargo Scanner II" and "2x Cargo Scanner II"
+        # (Cargo Scan)
         try:
             count, name = fmt_line.split(' ', 1)
             count = int(count.replace('x', '').strip().replace(',', ''))
@@ -327,7 +320,7 @@ def parse_scan_items(scan_result):
         except ValueError:
             pass
 
-        # aiming for the format
+        # aiming for the format (EFT)
         # "800mm Repeating Artillery II, Republic Fleet EMP L"
         if ',' in fmt_line:
             item, item2 = fmt_line.rsplit(',', 1)
@@ -335,7 +328,7 @@ def parse_scan_items(scan_result):
             if _add_type(item.strip(), 1):
                 continue
 
-        # aiming for the format "Hornet x5"
+        # aiming for the format "Hornet x5" (EFT)
         try:
             if 'x' in fmt_line:
                 item, count = fmt_line.rsplit('x', 1)
@@ -344,19 +337,19 @@ def parse_scan_items(scan_result):
         except ValueError:
             pass
 
-        # aiming for the format "[panther, my pimp panther]"
+        # aiming for the format "[panther, my pimp panther]" (EFT)
         if '[' in fmt_line and ']' in fmt_line and fmt_line.count(",") > 0:
             item, _ = fmt_line.strip('[').split(',', 1)
             if _add_type(item.strip(), 1):
                 continue
 
-        # aiming for format "PERSON'S NAME\tShipType\tdistance"
+        # aiming for format "PERSON'S NAME\tShipType\tdistance" (d-scan)
         if fmt_line.count("\t") > 1:
             _, item, _ = fmt_line.split("\t", 2)
             if _add_type(item.strip(), 1):
                 continue
 
-        # aiming for format "Item Name\tCount..."
+        # aiming for format "Item Name\tCount..." (Assets, Inventory)
         try:
             if fmt_line.count("\t") > 1:
                 item, count, _ = fmt_line.split("\t", 2)
@@ -365,7 +358,7 @@ def parse_scan_items(scan_result):
         except ValueError:
             pass
 
-        # aiming for format "Item Name\t..."
+        # aiming for format "Item Name\t..." (???)
         try:
             if fmt_line.count("\t") > 0:
                 item, _ = fmt_line.split("\t", 1)
@@ -509,22 +502,19 @@ def display_scan(scan_id):
 def latest(limit):
     if limit > 1000:
         return redirect(url_for('latest', limit=1000))
-    conn = sqlite3.connect('data/scans.db')
-    results = []
-    with conn:
-        cur = conn.cursor()
-        cur.execute("""SELECT Id, Created, BuyValue, SellValue FROM Scans
-                       ORDER BY Created DESC, Id DESC
-                       LIMIT ?;""", (limit, ))
-        for result in cur.fetchall():
-            _id, _timestamp, buy_value, sell_value = result
-            results.append({
-                    'scan_id': _id,
-                    'created': _timestamp,
-                    'buy_value': buy_value,
-                    'sell_value': sell_value,
-                })
-    return render_template('latest.html', listing=results)
+    results = select(
+        [scans.c.Id, scans.c.Created, scans.c.BuyValue, scans.c.SellValue],
+        limit=limit,).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
+
+    scan_list = []
+    for result in results:
+        scan_list.append({
+                'scan_id': result['Id'],
+                'created': result['Created'],
+                'buy_value': result['BuyValue'],
+                'sell_value': result['SellValue'],
+            })
+    return render_template('latest.html', listing=scan_list)
 
 
 @app.route('/', methods=['GET', 'POST'])

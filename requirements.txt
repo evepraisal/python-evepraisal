@@ -3,3 +3,4 @@ mysql-connector-repackaged
 pylibmc
 flask
 Flask-Cache
+Flask-SQLAlchemy

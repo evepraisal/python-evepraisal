@@ -44,21 +44,33 @@
           <table id="scan_results" class="table table-condensed">
             <thead>
               <tr>
-                <!-- <th class="header" style="width: 10%;">#</th> -->
                 <th class="header" style="width: 90%">Item</th>
                 <th class="header" style="text-align:right">Single</th>
                 <th class="header" style="text-align:right">Totals</th>
               </tr>
             </thead>
             <tbody>
-            {% for item in scan_results.line_items %}
+
+            {% for item in scan_results.line_items if item.market == false %}
+              <tr class="line-item-row">
+                <td>
+                  <img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> 
+                  <span class="warning-message">{{ item.typeName }}</span> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small> 
+                </td>
+                <td style="text-align:right"><span class="warning-message">Unknown</span></td>
+                <td style="text-align:right"><span class="warning-message">Unknown</span></td>
+              </tr>
+            {% endfor %}
+              
+            {% for item in scan_results.line_items if item.market != false %}
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
-                <!-- <td>{{ item.count }}</td> -->
-                <td><span>
-                  {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
-                  <a href="{{market_url}}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"></a> <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
-                  <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
-                </span></td>
+                <td>
+                    {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
+                    <span>
+                    <a href="{{market_url}}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"></a> <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
+                    <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
+                  </span>
+                </td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
                   <span class="nowrap">{% if item.buy.price %}{{ item.buy.price|format_isk }}{% else %}{{ item.buy.avg|format_isk }}{% endif %}</span>
@@ -68,18 +80,18 @@
                   <span class="nowrap">{{ item.totals.buy|format_isk }}</span>
                 </td>
               </tr>
-            {% else %}
             {% endfor %}
             </tbody>
             <tfoot>
               <tr>
-                <!-- <td></td> -->
                 <td><span class="nowrap">Total Sell Value</span><br />
-                  <span class="nowrap">Total Buy Value</span></td>
+                  <span class="nowrap">Total Buy Value</span><br />
+                  <span class="nowrap">Total Volume</span></td>
                 <td></td>
                 <th style="text-align:right">
                   <span class="nowrap">{{ scan_results.totals.sell|format_isk }}</span><br />
                   <span class="nowrap">{{ scan_results.totals.buy|format_isk }}</span>
+                  <span class="nowrap">{{ scan_results.totals.volume|format_volume|safe }}</span>
                 </th>
               </tr>
             </tfoot>
