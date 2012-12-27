@@ -48,9 +48,12 @@ cache.init_app(app)
 
 
 class EveType():
-    def __init__(self, type_id, count, props=None, pricing_info=None):
+    def __init__(self, type_id, count=0, props=None, pricing_info=None):
         self.type_id = type_id
+
         self.count = count
+        self.fitted_count = 0
+
         self.props = props or {}
         self.pricing_info = pricing_info or {}
         self.market = self.props.get('market', False)
@@ -68,10 +71,16 @@ class EveType():
     def is_market_item(self):
         return self.props.get('market', False) == True
 
+    def incr_count(self, count, fitted=False):
+        self.count += count
+        if fitted:
+            self.fitted_count += count
+
     def to_dict(self):
         return {
             'typeID': self.type_id,
             'count': self.count,
+            'fitted_count': self.fitted_count,
             'market': self.market,
             'volume': self.volume,
             'typeName': self.type_name,
@@ -290,17 +299,16 @@ def parse_scan_items(scan_result):
     results = {}
     bad_lines = []
 
-    def _add_type(name, count):
+    def _add_type(name, count, fitted=False):
         if name == '':
             return False
         details = app.config['TYPES'].get(name)
         if not details:
             return False
         type_id = details['typeID']
-        if type_id in results:
-            results[type_id].count += count
-        else:
-            results[type_id] = EveType(type_id, count, details.copy())
+        if type_id not in results:
+            results[type_id] = EveType(type_id, props=details.copy())
+        results[type_id].incr_count(count, fitted=fitted)
         return True
 
     for line in lines:
@@ -349,6 +357,19 @@ def parse_scan_items(scan_result):
             if _add_type(item.strip(), 1):
                 continue
 
+        # aiming for format "Item Name\tCount\tCategory\tFitted..." (Contracts)
+        try:
+            if fmt_line.count("\t") == 3:
+                item, count, _, fitted = fmt_line.split("\t", 3)
+                if fitted in ['', 'fitted']:
+                    is_fitted = fitted == 'fitted'
+                    if _add_type(item.strip(),
+                                int(count.strip().replace(',', '')),
+                                fitted=is_fitted):
+                        continue
+        except ValueError:
+            pass
+
         # aiming for format "Item Name\tCount..." (Assets, Inventory)
         try:
             if fmt_line.count("\t") > 1:
@@ -394,7 +415,7 @@ def get_componentized_values(eve_types):
     componentized_items = {}
     for eve_type in eve_types:
         if 'components' in eve_type.props:
-            component_types = [EveType(c['materialTypeID'], c['quantity'])
+            component_types = [EveType(c['materialTypeID'], count=c['quantity'])
                 for c in eve_type.props['components']]
 
             populate_market_values(component_types, methods=[get_cached_values,

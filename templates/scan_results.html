@@ -66,10 +66,14 @@
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
                 <td>
                     {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
-                    <span>
-                    <a href="{{market_url}}" target="_blank"><img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"></a> <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
-                    <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
-                  </span>
+                    <div class="media">
+                      <a class="pull-left" href="{{market_url}}" target="_blank">
+                        <img class="media-object" src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}">
+                      </a> 
+                      <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
+                      <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
+                      {% if item.fitted_count > 0 %}<br /><small class="nowrap">({{ item.fitted_count }}/{{ item.count }} Fitted)</small> {% endif %}
+                  </div>
                 </td>
                 <td style="text-align:right">
                   <span class="nowrap">{% if item.sell.price %}{{ item.sell.price|format_isk }}{% else %}{{ item.sell.avg|format_isk }}{% endif %}</span><br />
