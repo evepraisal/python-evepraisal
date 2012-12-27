@@ -202,9 +202,9 @@ def get_market_values(eve_types):
                 for stat in marketstat.find(stat_type):
                     props[stat.tag] = float(stat.text)
                 v[stat_type] = props
-            v['all']['price'] = v['all']['avg']
-            v['buy']['price'] = v['buy']['max']
-            v['sell']['price'] = v['sell']['min']
+            v['all']['price'] = v['all']['percentile']
+            v['buy']['price'] = v['buy']['percentile']
+            v['sell']['price'] = v['sell']['percentile']
             market_prices[k] = v
 
             # Cache for up to 10 hours
