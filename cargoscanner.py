@@ -284,8 +284,9 @@ def load_scan(scan_id):
     except:
         return
 
-    data = select([scans.c.Data], scans.c.Id == scan_id).execute().first()[0]
-    return json.loads(data)
+    data = select([scans.c.Data], scans.c.Id == scan_id).execute().first()
+    if data:
+        return json.loads(data[0])
 
 
 def parse_scan_items(scan_result):

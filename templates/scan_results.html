@@ -1,5 +1,8 @@
           {% if full_page %}{% extends 'index.html' %}{% endif -%}
-          {% if scan_results %}
+          {{ scan_results }}
+          {% if scan_results is none %}
+            
+          {% elseif %}
           {% block scan_results %}
           <div>
             <p>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
@@ -72,7 +75,7 @@
                       </a> 
                       <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
                       <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
-                      {% if item.fitted_count > 0 %}<br /><small class="nowrap">({{ item.fitted_count }}/{{ item.count }} Fitted)</small> {% endif %}
+                      {% if item.fitted_count is defined and item.fitted_count > 0 %}<br /><small class="nowrap">({{ item.fitted_count }}/{{ item.count }} Fitted)</small> {% endif %}
                   </div>
                 </td>
                 <td style="text-align:right">
