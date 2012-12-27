@@ -511,11 +511,11 @@ def display_scan(scan_id):
     status = 200
     if scan_results:
         scan_results['scan_id'] = scan_id
+        return render_template('scan_results.html', scan_results=scan_results,
+            error=error, from_igb=is_from_igb(), full_page=True), status
     else:
-        error = "Scan Not Found"
-        status = 404
-    return render_template('scan_results.html', scan_results=scan_results,
-     error=error, from_igb=is_from_igb(), full_page=True), status
+        return render_template('index.html', error="Scan Not Found",
+            from_igb=is_from_igb(), full_page=True), 404
 
 
 @app.route('/latest/', defaults={'limit': 20})
