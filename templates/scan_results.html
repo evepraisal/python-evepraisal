@@ -1,8 +1,5 @@
           {% if full_page %}{% extends 'index.html' %}{% endif -%}
-          {{ scan_results }}
-          {% if scan_results is none %}
-            
-          {% elif %}
+          {% if scan_results %}
           {% block scan_results %}
           <div>
             <p>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
