@@ -16,6 +16,7 @@ from flask.ext.cache import Cache
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text,\
     Float, select, desc
 
+
 # configuration
 DEBUG = True
 TYPES = json.loads(open('data/types.json').read())
@@ -187,40 +188,43 @@ def get_market_values(eve_types):
     """
     if len(eve_types) == 0:
         return {}
-    typeids = ["typeid=" + str(x.type_id) for x in eve_types]
-    # Forge (for jita): 10000002
-    # Metropolis (for hek): 10000042
-    # Heimatar (for rens): 10000030
-    # Sinq Laison region (for dodixie): 10000032
-    # Domain (for amarr): 10000043
-    regions = ['regionlimit=10000002', 'regionlimit=10000042',
-        'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
-    query_str = '&'.join(regions + typeids)
-    url = "http://api.eve-central.com/api/marketstat?%s" % query_str
-    try:
-        request = urllib2.Request(url)
-        request.add_header('User-Agent', app.config['USER_AGENT'])
-        response = urllib2.build_opener().open(request).read()
-        stats = ET.fromstring(response).findall("./marketstat/type")
-        market_prices = {}
-        for marketstat in stats:
-            k = int(marketstat.attrib.get('id'))
-            v = {}
-            for stat_type in ['sell', 'buy', 'all']:
-                props = {}
-                for stat in marketstat.find(stat_type):
-                    props[stat.tag] = float(stat.text)
-                v[stat_type] = props
-            v['all']['price'] = v['all']['percentile']
-            v['buy']['price'] = v['buy']['percentile']
-            v['sell']['price'] = v['sell']['percentile']
-            market_prices[k] = v
 
-            # Cache for up to 10 hours
-            cache.set(memcache_type_key(k), v, timeout=10 * 60 * 60)
-        return market_prices
-    except urllib2.HTTPError:
-        return {}
+    market_prices = {}
+    for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
+        typeids = ["typeid=" + str(x.type_id) for x in types]
+        # Forge (for jita): 10000002
+        # Metropolis (for hek): 10000042
+        # Heimatar (for rens): 10000030
+        # Sinq Laison region (for dodixie): 10000032
+        # Domain (for amarr): 10000043
+        regions = ['regionlimit=10000002', 'regionlimit=10000042',
+            'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
+        query_str = '&'.join(regions + typeids)
+        url = "http://api.eve-central.com/api/marketstat?%s" % query_str
+        try:
+            request = urllib2.Request(url)
+            request.add_header('User-Agent', app.config['USER_AGENT'])
+            response = urllib2.build_opener().open(request).read()
+            stats = ET.fromstring(response).findall("./marketstat/type")
+
+            for marketstat in stats:
+                k = int(marketstat.attrib.get('id'))
+                v = {}
+                for stat_type in ['sell', 'buy', 'all']:
+                    props = {}
+                    for stat in marketstat.find(stat_type):
+                        props[stat.tag] = float(stat.text)
+                    v[stat_type] = props
+                v['all']['price'] = v['all']['percentile']
+                v['buy']['price'] = v['buy']['percentile']
+                v['sell']['price'] = v['sell']['percentile']
+                market_prices[k] = v
+
+                # Cache for up to 10 hours
+                cache.set(memcache_type_key(k), v, timeout=10 * 60 * 60)
+        except urllib2.HTTPError:
+            pass
+    return market_prices
 
 
 def get_market_values_2(eve_types):
@@ -237,37 +241,39 @@ def get_market_values_2(eve_types):
     """
     if len(eve_types) == 0:
         return {}
-    typeIds_str = ','.join(str(x.type_id) for x in eve_types)
-    url = "http://api.eve-marketdata.com/api/item_prices2.json?char_name=magerawr&type_ids=%s&buysell=a" % typeIds_str
-    try:
-        request = urllib2.Request(url)
-        request.add_header('User-Agent', app.config['USER_AGENT'])
-        response = json.loads(urllib2.build_opener().open(request).read())
 
-        market_prices = {}
-        for row in response['emd']['result']:
-            row = row['row']
-            k = int(row['typeID'])
-            if k not in market_prices:
-                market_prices[k] = {}
-            if row['buysell'] == 's':
-                price = float(row['price'])
-                market_prices[k]['sell'] = {'avg': price, 'min': price, 'max': price}
-            elif row['buysell'] == 'b':
-                price = float(row['price'])
-                market_prices[k]['buy'] = {'avg': price, 'min': price, 'max': price}
+    market_prices = {}
+    for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
+        typeIds_str = ','.join(str(x.type_id) for x in types)
+        url = "http://api.eve-marketdata.com/api/item_prices2.json?char_name=magerawr&type_ids=%s&buysell=a" % typeIds_str
+        try:
+            request = urllib2.Request(url)
+            request.add_header('User-Agent', app.config['USER_AGENT'])
+            response = json.loads(urllib2.build_opener().open(request).read())
 
-        for typeId, prices in market_prices.iteritems():
-            avg = (prices['sell']['avg'] + prices['buy']['avg']) / 2
-            market_prices[typeId]['all'] = {'avg': avg, 'min': avg, 'max': avg, 'price': avg}
-            market_prices[typeId]['buy']['price'] = market_prices[typeId]['buy']['max']
-            market_prices[typeId]['sell']['price'] = market_prices[typeId]['sell']['min']
+            for row in response['emd']['result']:
+                row = row['row']
+                k = int(row['typeID'])
+                if k not in market_prices:
+                    market_prices[k] = {}
+                if row['buysell'] == 's':
+                    price = float(row['price'])
+                    market_prices[k]['sell'] = {'avg': price, 'min': price, 'max': price}
+                elif row['buysell'] == 'b':
+                    price = float(row['price'])
+                    market_prices[k]['buy'] = {'avg': price, 'min': price, 'max': price}
 
-            # Cache for up to 10 hours
-            cache.set(memcache_type_key(typeId), prices, timeout=10 * 60 * 60)
-        return market_prices
-    except urllib2.HTTPError:
-        return {}
+            for typeId, prices in market_prices.iteritems():
+                avg = (prices['sell']['avg'] + prices['buy']['avg']) / 2
+                market_prices[typeId]['all'] = {'avg': avg, 'min': avg, 'max': avg, 'price': avg}
+                market_prices[typeId]['buy']['price'] = market_prices[typeId]['buy']['max']
+                market_prices[typeId]['sell']['price'] = market_prices[typeId]['sell']['min']
+
+                # Cache for up to 10 hours
+                cache.set(memcache_type_key(typeId), prices, timeout=10 * 60 * 60)
+        except urllib2.HTTPError:
+            pass
+    return market_prices
 
 
 def save_scan(scan_result):
