@@ -53,8 +53,10 @@
             {% for item in scan_results.line_items if item.market == false %}
               <tr class="line-item-row">
                 <td>
-                  <img src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> 
-                  <span class="warning-message">{{ item.typeName }}</span> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small> 
+                  <div class="media">
+                    <img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"> 
+                    <span class="warning-message">{{ item.typeName }}</span> &nbsp; <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small> 
+                  </div>
                 </td>
                 <td style="text-align:right"><span class="warning-message">Unknown</span></td>
                 <td style="text-align:right"><span class="warning-message">Unknown</span></td>
@@ -66,8 +68,8 @@
                 <td>
                     {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
                     <div class="media">
-                      <a class="pull-left" href="{{market_url}}" target="_blank">
-                        <img class="media-object" src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}">
+                      <a href="{{market_url}}" target="_blank">
+                        <img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}">
                       </a> 
                       <a href="{{market_url}}" target="_blank">{{ item.typeName }}</a> &nbsp;
                       <small class="nowrap">[{% if item.count > 1 %}<b>{{item.count}}</b> * {% endif %}{{ item.volume|format_volume|safe }}]</small>
