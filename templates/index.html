@@ -35,7 +35,7 @@ $(function() {
         // Populate results
         $('#result_container').html(data);
         if (typeof(_gaq) != "undefined") {
-          _gaq.push(['_trackPageview', 'estimate_cost']);
+          _gaq.push(['_trackEvent', 'estimate_cost', 'success']);
         }
       }).error(function() {
         // Enable form components
@@ -43,7 +43,7 @@ $(function() {
         result_submit.removeAttr("disabled").removeClass("disabled");
         alert("Server responded with an error.");
         if (typeof(_gaq) != "undefined") {
-          _gaq.push(['_trackPageview', 'estimate_cost_fail']);
+          _gaq.push(['_trackEvent', 'estimate_cost', 'fail']);
         }
       });
     return false;
