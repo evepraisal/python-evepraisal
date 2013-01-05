@@ -34,7 +34,7 @@ $(function() {
         result_submit.removeAttr("disabled").removeClass("disabled");
         // Populate results
         $('#result_container').html(data);
-        if (typeof(x) != "undefined") {
+        if (typeof(_gaq) != "undefined") {
           _gaq.push(['_trackPageview', 'estimate_cost']);
         }
       }).error(function() {
@@ -42,7 +42,7 @@ $(function() {
         result.removeAttr("disabled").removeClass("disabled");
         result_submit.removeAttr("disabled").removeClass("disabled");
         alert("Server responded with an error.");
-        if (typeof(x) != "undefined") {
+        if (typeof(_gaq) != "undefined") {
           _gaq.push(['_trackPageview', 'estimate_cost_fail']);
         }
       });
