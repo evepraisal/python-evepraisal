@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-01-05 09:57-0600\n"
+"POT-Creation-Date: 2013-01-05 10:36-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,10 @@ msgstr ""
 
 #: templates/layout.default.html:5 templates/layout.default.html:62
 msgid "app title"
+msgstr ""
+
+#: templates/layout.default.html:5
+msgid "app short description"
 msgstr ""
 
 #: templates/layout.default.html:65 templates/layout.default.html:73

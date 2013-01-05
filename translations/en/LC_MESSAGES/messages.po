@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-01-04 20:51-0600\n"
+"POT-Creation-Date: 2013-01-05 10:36-0600\n"
 "PO-Revision-Date: 2013-01-03 20:18-0600\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -29,31 +29,31 @@ msgstr "autosubmit on paste"
 msgid "save for sharing"
 msgstr "save for sharing"
 
-#: templates/index.html:82
+#: templates/index.html:86
 msgid "paste box title"
 msgstr "Quick Estimate"
 
-#: templates/index.html:84
+#: templates/index.html:88
 msgid "paste box placeholder"
 msgstr "paste stuff to evaluate here. protip: ctrl+a, ctrl+c, ctrl+v"
 
-#: templates/index.html:88
+#: templates/index.html:92
 msgid "submit button"
 msgstr "Submit"
 
-#: templates/index.html:89
+#: templates/index.html:93
 msgid "reset button"
 msgstr "Reset"
 
-#: templates/index.html:97
+#: templates/index.html:101
 msgid "error"
 msgstr "Error"
 
-#: templates/index.html:101
+#: templates/index.html:105
 msgid "what do i do title"
 msgstr "What do I do?"
 
-#: templates/index.html:103
+#: templates/index.html:107
 msgid "what do i do"
 msgstr ""
 "Find something in Eve Online that you want to price check like a "
@@ -62,11 +62,11 @@ msgstr ""
 "press <strong>CTRL + V</strong>. Submit and you should see a price "
 "breakdown of all the items."
 
-#: templates/index.html:106
+#: templates/index.html:110
 msgid "paste options title"
 msgstr "What all can I paste in there?"
 
-#: templates/index.html:108
+#: templates/index.html:112
 msgid "paste options"
 msgstr ""
 "At first, this started as a simple cargo scan estimator but over time "
@@ -85,6 +85,10 @@ msgstr ""
 msgid "app title"
 msgstr "Evepraisal"
 
+#: templates/layout.default.html:5
+msgid "app short description"
+msgstr "Price check Eve Online items from Cargo Scans, Contracts, D-Scan, EFT Blocks, Inventory, Assets"
+
 #: templates/layout.default.html:65 templates/layout.default.html:73
 msgid "help tile"
 msgstr "Help"
@@ -92,30 +96,43 @@ msgstr "Help"
 #: templates/layout.default.html:76
 msgid "help text"
 msgstr ""
-"        <h4>What is this?</h4>"
-"        <p>This is a tool for Eve Online aimed at being able to quickly price check items. </p>"
-""
-"        <h4>Why would I use this?</h4>"
-"        <p>You scan a drake full of original blueprints that you weren't able to quickly see because you sorting through the tabacco, spirits, exotic dancers, T1 planetary comodaties, livestock, garbage, scrap metal, and other random junk you're likely to find in the cargo hold. This tool will allow you to quickly see what's valuable and a rough estimate of how valueable everything is so the few seconds that you have to decide to commit won't be wasted messing messing around with eve's UI. This tool also happens to be pretty decent at doing quick price checks. It currently is known to work with cargo scan results and EFT-formatted blocks.</p>"
-""
-"        <h4>How are prices calculated?</h5>"
-"        <p>Prices are pulled from <a href=\"http://eve-central.com/\">Eve-Central.com</a> and (as a backup) <a href=\"http://eve-marketdata.com/\">Eve-Marketdata.com</a>. The pricing is limited to the following regions: Forge, Metropolis, Heimatar, Sinq Laison region, Domain. This is because each of these regions has a large market hub. Capital ship prices are set by the sum of their component parts.</p>"
-""
-"        <h4>Caveats/Known Issues</h4>"
-"        <ul>"
-"          <li>There's no reliable way to get prices of blueprint copies (BPCs). Due to this, I don't even try to guess a price for them.</li>"
-"        </ul>"
-
-
-"        <h4>Problems/More Questions?</h4>"
-"        <p>Feel free to send me an in-game mail. My character name is <a href=\"https://gate.eveonline.com/Profile/Magerawr\" target="_blank">Magerawr</a>.</p>"
+"        <h4>What is this?</h4>        <p>This is a tool for Eve Online "
+"aimed at being able to quickly price check items. </p>        <h4>Why "
+"would I use this?</h4>        <p>You scan a drake full of original "
+"blueprints that you weren't able to quickly see because you sorting "
+"through the tabacco, spirits, exotic dancers, T1 planetary comodaties, "
+"livestock, garbage, scrap metal, and other random junk you're likely to "
+"find in the cargo hold. This tool will allow you to quickly see what's "
+"valuable and a rough estimate of how valueable everything is so the few "
+"seconds that you have to decide to commit won't be wasted messing messing"
+" around with eve's UI. This tool also happens to be pretty decent at "
+"doing quick price checks. It currently is known to work with cargo scan "
+"results and EFT-formatted blocks.</p>        <h4>How are prices "
+"calculated?</h5>        <p>Prices are pulled from <a href=\"http://eve-"
+"central.com/\">Eve-Central.com</a> and (as a backup) <a href=\"http"
+"://eve-marketdata.com/\">Eve-Marketdata.com</a>. The pricing is limited "
+"to the following regions: Forge, Metropolis, Heimatar, Sinq Laison "
+"region, Domain. This is because each of these regions has a large market "
+"hub. Capital ship prices are set by the sum of their component parts.</p>"
+"        <h4>Caveats/Known Issues</h4>        <ul>          <li>There's no"
+" reliable way to get prices of blueprint copies (BPCs). Due to this, I "
+"don't even try to guess a price for them.</li>        </ul>        "
+"<h4>Problems/More Questions?</h4>        <p>Feel free to send me an in-"
+"game mail. My character name is <a "
+"href=\"https://gate.eveonline.com/Profile/Magerawr\" "
+"target=\"_blank\">Magerawr</a>.</p>"
 
 #: templates/layout.default.html:79 templates/results.html:39
+#: templates/scan_results.html:39
 #, fuzzy
 msgid "close buton"
 msgstr "Reset"
 
 #: templates/layout.default.html:88
 msgid "footer text"
-msgstr "Created by <a href=\"https://gate.eveonline.com/Profile/Magerawr\" target=\"_blank\">Magerawr</a>. Feel free to send me questions, suggestions or donations of ISK. Source is available on <a href=\"https://github.com/sudorandom/cargoscanner\">github</a>."
+msgstr ""
+"Created by <a href=\"https://gate.eveonline.com/Profile/Magerawr\" "
+"target=\"_blank\">Magerawr</a>. Feel free to send me questions, "
+"suggestions or donations of ISK. Source is available on <a "
+"href=\"https://github.com/sudorandom/cargoscanner\">github</a>."
 
