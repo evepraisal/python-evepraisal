@@ -7,7 +7,6 @@ Requirements
 * Python >= 2.6
 * Flask
 * Memcache
-* en-US Locale
 
 First Run
 =========
@@ -24,7 +23,7 @@ pip install -r requirements.txt
 
 Start the app
 ```
-python cargoscanner.py
+python evepraisal.py
 ```
 
 Deployment

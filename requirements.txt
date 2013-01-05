@@ -2,4 +2,5 @@ humanize
 pylibmc
 flask
 Flask-Cache
+Flask-Babel
 sqlalchemy

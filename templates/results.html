@@ -1,38 +1,38 @@
           {% if full_page %}{% extends 'index.html' %}{% endif -%}
-          {% block scan_results %}
+          {% block results %}
           <div>
-            <p>Scan Result {% if scan_results.scan_id %}#{{ scan_results.scan_id }} {% endif %}<small> {% if scan_results.created %}<small>created {{ scan_results.created|relative_time}}</small> {% endif %} 
-            {% if scan_results.raw_scan %}<a href="#raw-scan-modal" data-toggle="modal">View Raw</a>{% endif%}</small>
+            <p>Result {% if results.result_id %}#{{ results.result_id }} {% endif %}<small> {% if results.created %}<small>created {{ results.created|relative_time}}</small> {% endif %} 
+            {% if results.raw_paste %}<a href="#raw-result-modal" data-toggle="modal">View Raw</a>{% endif%}</small>
             </p>
-            {% if scan_results.raw_scan %}
-            <!-- RawScan Modal -->
-            <div id="raw-scan-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw-scan-modal" aria-hidden="true">
+            {% if results.raw_paste %}
+
+            <div id="raw-result-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw-result-modal" aria-hidden="true">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h3>Raw Scan Result</h3>
+                <h3>Raw Pasted Text</h3>
               </div>
               <div class="modal-body">
-                <textarea class="input-block-level" rows="10">{{ scan_results.raw_scan }}</textarea>
+                <textarea class="input-block-level" rows="10">{{ results.raw_paste }}</textarea>
               </div>
               <div class="modal-footer">
                 <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
               </div>
             </div>
             {% endif%}
-            <h4><span class="nowrap">{{ scan_results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ scan_results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
-            <p class="nowrap">{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}</p>
+            <h4><span class="nowrap">{{ results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
+            <p class="nowrap">{% if results.result_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_result', result_id=results.result_id) }}">{{ url_for('display_result', result_id=results.result_id, _external=True) }}</a> {% endif %}</p>
             
           </div>
-          {% set bad_line_count = scan_results.bad_line_items|length %}
+          {% set bad_line_count = results.bad_line_items|length %}
           {% if bad_line_count > 0 %}
-          <span class="warning-message">Found <a href="#errored-lines-modal" data-toggle="modal">{{ scan_results.bad_line_items|length }} invalid line(s)</a>.</span>
+          <span class="warning-message">Found <a href="#errored-lines-modal" data-toggle="modal">{{ results.bad_line_items|length }} invalid line(s)</a>.</span>
           <div id="errored-lines-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="errored-lines-modal" aria-hidden="true">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               <h3>Errored Lines</h3>
             </div>
             <div class="modal-body">
-              <textarea class="input-block-level" rows="10">{% for line in scan_results.bad_line_items %}{{ line }}
+              <textarea class="input-block-level" rows="10">{% for line in results.bad_line_items %}{{ line }}
 {% endfor %}</textarea>
             </div>
             <div class="modal-footer">
@@ -40,7 +40,7 @@
             </div>
           </div>
           {% endif %}
-          <table id="scan_results" class="table table-condensed">
+          <table id="results" class="table table-condensed">
             <thead>
               <tr>
                 <th class="header" style="width: 90%">Item</th>
@@ -50,7 +50,7 @@
             </thead>
             <tbody>
 
-            {% for item in scan_results.line_items if item.market == false %}
+            {% for item in results.line_items if item.market == false %}
               <tr class="line-item-row">
                 <td>
                   <div class="media">
@@ -63,7 +63,7 @@
               </tr>
             {% endfor %}
               
-            {% for item in scan_results.line_items if item.market != false %}
+            {% for item in results.line_items if item.market != false %}
               <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
                 <td>
                     {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
@@ -94,16 +94,16 @@
                   <span class="nowrap">Total Volume</span></td>
                 <td></td>
                 <th style="text-align:right">
-                  <span class="nowrap">{{ scan_results.totals.sell|format_isk }}</span><br />
-                  <span class="nowrap">{{ scan_results.totals.buy|format_isk }}</span>
-                  <span class="nowrap">{{ scan_results.totals.volume|format_volume|safe }}</span>
+                  <span class="nowrap">{{ results.totals.sell|format_isk }}</span><br />
+                  <span class="nowrap">{{ results.totals.buy|format_isk }}</span>
+                  <span class="nowrap">{{ results.totals.volume|format_volume|safe }}</span>
                 </th>
               </tr>
             </tfoot>
           </table>
           <script>
-            {% if scan_results.scan_id and not from_igb and not full_page %}
-              window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
+            {% if results.result_id and not from_igb and not full_page %}
+              window.history.replaceState('Object', 'Title', '{{ url_for('display_result', result_id=results.result_id) }}');
             {% endif %}
           </script>
           {% endblock %}

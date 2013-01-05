@@ -3,24 +3,94 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Options <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><label style="margin-left:10px;" class="checkbox"><input id="scan-hide-buttons" type="checkbox"> hide buttons</label></li>
-              <li><label style="margin-left:10px;" class="checkbox"><input id="scan-autosubmit" type="checkbox"> autosubmit on paste</label></li>
+              <li><label style="margin-left:10px;" class="checkbox"><input id="hide-buttons" type="checkbox"{% if session['hide_buttons'] == 'true' %} checked{% endif%}> {{_('hide buttons')}}</label></li>
+              <li><label style="margin-left:10px;" class="checkbox"><input id="paste-autosubmit" type="checkbox"{% if session['paste_autosubmit'] == 'true' %} checked{% endif%}> {{_('autosubmit on paste')}}</label></li>
+              <li><label style="margin-left:10px;" class="checkbox"><input id="paste-save" type="checkbox"{% if session['save'] != 'false' %} checked{% endif%}> {{_('save for sharing')}}</label></li>
             </ul>
           </li>
+{% endblock %}
+{% block extra_javascript %}
+<script>
+$(function() {
+  $("#result_form").submit(function() {
+    var result = $("#raw_textarea");
+    var result_submit = $("#result_submit");
+    // Disable form components
+    result.attr("disabled", "disabled").addClass("disabled");
+    result_submit.attr("disabled", "disabled").addClass("disabled");
+
+    $.post("{{ url_for('estimate_cost') }}",
+      {
+        raw_paste: result.val(),
+        hide_buttons: $("#hide-buttons").is(':checked'),
+        paste_autosubmit: $("#paste-autosubmit").is(':checked'),
+        save: $("#paste-save").is(':checked')
+      }, 
+      function(data) {
+        result.val('');
+        // Enable form components
+        result.removeAttr("disabled").removeClass("disabled");
+        result_submit.removeAttr("disabled").removeClass("disabled");
+        // Populate results
+        $('#result_container').html(data);
+        if (typeof(x) != "undefined") {
+          _gaq.push(['_trackPageview', 'estimate_cost']);
+        }
+      }).error(function() {
+        // Enable form components
+        result.removeAttr("disabled").removeClass("disabled");
+        result_submit.removeAttr("disabled").removeClass("disabled");
+        alert("Server responded with an error.");
+        if (typeof(x) != "undefined") {
+          _gaq.push(['_trackPageview', 'estimate_cost_fail']);
+        }
+      });
+    return false;
+  });
+
+  $("#raw_textarea").bind('paste', function(e) {
+    if($('#paste-autosubmit:checked').length > 0) {
+      setTimeout(function() {
+        $('#result_form').submit();
+      }, 0);
+    }
+  });
+
+  function toggle_buttons() {
+    if ($("#hide-buttons").is(':checked'))
+    {
+      $('#buttons').hide();
+    } else {
+      $('#buttons').show();
+    }
+  }
+  $("#hide-buttons").click(function(e) { toggle_buttons(); });
+
+  $('.dropdown-menu input, .dropdown-menu label').click(function(e) {
+      e.stopPropagation();
+  });
+
+  {% if from_igb %}
+    $('#hide-buttons').prop('checked', true);
+    $('#paste-autosubmit').prop('checked', true);
+  {% endif %}
+  toggle_buttons();
+});
+</script>
 {% endblock %}
 {% block body %}
 
     <div class="container">
       <div class="row">
         <div class="span5">
-          <h4>Paste Scan Result</h4>
-          <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="scan_result_form">
-            <textarea class="input-block-level" id="scan_result" name="scan_result" rows="5" placeholder="paste scan result here. protip: ctrl+a, ctrl+c, ctrl+v"></textarea>
+          <h4>{{_('paste box title')}}</h4>
+          <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
+            <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
             <input type="hidden" name="load_full" value="1"/>
             <div class="controls">
-              <div id="scan-buttons">
-                <button type="submit" id="scan_result_submit" class="btn btn-primary">Submit</button> 
-                <button type="reset" class="btn">Reset</button>
+              <div id="buttons">
+                <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
+                <button type="reset" class="btn">{{_('reset button')}}</button>
               </div>
             </div>
           </form>
@@ -28,25 +98,19 @@
         <div class="span7" id="result_container">
           {% if error %}
             <div class="alert alert-error">
-            <strong>Error:</strong> {{ error }}
+            <strong>{{_('error')}}:</strong> {{ error }}
           </div>
           {% endif %}
-          {% block scan_results %}
-            <h4>What do I do?</h4>
+          {% block results %}
+            <h4>{{_('what do i do title')}}</h4>
             <p>
-              Scan down a ship using a cargo scanner, click a result in the scan result list that pops up, hit <strong>CTRL + A, hit CTRL + C</strong>, then click on the box in this page and hit <strong>CTRL + V</strong>. It will then give you a readout with more detail in place of this text.
+               {{_('what do i do')}}
             </p>
 
-            <h4>What all can I paste in there?</h4>
-              At first, this started as a simple cargo scan estimator but over time more formats have been added to the parser so you can use it as a more general price checker. Currently the following formats are supported:
-              <ul>
-                <li>Cargo Scanner</li>
-                <li>EFT Format</li>
-                <li>D-Scan</li>
-                <li>Contracts</li>
-                <li>Asset Listing (named ships don't work)</li>
-                <li>Manual Item Listings. Example: "94812 Tritanium"</li>
-              </ul>
+            <h4>{{_('paste options title')}}</h4>
+            <p>
+               {{_('paste options')}}
+            </p>
           {% endblock %}
         </div>
       </div>

@@ -1,10 +1,10 @@
 {% extends "layout.%s.html"|format(config.TEMPLATE) %}
-{% block title %}Latest Scan Results{% endblock %}
+{% block title %}Latest Results{% endblock %}
 {% block body %}
     <div class="container">
       <div class="row">
         <div class="span12">
-          <h4>Latest Scan Results</h4>
+          <h4>Latest Results</h4>
           <table class="table table-condensed">
             <thead>
               <tr>
@@ -19,7 +19,7 @@
             <tbody>
               {% for item in listing %}
               <tr>
-                <td><a href="{{ url_for('display_scan', scan_id=item.scan_id) }}">#{{ item.scan_id }}</a></td>
+                <td><a href="{{ url_for('display_result', result_id=item.result_id) }}">#{{ item.result_id }}</a></td>
                 <td style="text-align:right">{{ item.created|relative_time }}</td>
                 <td style="text-align:right">{{ item.sell_value|format_isk }}</td>
                 <td><small>{{ item.sell_value|format_isk_human }}</small></td>

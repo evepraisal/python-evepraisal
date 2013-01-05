@@ -9,24 +9,29 @@ import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
+import os
 
-from flask import Flask, request, render_template, url_for, redirect
+from flask import Flask, request, render_template, url_for, redirect, session, \
+    send_from_directory
+
 from flask.ext.cache import Cache
+from flaskext.babel import Babel, format_decimal, format_timedelta
 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text,\
-    Float, select, desc
+    Float, Boolean, select, desc
 
 
 # configuration
 DEBUG = True
 TYPES = json.loads(open('data/types.json').read())
-USER_AGENT = 'CargoScanner/1.0 +http://sudorandom.com/cargoscanner'
+USER_AGENT = 'Evepraisal/1.0 +http://evepraisal.com/'
 SQLALCHEMY_DATABASE_URI = 'sqlite:///data/scans.db'
 CACHE_TYPE = 'memcached'
-CACHE_KEY_PREFIX = 'cargoscanner'
+CACHE_KEY_PREFIX = 'evepraisal'
 CACHE_MEMCACHED_SERVERS = ['127.0.0.1:11211']
 CACHE_DEFAULT_TIMEOUT = 10 * 60
 TEMPLATE = 'default'
+SECRET_KEY = 'SET ME TO SOMETHING SECRET IN THE APP CONFIG!'
 
 cache = Cache()
 app = Flask(__name__)
@@ -40,10 +45,19 @@ scans = Table('Scans', metadata,
     Column('Data', Text),
     Column('Created', Integer),
     Column('SellValue', Float),
-    Column('BuyValue', Float)
+    Column('BuyValue', Float),
+    Column('Public', Boolean, default=True),
 )
 
-locale.setlocale(locale.LC_ALL, 'en_US')
+try:
+    engine.connect()
+    engine.execute("ALTER TABLE Scans ADD Public BOOLEAN")
+except:
+    pass
+
+locale.setlocale(locale.LC_ALL, '')
+
+babel = Babel(app)
 metadata.create_all(bind=engine)
 cache.init_app(app)
 
@@ -124,7 +138,7 @@ def format_isk_human(value):
     try:
         return "%s ISK" % humanize.intword(value, format='%.2f')
     except:
-        return ""
+        return str(value)
 
 
 @app.template_filter('format_volume')
@@ -156,6 +170,11 @@ def bpc_count(bad_lines):
         if '(copy)' in line.lower():
             c += 1
     return c
+
+
+@babel.localeselector
+def get_locale():
+    return request.accept_languages.best_match(['en'])
 
 
 def memcache_type_key(typeId):
@@ -276,32 +295,43 @@ def get_market_values_2(eve_types):
     return market_prices
 
 
-def save_scan(scan_result):
-    data = json.dumps(scan_result, indent=2)
+def save_result(result, public=True):
+    data = json.dumps(result, indent=2)
     result = scans.insert().values(Data=data, Created=int(time.time()),
-        BuyValue=scan_result['totals']['buy'],
-        SellValue=scan_result['totals']['sell']).execute()
+        BuyValue=result['totals']['buy'],
+        SellValue=result['totals']['sell'],
+        Public=public).execute()
     return result.inserted_primary_key[0]
 
 
-def load_scan(scan_id):
+def load_result(result_id):
     try:
-        scan_id = int(scan_id)
+        result_id = int(result_id)
     except:
         return
 
-    data = select([scans.c.Data], scans.c.Id == scan_id).execute().first()
+    data = cache.get("results:%s" % result_id)
     if data:
-        return json.loads(data[0])
+        return data
+
+    row = select([scans.c.Data], (scans.c.Id == result_id) &
+        ((scans.c.Public == True) | (scans.c.Public == None))).execute().first()
+    if row:
+        data = json.loads(row[0])
+        if 'raw_scan' in data:
+            data['raw_paste'] = data['raw_scan']
+            del data['raw_scan']
+
+        cache.set("results:%s" % result_id, data, timeout=600)
+        return data
 
 
-def parse_scan_items(scan_result):
+def parse_paste_items(raw_paste):
     """
         Takes a scan result and returns:
             {'name': {details}, ...}, ['bad line']
     """
-    lines = scan_result.splitlines()
-    lines = [line.strip() for line in scan_result.splitlines() if line.strip()]
+    lines = [line.strip() for line in raw_paste.splitlines() if line.strip()]
 
     results = {}
     bad_lines = []
@@ -329,7 +359,7 @@ def parse_scan_items(scan_result):
         # (Cargo Scan)
         try:
             count, name = fmt_line.split(' ', 1)
-            count = int(count.replace('x', '').strip().replace(',', ''))
+            count = int(count.replace('x', '').strip().replace(',', '').replace('.', ''))
             if _add_type(name.strip(), count):
                 continue
         except ValueError:
@@ -347,7 +377,7 @@ def parse_scan_items(scan_result):
         try:
             if 'x' in fmt_line:
                 item, count = fmt_line.rsplit('x', 1)
-                if _add_type(item.strip(), int(count.strip().replace(',', ''))):
+                if _add_type(item.strip(), int(count.strip().replace(',', '').replace('.', ''))):
                     continue
         except ValueError:
             pass
@@ -371,7 +401,7 @@ def parse_scan_items(scan_result):
                 if fitted in ['', 'fitted']:
                     is_fitted = fitted == 'fitted'
                     if _add_type(item.strip(),
-                                int(count.strip().replace(',', '')),
+                                int(count.strip().replace(',', '').replace('.', '')),
                                 fitted=is_fitted):
                         continue
         except ValueError:
@@ -381,7 +411,7 @@ def parse_scan_items(scan_result):
         try:
             if fmt_line.count("\t") > 1:
                 item, count, _ = fmt_line.split("\t", 2)
-                if _add_type(item.strip(), int(count.strip().replace(',', ''))):
+                if _add_type(item.strip(), int(count.strip().replace(',', '').replace('.', ''))):
                     continue
         except ValueError:
             pass
@@ -477,9 +507,12 @@ def populate_market_values(eve_types, methods=None):
 
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
-    "Estimate Cost of scan result given by POST[SCAN_RESULT]. Renders HTML"
-    raw_scan = request.form.get('scan_result', '')
-    eve_types, bad_lines = parse_scan_items(raw_scan)
+    "Estimate Cost of pasted stuff result given by POST[raw_paste]. Renders HTML"
+    raw_paste = request.form.get('raw_paste', '')
+    session['paste_autosubmit'] = request.form.get('paste_autosubmit', 'false')
+    session['hide_buttons'] = request.form.get('hide_buttons', 'false')
+    session['save'] = request.form.get('save', 'true')
+    eve_types, bad_lines = parse_paste_items(raw_paste)
 
     # Populate types with pricing data
     populate_market_values(eve_types)
@@ -494,61 +527,76 @@ def estimate_cost():
     displayable_line_items = []
     for eve_type in sorted_eve_types:
         displayable_line_items.append(eve_type.to_dict())
-    scan_results = {
+    results = {
         'from_igb': is_from_igb(),
         'totals': totals,
         'bad_line_items': bad_lines,
         'line_items': displayable_line_items,
         'created': time.time(),
-        'raw_scan': raw_scan,
+        'raw_paste': raw_paste,
     }
     if len(sorted_eve_types) > 0:
-        scan_id = save_scan(scan_results)
-        scan_results['scan_id'] = scan_id
-    return render_template('scan_results.html', scan_results=scan_results,
+        if session['save'] == 'true':
+            result_id = save_result(results, public=True)
+            results['result_id'] = result_id
+        else:
+            result_id = save_result(results, public=False)
+    return render_template('results.html', results=results,
         from_igb=is_from_igb(), full_page=request.form.get('load_full'))
 
 
-@app.route('/estimate/<int:scan_id>', methods=['GET'])
-@cache.cached(timeout=600)
-def display_scan(scan_id):
-    scan_results = load_scan(scan_id)
+@app.route('/estimate/<int:result_id>', methods=['GET'])
+# @cache.cached(timeout=600)
+def display_result(result_id):
+    results = load_result(result_id)
     error = None
     status = 200
-    if scan_results:
-        scan_results['scan_id'] = scan_id
-        return render_template('scan_results.html', scan_results=scan_results,
+    if results:
+        results['result_id'] = result_id
+        return render_template('results.html', results=results,
             error=error, from_igb=is_from_igb(), full_page=True), status
     else:
-        return render_template('index.html', error="Scan Not Found",
+        return render_template('index.html', error="Resource Not Found",
             from_igb=is_from_igb(), full_page=True), 404
 
 
 @app.route('/latest/', defaults={'limit': 20})
 @app.route('/latest/limit/<int:limit>')
-@cache.cached(timeout=60)
+# @cache.cached(timeout=60)
 def latest(limit):
     if limit > 1000:
         return redirect(url_for('latest', limit=1000))
-    results = select(
-        [scans.c.Id, scans.c.Created, scans.c.BuyValue, scans.c.SellValue],
-        limit=limit,).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
 
-    scan_list = []
-    for result in results:
-        scan_list.append({
-                'scan_id': result['Id'],
-                'created': result['Created'],
-                'buy_value': result['BuyValue'],
-                'sell_value': result['SellValue'],
-            })
-    return render_template('latest.html', listing=scan_list)
+    result_list = cache.get("latest:%s" % limit)
+    if not result_list:
+        results = select(
+            [scans.c.Id, scans.c.Created, scans.c.BuyValue, scans.c.SellValue],
+                (scans.c.Public == True) | (scans.c.Public == None), limit=limit
+            ).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
+
+        result_list = []
+        for result in results:
+            result_list.append({
+                    'result_id': result['Id'],
+                    'created': result['Created'],
+                    'buy_value': result['BuyValue'],
+                    'sell_value': result['SellValue'],
+                })
+        cache.set("latest:%s" % limit, result_list, timeout=60)
+
+    return render_template('latest.html', listing=result_list)
 
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     "Index. Renders HTML."
     return render_template('index.html', from_igb=is_from_igb())
+
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 
 if __name__ == '__main__':
