@@ -10,6 +10,7 @@
           </li>
 {% endblock %}
 {% block extra_javascript %}
+{{ super() }}
 <script>
 $(function() {
   $("#result_form").submit(function() {

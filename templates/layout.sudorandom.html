@@ -1,10 +1,12 @@
 {% extends "layout.default.html" %}
 
-{% block footer %}
+{% block extra_javascript %}
 {{ super() }}
 <script type="text/javascript">
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-12594271-4']);
+  _gaq.push(['_setDomainName', 'evepraisal.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {
