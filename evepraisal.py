@@ -591,6 +591,11 @@ def index():
     return render_template('index.html', from_igb=is_from_igb())
 
 
+@app.route('/legal')
+def legal():
+    return render_template('legal.html')
+
+
 @app.route('/robots.txt')
 @app.route('/favicon.ico')
 def static_from_root():
