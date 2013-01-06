@@ -546,7 +546,6 @@ def estimate_cost():
 
 
 @app.route('/estimate/<int:result_id>', methods=['GET'])
-# @cache.cached(timeout=600)
 def display_result(result_id):
     results = load_result(result_id)
     error = None
@@ -562,7 +561,6 @@ def display_result(result_id):
 
 @app.route('/latest/', defaults={'limit': 20})
 @app.route('/latest/limit/<int:limit>')
-# @cache.cached(timeout=60)
 def latest(limit):
     if limit > 1000:
         return redirect(url_for('latest', limit=1000))
@@ -593,10 +591,10 @@ def index():
     return render_template('index.html', from_igb=is_from_igb())
 
 
+@app.route('/robots.txt')
 @app.route('/favicon.ico')
-def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+def static_from_root():
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 if __name__ == '__main__':
