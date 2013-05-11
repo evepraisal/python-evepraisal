@@ -11,7 +11,7 @@ import humanize
 import locale
 
 from flask import Flask, request, render_template, url_for, redirect, session, \
-    send_from_directory
+    send_from_directory, abort
 
 from flask.ext.cache import Cache
 from flaskext.babel import Babel
@@ -56,6 +56,13 @@ except:
     pass
 
 locale.setlocale(locale.LC_ALL, '')
+VALID_SOLAR_SYSTEMS = {
+    '30000142': 'Jita',
+    '30002187': 'Amarr',
+    '30002659': 'Dodixie',
+    '30002510': 'Rens',
+    '30002053': 'Hek',
+}
 
 babel = Babel(app)
 metadata.create_all(bind=engine)
@@ -533,6 +540,10 @@ def estimate_cost():
     session['hide_buttons'] = request.form.get('hide_buttons', 'false')
     session['save'] = request.form.get('save', 'true')
     solar_system = request.form.get('market', '30000142')
+
+    if solar_system not in VALID_SOLAR_SYSTEMS.keys():
+        abort(400)
+
     eve_types, bad_lines = parse_paste_items(raw_paste)
 
     # Populate types with pricing data
@@ -555,6 +566,8 @@ def estimate_cost():
         'line_items': displayable_line_items,
         'created': time.time(),
         'raw_paste': raw_paste,
+        'solar_system': solar_system,
+        'solar_system_name': VALID_SOLAR_SYSTEMS.get(solar_system, 'UNKNOWN'),
     }
     if len(sorted_eve_types) > 0:
         if session['save'] == 'true':

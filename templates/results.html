@@ -1,7 +1,7 @@
           {% if full_page %}{% extends 'index.html' %}{% endif -%}
           {% block results %}
           <div>
-            <p>Result {% if results.result_id %}#{{ results.result_id }} {% endif %}<small> {% if results.created %}<small>created {{ results.created|relative_time}}</small> {% endif %} 
+            <p>Result {% if results.result_id %}#{{ results.result_id }} {% endif %}<small> {% if results.created %}<small>created {{ results.created|relative_time}}</small>{% endif %} 
             {% if results.raw_paste %}<a href="#raw-result-modal" data-toggle="modal">View Raw</a>{% endif%}</small>
             </p>
             {% if results.raw_paste %}
@@ -19,7 +19,15 @@
               </div>
             </div>
             {% endif%}
-            <h4><span class="nowrap">{{ results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
+            <h4>
+              <span class="nowrap">
+                {{ results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value {% if results.solar_system_name %} in {{ results.solar_system_name }}{% endif %}</small>
+              </span>
+              &nbsp;&nbsp;
+              <span class="nowrap">
+                {{ results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value {% if results.solar_system_name %} in {{ results.solar_system_name }}{% endif %}</small>
+              </span>
+            </h4>
             <p class="nowrap">{% if results.result_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_result', result_id=results.result_id) }}">{{ url_for('display_result', result_id=results.result_id, _external=True) }}</a> {% endif %}</p>
             
           </div>
@@ -44,8 +52,8 @@
             <thead>
               <tr>
                 <th class="header" style="width: 90%">Item</th>
-                <th class="header" style="text-align:right">Single</th>
-                <th class="header" style="text-align:right">Totals</th>
+                <th class="header" style="text-align:right">Single (sell)<br />Single (buy)</th>
+                <th class="header" style="text-align:right">Total (sell)<br />Total (buy)</th>
               </tr>
             </thead>
             <tbody>
