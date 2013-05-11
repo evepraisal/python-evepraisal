@@ -20,28 +20,28 @@ if __name__ == '__main__':
 
     all_types = {}
     for (typeID, groupID, typeName, marketGroupID, volume) in \
-            cfg.invtypes.Select('typeID', 'groupID', 'typeName',
-                'marketGroupID', 'volume'):
+            cfg.invtypes.Select(
+                'typeID', 'groupID', 'typeName', 'marketGroupID', 'volume'):
         print("Populating info for: %s" % typeName)
 
         hasMarket = marketGroupID is not None
         d = {
-                'typeID': typeID,
-                'groupID': groupID,
-                'typeName': typeName,
-                'volume': volume,
-                'market': hasMarket,
-            }
+            'typeID': typeID,
+            'groupID': groupID,
+            'typeName': typeName,
+            'volume': volume,
+            'market': hasMarket,
+        }
 
         # super, carrier, titan, dread
         if groupID in [659, 547, 30, 485] and typeID in cfg.invtypematerials:
             components = []
             for typeID, materialTypeID, component_quantity in cfg.invtypematerials[typeID]:
                 components.append({
-                                    'typeID': typeID,
-                                    'materialTypeID': materialTypeID,
-                                    'quantity': component_quantity,
-                                })
+                    'typeID': typeID,
+                    'materialTypeID': materialTypeID,
+                    'quantity': component_quantity,
+                })
 
             d['components'] = components
         name_lower = typeName.lower()

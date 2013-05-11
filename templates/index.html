@@ -25,6 +25,7 @@ $(function() {
         raw_paste: result.val(),
         hide_buttons: $("#hide-buttons").is(':checked'),
         paste_autosubmit: $("#paste-autosubmit").is(':checked'),
+        market: $("#market").val(),
         save: $("#paste-save").is(':checked')
       }, 
       function(data) {
@@ -88,10 +89,20 @@ $(function() {
           <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
             <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
             <input type="hidden" name="load_full" value="1"/>
-            <div class="controls">
-              <div id="buttons">
+            <div class="controls form-inline clearfix">
+              <div id="buttons" class="pull-left">
                 <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
                 <button type="reset" class="btn">{{_('reset button')}}</button>
+              </div>
+
+              <div class="pull-right input-append">
+                <select class="span2" id="market">
+                  <option value='30000142'>Jita</option>
+                  <option value='30002187'>Amarr</option>
+                  <option value='30002659'>Dodixie</option>
+                  <option value='30002510'>Rens</option>
+                  <option value='30002053'>Hek</option>
+                </select>
               </div>
             </div>
           </form>

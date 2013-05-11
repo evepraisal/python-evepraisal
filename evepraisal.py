@@ -9,13 +9,12 @@ import datetime
 import xml.etree.ElementTree as ET
 import humanize
 import locale
-import os
 
 from flask import Flask, request, render_template, url_for, redirect, session, \
     send_from_directory
 
 from flask.ext.cache import Cache
-from flaskext.babel import Babel, format_decimal, format_timedelta
+from flaskext.babel import Babel
 
 from sqlalchemy import create_engine, MetaData, Table, Column, Integer, Text,\
     Float, Boolean, select, desc
@@ -40,7 +39,8 @@ app.config.from_pyfile('application.cfg', silent=True)
 
 engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], convert_unicode=True)
 metadata = MetaData(bind=engine)
-scans = Table('Scans', metadata,
+scans = Table(
+    'Scans', metadata,
     Column('Id', Integer, primary_key=True),
     Column('Data', Text),
     Column('Created', Integer),
@@ -84,7 +84,10 @@ class EveType():
         return max(sell_price, buy_price)
 
     def is_market_item(self):
-        return self.props.get('market', False) == True
+        if self.props.get('market', False):
+            return True
+        else:
+            return False
 
     def incr_count(self, count, fitted=False):
         self.count += count
@@ -108,19 +111,16 @@ class EveType():
 
     @classmethod
     def from_dict(self, cls, d):
-        return cls(d['typeID'], d['count'],
-            {
-                'typeName': d.get('typeName'),
-                'groupID': d.get('groupID'),
-                'volume': d.get('volume')
-            },
-            {
-                'totals': d.get('totals'),
-                'sell': d.get('sell'),
-                'buy': d.get('buy'),
-                'all': d.get('all'),
-            }
-        )
+        return cls(d['typeID'], d['count'], {
+            'typeName': d.get('typeName'),
+            'groupID': d.get('groupID'),
+            'volume': d.get('volume')
+        }, {
+            'totals': d.get('totals'),
+            'sell': d.get('sell'),
+            'buy': d.get('buy'),
+            'all': d.get('all'),
+        })
 
 
 @app.template_filter('format_isk')
@@ -177,22 +177,24 @@ def get_locale():
     return request.accept_languages.best_match(['en'])
 
 
-def memcache_type_key(typeId):
-    return "prices:%s" % typeId
+def memcache_type_key(typeId, options=None):
+    if options is None:
+        options = {}
+    return "prices:%s:%s" % (options.get('solarsystem_id', 30000142), typeId)
 
 
-def get_cached_values(eve_types):
+def get_cached_values(eve_types, options=None):
     "Get Cached values given the eve_types"
     found = {}
     for eve_type in eve_types:
-        key = memcache_type_key(eve_type.type_id)
+        key = memcache_type_key(eve_type.type_id, options=options)
         obj = cache.get(key)
         if obj:
             found[eve_type.type_id] = obj
     return found
 
 
-def get_market_values(eve_types):
+def get_market_values(eve_types, options=None):
     """
         Takes list of typeIds. Returns dict of pricing details with typeId as
         the key. Calls out to the eve-central.
@@ -208,17 +210,15 @@ def get_market_values(eve_types):
     if len(eve_types) == 0:
         return {}
 
+    if options is None:
+        options = {}
+
     market_prices = {}
-    for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
+    for types in [eve_types[i:i + 100] for i in range(0, len(eve_types), 100)]:
         typeids = ["typeid=" + str(x.type_id) for x in types]
-        # Forge (for jita): 10000002
-        # Metropolis (for hek): 10000042
-        # Heimatar (for rens): 10000030
-        # Sinq Laison region (for dodixie): 10000032
-        # Domain (for amarr): 10000043
-        regions = ['regionlimit=10000002', 'regionlimit=10000042',
-            'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
-        query_str = '&'.join(regions + typeids)
+        solarsystems = [
+            'usesystem=%s' % options.get('solarsystem_id', 30000142)]
+        query_str = '&'.join(solarsystems + typeids)
         url = "http://api.eve-central.com/api/marketstat?%s" % query_str
         try:
             request = urllib2.Request(url)
@@ -246,7 +246,7 @@ def get_market_values(eve_types):
     return market_prices
 
 
-def get_market_values_2(eve_types):
+def get_market_values_2(eve_types, options=None):
     """
         Takes list of typeIds. Returns dict of pricing details with typeId as
         the key. Calls out to the eve-marketdata.
@@ -261,10 +261,17 @@ def get_market_values_2(eve_types):
     if len(eve_types) == 0:
         return {}
 
+    if options is None:
+        options = {}
+
     market_prices = {}
     for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
         typeIds_str = ','.join(str(x.type_id) for x in types)
-        url = "http://api.eve-marketdata.com/api/item_prices2.json?char_name=magerawr&type_ids=%s&buysell=a" % typeIds_str
+        solarsystem_ids_str = ','.join(
+            [str(options.get('solarsystem_id', 30000142))])
+        url = "http://api.eve-marketdata.com/api/item_prices2.json?" \
+            "char_name=magerawr&type_ids=%s&solarsystem_ids=%s&buysell=a" % \
+            (typeIds_str, solarsystem_ids_str)
         try:
             request = urllib2.Request(url)
             request.add_header('User-Agent', app.config['USER_AGENT'])
@@ -297,7 +304,8 @@ def get_market_values_2(eve_types):
 
 def save_result(result, public=True):
     data = json.dumps(result, indent=2)
-    result = scans.insert().values(Data=data, Created=int(time.time()),
+    result = scans.insert().values(
+        Data=data, Created=int(time.time()),
         BuyValue=result['totals']['buy'],
         SellValue=result['totals']['sell'],
         Public=public).execute()
@@ -314,8 +322,11 @@ def load_result(result_id):
     if data:
         return data
 
-    row = select([scans.c.Data], (scans.c.Id == result_id) &
-        ((scans.c.Public == True) | (scans.c.Public == None))).execute().first()
+    row = select(
+        [scans.c.Data],
+        (scans.c.Id == result_id) &
+        ((scans.c.Public == True) | (scans.c.Public == None))
+    ).execute().first()
     if row:
         data = json.loads(row[0])
         if 'raw_scan' in data:
@@ -400,9 +411,10 @@ def parse_paste_items(raw_paste):
                 item, count, _, fitted = fmt_line.split("\t", 3)
                 if fitted in ['', 'fitted']:
                     is_fitted = fitted == 'fitted'
-                    if _add_type(item.strip(),
-                                int(count.strip().replace(',', '').replace('.', '')),
-                                fitted=is_fitted):
+                    if _add_type(
+                            item.strip(),
+                            int(count.strip().replace(',', '').replace('.', '')),
+                            fitted=is_fitted):
                         continue
         except ValueError:
             pass
@@ -434,10 +446,10 @@ def is_from_igb():
     return request.headers.get('User-Agent', '').find("EVE-IGB") != -1
 
 
-def get_invalid_values(eve_types):
+def get_invalid_values(eve_types, options=None):
     invalid_items = {}
     for eve_type in eve_types:
-        if eve_type.props.get('market') == False:
+        if eve_type.props.get('market') is False:
             zeroed_price = {'avg': 0, 'min': 0, 'max': 0, 'price': 0}
             price_info = {
                 'buy': zeroed_price.copy(),
@@ -448,15 +460,19 @@ def get_invalid_values(eve_types):
     return invalid_items
 
 
-def get_componentized_values(eve_types):
+def get_componentized_values(eve_types, options=None):
     componentized_items = {}
     for eve_type in eve_types:
         if 'components' in eve_type.props:
-            component_types = [EveType(c['materialTypeID'], count=c['quantity'])
+            component_types = [
+                EveType(c['materialTypeID'], count=c['quantity'])
                 for c in eve_type.props['components']]
 
-            populate_market_values(component_types, methods=[get_cached_values,
-                get_market_values, get_market_values_2])
+            populate_market_values(
+                component_types,
+                methods=[
+                    get_cached_values, get_market_values, get_market_values_2],
+                options=options)
             zeroed_price = {'avg': 0, 'min': 0, 'max': 0, 'price': 0}
             complete_price_data = {
                 'buy': zeroed_price.copy(),
@@ -470,23 +486,27 @@ def get_componentized_values(eve_types):
                             component.pricing_info[market_type][stat] * component.count
             componentized_items[eve_type.type_id] = complete_price_data
             # Cache for up to 10 hours
-            cache.set(memcache_type_key(eve_type.type_id), complete_price_data,
+            cache.set(
+                memcache_type_key(eve_type.type_id),
+                complete_price_data,
                 timeout=10 * 60 * 60)
 
     return componentized_items
 
 
-def populate_market_values(eve_types, methods=None):
+def populate_market_values(eve_types, methods=None, options=None):
     unpopulated_types = list(eve_types)
     if methods is None:
-        methods = [get_invalid_values, get_cached_values,
-            get_componentized_values, get_market_values, get_market_values_2]
+        methods = [
+            get_invalid_values, get_cached_values, get_componentized_values,
+            get_market_values, get_market_values_2]
     for pricing_method in methods:
         if len(unpopulated_types) == 0:
             break
         # returns a dict with {type_id: pricing_info}
-        prices = pricing_method(unpopulated_types)
-        app.logger.debug("Found %s/%s items using method: %s", len(prices),
+        prices = pricing_method(unpopulated_types, options=options)
+        app.logger.debug(
+            "Found %s/%s items using method: %s", len(prices),
             len(unpopulated_types), pricing_method)
         new_unpopulated_types = []
         for eve_type in unpopulated_types:
@@ -512,10 +532,11 @@ def estimate_cost():
     session['paste_autosubmit'] = request.form.get('paste_autosubmit', 'false')
     session['hide_buttons'] = request.form.get('hide_buttons', 'false')
     session['save'] = request.form.get('save', 'true')
+    solar_system = request.form.get('market', '30000142')
     eve_types, bad_lines = parse_paste_items(raw_paste)
 
     # Populate types with pricing data
-    populate_market_values(eve_types)
+    populate_market_values(eve_types, options={'solarsystem_id': solar_system})
 
     # calculate the totals
     totals = {'sell': 0, 'buy': 0, 'all': 0, 'volume': 0}
@@ -541,8 +562,9 @@ def estimate_cost():
             results['result_id'] = result_id
         else:
             result_id = save_result(results, public=False)
-    return render_template('results.html', results=results,
-        from_igb=is_from_igb(), full_page=request.form.get('load_full'))
+    return render_template(
+        'results.html', results=results, from_igb=is_from_igb(),
+        full_page=request.form.get('load_full'))
 
 
 @app.route('/estimate/<int:result_id>', methods=['GET'])
@@ -552,11 +574,13 @@ def display_result(result_id):
     status = 200
     if results:
         results['result_id'] = result_id
-        return render_template('results.html', results=results,
-            error=error, from_igb=is_from_igb(), full_page=True), status
+        return render_template(
+            'results.html', results=results, error=error,
+            from_igb=is_from_igb(), full_page=True), status
     else:
-        return render_template('index.html', error="Resource Not Found",
-            from_igb=is_from_igb(), full_page=True), 404
+        return render_template(
+            'index.html', error="Resource Not Found", from_igb=is_from_igb(),
+            full_page=True), 404
 
 
 @app.route('/latest/', defaults={'limit': 20})
@@ -569,17 +593,18 @@ def latest(limit):
     if not result_list:
         results = select(
             [scans.c.Id, scans.c.Created, scans.c.BuyValue, scans.c.SellValue],
-                (scans.c.Public == True) | (scans.c.Public == None), limit=limit
-            ).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
+            (scans.c.Public == True) | (scans.c.Public == None),
+            limit=limit
+        ).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
 
         result_list = []
         for result in results:
             result_list.append({
-                    'result_id': result['Id'],
-                    'created': result['Created'],
-                    'buy_value': result['BuyValue'],
-                    'sell_value': result['SellValue'],
-                })
+                'result_id': result['Id'],
+                'created': result['Created'],
+                'buy_value': result['BuyValue'],
+                'sell_value': result['SellValue'],
+            })
         cache.set("latest:%s" % limit, result_list, timeout=60)
 
     return render_template('latest.html', listing=result_list)
