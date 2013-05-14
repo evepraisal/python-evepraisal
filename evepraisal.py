@@ -57,6 +57,7 @@ except:
 
 locale.setlocale(locale.LC_ALL, '')
 VALID_SOLAR_SYSTEMS = {
+    '-1': 'Trade Hub Regions',
     '30000142': 'Jita',
     '30002187': 'Amarr',
     '30002659': 'Dodixie',
@@ -221,11 +222,21 @@ def get_market_values(eve_types, options=None):
         options = {}
 
     market_prices = {}
+    solarsystem_id = options.get('solarsystem_id', 30000142)
     for types in [eve_types[i:i + 100] for i in range(0, len(eve_types), 100)]:
-        typeids = ["typeid=" + str(x.type_id) for x in types]
-        solarsystems = [
-            'usesystem=%s' % options.get('solarsystem_id', 30000142)]
-        query_str = '&'.join(solarsystems + typeids)
+        query = []
+        query += ['typeid=%s' % str(x.type_id) for x in types]
+        if solarsystem_id == '-1':
+            # Forge (for jita): 10000002
+            # Metropolis (for hek): 10000042
+            # Heimatar (for rens): 10000030
+            # Sinq Laison region (for dodixie): 10000032
+            # Domain (for amarr): 10000043
+            query += ['regionlimit=10000002', 'regionlimit=10000042',
+                      'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
+        else:
+            query += ['usesystem=%s' % solarsystem_id]
+        query_str = '&'.join(query)
         url = "http://api.eve-central.com/api/marketstat?%s" % query_str
         try:
             request = urllib2.Request(url)
@@ -272,13 +283,21 @@ def get_market_values_2(eve_types, options=None):
         options = {}
 
     market_prices = {}
+    solarsystem_id = options.get('solarsystem_id', 30000142)
     for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
-        typeIds_str = ','.join(str(x.type_id) for x in types)
-        solarsystem_ids_str = ','.join(
-            [str(options.get('solarsystem_id', 30000142))])
+        typeIds_str = 'type_ids=%s' % ','.join(str(x.type_id) for x in types)
+        query = ['typeid=%s' % typeIds_str]
+
+        if solarsystem_id != '-1':
+            query += ['usesystem=%s' % solarsystem_id]
+
+            solarsystem_ids_str = ','.join(
+                [str(options.get('solarsystem_id', 30000142))])
+            query += ['solarsystem_ids=' % solarsystem_ids_str]
+        query_str = '&'.join(query)
+
         url = "http://api.eve-marketdata.com/api/item_prices2.json?" \
-            "char_name=magerawr&type_ids=%s&solarsystem_ids=%s&buysell=a" % \
-            (typeIds_str, solarsystem_ids_str)
+            "char_name=magerawr&buysell=a&%s" % (query_str)
         try:
             request = urllib2.Request(url)
             request.add_header('User-Agent', app.config['USER_AGENT'])

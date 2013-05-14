@@ -131,5 +131,5 @@ msgstr "Reset"
 #: templates/layout.default.html:88
 msgid "footer text"
 msgstr ""
-"Created by <a href=\"https://gate.eveonline.com/Profile/Magerawr\" target=\"_blank\">Magerawr</a>. Feel free to send me questions, suggestions or donations of ISK. Source is available on <a href=\"https://github.com/sudorandom/cargoscanner\">github</a>. <br /> All <a href=\"http://www.evepraisal.com/legal\">Eve Related Materials</a> are property of CCP Games. See <a href=\"http://www.evepraisal.com/legal\">Legal Notice</a>"
+"Created by <a href=\"https://gate.eveonline.com/Profile/Magerawr\" target=\"_blank\">Magerawr</a>. Feel free to send me questions, suggestions or donations of ISK. Source is available on <a href=\"https://github.com/sudorandom/evepraisal\">github</a>. <br /> All <a href=\"http://www.evepraisal.com/legal\">Eve Related Materials</a> are property of CCP Games. See <a href=\"http://www.evepraisal.com/legal\">Legal Notice</a>"
 
