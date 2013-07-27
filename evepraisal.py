@@ -10,8 +10,9 @@ import xml.etree.ElementTree as ET
 import humanize
 import locale
 
-from flask import Flask, request, render_template, url_for, redirect, session, \
-    send_from_directory, abort
+from flask import (
+    Flask, request, render_template, url_for, redirect, session,
+    send_from_directory, abort)
 
 from flask.ext.cache import Cache
 from flaskext.babel import Babel
@@ -37,7 +38,8 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 app.config.from_pyfile('application.cfg', silent=True)
 
-engine = create_engine(app.config['SQLALCHEMY_DATABASE_URI'], convert_unicode=True)
+engine = create_engine(
+    app.config['SQLALCHEMY_DATABASE_URI'], convert_unicode=True)
 metadata = MetaData(bind=engine)
 scans = Table(
     'Scans', metadata,
@@ -188,7 +190,7 @@ def get_locale():
 def memcache_type_key(typeId, options=None):
     if options is None:
         options = {}
-    return "prices:%s:%s" % (options.get('solarsystem_id', 30000142), typeId)
+    return "prices:%s:%s" % (options.get('solarsystem_id', '-1'), typeId)
 
 
 def get_cached_values(eve_types, options=None):
@@ -210,9 +212,24 @@ def get_market_values(eve_types, options=None):
         Example Return Value:
         {
             21574:{
-             'all': {'avg': 254.83, 'min': 254.83, 'max': 254.83, 'price': 254.83},
-             'buy': {'avg': 5434414.43, 'min': 5434414.43, 'max': 5434414.43, 'price': 5434414.43},
-             'sell': {'avg': 10552957.04, 'min': 10552957.04, 'max': 10552957.04, 'price': 10552957.04}
+             'all': {
+                'avg': 254.83,
+                'min': 254.83,
+                'max': 254.83,
+                'price': 254.83
+             },
+             'buy': {
+                'avg': 5434414.43,
+                'min': 5434414.43,
+                'max': 5434414.43,
+                'price': 5434414.43
+             },
+             'sell': {
+                'avg': 10552957.04,
+                'min': 10552957.04,
+                'max': 10552957.04,
+                'price': 10552957.04
+             }
         }
     """
     if len(eve_types) == 0:
@@ -222,19 +239,25 @@ def get_market_values(eve_types, options=None):
         options = {}
 
     market_prices = {}
-    solarsystem_id = options.get('solarsystem_id', 30000142)
+    solarsystem_id = options.get('solarsystem_id', -1)
     for types in [eve_types[i:i + 100] for i in range(0, len(eve_types), 100)]:
         query = []
         query += ['typeid=%s' % str(x.type_id) for x in types]
+        all_price_metric = 'percentile'
         if solarsystem_id == '-1':
+            buy_price_metric = 'percentile'
+            sell_price_metric = 'percentile'
             # Forge (for jita): 10000002
             # Metropolis (for hek): 10000042
             # Heimatar (for rens): 10000030
             # Sinq Laison region (for dodixie): 10000032
             # Domain (for amarr): 10000043
             query += ['regionlimit=10000002', 'regionlimit=10000042',
-                      'regionlimit=10000030', 'regionlimit=10000032', 'regionlimit=10000043']
+                      'regionlimit=10000030', 'regionlimit=10000032',
+                      'regionlimit=10000043']
         else:
+            buy_price_metric = 'max'
+            sell_price_metric = 'min'
             query += ['usesystem=%s' % solarsystem_id]
         query_str = '&'.join(query)
         url = "http://api.eve-central.com/api/marketstat?%s" % query_str
@@ -252,13 +275,14 @@ def get_market_values(eve_types, options=None):
                     for stat in marketstat.find(stat_type):
                         props[stat.tag] = float(stat.text)
                     v[stat_type] = props
-                v['all']['price'] = v['all']['percentile']
-                v['buy']['price'] = v['buy']['percentile']
-                v['sell']['price'] = v['sell']['percentile']
+                v['all']['price'] = v['all'][all_price_metric]
+                v['buy']['price'] = v['buy'][buy_price_metric]
+                v['sell']['price'] = v['sell'][sell_price_metric]
                 market_prices[k] = v
 
                 # Cache for up to 10 hours
-                cache.set(memcache_type_key(k), v, timeout=10 * 60 * 60)
+                cache.set(memcache_type_key(k, options=options),
+                          v, timeout=10 * 60 * 60)
         except urllib2.HTTPError:
             pass
     return market_prices
@@ -271,9 +295,24 @@ def get_market_values_2(eve_types, options=None):
         Example Return Value:
         {
             21574:{
-             'all': {'avg': 254.83, 'min': 254.83, 'max': 254.83, 'price': 254.83},
-             'buy': {'avg': 5434414.43, 'min': 5434414.43, 'max': 5434414.43, 'price': 5434414.43},
-             'sell': {'avg': 10552957.04, 'min': 10552957.04, 'max': 10552957.04, 'price': 10552957.04}
+             'all': {
+                'avg': 254.83,
+                'min': 254.83,
+                'max': 254.83,
+                'price': 254.83
+             },
+             'buy': {
+                'avg': 5434414.43,
+                'min': 5434414.43,
+                'max': 5434414.43,
+                'price': 5434414.43
+             },
+             'sell': {
+                'avg': 10552957.04,
+                'min': 10552957.04,
+                'max': 10552957.04,
+                'price': 10552957.04
+             }
         }
     """
     if len(eve_types) == 0:
@@ -283,7 +322,7 @@ def get_market_values_2(eve_types, options=None):
         options = {}
 
     market_prices = {}
-    solarsystem_id = options.get('solarsystem_id', 30000142)
+    solarsystem_id = options.get('solarsystem_id', '-1')
     for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
         typeIds_str = 'type_ids=%s' % ','.join(str(x.type_id) for x in types)
         query = ['typeid=%s' % typeIds_str]
@@ -310,19 +349,36 @@ def get_market_values_2(eve_types, options=None):
                     market_prices[k] = {}
                 if row['buysell'] == 's':
                     price = float(row['price'])
-                    market_prices[k]['sell'] = {'avg': price, 'min': price, 'max': price}
+                    market_prices[k]['sell'] = {
+                        'avg': price,
+                        'min': price,
+                        'max': price,
+                    }
                 elif row['buysell'] == 'b':
                     price = float(row['price'])
-                    market_prices[k]['buy'] = {'avg': price, 'min': price, 'max': price}
+                    market_prices[k]['buy'] = {
+                        'avg': price,
+                        'min': price,
+                        'max': price,
+                    }
 
             for typeId, prices in market_prices.iteritems():
                 avg = (prices['sell']['avg'] + prices['buy']['avg']) / 2
-                market_prices[typeId]['all'] = {'avg': avg, 'min': avg, 'max': avg, 'price': avg}
-                market_prices[typeId]['buy']['price'] = market_prices[typeId]['buy']['max']
-                market_prices[typeId]['sell']['price'] = market_prices[typeId]['sell']['min']
+                market_prices[typeId]['all'] = {
+                    'avg': avg,
+                    'min': avg,
+                    'max': avg,
+                    'price': avg,
+                }
+                market_prices[typeId]['buy']['price'] = \
+                    market_prices[typeId]['buy']['max']
+                market_prices[typeId]['sell']['price'] = \
+                    market_prices[typeId]['sell']['min']
 
                 # Cache for up to 10 hours
-                cache.set(memcache_type_key(typeId), prices, timeout=10 * 60 * 60)
+                cache.set(
+                    memcache_type_key(typeId, options=options),
+                    prices, timeout=10 * 60 * 60)
         except urllib2.HTTPError:
             pass
     return market_prices
@@ -348,10 +404,9 @@ def load_result(result_id):
     if data:
         return data
 
-    row = select(
-        [scans.c.Data],
+    row = select([scans.c.Data]).where(
         (scans.c.Id == result_id) &
-        ((scans.c.Public == True) | (scans.c.Public == None))
+        ((scans.c.Public == True) | (scans.c.Public == None))  # NOQA
     ).execute().first()
     if row:
         data = json.loads(row[0])
@@ -388,6 +443,9 @@ def parse_paste_items(raw_paste):
     for line in lines:
         fmt_line = line.lower().replace(' (original)', '')
 
+        if fmt_line in ['high power', 'medium power', 'low power', 'rig slot']:
+            continue
+
         # aiming for the format "Cargo Scanner II" (Basic Listing)
         if _add_type(fmt_line, 1):
             continue
@@ -396,8 +454,9 @@ def parse_paste_items(raw_paste):
         # (Cargo Scan)
         try:
             count, name = fmt_line.split(' ', 1)
-            count = int(count.replace('x', '').strip().replace(',', '').replace('.', ''))
-            if _add_type(name.strip(), count):
+            count = count.replace('x', '').strip()
+            count = count.replace(',', '').replace('.', '')
+            if _add_type(name.strip(), int(count)):
                 continue
         except ValueError:
             pass
@@ -414,7 +473,8 @@ def parse_paste_items(raw_paste):
         try:
             if 'x' in fmt_line:
                 item, count = fmt_line.rsplit('x', 1)
-                if _add_type(item.strip(), int(count.strip().replace(',', '').replace('.', ''))):
+                count = int(count.strip().replace(',', '').replace('.', ''))
+                if _add_type(item.strip(), count):
                     continue
         except ValueError:
             pass
@@ -437,10 +497,8 @@ def parse_paste_items(raw_paste):
                 item, count, _, fitted = fmt_line.split("\t", 3)
                 if fitted in ['', 'fitted']:
                     is_fitted = fitted == 'fitted'
-                    if _add_type(
-                            item.strip(),
-                            int(count.strip().replace(',', '').replace('.', '')),
-                            fitted=is_fitted):
+                    count = count.strip().replace(',', '').replace('.', '')
+                    if _add_type(item.strip(), int(count), fitted=is_fitted):
                         continue
         except ValueError:
             pass
@@ -449,7 +507,10 @@ def parse_paste_items(raw_paste):
         try:
             if fmt_line.count("\t") > 1:
                 item, count, _ = fmt_line.split("\t", 2)
-                if _add_type(item.strip(), int(count.strip().replace(',', '').replace('.', ''))):
+                if _add_type(
+                        item.strip(),
+                        int(count.strip().replace(',', '').replace('.', ''))
+                ):
                     continue
         except ValueError:
             pass
@@ -509,11 +570,12 @@ def get_componentized_values(eve_types, options=None):
                 for market_type in ['buy', 'sell', 'all']:
                     for stat in ['avg', 'min', 'max', 'price']:
                         complete_price_data[market_type][stat] += \
-                            component.pricing_info[market_type][stat] * component.count
+                            component.pricing_info[market_type][stat] * \
+                            component.count
             componentized_items[eve_type.type_id] = complete_price_data
             # Cache for up to 10 hours
             cache.set(
-                memcache_type_key(eve_type.type_id),
+                memcache_type_key(eve_type.type_id, options=options),
                 complete_price_data,
                 timeout=10 * 60 * 60)
 
@@ -553,7 +615,8 @@ def populate_market_values(eve_types, methods=None, options=None):
 
 @app.route('/estimate', methods=['POST'])
 def estimate_cost():
-    "Estimate Cost of pasted stuff result given by POST[raw_paste]. Renders HTML"
+    """ Estimate Cost of pasted stuff result given by POST[raw_paste].
+        Renders HTML """
     raw_paste = request.form.get('raw_paste', '')
     session['paste_autosubmit'] = request.form.get('paste_autosubmit', 'false')
     session['hide_buttons'] = request.form.get('hide_buttons', 'false')
@@ -574,7 +637,8 @@ def estimate_cost():
         for total_key in ['sell', 'buy', 'all', 'volume']:
             totals[total_key] += t.pricing_info['totals'][total_key]
 
-    sorted_eve_types = sorted(eve_types, key=lambda k: -k.representative_value())
+    sorted_eve_types = sorted(
+        eve_types, key=lambda k: -k.representative_value())
     displayable_line_items = []
     for eve_type in sorted_eve_types:
         displayable_line_items.append(eve_type.to_dict())
@@ -623,11 +687,16 @@ def latest(limit):
 
     result_list = cache.get("latest:%s" % limit)
     if not result_list:
-        results = select(
-            [scans.c.Id, scans.c.Created, scans.c.BuyValue, scans.c.SellValue],
-            (scans.c.Public == True) | (scans.c.Public == None),
-            limit=limit
-        ).order_by(desc(scans.c.Created), desc(scans.c.Id)).execute()
+        q = select([
+            scans.c.Id,
+            scans.c.Created,
+            scans.c.BuyValue,
+            scans.c.SellValue
+        ])
+        q = q.where((scans.c.Public == True) | (scans.c.Public == None))  # NOQA
+        q = q.limit(limit)
+        q = q.order_by(desc(scans.c.Created), desc(scans.c.Id))
+        results = q.execute()
 
         result_list = []
         for result in results:
