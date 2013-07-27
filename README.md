@@ -12,8 +12,8 @@ First Run
 =========
 First, you need to download the source.
 ```
-git clone https://github.com/sudorandom/cargoscanner.git
-cd cargoscanner
+git clone https://github.com/sudorandom/evepraisal.git
+cd evepraisal
 ```
 
 Install requirements
