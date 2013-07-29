@@ -332,7 +332,7 @@ def get_market_values_2(eve_types, options=None):
 
             solarsystem_ids_str = ','.join(
                 [str(options.get('solarsystem_id', 30000142))])
-            query += ['solarsystem_ids=' % solarsystem_ids_str]
+            query += ['solarsystem_ids=%s' % solarsystem_ids_str]
         query_str = '&'.join(query)
 
         url = "http://api.eve-marketdata.com/api/item_prices2.json?" \
