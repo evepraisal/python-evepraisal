@@ -34,7 +34,7 @@ app.config['TEMPLATE'] = 'sudorandom'
 app.config['SECRET_KEY'] = 'SET ME TO SOMETHING SECRET IN THE APP CONFIG!'
 app.config['USER_DEFAULT_OPTIONS'] = {'autosubmit': False, 'share': True}
 
-app.config.from_pyfile('application.cfg', silent=True)
+app.config.from_pyfile('../application.cfg', silent=True)
 
 locale.setlocale(locale.LC_ALL, '')
 
