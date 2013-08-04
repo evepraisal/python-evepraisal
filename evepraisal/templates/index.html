@@ -1,0 +1,104 @@
+{% extends "layout.%s.html"|format(config.TEMPLATE) %}
+{% block extra_javascript %}
+{{ super() }}
+<script>
+$(function() {
+  $("#result_form").submit(function() {
+    var result = $("#raw_textarea");
+    var result_submit = $("#result_submit");
+    // Disable form components
+    result.attr("disabled", "disabled").addClass("disabled");
+    result_submit.attr("disabled", "disabled").addClass("disabled");
+
+    $.post("{{ url_for('estimate_cost') }}",
+      {
+        raw_paste: result.val(),
+        hide_buttons: $("#hide-buttons").is(':checked'),
+        paste_autosubmit: $("#paste-autosubmit").is(':checked'),
+        market: $("#market").val(),
+        {% if session['options']['share'] %}
+          save: true,
+        {% endif %}
+      }, 
+      function(data) {
+        result.val('');
+        // Enable form components
+        result.removeAttr("disabled").removeClass("disabled");
+        result_submit.removeAttr("disabled").removeClass("disabled");
+        // Populate results
+        $('#result_container').html(data);
+        if (typeof(_gaq) != "undefined") {
+          _gaq.push(['_trackEvent', 'estimate_cost', 'success']);
+        }
+      }).error(function() {
+        // Enable form components
+        result.removeAttr("disabled").removeClass("disabled");
+        result_submit.removeAttr("disabled").removeClass("disabled");
+        alert("Server responded with an error.");
+        if (typeof(_gaq) != "undefined") {
+          _gaq.push(['_trackEvent', 'estimate_cost', 'fail']);
+        }
+      });
+    return false;
+  });
+
+  {% if session['options']['autosubmit'] %}
+    $("#raw_textarea").bind('paste', function(e) {
+        setTimeout(function() {
+          $('#result_form').submit();
+        }, 0);
+    });
+{% endif %}
+
+  {% if from_igb %}
+    $('#hide-buttons').prop('checked', true);
+    $('#paste-autosubmit').prop('checked', true);
+  {% endif %}
+  toggle_buttons();
+});
+</script>
+{% endblock %}
+{% block body %}
+
+    <div class="container">
+      <div class="row">
+        <div class="span5">
+          <h4>{{_('paste box title')}}</h4>
+          <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
+            <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
+            <input type="hidden" name="load_full" value="1"/>
+            <div class="controls form-inline clearfix">
+              <div id="buttons" class="pull-left">
+                <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
+                <button type="reset" class="btn">{{_('reset button')}}</button>
+              </div>
+
+              <div class="pull-right input-append">
+                <select class="span3" id="market">
+                  <option value='30000142'>Jita</option>
+                  <option value='30002187'>Amarr</option>
+                  <option value='30002659'>Dodixie</option>
+                  <option value='30002510'>Rens</option>
+                  <option value='30002053'>Hek</option>
+                  <option value='-1'>Trade Hub Regions</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="span7" id="result_container">
+          {% block results %}
+            <h4>{{_('what do i do title')}}</h4>
+            <p>
+               {{_('what do i do')}}
+            </p>
+
+            <h4>{{_('paste options title')}}</h4>
+            <p>
+               {{_('paste options')}}
+            </p>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+{% endblock %}

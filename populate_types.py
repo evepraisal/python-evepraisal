@@ -12,7 +12,10 @@ from reverence import blue
 
 if __name__ == '__main__':
 
-    EVEPATH = '/Applications/EVE Online.app/Contents/Resources/EVE Online.app/Contents/Resources/transgaming/c_drive/Program Files/CCP/EVE'
+    COMP_TYPES = [659, 547, 30, 485, 883]
+    EVEPATH = '/Applications/EVE Online.app/Contents/Resources/' \
+              'EVE Online.app/Contents/Resources/transgaming/c_drive/' \
+              'Program Files/CCP/EVE'
     # EVEPATH = "C:/EVE"
 
     eve = blue.EVE(EVEPATH)
@@ -33,14 +36,14 @@ if __name__ == '__main__':
             'market': hasMarket,
         }
 
-        # super, carrier, titan, dread
-        if groupID in [659, 547, 30, 485] and typeID in cfg.invtypematerials:
+        # super carrier, carrier, titan, dread, rorq
+        if groupID in COMP_TYPES and typeID in cfg.invtypematerials:
             components = []
-            for typeID, materialTypeID, component_quantity in cfg.invtypematerials[typeID]:
+            for typeID, materialTypeID, qty in cfg.invtypematerials[typeID]:
                 components.append({
                     'typeID': typeID,
                     'materialTypeID': materialTypeID,
-                    'quantity': component_quantity,
+                    'quantity': qty,
                 })
 
             d['components'] = components

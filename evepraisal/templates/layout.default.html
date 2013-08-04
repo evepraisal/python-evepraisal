@@ -1,0 +1,118 @@
+{% block header %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{{_('app title')}} - {{_('app short description')}}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{_('app short description')}}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/bootswatch/2.1.1/cyborg/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bootstrap-responsive.min.css') }}" rel="stylesheet">
+    <style> 
+      body {
+        padding-top: 0px;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      .table-condensed th, .table-condensed td { padding: 0px 4px; }
+      .nowrap {
+        white-space: nowrap;
+      }
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      p.footer{
+        text-align:center;
+      }
+      div.raw_textarea {
+        padding: 0 20px;
+      }
+      span.warning-message {
+        color: #B94A48;
+      }
+      span.warning-message a {
+        color: #B94A48;
+        font-weight: bold;
+      }
+    </style>
+
+    {% block extra_style %}
+    {% endblock %}
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+
+    {% block extra_javascript %}
+    {% endblock %}
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="{{ url_for('index') }}">{{_('app title')}}</a>
+        <ul class="nav">
+          <li><a href="{{ url_for('history') }}">{{_('history button')}}</a></li>
+          {% block extra_menu_items %}{% endblock %}
+          {% if g.user %}
+            <li><a href="{{ url_for('options') }}">{{_('options button')}}</a></li>
+            <li><a href="{{ url_for('logout') }}">{{_('logout button')}}</a></li>
+          {% else %}
+            <li><a href="{{ url_for('login') }}">{{_('login button')}}</a></li>
+          {% endif %}
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="#help-modal" data-toggle="modal">{{_('help tile')}}</a></li>
+        </ul>
+
+      </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar --> 
+
+    <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_paste_modal" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>{{_('help tile')}}</h3>
+      </div>
+      <div class="modal-body">
+        {{_('help text')}}
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">{{_('close buton')}}</button>
+      </div>
+    </div>
+    {% endblock %}
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          {% for message in get_flashed_messages(category_filter=["error"]) %}
+            <div class="alert alert-error">
+              <strong>{{_('error')}}:</strong> {{ message }}
+            </div>
+          {% endfor %}
+          {% for message in get_flashed_messages(category_filter=["message"]) %}
+            <div class="alert alert-success">
+              {{ message }}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% block body %}{% endblock %}
+
+    {% block footer %}
+    <footer>
+      <p class="footer">{{_('footer text')}}</p>
+    </footer>
+    {% endblock %}
+  </body>
+</html>

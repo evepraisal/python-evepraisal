@@ -1,6 +1,8 @@
 humanize
 pylibmc
+sqlalchemy
 flask
 Flask-Cache
 Flask-Babel
-sqlalchemy
+flask_openid
+flask-sqlalchemy

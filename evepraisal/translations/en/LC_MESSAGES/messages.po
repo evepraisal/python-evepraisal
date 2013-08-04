@@ -1,0 +1,161 @@
+# English translations for PROJECT.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-08-03 23:58-0500\n"
+"PO-Revision-Date: 2013-01-03 20:18-0600\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: evepraisal/templates/index.html:66
+msgid "paste box title"
+msgstr "Quick Estimate"
+
+#: evepraisal/templates/index.html:68
+msgid "paste box placeholder"
+msgstr "paste stuff to evaluate here. protip: ctrl+a, ctrl+c, ctrl+v"
+
+#: evepraisal/templates/index.html:72
+msgid "submit button"
+msgstr "Submit"
+
+#: evepraisal/templates/index.html:73
+msgid "reset button"
+msgstr "Reset"
+
+#: evepraisal/templates/index.html:91
+msgid "what do i do title"
+msgstr "What do I do?"
+
+#: evepraisal/templates/index.html:93
+msgid "what do i do"
+msgstr ""
+"Find something in Eve Online that you want to price check like a "
+"contract, cargo scan result, etc. Press <strong>CTRL + A, CTRL + "
+"C</strong>, then click on the lovely box to the left or above this and "
+"press <strong>CTRL + V</strong>. Submit and you should see a price "
+"breakdown of all the items."
+
+#: evepraisal/templates/index.html:96
+msgid "paste options title"
+msgstr "What all can I paste in there?"
+
+#: evepraisal/templates/index.html:98
+msgid "paste options"
+msgstr ""
+"At first, this started as a simple cargo scan estimator but over time "
+"more formats have been added to the parser so you can use it as a more "
+"general price checker. Currently the following formats are supported:\n"
+"<ul>\n"
+"  <li>Cargo Scanner</li>\n"
+"  <li>EFT Format</li>\n"
+"  <li>D-Scan</li>\n"
+"  <li>Contracts</li>\n"
+"  <li>Asset Listing (named ships don't work)</li>\n"
+"  <li>Manual Entry. Example: \"94812 Tritanium\"</li>\n"
+"</ul>\n"
+
+#: evepraisal/templates/layout.default.html:5
+#: evepraisal/templates/layout.default.html:62
+msgid "app title"
+msgstr "Evepraisal"
+
+#: evepraisal/templates/layout.default.html:5
+#: evepraisal/templates/layout.default.html:9
+msgid "app short description"
+msgstr ""
+"Price check Eve Online items from Cargo Scans, Contracts, D-Scan, EFT "
+"Blocks, Inventory, Assets"
+
+#: evepraisal/templates/layout.default.html:64
+msgid "history button"
+msgstr "History"
+
+#: evepraisal/templates/layout.default.html:67
+msgid "options button"
+msgstr "Options"
+
+#: evepraisal/templates/layout.default.html:68
+msgid "logout button"
+msgstr "Logout"
+
+#: evepraisal/templates/layout.default.html:70
+msgid "login button"
+msgstr "Login"
+
+#: evepraisal/templates/layout.default.html:74
+#: evepraisal/templates/layout.default.html:83
+msgid "help tile"
+msgstr "Help"
+
+#: evepraisal/templates/layout.default.html:86
+msgid "help text"
+msgstr ""
+"        <h4>What is this?</h4>        <p>This is a tool for Eve Online "
+"aimed at being able to quickly price check items. </p>        <h4>Why "
+"would I use this?</h4>        <p>You scan a drake full of original "
+"blueprints that you weren't able to quickly see because you sorting "
+"through the tabacco, spirits, exotic dancers, T1 planetary comodaties, "
+"livestock, garbage, scrap metal, and other random junk you're likely to "
+"find in the cargo hold. This tool will allow you to quickly see what's "
+"valuable and a rough estimate of how valueable everything is so the few "
+"seconds that you have to decide to commit won't be wasted messing messing"
+" around with eve's UI. This tool also happens to be pretty decent at "
+"doing quick price checks. It currently is known to work with cargo scan "
+"results and EFT-formatted blocks.</p>        <h4>How are prices "
+"calculated?</h5>        <p>Prices are pulled from <a href=\"http://eve-"
+"central.com/\">Eve-Central.com</a> and (as a backup) <a href=\"http"
+"://eve-marketdata.com/\">Eve-Marketdata.com</a>. The pricing is limited "
+"to the following regions: Forge, Metropolis, Heimatar, Sinq Laison "
+"region, Domain. This is because each of these regions has a large market "
+"hub. Capital ship prices are set by the sum of their component parts.</p>"
+"        <h4>Caveats/Known Issues</h4>        <ul>          <li>There's no"
+" reliable way to get prices of blueprint copies (BPCs). Due to this, I "
+"don't even try to guess a price for them.</li>        </ul>        "
+"<h4>Problems/More Questions?</h4>        <p>Feel free to send me an in-"
+"game mail. My character name is <a "
+"href=\"https://gate.eveonline.com/Profile/Magerawr\" "
+"target=\"_blank\">Magerawr</a>.</p>"
+
+#: evepraisal/templates/layout.default.html:89
+#: evepraisal/templates/results.html:47
+#: evepraisal/templates/scan_results.html:39
+msgid "close buton"
+msgstr "Close"
+
+#: evepraisal/templates/layout.default.html:99
+msgid "error"
+msgstr "Error"
+
+#: evepraisal/templates/layout.default.html:114
+msgid "footer text"
+msgstr ""
+"Created by <a href=\"https://gate.eveonline.com/Profile/Magerawr\" "
+"target=\"_blank\">Magerawr</a>. Feel free to send me questions, "
+"suggestions or donations of ISK. Source is available on <a "
+"href=\"https://github.com/sudorandom/evepraisal\">github</a>. <br /> All "
+"<a href=\"http://www.evepraisal.com/legal\">Eve Related Materials</a> are"
+" property of CCP Games. See <a "
+"href=\"http://www.evepraisal.com/legal\">Legal Notice</a>"
+
+#: evepraisal/templates/options.html:10
+msgid "autosubmit on paste"
+msgstr "autosubmit on paste. [default: off]"
+
+#: evepraisal/templates/options.html:11
+msgid "save for sharing"
+msgstr "save for sharing. [default: on]"
+
+#~ msgid "hide buttons"
+#~ msgstr "hide buttons"
+
