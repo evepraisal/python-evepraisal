@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 Start the app
 ```
-python evepraisal.py
+python wsgi.py
 ```
 
 Deployment
