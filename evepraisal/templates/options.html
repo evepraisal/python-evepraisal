@@ -3,12 +3,14 @@
 {% block extra_style %}
 {% endblock %}
 {% block body %}
+<div class="container">
   <form action="" method="post">
-    <h2>Options</h2>
+    <h2 class="form-signin-heading">Options</h2>
     {% if error %}<p class=error><strong>Error:</strong> {{ error }}</p>{% endif %}
     <label class="checkbox"><input name="autosubmit" type="checkbox"{% if session['options']['autosubmit'] %} checked{% endif %}> {{_('autosubmit on paste')}}</label>
     <label class="checkbox"><input name="share" type="checkbox"{% if session['options']['share'] %} checked{% endif %}> {{_('save for sharing')}}</label>
 
     <button class="btn btn-primary" type="submit">Save</button>
   </form>
+</div>
 {% endblock %}

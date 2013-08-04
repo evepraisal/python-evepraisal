@@ -63,10 +63,9 @@ def before_first_request():
         app.logger.error(str(e))
 
     try:
-        ignore_errors(db.engine.execute,
-                      'ALTER TABLE Scans ADD COLUMN UserId integer')
+        db.engine.execute('ALTER TABLE "Scans" ADD COLUMN "UserId" integer')
     except Exception, e:
-        pass
+        app.logger.error(str(e))
 
 
 @app.before_request
