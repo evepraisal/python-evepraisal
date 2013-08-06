@@ -17,18 +17,30 @@
 {% block body %}
 
 <div class="container">
-  <form id="login_form" action="{{ url_for('login') }}" method="post" class="form-signin">
-    <h2 class="form-signin-heading">Sign in with your OpenId</h2>
-    {% if error %}<p class=error><strong>Error:</strong> {{ error }}</p>{% endif %}
-    <div class="openid-providers" style="text-align: center">
-      <button class="btn" type="button" onclick="$('#openid_url').val('https://www.google.com/accounts/o8/id'); $('#login_form').submit()">Google</button>
-      <button class="btn" type="button" onclick="$('#openid_url').val('http://yahoo.com/'); $('#login_form').submit()">Yahoo</button>
-      <button class="btn" type="button" onclick="$('#openid_url').val('https://openid.stackexchange.com'); $('#login_form').submit()">Stack Exchange</button>
-      <button class="btn" type="button" onclick="$('#openid_url').val('http://myopenid.com/'); $('#login_form').submit()">MyOpenID</button>
+  <div class="row">
+    <div class="span6">
+      <form id="login_form" action="{{ url_for('login') }}" method="post" class="form-signin">
+        <h3>Sign in with your OpenID</h3>
+        {% if error %}<p class=error><strong>Error:</strong> {{ error }}</p>{% endif %}
+        <div class="openid-providers" style="text-align: center">
+          <button class="btn" type="button" onclick="$('#openid_url').val('https://www.google.com/accounts/o8/id'); $('#login_form').submit()">Google</button>
+          <button class="btn" type="button" onclick="$('#openid_url').val('http://yahoo.com/'); $('#login_form').submit()">Yahoo</button>
+          <button class="btn" type="button" onclick="$('#openid_url').val('https://openid.stackexchange.com'); $('#login_form').submit()">Stack Exchange</button>
+          <button class="btn" type="button" onclick="$('#openid_url').val('http://myopenid.com/'); $('#login_form').submit()">MyOpenID</button>
+        </div>
+        <div><input type="text" id='openid_url' name="openid" placeholder="Custom OpenID URL" class="input-block-level"></div>
+        <input type="hidden" name="next" value="{{ next }}">
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
     </div>
-    <div><input type="text" id='openid_url' name="openid" placeholder="Custom OpenId URL" class="input-block-level"></div>
-    <input type="hidden" name="next" value="{{ next }}">
-    <button class="btn btn-primary" type="submit">Sign in</button>
-  </form>
+    <div class="span6">
+      <h4>Why?</h4>
+      <p>Logging in allows you to see your latest appraisals. In the future, you'll be able to delete appraisals, make them public or private.</p>
+
+      <h4>What is 'OpenID'?</h4>
+      <p><a href="https://openid.net/" target="_blank">OpenID</a> allows you to have one identity to log into any OpenID-enabled website. There's no need to maintain separate credentials for every website you ever go on. I don't want your credentials. I just want to know that you are you and that's what OpenID does really well. I've created easy login buttons for some common OpenID providers. If your provider isn't there and supports OpenID, let me know. Also, tell CCP to be an OpenID provider.</p>
+
+    </div>
+  </div>
 </div>
 {% endblock %}

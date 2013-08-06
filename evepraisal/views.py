@@ -80,7 +80,6 @@ def display_result(result_id):
 @login_required
 def options():
     if request.method == 'POST':
-        print request.form
         autosubmit = True if request.form.get('autosubmit') == 'on' else False
         paste_share = True if request.form.get('share') == 'on' else False
 
@@ -174,7 +173,6 @@ def create_or_login(resp):
     session['openid'] = resp.identity_url
     user = Users.query.filter_by(OpenId=resp.identity_url).first()
     if user is None:
-        print "CREATE USER"
         user = Users(
             OpenId=session['openid'],
             Options=json.dumps(app.config['USER_DEFAULT_OPTIONS']))
