@@ -58,7 +58,7 @@ def ignore_errors(f, *args, **kwargs):
 @app.before_first_request
 def before_first_request():
     try:
-        models.db.create_all()
+        db.create_all()
     except Exception as e:
         app.logger.error(str(e))
 
