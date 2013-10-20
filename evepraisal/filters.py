@@ -7,7 +7,7 @@ from . import app
 @app.template_filter('format_isk')
 def format_isk(value):
     try:
-        return "{:,}".format(value)
+        return "{:,.2f}".format(value)
     except:
         return ""
 
