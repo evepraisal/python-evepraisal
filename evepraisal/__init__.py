@@ -8,7 +8,7 @@ import json
 from flask import Flask, g, session
 from flask.ext.cache import Cache
 from flask.ext.sqlalchemy import SQLAlchemy
-from flaskext.babel import Babel
+from flask.ext.babel import Babel
 from flask_openid import OpenID
 
 app = Flask(__name__)

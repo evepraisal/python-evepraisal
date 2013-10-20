@@ -6,3 +6,4 @@ Flask-Cache
 Flask-Babel
 flask_openid
 flask-sqlalchemy
+git+git://github.com/ntt/reverence.git

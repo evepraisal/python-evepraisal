@@ -1,4 +1,3 @@
-import locale
 import datetime
 import humanize
 
@@ -8,7 +7,7 @@ from . import app
 @app.template_filter('format_isk')
 def format_isk(value):
     try:
-        return "%s ISK" % locale.format("%.2f", value, grouping=True)
+        return "{:,}".format(value)
     except:
         return ""
 

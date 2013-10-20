@@ -1,6 +1,14 @@
 from flask import current_app
 from models import EveType
 
+LINE_BLASKLIST = [
+    'high power',
+    'medium power',
+    'low power',
+    'rig slot',
+    'charges',
+]
+
 
 def parse_paste_items(raw_paste):
     """
@@ -27,7 +35,7 @@ def parse_paste_items(raw_paste):
     for line in lines:
         fmt_line = line.lower().replace(' (original)', '')
 
-        if fmt_line in ['high power', 'medium power', 'low power', 'rig slot']:
+        if fmt_line in LINE_BLASKLIST:
             continue
 
         # aiming for the format "Cargo Scanner II" (Basic Listing)
@@ -84,6 +92,22 @@ def parse_paste_items(raw_paste):
                     count = count.strip().replace(',', '').replace('.', '')
                     if _add_type(item.strip(), int(count), fitted=is_fitted):
                         continue
+        except ValueError:
+            pass
+
+        # aiming for format
+        # "Item Name\tQuantity\tCategory\tCategory2\tInfo" (Manufactoring)
+        try:
+            if fmt_line.count("\t") == 4:
+                item, count, col3, col4, col5 = fmt_line.split("\t", 4)
+                item = item.strip()
+                if 'blueprint copy' in col5:
+                    item = item + ' (copy)'
+                if _add_type(
+                        item,
+                        int(count.strip().replace(',', '').replace('.', ''))
+                ):
+                    continue
         except ValueError:
             pass
 
