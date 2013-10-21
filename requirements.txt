@@ -1,4 +1,3 @@
-humanize
 pylibmc
 sqlalchemy
 flask
