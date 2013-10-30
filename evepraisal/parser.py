@@ -1,5 +1,6 @@
 from flask import current_app
 from models import EveType
+import re
 
 LINE_BLASKLIST = [
     'high power',
@@ -131,6 +132,17 @@ def parse_paste_items(raw_paste):
                     continue
         except ValueError:
             pass
+
+        # Support format from Bill of Materials
+        # Tritanium [17294] 
+        # R.A.M.- Weapon Tech - [1], Damage Per Run: 15.00%
+        # Logic Circuit - [You: 23 - Perfect: 20]
+        m = re.match('(?P<name>.*?)( - )?\[(you: )?(?P<count>\d*)(.*?)\]', fmt_line)
+        if m:
+            name = m.group('name').strip()
+            count = int(m.group('count'))
+            if _add_type(name, count):
+                continue
 
         bad_lines.append(line)
 
