@@ -20,7 +20,7 @@
             </div>
             {% endif%}
             <h4><span class="nowrap">{{ scan_results.totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value</small></span> &nbsp;&nbsp; <span class="nowrap">{{ scan_results.totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value</small></span></h4>
-            <p class="nowrap">{% if scan_results.scan_id %} <strong>PemaLink</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}</p>
+            <p class="nowrap">{% if scan_results.scan_id %} <strong>Permanent link</strong>: <a href="{{ url_for('display_scan', scan_id=scan_results.scan_id) }}">{{ url_for('display_scan', scan_id=scan_results.scan_id, _external=True) }}</a> {% endif %}</p>
             
           </div>
           {% set bad_line_count = scan_results.bad_line_items|length %}
