@@ -23,7 +23,6 @@ app.config['VALID_SOLAR_SYSTEMS'] = {
     '30002510': 'Rens',
     '30002053': 'Hek',
 }
-app.config['TYPES'] = json.loads(open('data/types.json').read())
 app.config['USER_AGENT'] = 'Evepraisal/1.0 +http://evepraisal.com/'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../data/scans.db'
 app.config['CACHE_TYPE'] = 'memcached'
@@ -51,7 +50,7 @@ from . import models, views, routes, filters  # NOQA
 def ignore_errors(f, *args, **kwargs):
     try:
         f(*args, **kwargs)
-    except:
+    except Exception:
         pass
 
 
@@ -60,11 +59,6 @@ def before_first_request():
     try:
         db.create_all()
     except Exception as e:
-        app.logger.error(str(e))
-
-    try:
-        db.engine.execute('ALTER TABLE "Scans" ADD COLUMN "UserId" integer')
-    except Exception, e:
         app.logger.error(str(e))
 
 

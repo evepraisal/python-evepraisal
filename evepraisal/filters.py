@@ -2,27 +2,50 @@ import time
 import math
 from datetime import timedelta
 from babel.dates import format_timedelta
+from flask import request
 
 from . import app
+from models import get_type_by_name
+
+
+def get_market_name(market_id):
+    return app.config['VALID_SOLAR_SYSTEMS'].get(market_id, 'UNKNOWN'),
+
+
+@app.context_processor
+def utility_processor():
+    def is_from_igb():
+        return 'EVE-IGB' in request.headers.get('User-Agent', '')
+    return dict(is_from_igb=is_from_igb,
+                get_market_name=get_market_name,
+                get_type_by_name=get_type_by_name)
 
 
 # Adopted from http://stackoverflow.com/a/3155023/74375
-def millify(n, format="{:,.2f}"):
+def millify(n, fmt="{:,.2f}"):
     millnames = ['', 'Thousand', 'Million', 'Billion', 'Trillion',
                  'Quadrillion', 'Quintillion', 'Sextillion', 'Septillion',
                  'Octillion', 'Nonillion', 'Decillion']
     millidx = max(0, min(len(millnames) - 1,
                          int(math.floor(math.log10(abs(n)) / 3.0))))
     num = n / 10 ** (3 * millidx)
-    return (format + ' {}').format(num,
-                                   millnames[millidx])
+    return (fmt + ' {}').format(num,
+                                millnames[millidx])
+
+
+@app.template_filter('comma_separated_int')
+def comma_separated_int(value):
+    try:
+        return "{:,}".format(value)
+    except Exception:
+        return ""
 
 
 @app.template_filter('format_isk')
 def format_isk(value):
     try:
         return "{:,.2f}".format(value)
-    except:
+    except Exception:
         return ""
 
 
@@ -46,7 +69,7 @@ def format_volume(value):
         if value < 1:
             return "%.2fm<sup>3</sup>" % value
         return "{:,.2f}m<sup>3</sup>".format(value)
-    except:
+    except Exception:
         return "unknown m<sup>3</sup>"
 
 
@@ -62,7 +85,7 @@ def relative_time(past):
     try:
         delta = timedelta(seconds=delta_seconds)
         return format_timedelta(delta, locale='en_US') + postfix
-    except:
+    except Exception:
         return ''
 
 

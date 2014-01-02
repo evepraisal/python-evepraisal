@@ -64,7 +64,7 @@
             {% endfor %}
               
             {% for item in scan_results.line_items if item.market != false %}
-              <tr class="line-item-row" {% if from_igb %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
+              <tr class="line-item-row" {% if is_from_igb() %} onclick="CCPEVE.showMarketDetails({{ item.typeID }})"{% endif %}>
                 <td>
                     {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
                     <div class="media">
@@ -102,7 +102,7 @@
             </tfoot>
           </table>
           <script>
-            {% if scan_results.scan_id and not from_igb and not full_page %}
+            {% if scan_results.scan_id and not is_from_igb() and not full_page %}
               window.history.replaceState('Object', 'Title', '{{ url_for('display_scan', scan_id=scan_results.scan_id) }}');
             {% endif %}
           </script>

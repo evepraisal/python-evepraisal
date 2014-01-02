@@ -50,7 +50,7 @@ $(function() {
     });
 {% endif %}
 
-  {% if from_igb %}
+  {% if is_from_igb() %}
     $('#hide-buttons').prop('checked', true);
     $('#paste-autosubmit').prop('checked', true);
   {% endif %}
@@ -88,6 +88,7 @@ $(function() {
         </div>
         <div class="span7" id="result_container">
           {% block results %}
+            <span style="text-align:right"><h5>{{ appraisal_count|comma_separated_int }} Appraisals Performed</h5></span>
             <h4>{{_('what do i do title')}}</h4>
             <p>
                {{_('what do i do')}}

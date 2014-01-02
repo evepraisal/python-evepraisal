@@ -10,11 +10,46 @@ from flask import (
     send_from_directory, abort)
 from sqlalchemy import desc
 
-from helpers import login_required, save_result, load_result, is_from_igb
+from helpers import login_required
 from parser import parse_paste_items
-from estimate import populate_market_values
-from models import Scans, Users
+from estimate import get_market_prices
+from models import Appraisals, Users, get_type_by_name
 from . import app, db, cache, oid
+
+
+def match_item_details(kind, result):
+    """ Returns a mapping of module name (munged) => module id for all unique
+        modules"""
+    items = []
+    bad_items = []
+    if kind in ['assets',
+                'bill_of_materials',
+                'dscan',
+                'fitting',
+                'listing',
+                'loot_history',
+                'contract']:
+        for item in result:
+            items.append(item['name'])
+    elif kind == 'eft':
+        result.append(item['ship'])
+        for item in result['modules']:
+            items.append(item['name'])
+            if item.get('ammo'):
+                items.append(item['ammo'])
+    else:
+        raise ValueError('Invalid kind %s', kind)
+
+    name_map = {}
+    for item in items:
+        details = get_type_by_name(item)
+        if details:
+            name_map[item] = details
+        else:
+            bad_items.append(item)
+
+    return [(details['typeID'], name, details)
+            for name, details in name_map.items()], bad_items
 
 
 def estimate_cost():
@@ -26,55 +61,61 @@ def estimate_cost():
     if solar_system not in app.config['VALID_SOLAR_SYSTEMS'].keys():
         abort(400)
 
-    eve_types, bad_lines = parse_paste_items(raw_paste)
+    kind, result, bad_lines = parse_paste_items(raw_paste)
 
     # Populate types with pricing data
-    populate_market_values(eve_types, options={'solarsystem_id': solar_system})
+    item_details, bad_items = match_item_details(kind, result)
+    prices = get_market_prices([type_id for type_id, _, _ in item_details],
+                               options={'solarsystem_id': solar_system})
 
-    # calculate the totals
-    totals = {'sell': 0, 'buy': 0, 'all': 0, 'volume': 0}
-    for t in eve_types:
-        for total_key in ['sell', 'buy', 'all', 'volume']:
-            totals[total_key] += t.pricing_info['totals'][total_key]
+    appraisal = Appraisals(Created=int(time.time()),
+                           RawInput=raw_paste,
+                           Kind=kind,
+                           PricesJson=prices,
+                           ParsedJson=result,
+                           BadLinesJson=bad_lines,
+                           Market=solar_system,
+                           Public=bool(session['options'].get('share')),
+                           UserId=g.user.Id if g.user else None)
+    db.session.add(appraisal)
+    db.session.commit()
 
-    sorted_eve_types = sorted(
-        eve_types, key=lambda k: -k.representative_value())
-    displayable_line_items = []
-    for eve_type in sorted_eve_types:
-        displayable_line_items.append(eve_type.to_dict())
-    results = {
-        'from_igb': is_from_igb(),
-        'totals': totals,
-        'bad_line_items': bad_lines,
-        'line_items': displayable_line_items,
-        'created': time.time(),
-        'raw_paste': raw_paste,
-        'solar_system': solar_system,
-        'solar_system_name': app.config['VALID_SOLAR_SYSTEMS'].get(
-            solar_system, 'UNKNOWN'),
-    }
-    if len(sorted_eve_types) > 0:
-        if session['options'].get('share'):
-            result_id = save_result(results, public=True)
-            results['result_id'] = result_id
-        else:
-            result_id = save_result(results, public=False)
-    return render_template(
-        'results.html', results=results, from_igb=is_from_igb(),
-        full_page=request.form.get('load_full'))
+    print dict((col, getattr(appraisal, col)) for col in appraisal.__table__.columns.keys())
+
+    return render_template('results.html',
+                           appraisal=appraisal,
+                           full_page=request.form.get('load_full'))
 
 
 def display_result(result_id):
-    results = load_result(result_id)
-    if results:
-        results['result_id'] = result_id
-        return render_template(
-            'results.html', results=results, from_igb=is_from_igb(),
-            full_page=True)
-    else:
+    # TODO: FIX THIS TO WORK WITH THE NEW TABLE
+    try:
+        result_id = int(result_id)
+    except:
         flash('Resource Not Found', 'error')
-        return render_template(
-            'index.html', from_igb=is_from_igb(), full_page=True), 404
+        return index(), 404
+
+    data = cache.get("results:%s" % result_id)
+    if data:
+        return data
+
+    q = Appraisals.query.filter(Appraisals.Id == result_id)
+    if g.user:
+        q = q.filter((Appraisals.UserId == g.user.Id) |
+                     (Appraisals.Public == True))  # noqa
+    else:
+        q = q.filter(Appraisals.Public == True)  # noqa
+
+    appraisal = q.first()
+
+    if not appraisal:
+        flash('Resource Not Found', 'error')
+        return index(), 404
+
+    if appraisal.Public is True:
+        cache.set("results:%s" % result_id, data, timeout=600)
+
+    return render_template('results.html', appraisal=appraisal, full_page=True)
 
 
 @login_required
@@ -98,9 +139,9 @@ def options():
 
 @login_required
 def history():
-    q = Scans.query
-    q = q.filter(Scans.UserId == g.user.Id)
-    q = q.order_by(desc(Scans.Created), desc(Scans.Id))
+    q = Appraisals.query
+    q = q.filter(Appraisals.UserId == g.user.Id)
+    q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
     q = q.limit(100)
     results = q.all()
 
@@ -109,8 +150,6 @@ def history():
         result_list.append({
             'result_id': result.Id,
             'created': result.Created,
-            'buy_value': result.BuyValue,
-            'sell_value': result.SellValue,
         })
 
     return render_template('history.html', listing=result_list)
@@ -122,9 +161,9 @@ def latest(limit):
 
     result_list = cache.get("latest:%s" % limit)
     if not result_list:
-        q = Scans.query
+        q = Appraisals.query
         q = q.filter_by(Public=True)  # NOQA
-        q = q.order_by(desc(Scans.Created), desc(Scans.Id))
+        q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
         q = q.limit(limit)
         results = q.all()
 
@@ -133,8 +172,6 @@ def latest(limit):
             result_list.append({
                 'result_id': result.Id,
                 'created': result.Created,
-                'buy_value': result.BuyValue,
-                'sell_value': result.SellValue,
             })
         cache.set("latest:%s" % limit, result_list, timeout=60)
 
@@ -143,7 +180,16 @@ def latest(limit):
 
 def index():
     "Index. Renders HTML."
-    return render_template('index.html', from_igb=is_from_igb())
+
+    appraisal_count = cache.get("latest:count")
+    if not appraisal_count:
+        q = Appraisals.query
+        q = q.filter_by()  # NOQA
+        appraisal_count = q.count()
+
+        cache.set("latest:count", appraisal_count, timeout=60)
+
+    return render_template('index.html', appraisal_count=appraisal_count)
 
 
 def legal():

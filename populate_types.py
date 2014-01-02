@@ -21,7 +21,7 @@ if __name__ == '__main__':
     eve = blue.EVE(EVEPATH)
     cfg = eve.getconfigmgr()
 
-    all_types = {}
+    all_types = []
     for (typeID, groupID, typeName, marketGroupID, volume) in \
             cfg.invtypes.Select(
                 'typeID', 'groupID', 'typeName', 'marketGroupID', 'volume'):
@@ -48,17 +48,7 @@ if __name__ == '__main__':
 
             d['components'] = components
         name_lower = typeName.lower()
-        all_types[name_lower] = d
-        # Create a stub for blueprint copies
-        if name_lower.endswith(' blueprint'):
-            copy_name = typeName + ' (Copy)'
-            all_types[copy_name.lower()] = {
-                'typeID': typeID,
-                'groupID': groupID,
-                'typeName': copy_name,
-                'volume': volume,
-                'market': False,
-            }
+        all_types.append(d)
 
     with open('data/types.json', 'w') as f:
         f.write(json.dumps(all_types, indent=2))

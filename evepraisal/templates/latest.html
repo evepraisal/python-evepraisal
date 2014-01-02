@@ -9,22 +9,14 @@
             <thead>
               <tr>
                 <th class="header">Id</th>
-                <th class="header" style="text-align:right">Created</th>
-                <th class="header" style="text-align:right">Sell Value</th>
-                <th class="header"></th>
-                <th class="header" style="text-align:right">Buy Value</th>
-                <th class="header"></th>
+                <th class="header" style="text-align:left">Created</th>
               </tr>
             </thead>
             <tbody>
               {% for item in listing %}
               <tr>
                 <td><a href="{{ url_for('display_result', result_id=item.result_id) }}">#{{ item.result_id }}</a></td>
-                <td style="text-align:right">{{ item.created|relative_time }}</td>
-                <td style="text-align:right">{{ item.sell_value|format_isk }}</td>
-                <td><small>{{ item.sell_value|format_isk_human }}</small></td>
-                <td style="text-align:right">{{ item.buy_value|format_isk }}</td>
-                <td><small>{{ item.buy_value|format_isk_human }}</small></td>
+                <td style="text-align:left">{{ item.created|relative_time }}</td>
               </tr>
               {% endfor %}
           </table>

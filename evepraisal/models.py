@@ -1,16 +1,55 @@
+import json
+
 from . import db
+from sqlalchemy.types import TypeDecorator, Unicode
+
+
+class JsonType(TypeDecorator):
+    impl = Unicode
+
+    def process_bind_param(self, value, engine):
+        return json.dumps(value)
+
+    def process_result_value(self, value, engine):
+        return json.loads(value)
 
 
 class Scans(db.Model):
     __tablename__ = 'Scans'
 
     Id = db.Column(db.Integer(), primary_key=True)
+    #: Being split up into RawInput, ParsedJson, Prices
     Data = db.Column(db.Text())
+    #: Being kept (with an added index)
     Created = db.Column(db.Integer())
+    #: Going away
     SellValue = db.Column(db.Float())
+    #: Going away
     BuyValue = db.Column(db.Float())
+    #: Being kept (with an added index)
     Public = db.Column(db.Boolean(), default=True)
+    #: Being kept (with an added index)
     UserId = db.Column(db.Integer(), db.ForeignKey('Users.Id'))
+
+
+class Appraisals(db.Model):
+    __tablename__ = 'Appraisals'
+
+    Id = db.Column(db.Integer(), primary_key=True)
+    #: Bad Lines
+    Kind = db.Column(db.Text())
+    #: Raw Input taken from the user
+    RawInput = db.Column(db.Text())
+    #: JSON as a result of the parser (evepaste)
+    ParsedJson = db.Column(JsonType())
+    #: Prices
+    PricesJson = db.Column(JsonType())
+    #: Bad Lines
+    BadLinesJson = db.Column(JsonType())
+    Market = db.Column(db.Integer())
+    Created = db.Column(db.Integer(), index=True)
+    Public = db.Column(db.Boolean(), index=True, default=True)
+    UserId = db.Column(db.Integer(), db.ForeignKey('Users.Id'), index=True)
 
 
 class Users(db.Model):
@@ -21,62 +60,19 @@ class Users(db.Model):
     Options = db.Column(db.Text())
 
 
-class EveType():
-    def __init__(self, type_id, count=0, props=None, pricing_info=None):
-        self.type_id = type_id
+def row_to_dict(row):
+    return dict((col, getattr(row, col))
+                for col in row.__table__.columns.keys())
 
-        self.count = count
-        self.fitted_count = 0
 
-        self.props = props or {}
-        self.pricing_info = pricing_info or {}
-        self.market = self.props.get('market', False)
-        self.volume = self.props.get('volume', 0)
-        self.type_name = self.props.get('typeName', 0)
-        self.group_id = self.props.get('groupID')
+TYPES = json.loads(open('data/types.json').read())
+TYPES_BY_NAME = dict((t['typeName'].lower(), t) for t in TYPES)
+TYPES_BY_ID = dict((t['typeID'], t) for t in TYPES)
 
-    def representative_value(self):
-        if not self.pricing_info:
-            return 0
-        sell_price = self.pricing_info.get('totals', {}).get('sell', 0)
-        buy_price = self.pricing_info.get('totals', {}).get('buy', 0)
-        return max(sell_price, buy_price)
 
-    def is_market_item(self):
-        if self.props.get('market', False):
-            return True
-        else:
-            return False
+def get_type_by_name(name):
+    return TYPES_BY_NAME.get(name.lower())
 
-    def incr_count(self, count, fitted=False):
-        self.count += count
-        if fitted:
-            self.fitted_count += count
 
-    def to_dict(self):
-        return {
-            'typeID': self.type_id,
-            'count': self.count,
-            'fitted_count': self.fitted_count,
-            'market': self.market,
-            'volume': self.volume,
-            'typeName': self.type_name,
-            'groupID': self.group_id,
-            'totals': self.pricing_info.get('totals'),
-            'sell': self.pricing_info.get('sell'),
-            'buy': self.pricing_info.get('buy'),
-            'all': self.pricing_info.get('all'),
-        }
-
-    @classmethod
-    def from_dict(self, cls, d):
-        return cls(d['typeID'], d['count'], {
-            'typeName': d.get('typeName'),
-            'groupID': d.get('groupID'),
-            'volume': d.get('volume')
-        }, {
-            'totals': d.get('totals'),
-            'sell': d.get('sell'),
-            'buy': d.get('buy'),
-            'all': d.get('all'),
-        })
+def get_type_by_id(typeID):
+    return TYPES_BY_ID.get(typeID)
