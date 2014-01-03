@@ -15,7 +15,6 @@ def login_required(func):
 
 def iter_types(kind, result):
     if kind in ['assets',
-                'bill_of_materials',
                 'dscan',
                 'fitting',
                 'listing',
@@ -23,6 +22,9 @@ def iter_types(kind, result):
                 'contract']:
         for item in result:
             yield item['name'], item.get('quantity', 1)
+    elif kind == 'bill_of_materials':
+        for item in result:
+            yield item['name'], item.get('you', item.get('quantity'))
     elif kind == 'eft':
         yield result['ship'], 1
         for item in result['modules']:

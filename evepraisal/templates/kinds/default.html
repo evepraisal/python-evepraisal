@@ -3,10 +3,13 @@
 {% macro print_row(item) -%}
     {% set details = item.name|type_details %}
     {% set prices = price_table[details.typeID] %}
-    {% set qty = item.quantity|default(1) %}
+    {% set qty = item.quantity|default(item.you|default(1)) %}
     {% set name = details.typeName %}
     {% if 'BLUEPRINT COPY' in item.info %}
       {% set name = '%s (copy)'|format(details.typeName) %}
+      {% set prices = None %}
+    {% endif %}
+    {% if not details.market %}
       {% set prices = None %}
     {% endif %}
 
@@ -79,17 +82,15 @@
   </tbody>
   <tfoot>
     <tr>
-      <td></td>
-      <td><span class="nowrap">Total Sell Value</span><br />
+      <td colspan="3" style="text-align: right"><span class="nowrap">Total Sell Value</span><br />
         <span class="nowrap">Total Buy Value</span><br />
         <span class="nowrap">Total Volume</span></td>
-      <td></td>
-      <td></td>
-      <th style="text-align:right">
+      <th colspan="2" style="text-align:right">
         <span class="nowrap">{{ totals.sell|format_isk }}</span><br />
         <span class="nowrap">{{ totals.buy|format_isk }}</span><br />
         <span class="nowrap">{{ totals.volume|format_volume }}m<sup>3</sup></span>
       </th>
+      <td></td>
     </tr>
   </tfoot>
 </table>
