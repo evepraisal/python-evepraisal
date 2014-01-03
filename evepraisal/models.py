@@ -1,6 +1,8 @@
 import json
 
 from . import db
+from helpers import iter_types
+
 from sqlalchemy.types import TypeDecorator, Unicode
 
 
@@ -41,15 +43,30 @@ class Appraisals(db.Model):
     #: Raw Input taken from the user
     RawInput = db.Column(db.Text())
     #: JSON as a result of the parser (evepaste)
-    ParsedJson = db.Column(JsonType())
+    Parsed = db.Column(JsonType())
     #: Prices
-    PricesJson = db.Column(JsonType())
+    Prices = db.Column(JsonType())
     #: Bad Lines
-    BadLinesJson = db.Column(JsonType())
+    BadLines = db.Column(JsonType())
     Market = db.Column(db.Integer())
     Created = db.Column(db.Integer(), index=True)
     Public = db.Column(db.Boolean(), index=True, default=True)
     UserId = db.Column(db.Integer(), db.ForeignKey('Users.Id'), index=True)
+
+    def totals(self):
+        total_sell = total_buy = total_volume = 0
+
+        price_map = dict(self.Prices)
+        for item_name, quantity in iter_types(self.Kind, self.Parsed):
+            details = get_type_by_name(item_name)
+            if details:
+                type_prices = price_map.get(details['typeID'])
+                if type_prices:
+                    total_sell += type_prices['sell']['price'] * quantity
+                    total_buy += type_prices['buy']['price'] * quantity
+                total_volume += details['volume'] * quantity
+
+        return {'sell': total_sell, 'buy': total_buy, 'volume': total_volume}
 
 
 class Users(db.Model):

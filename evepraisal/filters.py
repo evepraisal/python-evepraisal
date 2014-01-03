@@ -8,20 +8,29 @@ from . import app
 from models import get_type_by_name
 
 
-def get_market_name(market_id):
-    return app.config['VALID_SOLAR_SYSTEMS'].get(market_id, 'UNKNOWN'),
-
-
 @app.context_processor
 def utility_processor():
     def is_from_igb():
         return 'EVE-IGB' in request.headers.get('User-Agent', '')
-    return dict(is_from_igb=is_from_igb,
-                get_market_name=get_market_name,
-                get_type_by_name=get_type_by_name)
+    return dict(is_from_igb=is_from_igb)
 
 
-# Adopted from http://stackoverflow.com/a/3155023/74375
+@app.template_filter('market_name')
+def get_market_name(market_id):
+    return app.config['VALID_SOLAR_SYSTEMS'].get(str(market_id), 'UNKNOWN')
+
+
+@app.template_filter('type_details')
+def type_details(type_name):
+    return get_type_by_name(type_name) or {'typeID': 1, 'typeName': type_name}
+
+
+@app.template_filter('make_price_table')
+def make_price_table(prices):
+    return dict(prices)
+
+
+# Adapted from http://stackoverflow.com/a/3155023/74375
 def millify(n, fmt="{:,.2f}"):
     millnames = ['', 'Thousand', 'Million', 'Billion', 'Trillion',
                  'Quadrillion', 'Quintillion', 'Sextillion', 'Septillion',
@@ -63,14 +72,14 @@ def format_isk_human(value):
 def format_volume(value):
     try:
         if value == 0:
-            return "0m<sup>3</sup>"
+            return "0"
         if value < 0.01:
-            return "%.4fm<sup>3</sup>" % value
+            return "%.4f" % value
         if value < 1:
-            return "%.2fm<sup>3</sup>" % value
-        return "{:,.2f}m<sup>3</sup>".format(value)
+            return "%.2f" % value
+        return "{:,.2f}".format(value)
     except Exception:
-        return "unknown m<sup>3</sup>"
+        return "unknown"
 
 
 @app.template_filter('relative_time')

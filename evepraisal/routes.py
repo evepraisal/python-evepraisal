@@ -11,8 +11,6 @@ app.route('/history')(views.history)
 app.route('/options', methods=['GET', 'POST'])(views.options)
 app.route('/estimate', methods=['POST'])(views.estimate_cost)
 app.route('/estimate/<int:result_id>', methods=['GET'])(views.display_result)
-app.route('/estimate/delete/<int:result_id>',
-          methods=['POST'])(views.display_result)
 app.route('/latest/', defaults={'limit': 20})(views.latest)
 app.route('/latest/limit/<int:limit>')(views.latest)
 app.route('/legal')(views.legal)

@@ -9,47 +9,12 @@ from flask import (
     g, flash, request, render_template, url_for, redirect, session,
     send_from_directory, abort)
 from sqlalchemy import desc
+import evepaste
 
-from helpers import login_required
-from parser import parse_paste_items
+from helpers import login_required, iter_types
 from estimate import get_market_prices
 from models import Appraisals, Users, get_type_by_name
 from . import app, db, cache, oid
-
-
-def match_item_details(kind, result):
-    """ Returns a mapping of module name (munged) => module id for all unique
-        modules"""
-    items = []
-    bad_items = []
-    if kind in ['assets',
-                'bill_of_materials',
-                'dscan',
-                'fitting',
-                'listing',
-                'loot_history',
-                'contract']:
-        for item in result:
-            items.append(item['name'])
-    elif kind == 'eft':
-        result.append(item['ship'])
-        for item in result['modules']:
-            items.append(item['name'])
-            if item.get('ammo'):
-                items.append(item['ammo'])
-    else:
-        raise ValueError('Invalid kind %s', kind)
-
-    name_map = {}
-    for item in items:
-        details = get_type_by_name(item)
-        if details:
-            name_map[item] = details
-        else:
-            bad_items.append(item)
-
-    return [(details['typeID'], name, details)
-            for name, details in name_map.items()], bad_items
 
 
 def estimate_cost():
@@ -61,26 +26,35 @@ def estimate_cost():
     if solar_system not in app.config['VALID_SOLAR_SYSTEMS'].keys():
         abort(400)
 
-    kind, result, bad_lines = parse_paste_items(raw_paste)
+    try:
+        kind, result, bad_lines = evepaste.parse(raw_paste)
+    except evepaste.Unparsable:
+        return 400
+
+    unique_items = set()
+    for item_name, _ in iter_types(kind, result):
+        details = get_type_by_name(item_name)
+        if details:
+            unique_items.add(details['typeID'])
 
     # Populate types with pricing data
-    item_details, bad_items = match_item_details(kind, result)
-    prices = get_market_prices([type_id for type_id, _, _ in item_details],
+    prices = get_market_prices(list(unique_items),
                                options={'solarsystem_id': solar_system})
 
     appraisal = Appraisals(Created=int(time.time()),
                            RawInput=raw_paste,
                            Kind=kind,
-                           PricesJson=prices,
-                           ParsedJson=result,
-                           BadLinesJson=bad_lines,
+                           Prices=prices,
+                           Parsed=result,
+                           BadLines=bad_lines,
                            Market=solar_system,
                            Public=bool(session['options'].get('share')),
                            UserId=g.user.Id if g.user else None)
     db.session.add(appraisal)
     db.session.commit()
 
-    print dict((col, getattr(appraisal, col)) for col in appraisal.__table__.columns.keys())
+    from pprint import pprint as pp
+    pp(dict((col, getattr(appraisal, col)) for col in appraisal.__table__.columns.keys()))
 
     return render_template('results.html',
                            appraisal=appraisal,
@@ -115,7 +89,9 @@ def display_result(result_id):
     if appraisal.Public is True:
         cache.set("results:%s" % result_id, data, timeout=600)
 
-    return render_template('results.html', appraisal=appraisal, full_page=True)
+    return render_template('results.html',
+                           appraisal=appraisal,
+                           full_page=True)
 
 
 @login_required
