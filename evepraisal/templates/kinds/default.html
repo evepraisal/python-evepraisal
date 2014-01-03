@@ -1,0 +1,107 @@
+{% set price_table = appraisal.Prices|make_price_table %}
+{% set totals = appraisal.totals() %}
+{% macro print_row(item) -%}
+    {% set details = item.name|type_details %}
+    {% set prices = price_table[details.typeID] %}
+    {% set qty = item.quantity|default(1) %}
+    {% set name = details.typeName %}
+    {% if 'BLUEPRINT COPY' in item.info %}
+      {% set name = '%s (copy)'|format(details.typeName) %}
+      {% set prices = None %}
+    {% endif %}
+
+    <tr class="line-item-row">
+      <td>{{ qty|comma_separated_int }}</td>
+      <td>
+          <div class="media">
+            {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(details.typeID) %}
+            <a href="{{market_url}}" target="_blank"><img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a> {% if is_from_igb() %} <a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})">[Market]</a>{% endif %}
+          </div>
+      </td>
+      <td>{{ details.volume|format_volume }}</td>
+      {% if prices %}
+        {% set representative_price = prices.sell.price or prices.buy.price %}
+        <td style="text-align:right" x-sort-data="{{ representative_price }}">
+          <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
+          <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
+        </td> 
+        <td style="text-align:right" x-sort-data="{{ representative_price * qty|float }}">
+          <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
+          <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
+        </td>
+        <td style="text-align:right" x-sort-data="{{ representative_price / details.volume }}">
+          <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
+          <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
+        </td>
+      {% else %}
+        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td> 
+        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td>
+        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td>
+      {% endif %}
+    </tr>
+{%- endmacro %}
+<div>
+  <h4>
+    <span class="nowrap">
+      {{ totals.sell|format_isk_human }} <small>estimated <strong>sell</strong> value {% if appraisal.Market %} in {{ appraisal.Market|market_name }}{% endif %}</small>
+    </span>
+    &nbsp;&nbsp;
+    <span class="nowrap">
+      {{ totals.buy|format_isk_human }} <small>estimated <strong>buy</strong> value {% if appraisal.Market %} in {{ appraisal.Market|market_name }}{% endif %}</small>
+    </span>
+  </h4>
+
+<table id="results" class="table table-condensed tablesorter">
+  <thead>
+    <tr>
+      <th class="header" style="width: 5%">Qty</th>
+      <th class="header" style="width: 90%">Item</th>
+      <th class="header">Vol (m3)</th>
+      <th class="header" style="text-align:right">Single&nbsp;(sell)<br />Single&nbsp;(buy)</th>
+      <th class="header" style="text-align:right">Total&nbsp;(sell)<br />Total&nbsp;(buy)</th>
+      <th class="header" style="text-align:right">ISK/m3&nbsp;(sell)<br />ISK/m3&nbsp;(buy)</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  {% if appraisal.Kind == 'eft' %}
+    {{ print_row({'name': appraisal.Parsed.ship}) }}
+    {% for item in appraisal.Parsed.modules %}
+      {{ print_row(item) }}
+    {% endfor %}
+  {% else %}
+
+    {% for item in appraisal.Parsed %}
+      {{ print_row(item) }}
+    {% endfor %}
+  {% endif %}
+
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td><span class="nowrap">Total Sell Value</span><br />
+        <span class="nowrap">Total Buy Value</span><br />
+        <span class="nowrap">Total Volume</span></td>
+      <td></td>
+      <td></td>
+      <th style="text-align:right">
+        <span class="nowrap">{{ totals.sell|format_isk }}</span><br />
+        <span class="nowrap">{{ totals.buy|format_isk }}</span><br />
+        <span class="nowrap">{{ totals.volume|format_volume }}m<sup>3</sup></span>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+
+<script>
+$(document).ready(function() {
+  $("#results").tablesorter({ 
+    {% if appraisal.Kind == 'listing' %}
+        sortList: [[5,1]]
+    {% else %}
+        sortList: [[4,1]]
+    {% endif %}
+    });
+});
+</script>
