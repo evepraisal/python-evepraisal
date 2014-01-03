@@ -88,7 +88,7 @@ TYPES_BY_ID = dict((t['typeID'], t) for t in TYPES)
 
 
 def get_type_by_name(name):
-    return TYPES_BY_NAME.get(name.lower())
+    return TYPES_BY_NAME.get(name.lower().rstrip('*'))
 
 
 def get_type_by_id(typeID):

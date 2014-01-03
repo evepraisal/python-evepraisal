@@ -29,7 +29,7 @@ def estimate_cost():
     try:
         kind, result, bad_lines = evepaste.parse(raw_paste)
     except evepaste.Unparsable:
-        return 400
+        abort(400)
 
     unique_items = set()
     for item_name, _ in iter_types(kind, result):

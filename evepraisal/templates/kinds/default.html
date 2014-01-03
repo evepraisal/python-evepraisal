@@ -37,9 +37,9 @@
           <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
         </td>
       {% else %}
-        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td> 
-        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td>
-        <td style="text-align:right" x-sort-data="0"><span class="warning-message">Unknown</span></td>
+        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td> 
+        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td>
+        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td>
       {% endif %}
     </tr>
 {%- endmacro %}
