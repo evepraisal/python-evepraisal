@@ -45,7 +45,7 @@ def upgrade():
 
     offset = 0
     result_count = 1000
-    results = Scans.query.limit(result_count).offset(offset)
+    results = Scans.query.order_by(Scans.Id).limit(result_count).offset(offset)
     scans = list(results)
     while scans:
         print("Migrating batch of %s. offset=%s" % (result_count, offset))
