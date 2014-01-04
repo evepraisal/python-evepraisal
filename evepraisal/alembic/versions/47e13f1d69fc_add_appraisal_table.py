@@ -77,7 +77,8 @@ def upgrade():
                                    Kind=kind,
                                    BadLines=bad_lines,
                                    Prices=prices,
-                                   Market=int(scan_data['solar_system']),
+                                   Market=int(scan_data.get('solar_system',
+                                                            '-1')),
                                    Public=scan.Public,
                                    UserId=scan.UserId)
 
