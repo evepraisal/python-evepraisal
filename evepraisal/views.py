@@ -63,7 +63,7 @@ def estimate_cost():
 def display_result(result_id):
     try:
         result_id = int(result_id)
-    except:
+    except Exception:
         flash('Resource Not Found', 'error')
         return index(), 404
 
