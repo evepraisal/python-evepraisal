@@ -59,8 +59,8 @@ def upgrade():
             try:
                 kind, result, bad_lines = parse(scan_data.get('raw_paste', ''))
             except evepaste.Unparsable:
-                print('--[Unparsable]---------')
-                print()
+                print('--[Unparsable: %s]---------' % scan.Id)
+                print('')
                 print([scan_data.get('raw_paste', '')])
                 print('-'*20)
                 kind = 'listing'
@@ -69,6 +69,11 @@ def upgrade():
                           for item in scan_data['line_items']]
                 bad_lines = scan_data['bad_line_items']
                 FAILED_COUNT += 1
+            except Exception:
+                print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
+                print('')
+                print([scan_data.get('raw_paste', '')])
+                print('-'*20)
 
             appraisal = Appraisals(Id=scan.Id,
                                    Created=scan.Created,
