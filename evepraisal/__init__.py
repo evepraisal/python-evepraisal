@@ -4,6 +4,7 @@
 """
 import locale
 import json
+import os
 
 from flask import Flask, g, session
 from flask.ext.cache import Cache
@@ -24,7 +25,8 @@ app.config['VALID_SOLAR_SYSTEMS'] = {
     '30002053': 'Hek',
 }
 app.config['USER_AGENT'] = 'Evepraisal/1.0 +http://evepraisal.com/'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///../data/scans.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = ('sqlite:////%s/data/scans.db'
+                                         % os.getcwd())
 app.config['CACHE_TYPE'] = 'memcached'
 app.config['CACHE_KEY_PREFIX'] = 'evepraisal'
 app.config['CACHE_MEMCACHED_SERVERS'] = ['127.0.0.1:11211']
@@ -44,7 +46,10 @@ cache = Cache()
 cache.init_app(app)
 
 # Late import so modules can import their dependencies properly
-from . import models, views, routes, filters  # NOQA
+from . import models, views, routes, filters
+
+
+__all__ = ['models', 'views', 'routes', 'filters', 'app', 'db', 'cache']
 
 
 def ignore_errors(f, *args, **kwargs):

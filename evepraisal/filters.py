@@ -96,12 +96,3 @@ def relative_time(past):
         return format_timedelta(delta, locale='en_US') + postfix
     except Exception:
         return ''
-
-
-@app.template_filter('bpc_count')
-def bpc_count(bad_lines):
-    c = 0
-    for line in bad_lines:
-        if '(copy)' in line.lower():
-            c += 1
-    return c

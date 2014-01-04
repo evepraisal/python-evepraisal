@@ -14,6 +14,7 @@ import evepaste
 from helpers import login_required, iter_types
 from estimate import get_market_prices
 from models import Appraisals, Users, get_type_by_name
+from parser import parse
 from . import app, db, cache, oid
 
 
@@ -27,7 +28,7 @@ def estimate_cost():
         abort(400)
 
     try:
-        kind, result, bad_lines = evepaste.parse(raw_paste)
+        kind, result, bad_lines = parse(raw_paste)
     except evepaste.Unparsable:
         abort(400)
 
@@ -53,16 +54,12 @@ def estimate_cost():
     db.session.add(appraisal)
     db.session.commit()
 
-    from pprint import pprint as pp
-    pp(dict((col, getattr(appraisal, col)) for col in appraisal.__table__.columns.keys()))
-
     return render_template('results.html',
                            appraisal=appraisal,
                            full_page=request.form.get('load_full'))
 
 
 def display_result(result_id):
-    # TODO: FIX THIS TO WORK WITH THE NEW TABLE
     try:
         result_id = int(result_id)
     except:

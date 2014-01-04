@@ -146,7 +146,8 @@ msgstr ""
 "href=\"https://github.com/sudorandom/evepraisal\">github</a>. <br /> All "
 "<a href=\"http://www.evepraisal.com/legal\">Eve Related Materials</a> are"
 " property of CCP Games. See <a "
-"href=\"http://www.evepraisal.com/legal\">Legal Notice</a>"
+"href=\"http://www.evepraisal.com/legal\">Legal Notice</a>. <a "
+"href=\"https://github.com/sudorandom/evepraisal/issues\">Report an Issue</a>."
 
 #: evepraisal/templates/options.html:10
 msgid "autosubmit on paste"

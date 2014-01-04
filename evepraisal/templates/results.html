@@ -15,8 +15,8 @@
 </div>
 
 <div>
-  <p style="float:left">Result {% if appraisal.Public %}#{{ appraisal.Id }} {% endif %} ({{ appraisal.Kind }}) created {{ appraisal.Created|relative_time}}.
- <a href="#raw-result-modal" data-toggle="modal">View Raw</a></p>
+  <p style="float:left">Result {% if appraisal.Public %}<strong>#{{ appraisal.Id }}</strong> {% endif %} ({{ appraisal.Kind }}) created {{ appraisal.Created|relative_time}}.
+ <a href="#raw-result-modal" data-toggle="modal">View Raw</a>&nbsp;&nbsp;</p>
   <p style="float:right"> {% if appraisal.Public %} <strong>Pemalink</strong>: <a href="{{ url_for('display_result', result_id=appraisal.Id) }}">{{ url_for('display_result', result_id=appraisal.Id, _external=True) }}</a> {% endif %}</p>
   <div class="clearfix visible-xs"></div>
 </div>

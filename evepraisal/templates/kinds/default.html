@@ -5,7 +5,7 @@
     {% set prices = price_table[details.typeID] %}
     {% set qty = item.quantity|default(item.you|default(1)) %}
     {% set name = details.typeName %}
-    {% if 'BLUEPRINT COPY' in item.info %}
+    {% if 'BLUEPRINT COPY' in item.details %}
       {% set name = '%s (copy)'|format(details.typeName) %}
       {% set prices = None %}
     {% endif %}
@@ -14,25 +14,25 @@
     {% endif %}
 
     <tr class="line-item-row">
-      <td>{{ qty|comma_separated_int }}</td>
+      <td style="text-align:right">{{ qty|comma_separated_int }}</td>
       <td>
           <div class="media">
             {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(details.typeID) %}
             <a href="{{market_url}}" target="_blank"><img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a> {% if is_from_igb() %} <a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})">[Market]</a>{% endif %}
           </div>
       </td>
-      <td>{{ details.volume|format_volume }}</td>
+      <td style="text-align:right">{{ details.volume|format_volume }}</td>
       {% if prices %}
         {% set representative_price = prices.sell.price or prices.buy.price %}
-        <td style="text-align:right" x-sort-data="{{ representative_price }}">
+        <td style="text-align:right" x-sort-data="-{{ representative_price }}">
           <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
           <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
         </td> 
-        <td style="text-align:right" x-sort-data="{{ representative_price * qty|float }}">
+        <td style="text-align:right" x-sort-data="-{{ representative_price * qty|float }}">
           <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
           <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
         </td>
-        <td style="text-align:right" x-sort-data="{{ representative_price / details.volume }}">
+        <td style="text-align:right" x-sort-data="-{{ representative_price / details.volume }}">
           <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
           <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
         </td>
@@ -97,11 +97,11 @@
 
 <script>
 $(document).ready(function() {
-  $("#results").tablesorter({ 
+  $("#results").tablesorter({
     {% if appraisal.Kind == 'listing' %}
-        sortList: [[5,1]]
+        sortList: [[5,0]]
     {% else %}
-        sortList: [[4,1]]
+        sortList: [[4,0]]
     {% endif %}
     });
 });

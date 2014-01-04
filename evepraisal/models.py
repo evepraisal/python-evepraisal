@@ -3,35 +3,17 @@ import json
 from . import db
 from helpers import iter_types
 
-from sqlalchemy.types import TypeDecorator, Unicode
+from sqlalchemy.types import TypeDecorator, VARCHAR
 
 
 class JsonType(TypeDecorator):
-    impl = Unicode
+    impl = VARCHAR
 
     def process_bind_param(self, value, engine):
         return json.dumps(value)
 
     def process_result_value(self, value, engine):
         return json.loads(value)
-
-
-class Scans(db.Model):
-    __tablename__ = 'Scans'
-
-    Id = db.Column(db.Integer(), primary_key=True)
-    #: Being split up into RawInput, ParsedJson, Prices
-    Data = db.Column(db.Text())
-    #: Being kept (with an added index)
-    Created = db.Column(db.Integer())
-    #: Going away
-    SellValue = db.Column(db.Float())
-    #: Going away
-    BuyValue = db.Column(db.Float())
-    #: Being kept (with an added index)
-    Public = db.Column(db.Boolean(), default=True)
-    #: Being kept (with an added index)
-    UserId = db.Column(db.Integer(), db.ForeignKey('Users.Id'))
 
 
 class Appraisals(db.Model):
