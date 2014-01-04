@@ -48,7 +48,8 @@ def upgrade():
     results = Scans.query.order_by(Scans.Id).limit(result_count).offset(offset)
     scans = list(results)
     while scans:
-        print("Migrating batch of %s. offset=%s" % (result_count, offset))
+        print("Migrating batch of %s. offset=%s, marker=%s"
+              % (result_count, offset, scans[0].Id))
         for i, scan in enumerate(scans):
             scan_data = json.loads(scan.Data)
             prices = [[item.get('typeID'), {'all': item.get('all'),
@@ -91,10 +92,11 @@ def upgrade():
             db.session.add(appraisal)
             SUCCESS_COUNT += 1
         offset += result_count
+        db.session.commit()
+
         results = Scans.query.limit(result_count).offset(offset)
         scans = list(results)
 
-        db.session.commit()
     print("Sucesses: %s" % SUCCESS_COUNT)
     print("Modified: %s" % MODIFIED_COUNT)
     print("Failed: %s" % FAILED_COUNT)
