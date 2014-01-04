@@ -11,8 +11,8 @@ revision = '47e13f1d69fc'
 down_revision = None
 import json
 
-from alembic import op
-import sqlalchemy as sa
+# from alembic import op
+# import sqlalchemy as sa
 import evepaste
 
 from evepraisal.models import Appraisals
