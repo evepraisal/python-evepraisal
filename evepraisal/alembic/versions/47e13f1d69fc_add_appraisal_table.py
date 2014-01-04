@@ -42,6 +42,7 @@ def upgrade():
     FAILED_COUNT = 0
     MODIFIED_COUNT = 0
     SUCCESS_COUNT = 0
+    COMMIT_RATE = 1000
     for i, scan in enumerate(Scans.query.filter()):
         scan_data = json.loads(scan.Data)
         prices = [[item.get('typeID'), {'all': item.get('all'),
@@ -74,6 +75,8 @@ def upgrade():
                                UserId=scan.UserId)
         db.session.add(appraisal)
         SUCCESS_COUNT += 1
+        if i % COMMIT_RATE == 0:
+            db.session.commit()
 
     db.session.commit()
     print "Sucesses", SUCCESS_COUNT
