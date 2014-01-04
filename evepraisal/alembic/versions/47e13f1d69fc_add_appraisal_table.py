@@ -15,8 +15,6 @@ import json
 # import sqlalchemy as sa
 import evepaste
 
-from sqlalchemy.exc import IntegrityError
-
 from evepraisal.models import Appraisals
 from evepraisal import db
 from evepraisal.parser import parse
@@ -44,7 +42,6 @@ def upgrade():
     FAILED_COUNT = 0
     MODIFIED_COUNT = 0
     SUCCESS_COUNT = 0
-    DUPLICATE_COUNT = 0
 
     offset = 0
     result_count = 1000
@@ -86,20 +83,15 @@ def upgrade():
 
             # print("Inserting appraisal #%s" % appraisal.Id)
             db.session.add(appraisal)
-            try:
-                db.session.commit()
-            except IntegrityError:
-                DUPLICATE_COUNT += 1
-            else:
-                SUCCESS_COUNT += 1
+            SUCCESS_COUNT += 1
         offset += result_count
         results = Scans.query.limit(result_count).offset(offset)
         scans = list(results)
 
+        db.session.commit()
     print("Sucesses: %s" % SUCCESS_COUNT)
     print("Modified: %s" % MODIFIED_COUNT)
     print("Failed: %s" % FAILED_COUNT)
-    print("Duplicates: %s" % DUPLICATE_COUNT)
 
 
 def downgrade():
