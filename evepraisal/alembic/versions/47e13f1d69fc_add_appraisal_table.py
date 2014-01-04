@@ -57,11 +57,11 @@ def upgrade():
                       for item in scan_data['line_items']]
 
             try:
-                kind, result, bad_lines = parse(scan_data['raw_paste'])
+                kind, result, bad_lines = parse(scan_data.get('raw_paste', ''))
             except evepaste.Unparsable:
                 print('--[Unparsable]---------')
                 print()
-                print([scan_data['raw_paste']])
+                print([scan_data.get('raw_paste', '')])
                 print('-'*20)
                 kind = 'listing'
                 result = [{'name': item['typeName'],
@@ -72,7 +72,7 @@ def upgrade():
 
             appraisal = Appraisals(Id=scan.Id,
                                    Created=scan.Created,
-                                   RawInput=scan_data['raw_paste'],
+                                   RawInput=scan_data.get('raw_paste', ''),
                                    Parsed=result,
                                    Kind=kind,
                                    BadLines=bad_lines,
