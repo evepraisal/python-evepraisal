@@ -40,18 +40,18 @@ class Scans(db.Model):
 
 
 def upgrade():
-    FAILED_COUNT = 0
+    PARSING_FAILURE_COUNT = 0
     MODIFIED_COUNT = 0
     SUCCESS_COUNT = 0
-    FAILURE_COUNT = 0
 
-    offset = 0
     result_count = 1000
-    results = Scans.query.order_by(Scans.Id).limit(result_count).offset(offset)
+    marker = 0
+    results = Scans.query.filter(
+        Scans.Id > marker).order_by(Scans.Id).limit(result_count)
     scans = list(results)
+
     while scans:
-        print("Migrating batch of %s. offset=%s, marker=%s"
-              % (result_count, offset, scans[0].Id))
+        print("Migrating batch of %s. marker=%s" % (result_count, marker))
         for i, scan in enumerate(scans):
             scan_data = json.loads(scan.Data)
             prices = [[item.get('typeID'), {'all': item.get('all'),
@@ -71,7 +71,7 @@ def upgrade():
                            'quantity': item['count']}
                           for item in scan_data['line_items']]
                 bad_lines = scan_data['bad_line_items']
-                FAILED_COUNT += 1
+                PARSING_FAILURE_COUNT += 1
             except Exception:
                 print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
                 print('')
@@ -91,22 +91,18 @@ def upgrade():
                                    UserId=scan.UserId)
 
             # print("Inserting appraisal #%s" % appraisal.Id)
-            db.session.add(appraisal)
-            try:
-                db.session.commit()
-            except IntegrityError:
-                FAILURE_COUNT += 1
-            else:
-                SUCCESS_COUNT += 1
-        offset += result_count
+            db.session.merge(appraisal)
+            marker = scan.Id
 
-        results = Scans.query.limit(result_count).offset(offset)
+        db.session.commit()
+
+        results = Scans.query.filter(
+            Scans.Id > marker).order_by(Scans.Id).limit(result_count)
         scans = list(results)
 
     print("Sucesses: %s" % SUCCESS_COUNT)
-    print("Failure: %s" % FAILURE_COUNT)
     print("Modified: %s" % MODIFIED_COUNT)
-    print("Failed: %s" % FAILED_COUNT)
+    print("Parsing Failures: %s" % PARSING_FAILURE_COUNT)
 
 
 def downgrade():
