@@ -40,6 +40,7 @@ class Scans(db.Model):
 
 
 def upgrade():
+    COUNT = 0
     PARSING_FAILURE_COUNT = 0
     MODIFIED_COUNT = 0
     SUCCESS_COUNT = 0
@@ -51,7 +52,8 @@ def upgrade():
     scans = list(results)
 
     while scans:
-        print("Migrating batch of %s. marker=%s" % (result_count, marker))
+        print("Migrating batch of %s. count=%s, marker=%s"
+              % (result_count, COUNT, marker))
         for i, scan in enumerate(scans):
             scan_data = json.loads(scan.Data)
             prices = [[item.get('typeID'), {'all': item.get('all'),
@@ -63,7 +65,6 @@ def upgrade():
                 kind, result, bad_lines = parse(scan_data.get('raw_paste', ''))
             except evepaste.Unparsable:
                 print('--[Unparsable: %s]---------' % scan.Id)
-                print('')
                 print([scan_data.get('raw_paste', '')])
                 print('-'*20)
                 kind = 'listing'
@@ -74,7 +75,6 @@ def upgrade():
                 PARSING_FAILURE_COUNT += 1
             except Exception:
                 print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
-                print('')
                 print([scan_data.get('raw_paste', '')])
                 print('-'*20)
 
@@ -92,6 +92,7 @@ def upgrade():
 
             # print("Inserting appraisal #%s" % appraisal.Id)
             db.session.merge(appraisal)
+            COUNT += 1
             marker = scan.Id
 
         db.session.commit()
@@ -103,6 +104,7 @@ def upgrade():
     print("Sucesses: %s" % SUCCESS_COUNT)
     print("Modified: %s" % MODIFIED_COUNT)
     print("Parsing Failures: %s" % PARSING_FAILURE_COUNT)
+    print("Total: %s" % COUNT)
 
 
 def downgrade():
