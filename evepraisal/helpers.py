@@ -34,5 +34,15 @@ def iter_types(kind, result):
             yield item['name'], item.get('quantity', 1)
             if item.get('ammo'):
                 yield item['ammo'], 1
+    elif kind == 'killmail':
+        yield result['victim']['destroyed'], 1
+        for item in result['dropped']:
+            yield item['name'], item.get('quantity', 1)
+        for item in result['destroyed']:
+            yield item['name'], item.get('quantity', 1)
+    elif kind == 'wallet':
+        for item in result:
+            if item.get('name'):
+                yield item['name'], item.get('quantity', 1)
     else:
         raise ValueError('Invalid kind %s', kind)

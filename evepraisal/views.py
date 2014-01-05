@@ -13,7 +13,7 @@ import evepaste
 
 from helpers import login_required, iter_types
 from estimate import get_market_prices
-from models import Appraisals, Users, get_type_by_name
+from models import Appraisals, Users, get_type_by_name, appraisal_count
 from parser import parse
 from . import app, db, cache, oid
 
@@ -110,53 +110,33 @@ def history():
     q = q.filter(Appraisals.UserId == g.user.Id)
     q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
     q = q.limit(100)
-    results = q.all()
+    appraisals = q.all()
 
-    result_list = []
-    for result in results:
-        result_list.append({
-            'result_id': result.Id,
-            'created': result.Created,
-        })
-
-    return render_template('history.html', listing=result_list)
+    return render_template('history.html', appraisals=appraisals)
 
 
+@cache.memoize(timeout=30)
 def latest(limit):
     if limit > 1000:
         return redirect(url_for('latest', limit=1000))
 
-    result_list = cache.get("latest:%s" % limit)
-    if not result_list:
-        q = Appraisals.query
-        q = q.filter_by(Public=True)  # NOQA
-        q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
-        q = q.limit(limit)
-        results = q.all()
-
-        result_list = []
-        for result in results:
-            result_list.append({
-                'result_id': result.Id,
-                'created': result.Created,
-            })
-        cache.set("latest:%s" % limit, result_list, timeout=60)
-
-    return render_template('latest.html', listing=result_list)
+    q = Appraisals.query
+    q = q.filter_by(Public=True)  # NOQA
+    q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
+    q = q.limit(limit)
+    appraisals = q.all()
+    return render_template('latest.html', appraisals=appraisals)
 
 
 def index():
     "Index. Renders HTML."
 
-    appraisal_count = cache.get("latest:count")
-    if not appraisal_count:
-        q = Appraisals.query
-        q = q.filter_by()  # NOQA
-        appraisal_count = q.count()
+    count = cache.get("latest:count")
+    if not count:
+        count = appraisal_count()
+        cache.set("latest:count", count, timeout=60)
 
-        cache.set("latest:count", appraisal_count, timeout=60)
-
-    return render_template('index.html', appraisal_count=appraisal_count)
+    return render_template('index.html', appraisal_count=count)
 
 
 def legal():

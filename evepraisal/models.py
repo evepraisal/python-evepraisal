@@ -4,6 +4,7 @@ from . import db
 from helpers import iter_types
 
 from sqlalchemy.types import TypeDecorator, VARCHAR
+from sqlalchemy.exc import OperationalError
 
 
 class JsonType(TypeDecorator):
@@ -40,6 +41,7 @@ class Appraisals(db.Model):
 
         price_map = dict(self.Prices)
         for item_name, quantity in iter_types(self.Kind, self.Parsed):
+            quantity = quantity or 1
             details = get_type_by_name(item_name)
             if details:
                 type_prices = price_map.get(details['typeID'])
@@ -57,6 +59,19 @@ class Users(db.Model):
     Id = db.Column(db.Integer(), primary_key=True)
     OpenId = db.Column(db.String(200))
     Options = db.Column(db.Text())
+
+
+def appraisal_count():
+
+    # Postres counts are slow.
+    try:
+        count = db.engine.execute("""SELECT reltuples
+                                     FROM pg_class r
+                                     WHERE relkind = 'r'
+                                     AND relname = 'Appraisals';""")
+    except OperationalError:
+        count = Appraisals.query.count()
+    return count
 
 
 def row_to_dict(row):

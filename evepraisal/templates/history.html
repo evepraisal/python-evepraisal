@@ -18,14 +18,15 @@
               </tr>
             </thead>
             <tbody>
-              {% for item in listing %}
+              {% for appraisal in appraisals %}
+              {% set totals = appraisal.totals() %}
               <tr>
-                <td><a href="{{ url_for('display_result', result_id=item.result_id) }}">#{{ item.result_id }}</a></td>
-                <td style="text-align:right">{{ item.created|relative_time }}</td>
-                <td style="text-align:right">{{ item.sell_value|format_isk }}</td>
-                <td><small>{{ item.sell_value|format_isk_human }}</small></td>
-                <td style="text-align:right">{{ item.buy_value|format_isk }}</td>
-                <td><small>{{ item.buy_value|format_isk_human }}</small></td>
+                <td><a href="{{ url_for('display_result', result_id=appraisal.Id) }}">#{{ appraisal.Id }}</a></td>
+                <td style="text-align:right">{{ appraisal.Created|relative_time }}</td>
+                <td style="text-align:right">{{ totals.sell|format_isk }}</td>
+                <td><small>{{ totals.sell|format_isk_human }}</small></td>
+                <td style="text-align:right">{{ totals.buy|format_isk }}</td>
+                <td><small>{{ totals.buy|format_isk_human }}</small></td>
               </tr>
               {% endfor %}
           </table>

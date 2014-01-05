@@ -1,6 +1,7 @@
 {% set price_table = appraisal.Prices|make_price_table %}
 {% set totals = appraisal.totals() %}
-{% macro print_row(item) -%}
+{% macro print_row(item, highlight=False) -%}
+  {% if item.name %}
     {% set details = item.name|type_details %}
     {% set prices = price_table[details.typeID] %}
     {% set qty = item.quantity|default(item.you|default(1)) %}
@@ -13,7 +14,7 @@
       {% set prices = None %}
     {% endif %}
 
-    <tr class="line-item-row">
+    <tr class="line-item-row {% if highlight %}error{%endif%}">
       <td style="text-align:right">{{ qty|comma_separated_int }}</td>
       <td>
           <div class="media">
@@ -42,6 +43,7 @@
         <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td>
       {% endif %}
     </tr>
+  {% endif %}
 {%- endmacro %}
 <div>
   <h4>
@@ -54,7 +56,7 @@
     </span>
   </h4>
 
-<table id="results" class="table table-condensed tablesorter">
+<table id="results" class="table table-condensed table-striped tablesorter">
   <thead>
     <tr>
       <th class="header" style="width: 5%">Qty</th>
@@ -66,10 +68,17 @@
     </tr>
   </thead>
   <tbody>
-
   {% if appraisal.Kind == 'eft' %}
     {{ print_row({'name': appraisal.Parsed.ship}) }}
     {% for item in appraisal.Parsed.modules %}
+      {{ print_row(item) }}
+    {% endfor %}
+  {% elif appraisal.Kind == 'killmail' %}
+    {{ print_row({'name': appraisal.Parsed.victim.destroyed}) }}
+    {% for item in appraisal.Parsed.destroyed %}
+      {{ print_row(item, True) }}
+    {% endfor %}
+    {% for item in appraisal.Parsed.dropped %}
       {{ print_row(item) }}
     {% endfor %}
   {% else %}
