@@ -47,6 +47,10 @@ def upgrade():
 
     result_count = 1000
     marker = 0
+
+    first = Appraisals.query.order_by(Appraisals.Id.desc()).limit(1).first()
+    if first:
+        marker = first.Id
     results = Scans.query.filter(
         Scans.Id > marker).order_by(Scans.Id).limit(result_count)
     scans = list(results)
