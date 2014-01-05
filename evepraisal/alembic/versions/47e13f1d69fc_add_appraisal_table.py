@@ -113,5 +113,4 @@ def upgrade():
 
 
 def downgrade():
-    db.session.query(Appraisals).delete()
-    db.session.commit()
+    pass
