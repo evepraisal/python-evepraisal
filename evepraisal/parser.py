@@ -17,14 +17,40 @@ def tryhard_parser(raw_paste):
     bad_lines = []
     lines = raw_paste.split('\n')
     for line in lines:
-        if '\t' in line:
-            parts = line.split('\t', 2)
-            name = parts[0].strip()
-            if get_type_by_name(name):
-                results.append({'name': name, 'quantity': 1})
-            else:
-                bad_lines.append(line)
+        parts = [part.strip().strip(',') for part in line.split('\t')]
+        combinations = [[None, 'name', None, 'quantity'],
+                        ['name', 'quantity'],
+                        ['quantity', 'name'],
+                        [None, 'name'],
+                        ['name']]
+        for combo in combinations:
+            if len(combo) > len(parts):
+                continue
+
+            name = ''
+            quantity = 1
+            for i, part in enumerate(combo):
+                if part == 'name':
+                    if get_type_by_name(parts[i]):
+                        name = parts[i]
+                    else:
+                        continue
+                elif part == 'quantity':
+                    if int_convert(parts[i]):
+                        quantity = int_convert(parts[i])
+                    else:
+                        continue
+            results.append({'name': name,
+                            'quantity': quantity})
+            break
         else:
             bad_lines.append(line)
 
     return 'listing', results, bad_lines
+
+
+def int_convert(s):
+    try:
+        return int(s.replace(',', '').replace('.', '').replace(' ', ''))
+    except ValueError:
+        return
