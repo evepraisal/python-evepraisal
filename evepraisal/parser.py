@@ -19,7 +19,7 @@ def tryhard_parser(raw_paste):
     bad_lines = []
     lines = raw_paste.split('\n')
     for line in lines:
-        parts = [part.strip().strip(',') for part in line.split('\t')]
+        parts = [part.strip(',\t ') for part in line.split('\t')]
         combinations = [['name', 'quantity'],
                         [None, 'name', None, 'quantity'],
                         ['quantity', 'name'],

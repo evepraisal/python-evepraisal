@@ -14,7 +14,7 @@ import json
 # from alembic import op
 # import sqlalchemy as sa
 import evepaste
-from sqlalchemy.exc import IntegrityError
+import traceback
 
 from evepraisal.models import Appraisals
 from evepraisal import db
@@ -76,6 +76,7 @@ def upgrade():
             except Exception:
                 print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
                 print([scan_data.get('raw_paste', '')])
+                traceback.print_exc()
                 print('-'*20)
 
             appraisal = Appraisals(Id=scan.Id,
