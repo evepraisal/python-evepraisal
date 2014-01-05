@@ -62,13 +62,13 @@ class Users(db.Model):
 
 
 def appraisal_count():
-
-    # Postres counts are slow.
+    # Postresql counts are slow.
     try:
-        count = db.engine.execute("""SELECT reltuples
-                                     FROM pg_class r
-                                     WHERE relkind = 'r'
-                                     AND relname = 'Appraisals';""")
+        res = db.engine.execute("""SELECT reltuples
+                                   FROM pg_class r
+                                   WHERE relkind = 'r'
+                                   AND relname = 'Appraisals';""")
+        count = int(res.fetchone()[0])
     except OperationalError:
         count = Appraisals.query.count()
     return count
