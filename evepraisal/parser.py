@@ -22,6 +22,7 @@ def tryhard_parser(raw_paste):
         parts = [part.strip(',\t ') for part in line.split('\t')]
         combinations = [['name', 'quantity'],
                         [None, 'name', None, 'quantity'],
+                        ['quantity', None, 'name'],
                         ['quantity', 'name'],
                         [None, 'name'],
                         ['name']]
