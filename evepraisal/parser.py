@@ -13,13 +13,15 @@ def parse(raw_paste):
 
 
 def tryhard_parser(raw_paste):
+    if not raw_paste.strip():
+        raise evepaste.Unparsable('No valid input')
     results = []
     bad_lines = []
     lines = raw_paste.split('\n')
     for line in lines:
         parts = [part.strip().strip(',') for part in line.split('\t')]
-        combinations = [[None, 'name', None, 'quantity'],
-                        ['name', 'quantity'],
+        combinations = [['name', 'quantity'],
+                        [None, 'name', None, 'quantity'],
                         ['quantity', 'name'],
                         [None, 'name'],
                         ['name']]
@@ -34,15 +36,16 @@ def tryhard_parser(raw_paste):
                     if get_type_by_name(parts[i]):
                         name = parts[i]
                     else:
-                        continue
+                        break
                 elif part == 'quantity':
                     if int_convert(parts[i]):
                         quantity = int_convert(parts[i])
                     else:
-                        continue
-            results.append({'name': name,
-                            'quantity': quantity})
-            break
+                        break
+            else:
+                results.append({'name': name,
+                                'quantity': quantity})
+                break
         else:
             bad_lines.append(line)
 
