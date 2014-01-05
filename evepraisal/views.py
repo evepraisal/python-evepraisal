@@ -116,14 +116,11 @@ def history():
 
 
 @cache.memoize(timeout=30)
-def latest(limit):
-    if limit > 1000:
-        return redirect(url_for('latest', limit=1000))
-
+def latest():
     q = Appraisals.query
     q = q.filter_by(Public=True)  # NOQA
     q = q.order_by(desc(Appraisals.Created))
-    q = q.limit(limit)
+    q = q.limit(200)
     appraisals = q.all()
     return render_template('latest.html', appraisals=appraisals)
 
