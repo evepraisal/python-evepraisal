@@ -49,6 +49,9 @@ def tryhard_parser(raw_paste):
         else:
             bad_lines.append(line)
 
+    if not results:
+        raise evepaste.Unparsable('No valid input')
+
     return 'listing', results, bad_lines
 
 
