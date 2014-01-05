@@ -60,16 +60,18 @@ def upgrade():
               % (result_count, COUNT, marker))
         for i, scan in enumerate(scans):
             scan_data = json.loads(scan.Data)
+            raw_paste = scan_data.get('raw_paste',
+                                      scan_data.get('raw_scan')) or ''
             prices = [[item.get('typeID'), {'all': item.get('all'),
                                             'buy': item.get('buy'),
                                             'sell': item.get('sell')}]
                       for item in scan_data['line_items']]
 
             try:
-                kind, result, bad_lines = parse(scan_data.get('raw_paste', ''))
+                kind, result, bad_lines = parse(raw_paste)
             except evepaste.Unparsable:
                 print('--[Unparsable: %s]---------' % scan.Id)
-                print([scan_data.get('raw_paste', '')])
+                print([raw_paste])
                 print('-'*20)
                 kind = 'listing'
                 result = [{'name': item['typeName'],
@@ -79,13 +81,13 @@ def upgrade():
                 PARSING_FAILURE_COUNT += 1
             except Exception:
                 print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
-                print([scan_data.get('raw_paste', '')])
+                print([raw_paste])
                 traceback.print_exc()
                 print('-'*20)
 
             appraisal = Appraisals(Id=scan.Id,
                                    Created=scan.Created,
-                                   RawInput=scan_data.get('raw_paste', ''),
+                                   RawInput=raw_paste,
                                    Parsed=result,
                                    Kind=kind,
                                    BadLines=bad_lines,
