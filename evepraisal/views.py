@@ -29,8 +29,9 @@ def estimate_cost():
 
     try:
         kind, result, bad_lines = parse(raw_paste)
-    except evepaste.Unparsable:
-        abort(400)
+    except evepaste.Unparsable as ex:
+        return render_template('error.html',
+                               error='Error when parsing input: ' + str(ex))
 
     unique_items = set()
     for item_name, _ in iter_types(kind, result):
@@ -55,8 +56,7 @@ def estimate_cost():
     db.session.commit()
 
     return render_template('results.html',
-                           appraisal=appraisal,
-                           full_page=request.form.get('load_full'))
+                           appraisal=appraisal)
 
 
 @cache.memoize(timeout=30)
@@ -108,7 +108,7 @@ def options():
 def history():
     q = Appraisals.query
     q = q.filter(Appraisals.UserId == g.user.Id)
-    q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
+    q = q.order_by(desc(Appraisals.Created))
     q = q.limit(100)
     appraisals = q.all()
 
@@ -122,7 +122,7 @@ def latest(limit):
 
     q = Appraisals.query
     q = q.filter_by(Public=True)  # NOQA
-    q = q.order_by(desc(Appraisals.Created), desc(Appraisals.Id))
+    q = q.order_by(desc(Appraisals.Created))
     q = q.limit(limit)
     appraisals = q.all()
     return render_template('latest.html', appraisals=appraisals)

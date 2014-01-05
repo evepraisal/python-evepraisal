@@ -1,0 +1,10 @@
+{% if request.form.get('load_full') %}{% extends 'index.html' %}{% endif -%}
+
+{% block results %}
+
+<h3>Oh no! An error has occured!</h3>
+<p><strong>{{ error }}</strong></p>
+
+<p>If you think this is a legitimate error, feel free to give the details in a new issue on <a href="https://github.com/sudorandom/evepraisal/issues" target="_blank">github</a>. You can also drop me an eve mail if github is not your thing. My in-game name is <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>.</p>
+
+{% endblock %}
