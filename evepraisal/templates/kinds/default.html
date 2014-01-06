@@ -19,7 +19,7 @@
       <td>
           <div class="media">
             {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(details.typeID) %}
-            <a href="{{market_url}}" target="_blank"><img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a> {% if is_from_igb() %} <a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})">[Market]</a>{% endif %}
+            {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a> {% if is_from_igb() %} <a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})">[Market]</a>{% endif %}
           </div>
       </td>
       <td style="text-align:right">{{ details.volume|format_volume }}</td>

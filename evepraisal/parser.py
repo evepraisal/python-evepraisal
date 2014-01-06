@@ -21,6 +21,7 @@ def tryhard_parser(raw_paste):
     results = []
     bad_lines = []
     lines = raw_paste.split('\n')
+    lines = [line for line in lines if line]
     for line in lines:
         parts = [part.strip(',\t ') for part in line.split('\t')]
         if len(parts) == 1:
@@ -72,6 +73,6 @@ def tryhard_parser(raw_paste):
 
 def int_convert(s):
     try:
-        return int(s.replace(',', '').replace('.', '').replace(' ', ''))
+        return int(s.translate(None, ',. x'))
     except ValueError:
         return
