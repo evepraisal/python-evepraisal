@@ -14,7 +14,7 @@ import evepaste
 from helpers import login_required, iter_types
 from estimate import get_market_prices
 from models import Appraisals, Users, get_type_by_name, appraisal_count
-from parser import parse
+from parser import parse, tryhard_parser
 from . import app, db, cache, oid
 
 
@@ -27,21 +27,25 @@ def estimate_cost():
     if solar_system not in app.config['VALID_SOLAR_SYSTEMS'].keys():
         abort(400)
 
-    try:
-        kind, result, bad_lines = parse(raw_paste.encode('utf-8'))
-    except evepaste.Unparsable as ex:
-        return render_template('error.html',
-                               error='Error when parsing input: ' + str(ex))
+    encoded_raw_paste = raw_paste.encode('utf-8')
+    for method in [parse, tryhard_parser]:
+        try:
+            kind, result, bad_lines = method(encoded_raw_paste)
+        except evepaste.Unparsable as ex:
+            return render_template(
+                'error.html', error='Error when parsing input: ' + str(ex))
 
-    unique_items = set()
-    for item_name, _ in iter_types(kind, result):
-        details = get_type_by_name(item_name)
-        if details:
-            unique_items.add(details['typeID'])
+        unique_items = set()
+        for item_name, _ in iter_types(kind, result):
+            details = get_type_by_name(item_name)
+            if details:
+                unique_items.add(details['typeID'])
 
-    # Populate types with pricing data
-    prices = get_market_prices(list(unique_items),
-                               options={'solarsystem_id': solar_system})
+        # Populate types with pricing data
+        prices = get_market_prices(list(unique_items),
+                                   options={'solarsystem_id': solar_system})
+        if not prices:
+            continue
 
     appraisal = Appraisals(Created=int(time.time()),
                            RawInput=raw_paste,
