@@ -46,6 +46,8 @@ def estimate_cost():
                                    options={'solarsystem_id': solar_system})
         if not prices:
             continue
+        else:
+            break
 
     appraisal = Appraisals(Created=int(time.time()),
                            RawInput=raw_paste,
