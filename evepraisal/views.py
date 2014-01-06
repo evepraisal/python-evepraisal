@@ -28,7 +28,7 @@ def estimate_cost():
         abort(400)
 
     try:
-        kind, result, bad_lines = parse(raw_paste)
+        kind, result, bad_lines = parse(raw_paste.encode('utf-8'))
     except evepaste.Unparsable as ex:
         return render_template('error.html',
                                error='Error when parsing input: ' + str(ex))
