@@ -59,13 +59,10 @@ def estimate_cost():
                            appraisal=appraisal)
 
 
-@cache.memoize(timeout=30)
 def display_result(result_id):
-    try:
-        result_id = int(result_id)
-    except Exception:
-        flash('Resource Not Found', 'error')
-        return index(), 404
+    page = cache.get('appraisal:%s' % result_id)
+    if page:
+        return page
 
     q = Appraisals.query.filter(Appraisals.Id == result_id)
     if g.user:
@@ -80,9 +77,12 @@ def display_result(result_id):
         flash('Resource Not Found', 'error')
         return index(), 404
 
-    return render_template('results.html',
+    page = render_template('results.html',
                            appraisal=appraisal,
                            full_page=True)
+    if appraisal.Public:
+        cache.set('appraisal:%s' % result_id, page, timeout=30)
+    return page
 
 
 @login_required

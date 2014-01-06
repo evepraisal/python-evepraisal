@@ -266,6 +266,7 @@ def get_market_prices(modules, methods=None, options=None):
         app.logger.debug("Found %s/%s items using method: %s",
                          len(_prices), len(modules), pricing_method)
         for type_id, pricing_info in _prices.items():
-            prices[type_id] = pricing_info
-            unpriced_modules.remove(type_id)
+            if type_id in modules:
+                prices[type_id] = pricing_info
+                unpriced_modules.remove(type_id)
     return prices.items()

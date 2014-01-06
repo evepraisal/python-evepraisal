@@ -6,7 +6,7 @@
       <div class="row">
         <div class="span12">
           <h4>Your Last 100 Appraisals</h4>
-          <table class="table table-condensed">
+          <table class="table table-condensed table-striped">
             <thead>
               <tr>
                 <th class="header">Id</th>
@@ -15,6 +15,7 @@
                 <th class="header"></th>
                 <th class="header" style="text-align:right">Buy Value</th>
                 <th class="header"></th>
+                <th class="header">Public</th>
               </tr>
             </thead>
             <tbody>
@@ -27,6 +28,7 @@
                 <td><small>{{ totals.sell|format_isk_human }}</small></td>
                 <td style="text-align:right">{{ totals.buy|format_isk }}</td>
                 <td><small>{{ totals.buy|format_isk_human }}</small></td>
+                <td>{{ appraisal.Public }}</td>
               </tr>
               {% endfor %}
           </table>

@@ -43,7 +43,7 @@
 
 <script>
 $(document).ready(function() {
-  {% if appraisal.Public and not is_from_igb() and not full_page %}
+  {% if not is_from_igb() and not full_page %}
       window.history.replaceState('Object', 'Title', '{{ url_for('display_result', result_id=appraisal.Id) }}');
   {% endif %}
 });
