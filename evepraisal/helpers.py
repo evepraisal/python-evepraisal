@@ -20,7 +20,7 @@ def iter_types(kind, result):
                 'fitting',
                 'listing',
                 'loot_history',
-                'pi'
+                'pi',
                 'survey_scanner',
                 'view_contents']:
         for item in result:
