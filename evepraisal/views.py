@@ -81,7 +81,10 @@ def display_result(result_id):
                            appraisal=appraisal,
                            full_page=True)
     if appraisal.Public:
-        cache.set('appraisal:%s' % result_id, page, timeout=30)
+        try:
+            cache.set('appraisal:%s' % result_id, page, timeout=30)
+        except Exception:
+            pass
     return page
 
 
