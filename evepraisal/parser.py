@@ -1,32 +1,81 @@
+from collections import defaultdict
+
 import evepaste
+from evepaste import parsers
 from models import get_type_by_name
-from . import app
+from helpers import iter_types
 
 
 def parse(raw_paste):
-    try:
-        return evepaste.parse(raw_paste)
-    except evepaste.Unparsable:
-        kind, results, bad_lines = tryhard_parser(raw_paste)
-        if not results:
-            raise
-        return 'listing', results, bad_lines
-
-
-def tryhard_parser(raw_paste):
-    app.logger.warning("Tryhard parser enabled.")
-    app.logger.warning(raw_paste)
-    if not raw_paste.strip():
-        raise evepaste.Unparsable('No valid input')
+    unique_items = set()
     results = []
+    representative_kind = ''
+    largest_kind_num = 0
+
+    parser_list = [('bill_of_materials', parsers.parse_bill_of_materials),
+                   ('loot_history', parsers.parse_loot_history),
+                   ('survey_scanner', parsers.parse_survey_scanner),
+                   ('pi', parsers.parse_pi),
+                   ('dscan', parsers.parse_dscan),
+                   ('killmail', parsers.parse_killmail),
+                   ('eft', parsers.parse_eft),
+                   ('fitting', parsers.parse_fitting),
+                   ('contract', parsers.parse_contract),
+                   ('assets', parsers.parse_assets),
+                   ('view_contents', parsers.parse_view_contents),
+                   ('wallet', parsers.parse_wallet),
+                   ('heuristic', tryhard_parser),
+                   ('listing', parsers.parse_listing)]
+
+    iterations = 0
+    while iterations < 10:
+        kind, result, bad_lines = evepaste.parse(raw_paste,
+                                                 parsers=parser_list)
+        if result:
+            results.append([kind, result])
+
+            for i, (item_name, _) in enumerate(iter_types(kind, result)):
+                details = get_type_by_name(item_name)
+                if details:
+                    unique_items.add(details['typeID'])
+
+            if i >= largest_kind_num:
+                representative_kind = kind
+                largest_kind_num = i
+
+            raw_paste = '\n'.join(bad_lines)
+        else:
+            # We found zero results, we're done parsing
+            break
+
+        # We're finished parsing because we've consumed all of our data
+        if not bad_lines:
+            break
+
+        iterations += 1
+
+    return {
+        'representative_kind': representative_kind,
+        'results': results,
+        'bad_lines': bad_lines,
+        'unique_items': unique_items,
+    }
+
+
+def tryhard_parser(lines):
+    results = defaultdict(int)
     bad_lines = []
-    lines = raw_paste.split('\n')
     lines = [line for line in lines if line]
     for line in lines:
         parts = [part.strip(',\t ') for part in line.split('\t')]
         if len(parts) == 1:
             parts = [part.strip(',\t ') for part in line.split('  ')]
             parts = [part for part in parts if part]
+
+        # This should only work for multi-part lines
+        if len(parts) == 1:
+            break
+
         combinations = [['name', 'quantity'],
                         [None, 'name', None, 'quantity'],
                         ['quantity', None, 'name'],
@@ -51,7 +100,7 @@ def tryhard_parser(raw_paste):
                     else:
                         break
             else:
-                results.append({'name': name, 'quantity': quantity})
+                results[name] += quantity
                 break
         else:
             # The above method failed. Now let's try splitting on spaces and
@@ -60,7 +109,7 @@ def tryhard_parser(raw_paste):
             for i in range(len(parts)):
                 name = ' '.join(parts[0:i])
                 if name and get_type_by_name(name):
-                    results.append({'name': name, 'quantity': 1})
+                    results[name] += 1
                     break
             else:
                 bad_lines.append(line)
@@ -68,7 +117,8 @@ def tryhard_parser(raw_paste):
     if not results:
         raise evepaste.Unparsable('No valid input')
 
-    return 'listing', results, bad_lines
+    return [{'name': name, 'quantity': quantity}
+            for name, quantity in results.items()], bad_lines
 
 
 def int_convert(s):

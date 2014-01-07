@@ -11,13 +11,11 @@ revision = '47e13f1d69fc'
 down_revision = None
 import json
 
-# from alembic import op
-# import sqlalchemy as sa
 import evepaste
 import traceback
 
-from evepraisal.models import Appraisals
 from evepraisal import db
+from evepraisal.models import Appraisals
 from evepraisal.parser import parse
 
 
@@ -62,13 +60,14 @@ def upgrade():
             scan_data = json.loads(scan.Data)
             raw_paste = scan_data.get('raw_paste',
                                       scan_data.get('raw_scan')) or ''
+            raw_paste_encoded = raw_paste.encode('utf-8')
             prices = [[item.get('typeID'), {'all': item.get('all'),
                                             'buy': item.get('buy'),
                                             'sell': item.get('sell')}]
                       for item in scan_data['line_items']]
 
             try:
-                kind, result, bad_lines = parse(raw_paste)
+                kind, result, bad_lines = parse(raw_paste_encoded)
             except evepaste.Unparsable:
                 print('--[Unparsable: %s]---------' % scan.Id)
                 print([raw_paste])
@@ -82,8 +81,9 @@ def upgrade():
             except Exception:
                 print('--[UNEXPECTED ERROR: %s]---------' % scan.Id)
                 print([raw_paste])
-                traceback.print_exc()
-                print('-'*20)
+                # traceback.print_exc()
+                # print('-'*20)
+                raise
 
             appraisal = Appraisals(Id=scan.Id,
                                    Created=scan.Created,
@@ -102,7 +102,11 @@ def upgrade():
             COUNT += 1
             marker = scan.Id
 
-        db.session.commit()
+        try:
+            db.session.commit()
+        except Exception:
+            print raw_paste
+            db.session.rollback()
 
         results = Scans.query.filter(
             Scans.Id > marker).order_by(Scans.Id).limit(result_count)

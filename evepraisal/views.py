@@ -11,10 +11,10 @@ from flask import (
 from sqlalchemy import desc
 import evepaste
 
-from helpers import login_required, iter_types
+from helpers import login_required
 from estimate import get_market_prices
-from models import Appraisals, Users, get_type_by_name, appraisal_count
-from parser import parse, tryhard_parser
+from models import Appraisals, Users, appraisal_count
+from parser import parse
 from . import app, db, cache, oid
 
 
@@ -28,33 +28,23 @@ def estimate_cost():
         abort(400)
 
     encoded_raw_paste = raw_paste.encode('utf-8')
-    for method in [parse, tryhard_parser]:
-        try:
-            kind, result, bad_lines = method(encoded_raw_paste)
-        except evepaste.Unparsable as ex:
-            return render_template(
-                'error.html', error='Error when parsing input: ' + str(ex))
+    try:
+        parse_results = parse(encoded_raw_paste)
+    except evepaste.Unparsable as ex:
+        return render_template(
+            'error.html', error='Error when parsing input: ' + str(ex))
 
-        unique_items = set()
-        for item_name, _ in iter_types(kind, result):
-            details = get_type_by_name(item_name)
-            if details:
-                unique_items.add(details['typeID'])
-
-        # Populate types with pricing data
-        prices = get_market_prices(list(unique_items),
-                                   options={'solarsystem_id': solar_system})
-        if not prices:
-            continue
-        else:
-            break
+    # Populate types with pricing data
+    prices = get_market_prices(list(parse_results['unique_items']),
+                               options={'solarsystem_id': solar_system})
 
     appraisal = Appraisals(Created=int(time.time()),
                            RawInput=raw_paste,
-                           Kind=kind,
+                           Kind=parse_results['representative_kind'],
                            Prices=prices,
-                           Parsed=result,
-                           BadLines=bad_lines,
+                           Parsed=parse_results['results'],
+                           ParsedVersion=1,
+                           BadLines=parse_results['bad_lines'],
                            Market=solar_system,
                            Public=bool(session['options'].get('share')),
                            UserId=g.user.Id if g.user else None)

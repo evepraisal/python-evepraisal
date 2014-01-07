@@ -25,7 +25,7 @@ if __name__ == '__main__':
     for (typeID, groupID, typeName, marketGroupID, volume) in \
             cfg.invtypes.Select(
                 'typeID', 'groupID', 'typeName', 'marketGroupID', 'volume'):
-        print("Populating info for: %s" % typeName)
+        print("Populating info for: %s" % typeName.encode('utf-8'))
 
         hasMarket = marketGroupID is not None
         d = {

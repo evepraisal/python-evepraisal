@@ -68,25 +68,27 @@
     </tr>
   </thead>
   <tbody>
-  {% if appraisal.Kind == 'eft' %}
-    {{ print_row({'name': appraisal.Parsed.ship}) }}
-    {% for item in appraisal.Parsed.modules %}
-      {{ print_row(item) }}
-    {% endfor %}
-  {% elif appraisal.Kind == 'killmail' %}
-    {{ print_row({'name': appraisal.Parsed.victim.destroyed}) }}
-    {% for item in appraisal.Parsed.destroyed %}
-      {{ print_row(item, True) }}
-    {% endfor %}
-    {% for item in appraisal.Parsed.dropped %}
-      {{ print_row(item) }}
-    {% endfor %}
-  {% else %}
+  {% for kind, result in appraisal.result_list() %}
+    {% if kind == 'eft' %}
+      {{ print_row({'name': result.ship}) }}
+      {% for item in result.modules %}
+        {{ print_row(item) }}
+      {% endfor %}
+    {% elif kind == 'killmail' %}
+      {{ print_row({'name': result.victim.destroyed}) }}
+      {% for item in result.destroyed %}
+        {{ print_row(item, True) }}
+      {% endfor %}
+      {% for item in result.dropped %}
+        {{ print_row(item) }}
+      {% endfor %}
+    {% else %}
 
-    {% for item in appraisal.Parsed %}
-      {{ print_row(item) }}
-    {% endfor %}
-  {% endif %}
+      {% for item in result %}
+        {{ print_row(item) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 
   </tbody>
   <tfoot>

@@ -22,9 +22,12 @@ def iter_types(kind, result):
                 'loot_history',
                 'pi',
                 'survey_scanner',
-                'view_contents']:
+                'view_contents',
+                'heuristic']:
         for item in result:
-            if 'BLUEPRINT COPY' not in item.get('details', ''):
+            if 'BLUEPRINT COPY' in item.get('details', ''):
+                yield item['name'], 0
+            else:
                 yield item['name'], item.get('quantity', 1)
     elif kind == 'bill_of_materials':
         for item in result:
@@ -43,8 +46,7 @@ def iter_types(kind, result):
             yield item['name'], item.get('quantity', 1)
     elif kind == 'wallet':
         for item in result:
-            if all(item.get('name') and
-                   'BLUEPRINT COPY' not in item.get('details', '')):
+            if item.get('name'):
                 yield item['name'], item.get('quantity', 1)
     else:
         raise ValueError('Invalid kind %s', kind)

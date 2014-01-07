@@ -27,6 +27,8 @@ class Appraisals(db.Model):
     RawInput = db.Column(db.Text())
     #: JSON as a result of the parser (evepaste)
     Parsed = db.Column(JsonType())
+    #: Parsed result Version
+    ParsedVersion = db.Column(db.Integer())
     #: Prices
     Prices = db.Column(JsonType())
     #: Bad Lines
@@ -40,17 +42,28 @@ class Appraisals(db.Model):
         total_sell = total_buy = total_volume = 0
 
         price_map = dict(self.Prices)
-        for item_name, quantity in iter_types(self.Kind, self.Parsed):
-            quantity = quantity or 1
-            details = get_type_by_name(item_name)
-            if details:
-                type_prices = price_map.get(details['typeID'])
-                if type_prices:
-                    total_sell += type_prices['sell']['price'] * quantity
-                    total_buy += type_prices['buy']['price'] * quantity
-                total_volume += details['volume'] * quantity
+        for kind, parsed in self.result_list():
+            for item_name, quantity in iter_types(kind, parsed):
+                quantity = quantity or 1
+                details = get_type_by_name(item_name)
+                if details:
+                    type_prices = price_map.get(details['typeID'])
+                    if type_prices:
+                        total_sell += type_prices['sell']['price'] * quantity
+                        total_buy += type_prices['buy']['price'] * quantity
+                    total_volume += details['volume'] * quantity
 
         return {'sell': total_sell, 'buy': total_buy, 'volume': total_volume}
+
+    def result_list(self):
+        """ Returns a structure that looks like this:
+            [[kind, result], [kind, result]]
+
+        """
+        if self.ParsedVersion == 1:
+            return self.Parsed
+
+        return [[self.Kind, self.Parsed]]
 
 
 class Users(db.Model):
@@ -85,7 +98,10 @@ TYPES_BY_ID = dict((t['typeID'], t) for t in TYPES)
 
 
 def get_type_by_name(name):
-    return TYPES_BY_NAME.get(name.lower().rstrip('*'))
+    if not name:
+        return
+    s = name.lower().strip()
+    return (TYPES_BY_NAME.get(s.rstrip('*')) or TYPES_BY_NAME.get(s))
 
 
 def get_type_by_id(typeID):
