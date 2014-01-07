@@ -3,12 +3,12 @@ import json
 from . import db
 from helpers import iter_types
 
-from sqlalchemy.types import TypeDecorator, VARCHAR
+from sqlalchemy import types
 from sqlalchemy.exc import OperationalError
 
 
-class JsonType(TypeDecorator):
-    impl = VARCHAR
+class JsonType(types.TypeDecorator):
+    impl = types.VARCHAR
 
     def process_bind_param(self, value, engine):
         return json.dumps(value)
