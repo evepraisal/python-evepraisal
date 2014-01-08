@@ -25,22 +25,22 @@
       <td style="text-align:right">{{ details.volume|format_volume }}</td>
       {% if prices %}
         {% set representative_price = prices.sell.price or prices.buy.price %}
-        <td style="text-align:right" x-sort-data="-{{ representative_price }}">
+        <td style="text-align:right" data-sort="-{{ representative_price }}">
           <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
           <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
         </td> 
-        <td style="text-align:right" x-sort-data="-{{ representative_price * qty|float }}">
+        <td style="text-align:right" data-sort="-{{ representative_price * qty|float }}">
           <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
           <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
         </td>
-        <td style="text-align:right" x-sort-data="-{{ representative_price / details.volume }}">
+        <td style="text-align:right" data-sort="-{{ representative_price / details.volume }}">
           <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
           <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
         </td>
       {% else %}
-        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td> 
-        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td>
-        <td style="text-align:right" x-sort-data="-1"><span class="warning-message">Unknown</span></td>
+        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td> 
+        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
+        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
       {% endif %}
     </tr>
   {% endif %}
@@ -56,11 +56,11 @@
     </span>
   </h4>
 
-<table id="results" class="table table-condensed table-striped tablesorter">
+<table id="results" class="table table-striped tablesorter">
   <thead>
     <tr>
       <th class="header" style="width: 5%">Qty</th>
-      <th class="header" style="width: 90%">Item</th>
+      <th class="header" style="width: 60%">Item</th>
       <th class="header">Vol (m3)</th>
       <th class="header" style="text-align:right">Single&nbsp;(sell)<br />Single&nbsp;(buy)</th>
       <th class="header" style="text-align:right">Total&nbsp;(sell)<br />Total&nbsp;(buy)</th>
@@ -105,6 +105,7 @@
     </tr>
   </tfoot>
 </table>
+</div>
 
 <script>
 $(document).ready(function() {

@@ -59,47 +59,44 @@ $(function() {
 {% endblock %}
 {% block body %}
 
-    <div class="container">
-      <div class="row">
-        <div class="span5">
-          <h4>{{_('paste box title')}}</h4>
-          <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
-            <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
-            <input type="hidden" name="load_full" value="1"/>
-            <div class="controls form-inline clearfix">
-              <div id="buttons" class="pull-left">
-                <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
-                <button type="reset" class="btn">{{_('reset button')}}</button>
-              </div>
-
-              <div class="pull-right input-append">
-                <select class="span3" id="market">
-                  <option value='30000142'>Jita</option>
-                  <option value='30002187'>Amarr</option>
-                  <option value='30002659'>Dodixie</option>
-                  <option value='30002510'>Rens</option>
-                  <option value='30002053'>Hek</option>
-                  <option value='-1'>Trade Hub Regions</option>
-                </select>
-              </div>
-            </div>
-          </form>
+<div class="row">
+  <div class="span5">
+    <h4>{{_('paste box title')}}</h4>
+    <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
+      <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
+      <input type="hidden" name="load_full" value="1"/>
+      <div class="controls form-inline clearfix">
+        <div id="buttons" class="pull-left">
+          <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
+          <button type="reset" class="btn">{{_('reset button')}}</button>
         </div>
-        <div class="span7" id="result_container">
-          {% block results %}
 
-            <span style="text-align:right"><h5>Over {{ '%.4g'|format(appraisal_count)|float|int|comma_separated_int }} Appraisals Performed</h5></span>
-            <h4>{{_('what do i do title')}}</h4>
-            <p>
-               {{_('what do i do')}}
-            </p>
-
-            <h4>{{_('paste options title')}}</h4>
-            <p>
-               {{_('paste options')}}
-            </p>
-          {% endblock %}
+        <div class="pull-right input-append">
+          <select class="span3" id="market">
+            <option value='30000142'>Jita</option>
+            <option value='30002187'>Amarr</option>
+            <option value='30002659'>Dodixie</option>
+            <option value='30002510'>Rens</option>
+            <option value='30002053'>Hek</option>
+            <option value='-1'>Trade Hub Regions</option>
+          </select>
         </div>
       </div>
-    </div>
+    </form>
+  </div>
+  <div class="span7" id="result_container">
+    {% block results %}
+
+      <div style="text-align:right"><h5>Over {{ '%.4g'|format(appraisal_count)|float|int|comma_separated_int }} Appraisals Performed</h5></div>
+      <h4>{{_('what do i do title')}}</h4>
+      <p>
+         {{_('what do i do')}}
+      </p>
+
+      <h4>{{_('paste options title')}}</h4>
+       {{_('paste options')}}
+      
+    {% endblock %}
+  </div>
+</div>
 {% endblock %}

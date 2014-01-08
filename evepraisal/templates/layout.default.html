@@ -58,10 +58,10 @@
         // set a unique id 
         id: 'attrib', 
         is: function(s, table, cell) { 
-            return !!$(cell).attr('x-sort-data');
+            return !!$(cell).attr('data-sort');
         }, 
         format: function(s, table, cell) { 
-            return $(cell).attr('x-sort-data');
+            return $(cell).attr('data-sort');
         }, 
         // set type, either numeric or text 
         type: 'numeric' 
@@ -92,7 +92,7 @@
       </div><!-- /.navbar-inner -->
     </div><!-- /.navbar --> 
 
-    <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw_paste_modal" aria-hidden="true">
+    <div id="help-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="help-modal" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3>{{_('help tile')}}</h3>
@@ -121,8 +121,8 @@
           {% endfor %}
         </div>
       </div>
+      {% block body %}{% endblock %}
     </div>
-    {% block body %}{% endblock %}
 
     {% block footer %}
     <footer>
