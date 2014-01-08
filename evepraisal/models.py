@@ -44,7 +44,8 @@ class Appraisals(db.Model):
         price_map = dict(self.Prices)
         for kind, parsed in self.result_list():
             for item_name, quantity in iter_types(kind, parsed):
-                quantity = quantity or 1
+                if quantity in [None, '']:
+                    quantity = 1
                 details = get_type_by_name(item_name)
                 if details:
                     type_prices = price_map.get(details['typeID'])
