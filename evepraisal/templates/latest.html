@@ -15,6 +15,7 @@
                 <th class="header"></th>
                 <th class="header" style="text-align:right">Buy Value</th>
                 <th class="header"></th>
+                <th class="header">Format</th>
               </tr>
             </thead>
             <tbody>
@@ -27,6 +28,7 @@
                 <td><small>{{ totals.sell|format_isk_human }}</small></td>
                 <td style="text-align:right">{{ totals.buy|format_isk }}</td>
                 <td><small>{{ totals.buy|format_isk_human }}</small></td>
+                <td><small>{{ appraisal.Kind|replace('_', ' ')|title }}</small></td>
               </tr>
               {% endfor %}
           </table>
