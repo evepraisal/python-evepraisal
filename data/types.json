@@ -101281,7 +101281,7 @@
     "volume": 0.5, 
     "typeID": 26902, 
     "groupID": 526, 
-    "market": false, 
+    "market": true, 
     "typeName": "Fedo"
   }, 
   {
@@ -136101,7 +136101,7 @@
     "volume": 5000.0, 
     "typeID": 33513, 
     "groupID": 31, 
-    "market": false, 
+    "market": true, 
     "typeName": "Leopard"
   }, 
   {
@@ -136430,28 +136430,28 @@
     "volume": 0.1, 
     "typeID": 33569, 
     "groupID": 500, 
-    "market": false, 
+    "market": true, 
     "typeName": "Snowball"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33571, 
     "groupID": 500, 
-    "market": false, 
+    "market": true, 
     "typeName": "Sodium Firework"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33572, 
     "groupID": 500, 
-    "market": false, 
+    "market": true, 
     "typeName": "Barium Firework"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33573, 
     "groupID": 500, 
-    "market": false, 
+    "market": true, 
     "typeName": "Copper Firework"
   }, 
   {
