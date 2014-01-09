@@ -131,7 +131,7 @@ def tryhard_parser(lines):
             # build each part until we find a valid type
             parts = [part.strip(',\t ') for part in line.split(' ')]
             for i in range(len(parts)):
-                name = ' '.join(parts[0:i])
+                name = ' '.join(parts[:-i])
                 if name and get_type_by_name(name):
                     results[name] += 1
                     break
