@@ -31,6 +31,9 @@ def estimate_cost():
     try:
         parse_results = parse(encoded_raw_paste)
     except evepaste.Unparsable as ex:
+        if encoded_raw_paste:
+            app.logger.warning("User input invalid data: %s",
+                               encoded_raw_paste)
         return render_template(
             'error.html', error='Error when parsing input: ' + str(ex))
 

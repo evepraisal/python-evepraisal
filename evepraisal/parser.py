@@ -25,8 +25,8 @@ def parse(raw_paste):
                    ('assets', parsers.parse_assets),
                    ('view_contents', parsers.parse_view_contents),
                    ('wallet', parsers.parse_wallet),
-                   ('cargo_scan', parsers.parse_cargo_scan),
                    ('listing', listing_parser),
+                   ('cargo_scan', parsers.parse_cargo_scan),
                    ('heuristic', tryhard_parser)]
 
     iterations = 0
@@ -71,16 +71,17 @@ def parse(raw_paste):
 
 
 def listing_parser(lines):
-    saved_results = []
+    results = defaultdict(int)
     bad_lines = []
-    results, bad_lines = parsers.parse_listing(lines)
-    for result in results:
-        if get_type_by_name(result['name']):
-            saved_results.append(result)
+    lines = [line.strip() for line in lines]
+    for line in lines:
+        if get_type_by_name(line):
+            results[line] += 1
         else:
-            bad_lines.append(result['name'])
+            bad_lines.append(line)
 
-    return saved_results, bad_lines
+    return [{'name': name, 'quantity': quantity}
+            for name, quantity in results.items()], bad_lines
 
 
 def tryhard_parser(lines):
@@ -136,6 +137,13 @@ def tryhard_parser(lines):
                     break
             else:
                 bad_lines.append(line)
+
+    parse_results, bad_lines = parsers.parse_listing(bad_lines)
+    for parse_result in parse_results:
+        if get_type_by_name(parse_result['name']):
+            results[parse_result['name']] += 1
+        else:
+            bad_lines.append({'name': parse_result['name'], 'quantity': 1})
 
     if not results:
         raise evepaste.Unparsable('No valid input')
