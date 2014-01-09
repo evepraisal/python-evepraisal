@@ -13,6 +13,7 @@ def parse(raw_paste):
     largest_kind_num = 0
 
     parser_list = [('bill_of_materials', parsers.parse_bill_of_materials),
+                   ('listing', listing_parser),
                    ('loot_history', parsers.parse_loot_history),
                    ('survey_scanner', parsers.parse_survey_scanner),
                    ('pi', parsers.parse_pi),
@@ -25,7 +26,6 @@ def parse(raw_paste):
                    ('assets', parsers.parse_assets),
                    ('view_contents', parsers.parse_view_contents),
                    ('wallet', parsers.parse_wallet),
-                   ('listing', listing_parser),
                    ('cargo_scan', parsers.parse_cargo_scan),
                    ('heuristic', tryhard_parser)]
 
