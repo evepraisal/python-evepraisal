@@ -1,6 +1,5 @@
 {% extends "layout.default.html" %}
 {% macro adspace() -%}
-  REFERRRER {{ request.referrer }}
   {% if request.referrer and request.host not in request.referrer %}
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Basic Text Medium -->
