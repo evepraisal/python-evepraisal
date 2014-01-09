@@ -19,6 +19,7 @@ def iter_types(kind, result):
                 'dscan',
                 'fitting',
                 'listing',
+                'cargo_scan',
                 'loot_history',
                 'pi',
                 'survey_scanner',

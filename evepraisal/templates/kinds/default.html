@@ -22,25 +22,25 @@
             {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a>
           </div>
       </td>
-      <td style="text-align:right">{{ details.volume|format_volume }}</td>
+      <td style="text-align:right" data-sort="{{ details.volume|int }}">{{ details.volume|format_volume }}</td>
       {% if prices %}
-        {% set representative_price = prices.sell.price or prices.buy.price %}
-        <td style="text-align:right" data-sort="-{{ representative_price }}">
-          <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
-          <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
-        </td> 
-        <td style="text-align:right" data-sort="-{{ representative_price * qty|float }}">
-          <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
-          <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
-        </td>
-        <td style="text-align:right" data-sort="-{{ representative_price / details.volume }}">
-          <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
-          <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
-        </td>
+      {% set representative_price = prices.sell.price or prices.buy.price %}
+      <td style="text-align:right" data-sort="-{{ representative_price }}">
+        <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
+        <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
+      </td> 
+      <td style="text-align:right" data-sort="-{{ representative_price * qty|float }}">
+        <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
+        <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
+      </td>
+      <td style="text-align:right" data-sort="-{{ representative_price / details.volume }}">
+        <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
+        <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
+      </td>
       {% else %}
-        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td> 
-        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
-        <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
+      <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td> 
+      <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
+      <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
       {% endif %}
     </tr>
   {% endif %}

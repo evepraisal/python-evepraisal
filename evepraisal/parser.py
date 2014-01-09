@@ -24,35 +24,42 @@ def parse(raw_paste):
                    ('assets', parsers.parse_assets),
                    ('view_contents', parsers.parse_view_contents),
                    ('wallet', parsers.parse_wallet),
-                   ('heuristic', tryhard_parser),
-                   ('listing', parsers.parse_listing)]
+                   ('cargo_scan', parsers.parse_cargo_scan),
+                   ('listing', listing_parser),
+                   ('heuristic', tryhard_parser)]
 
     iterations = 0
     while iterations < 10:
-        kind, result, bad_lines = evepaste.parse(raw_paste,
-                                                 parsers=parser_list)
-        if result:
-            results.append([kind, result])
-
-            for i, (item_name, _) in enumerate(iter_types(kind, result)):
-                details = get_type_by_name(item_name)
-                if details:
-                    unique_items.add(details['typeID'])
-
-            if i >= largest_kind_num:
-                representative_kind = kind
-                largest_kind_num = i
-
-            raw_paste = '\n'.join(bad_lines)
-        else:
-            # We found zero results, we're done parsing
-            break
-
-        # We're finished parsing because we've consumed all of our data
-        if not bad_lines:
-            break
-
         iterations += 1
+        try:
+            kind, result, bad_lines = evepaste.parse(raw_paste,
+                                                     parsers=parser_list)
+            if result:
+                results.append([kind, result])
+
+                for i, (item_name, _) in enumerate(iter_types(kind, result)):
+                    details = get_type_by_name(item_name)
+                    if details:
+                        unique_items.add(details['typeID'])
+
+                if i >= largest_kind_num:
+                    representative_kind = kind
+                    largest_kind_num = i
+
+                raw_paste = '\n'.join(bad_lines)
+            else:
+                # We found zero results, we're done parsing
+                break
+
+            # We're finished parsing because we've consumed all of our data
+            if not bad_lines:
+                break
+
+        except evepaste.Unparsable:
+            if results:
+                break
+            else:
+                raise
 
     return {
         'representative_kind': representative_kind,
@@ -62,14 +69,30 @@ def parse(raw_paste):
     }
 
 
+def listing_parser(lines):
+    saved_results = []
+    bad_lines = []
+    results, bad_lines = parsers.parse_listing(lines)
+    for result in results:
+        if get_type_by_name(result['name']):
+            saved_results.append(result)
+        else:
+            bad_lines.append(result['name'])
+
+    return saved_results, bad_lines
+
+
 def tryhard_parser(lines):
     results = defaultdict(int)
     bad_lines = []
-    lines = [line for line in lines if line]
     for line in lines:
-        parts = [part.strip(',\t ') for part in line.split('\t')]
+        parts = [part.strip(', ') for part in line.split('\t')]
         if len(parts) == 1:
             parts = [part.strip(',\t ') for part in line.split('  ')]
+            parts = [part for part in parts if part]
+
+        if len(parts) == 1:
+            parts = [part.strip(',') for part in line.split(' ')]
             parts = [part for part in parts if part]
 
         # This should only work for multi-part lines
@@ -80,8 +103,7 @@ def tryhard_parser(lines):
                         [None, 'name', None, 'quantity'],
                         ['quantity', None, 'name'],
                         ['quantity', 'name'],
-                        [None, 'name'],
-                        ['name']]
+                        [None, 'name']]
         for combo in combinations:
             if len(combo) > len(parts):
                 continue
