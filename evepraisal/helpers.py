@@ -49,5 +49,8 @@ def iter_types(kind, result):
         for item in result:
             if item.get('name'):
                 yield item['name'], item.get('quantity', 1)
+    elif kind == 'chat':
+        for item in result['items']:
+            yield item['name'], 1
     else:
         raise ValueError('Invalid kind %s', kind)

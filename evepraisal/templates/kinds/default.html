@@ -22,7 +22,7 @@
             {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ details.typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ details.typeID }}_32.png" alt="{{ name }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a>
           </div>
       </td>
-      <td style="text-align:right" data-sort="{{ details.volume|int }}">{{ details.volume|format_volume }}</td>
+      <td style="text-align:right">{{ details.volume|format_volume }}</td>
       {% if prices %}
       {% set representative_price = prices.sell.price or prices.buy.price %}
       <td style="text-align:right" data-sort="-{{ representative_price }}">
@@ -80,6 +80,10 @@
         {{ print_row(item, True) }}
       {% endfor %}
       {% for item in result.dropped %}
+        {{ print_row(item) }}
+      {% endfor %}
+    {% elif kind == 'chat' %}
+      {% for item in result['items'] %}
         {{ print_row(item) }}
       {% endfor %}
     {% else %}

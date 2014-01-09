@@ -18,6 +18,7 @@ def parse(raw_paste):
                    ('pi', parsers.parse_pi),
                    ('dscan', parsers.parse_dscan),
                    ('killmail', parsers.parse_killmail),
+                   ('chat', parsers.parse_chat),
                    ('eft', parsers.parse_eft),
                    ('fitting', parsers.parse_fitting),
                    ('contract', parsers.parse_contract),
