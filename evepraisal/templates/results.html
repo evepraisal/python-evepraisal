@@ -1,6 +1,11 @@
-{% if full_page %}{% extends 'index.html' %}{% endif -%}
-
-{% block title %}{{_('app title')}} - Result #{{ appraisal.Id }} [{{appraisal.Kind|format_kind}}]{% endblock %}
+{% if full_page %}
+  {% extends 'index.html' %}
+  {% block title %}{{_('app title')}} - Result #{{ appraisal.Id }} [{{appraisal.Kind|format_kind}}]{% endblock %}
+{% else %}
+<script>
+  document.title = "{{_('app title')}} - Result #{{ appraisal.Id }} [{{appraisal.Kind|format_kind}}]";
+</script>
+{% endif %}
 {% block results %}
 <div id="raw-result-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="raw-result-modal" aria-hidden="true">
   <div class="modal-header">
