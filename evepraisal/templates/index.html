@@ -60,7 +60,6 @@ $(function() {
 {% block body %}
 
 <div class="row">
-
   <div class="span5">
     <h4>{{_('paste box title')}}</h4>
     <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
@@ -84,7 +83,6 @@ $(function() {
         </div>
       </div>
     </form>
-    <div class="span5">{{ adspace() }}</div>
   </div>
   <div class="span7" id="result_container">
     {% block results %}
@@ -101,4 +99,5 @@ $(function() {
     {% endblock %}
   </div>
 </div>
+<div style="text-align:center">{{ adspace() }}</div>
 {% endblock %}
