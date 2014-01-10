@@ -37,8 +37,9 @@
   </div>
 </div>
 {% endif %}
-
-
+{% if appraisal.Kind == 'heuristic' %}
+<span class="warning-message">The heuristic parser was used to parse this result. That means that the format of the data you entered is unknown to Evepraisal and some guess-work was used to bring you the results below.</span>
+{% endif %}
 {% include 'kinds/default.html' %}
 
 <script>

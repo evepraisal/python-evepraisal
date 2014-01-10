@@ -114,7 +114,7 @@
 <script>
 $(document).ready(function() {
   $("#results").tablesorter({
-    {% if appraisal.Kind == 'listing' %}
+    {% if appraisal.Kind == 'cargo_scan' %}
         sortList: [[5,0]]
     {% else %}
         sortList: [[4,0]]

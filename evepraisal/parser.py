@@ -1,4 +1,5 @@
 from collections import defaultdict
+from itertools import takewhile
 
 import evepaste
 from evepaste import parsers
@@ -9,7 +10,7 @@ from helpers import iter_types
 def parse(raw_paste):
     unique_items = set()
     results = []
-    representative_kind = ''
+    representative_kind = 'unknown'
     largest_kind_num = 0
 
     parser_list = [('bill_of_materials', parsers.parse_bill_of_materials),
@@ -33,19 +34,36 @@ def parse(raw_paste):
     while iterations < 10:
         iterations += 1
         try:
+            if not parser_list:
+                break
+
             kind, result, bad_lines = evepaste.parse(raw_paste,
                                                      parsers=parser_list)
-            if result:
-                results.append([kind, result])
 
-                for i, (item_name, _) in enumerate(iter_types(kind, result)):
+            if result:
+                # Verify the results has some valid items and gather unique
+                # items
+                item_count = 0
+                for item_name, _ in iter_types(kind, result):
                     details = get_type_by_name(item_name)
                     if details:
                         unique_items.add(details['typeID'])
+                        item_count += 1
 
-                if i >= largest_kind_num:
+                if item_count == 0:
+                    # Narrow down the parser_list to those that didn't get a
+                    # chance last time
+                    used_parser_list = list(takewhile(lambda p: kind != p[0],
+                                                      parser_list))
+                    parser_list = parser_list[len(used_parser_list)+1:]
+                    continue
+
+                results.append([kind, result])
+
+                # Determine if this is the representative type
+                if item_count >= largest_kind_num:
                     representative_kind = kind
-                    largest_kind_num = i
+                    largest_kind_num = item_count
 
                 raw_paste = '\n'.join(bad_lines)
             else:
@@ -61,6 +79,9 @@ def parse(raw_paste):
                 break
             else:
                 raise
+
+    if raw_paste:
+        bad_lines += raw_paste.split('\n')
 
     return {
         'representative_kind': representative_kind,
@@ -86,8 +107,16 @@ def listing_parser(lines):
 
 def tryhard_parser(lines):
     results = defaultdict(int)
-    bad_lines = []
-    for line in lines:
+    unparsed_lines = []
+
+    parse_results, bad_lines = parsers.parse_listing(lines)
+    for parse_result in parse_results:
+        if get_type_by_name(parse_result['name']):
+            results[parse_result['name']] += parse_result.get('quantity', 1)
+        else:
+            unparsed_lines.append(parse_result['name'])
+
+    for line in unparsed_lines:
         parts = [part.strip(', ') for part in line.split('\t')]
         if len(parts) == 1:
             parts = [part.strip(',\t ') for part in line.split('  ')]
@@ -137,13 +166,6 @@ def tryhard_parser(lines):
                     break
             else:
                 bad_lines.append(line)
-
-    parse_results, bad_lines = parsers.parse_listing(bad_lines)
-    for parse_result in parse_results:
-        if get_type_by_name(parse_result['name']):
-            results[parse_result['name']] += 1
-        else:
-            bad_lines.append({'name': parse_result['name'], 'quantity': 1})
 
     if not results:
         raise evepaste.Unparsable('No valid input')
