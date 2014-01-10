@@ -28,7 +28,7 @@
         <td style="text-align:right">{{ totals.buy|format_isk }}</td>
         <td><small>{{ totals.buy|format_isk_human }}</small></td>
         <td>{{ appraisal.Public }}</td>
-        <td><small>{{ appraisal.Kind|replace('_', ' ')|title }}</small></td>
+        <td><small>{{ appraisal.Kind|format_kind }}</small></td>
       </tr>
       {% endfor %}
   </table>

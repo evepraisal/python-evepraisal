@@ -82,7 +82,7 @@ msgstr "Evepraisal"
 #: evepraisal/templates/layout.default.html:9
 msgid "app short description"
 msgstr ""
-"Price check Eve Online items from Cargo Scans, Contracts, D-Scan, EFT "
+"Price check Eve Online items from Cargo Scans, Contracts, D-Scan, EFT, Inventory, Asset listing, Loot History, PI, Survey Scanner, Killmails, Wallet Transactions"
 "Blocks, Inventory, Assets"
 
 #: evepraisal/templates/layout.default.html:64

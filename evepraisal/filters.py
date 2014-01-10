@@ -82,6 +82,11 @@ def format_volume(value):
         return "unknown"
 
 
+@app.template_filter('format_kind')
+def format_kind(value):
+    return value.replace('_', ' ').title()
+
+
 @app.template_filter('relative_time')
 def relative_time(past):
     now = time.time()

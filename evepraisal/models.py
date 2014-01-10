@@ -106,4 +106,6 @@ def get_type_by_name(name):
 
 
 def get_type_by_id(typeID):
+    if not typeID:
+        return
     return TYPES_BY_ID.get(typeID)
