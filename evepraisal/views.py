@@ -117,23 +117,30 @@ def history():
     return render_template('history.html', appraisals=appraisals)
 
 
-@cache.memoize(timeout=30)
 def latest():
+    cache_key = "latest:%s" % request.args.get('kind', 'all')
+    body = cache.get(cache_key)
+    if body:
+        return body
     q = Appraisals.query
     q = q.filter_by(Public=True)  # NOQA
+    if request.args.get('kind'):
+        q = q.filter_by(Kind=request.args.get('kind'))  # NOQA
     q = q.order_by(desc(Appraisals.Created))
     q = q.limit(200)
     appraisals = q.all()
-    return render_template('latest.html', appraisals=appraisals)
+    body = render_template('latest.html', appraisals=appraisals)
+    cache.set(cache_key, body, timeout=30)
+    return body
 
 
 def index():
     "Index. Renders HTML."
 
-    count = cache.get("latest:count")
+    count = cache.get("stats:appraisal_count")
     if not count:
         count = appraisal_count()
-        cache.set("latest:count", count, timeout=60)
+        cache.set("stats:appraisal_count", count, timeout=60)
 
     return render_template('index.html', appraisal_count=count)
 

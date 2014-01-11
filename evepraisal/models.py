@@ -22,7 +22,7 @@ class Appraisals(db.Model):
 
     Id = db.Column(db.Integer(), primary_key=True)
     #: Bad Lines
-    Kind = db.Column(db.Text())
+    Kind = db.Column(db.Text(), index=True)
     #: Raw Input taken from the user
     RawInput = db.Column(db.Text())
     #: JSON as a result of the parser (evepaste)

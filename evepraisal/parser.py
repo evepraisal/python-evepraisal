@@ -80,15 +80,10 @@ def parse(raw_paste):
             else:
                 raise
 
-    if raw_paste:
-        bad_lines += raw_paste.split('\n')
-
-    return {
-        'representative_kind': representative_kind,
-        'results': results,
-        'bad_lines': bad_lines,
-        'unique_items': unique_items,
-    }
+    return {'representative_kind': representative_kind,
+            'results': results,
+            'bad_lines': bad_lines,
+            'unique_items': unique_items}
 
 
 def listing_parser(lines):
