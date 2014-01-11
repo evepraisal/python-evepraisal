@@ -221,12 +221,8 @@ def get_componentized_values(eve_types, options=None):
             component_types = dict((c['materialTypeID'], c['quantity'])
                                    for c in type_details['components'])
 
-            component_prices = get_market_prices(
-                component_types.keys(),
-                methods=[get_cached_values,
-                         get_market_values,
-                         get_market_values_2],
-                options=options)
+            component_prices = get_market_prices(component_types.keys(),
+                                                 options=options)
             price_map = dict(component_prices)
             zeroed_price = {'avg': 0, 'min': 0, 'max': 0, 'price': 0}
             complete_price_data = {
@@ -251,14 +247,14 @@ def get_componentized_values(eve_types, options=None):
     return componentized_items
 
 
-def get_market_prices(modules, methods=None, options=None):
+def get_market_prices(modules, options=None):
     unpriced_modules = modules[:]
     prices = {}
-    for pricing_method in methods or [get_invalid_values,
-                                      get_cached_values,
-                                      get_componentized_values,
-                                      get_market_values,
-                                      get_market_values_2]:
+    for pricing_method in [get_invalid_values,
+                           get_cached_values,
+                           get_componentized_values,
+                           get_market_values,
+                           get_market_values_2]:
         if len(modules) == len(prices):
             break
         # each pricing_method returns a dict with {type_id: pricing_info}

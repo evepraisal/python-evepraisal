@@ -1,5 +1,13 @@
 {% set price_table = appraisal.Prices|make_price_table %}
 {% set totals = appraisal.totals() %}
+{% macro print_price_cell(price_dict, quantity=1) -%}
+  {% if price_dict.volume != 0 %}
+    <span class="nowrap">{{ (price_dict.price * quantity|float)|format_isk }}</span>
+  {% else %}
+    <span class="nowrap warning-message">No Market Volume</span>
+  {% endif %}
+{%- endmacro %}
+
 {% macro print_row(item, highlight=False) -%}
   {% if item.name %}
     {% set details = item.name|type_details %}
@@ -24,19 +32,16 @@
       </td>
       <td style="text-align:right">{{ details.volume|format_volume }}</td>
       {% if prices %}
-      {% set representative_price = prices.sell.price or prices.buy.price %}
-      <td style="text-align:right" data-sort="-{{ representative_price }}">
-        <span class="nowrap">{{ prices.sell.price|format_isk }}</span><br />
-        <span class="nowrap">{{ prices.buy.price|format_isk }}</span>
-      </td> 
-      <td style="text-align:right" data-sort="-{{ representative_price * qty|float }}">
-        <span class="nowrap">{{ (prices.sell.price * qty|float)|format_isk }}</span><br />
-        <span class="nowrap">{{ (prices.buy.price * qty|float)|format_isk }}</span>
-      </td>
-      <td style="text-align:right" data-sort="-{{ representative_price / details.volume }}">
-        <span class="nowrap">{{ (prices.sell.price / details.volume)|format_isk }}</span><br />
-        <span class="nowrap">{{ (prices.buy.price / details.volume)|format_isk }}</span>
-      </td>
+        {% set representative_price = prices.sell.price or prices.buy.price %}
+        <td style="text-align:right" data-sort="-{{ representative_price }}">
+          {{ print_price_cell(prices.sell) }}<br />{{ print_price_cell(prices.buy) }}
+        </td>
+        <td style="text-align:right" data-sort="-{{ representative_price * qty|float }}">
+          {{ print_price_cell(prices.sell, qty) }}<br />{{ print_price_cell(prices.buy, qty) }}
+        </td>
+        <td style="text-align:right" data-sort="-{{ representative_price / details.volume }}">
+          {{ print_price_cell(prices.sell, 1/details.volume) }}<br />{{ print_price_cell(prices.buy, 1/details.volume) }}
+        </td>
       {% else %}
       <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td> 
       <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>

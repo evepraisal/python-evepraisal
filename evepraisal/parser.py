@@ -94,7 +94,14 @@ def listing_parser(lines):
         if get_type_by_name(line):
             results[line] += 1
         else:
-            bad_lines.append(line)
+            result, bad_line = parsers.parse_listing([line])
+            for r in result:
+                if get_type_by_name(r['name']):
+                    results[r['name']] += r.get('quantity', 1)
+                else:
+                    bad_lines.append(line)
+            for l in bad_line:
+                bad_lines.append(l)
 
     return [{'name': name, 'quantity': quantity}
             for name, quantity in results.items()], bad_lines
@@ -102,16 +109,9 @@ def listing_parser(lines):
 
 def tryhard_parser(lines):
     results = defaultdict(int)
-    unparsed_lines = []
+    bad_lines = []
 
-    parse_results, bad_lines = parsers.parse_listing(lines)
-    for parse_result in parse_results:
-        if get_type_by_name(parse_result['name']):
-            results[parse_result['name']] += parse_result.get('quantity', 1)
-        else:
-            unparsed_lines.append(parse_result['name'])
-
-    for line in unparsed_lines:
+    for line in lines:
         parts = [part.strip(', ') for part in line.split('\t')]
         if len(parts) == 1:
             parts = [part.strip(',\t ') for part in line.split('  ')]
@@ -129,7 +129,8 @@ def tryhard_parser(lines):
                         [None, 'name', None, 'quantity'],
                         ['quantity', None, 'name'],
                         ['quantity', 'name'],
-                        [None, 'name']]
+                        [None, 'name'],
+                        ['name']]
         for combo in combinations:
             if len(combo) > len(parts):
                 continue
