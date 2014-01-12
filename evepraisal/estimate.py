@@ -80,6 +80,7 @@ def get_market_values(eve_types, options=None):
             query += ['usesystem=%s' % solarsystem_id]
         query_str = '&'.join(query)
         url = "http://api.eve-central.com/api/marketstat?%s" % query_str
+        app.logger.debug("API Call: %s", url)
         try:
             request = urllib2.Request(url)
             request.add_header('User-Agent', app.config['USER_AGENT'])
@@ -157,6 +158,7 @@ def get_market_values_2(eve_types, options=None):
 
         url = "http://api.eve-marketdata.com/api/item_prices2.json?" \
             "char_name=magerawr&buysell=a&%s" % (query_str)
+        app.logger.debug("API Call: %s", url)
         try:
             request = urllib2.Request(url)
             request.add_header('User-Agent', app.config['USER_AGENT'])
@@ -259,10 +261,13 @@ def get_market_prices(modules, options=None):
             break
         # each pricing_method returns a dict with {type_id: pricing_info}
         _prices = pricing_method(unpriced_modules, options=options)
-        app.logger.debug("Found %s/%s items using method: %s",
-                         len(_prices), len(modules), pricing_method)
+        # app.logger.debug("Found %s/%s items using method: %s",
+        #                  len(_prices), len(modules), pricing_method)
         for type_id, pricing_info in _prices.items():
             if type_id in unpriced_modules:
                 prices[type_id] = pricing_info
                 unpriced_modules.remove(type_id)
+            else:
+                app.logger.debug("[Method: %s] A price was returned which "
+                                 "wasn't asked for", pricing_method)
     return prices.items()
