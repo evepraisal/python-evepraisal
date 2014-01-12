@@ -172,6 +172,6 @@ def tryhard_parser(lines):
 
 def int_convert(s):
     try:
-        return int(s.translate(None, ',. x'))
+        return int(s.translate({"'": '', ',': '', '.': '', ' ': '', 'x': ''}))
     except ValueError:
         return

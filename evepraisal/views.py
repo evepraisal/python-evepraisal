@@ -27,13 +27,11 @@ def estimate_cost():
     if solar_system not in app.config['VALID_SOLAR_SYSTEMS'].keys():
         abort(400)
 
-    encoded_raw_paste = raw_paste.encode('utf-8')
     try:
-        parse_results = parse(encoded_raw_paste)
+        parse_results = parse(raw_paste)
     except evepaste.Unparsable as ex:
-        if encoded_raw_paste:
-            app.logger.warning("User input invalid data: %s",
-                               encoded_raw_paste)
+        if raw_paste:
+            app.logger.warning("User input invalid data: %s", raw_paste)
         return render_template(
             'error.html', error='Error when parsing input: ' + str(ex))
 
