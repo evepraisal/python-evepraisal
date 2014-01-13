@@ -52,7 +52,9 @@ def estimate_cost():
     db.session.add(appraisal)
     db.session.commit()
 
-    app.logger.debug("New Appraisal: %s", parse_results['representative_kind'])
+    app.logger.debug("New Appraisal [%s]: %s",
+                     appraisal.Id,
+                     parse_results['representative_kind'])
 
     return render_template('results.html',
                            appraisal=appraisal)
