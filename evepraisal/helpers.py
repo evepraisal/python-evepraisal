@@ -26,31 +26,35 @@ def iter_types(kind, result):
                 'view_contents',
                 'heuristic']:
         for item in result:
-            if 'BLUEPRINT COPY' in item.get('details', ''):
-                yield item['name'], 0
-            else:
-                yield item['name'], item.get('quantity', 1)
+            item['quantity'] = item.get('quantity', 1)
+            yield item
     elif kind == 'bill_of_materials':
         for item in result:
-            yield item['name'], item.get('you', item.get('quantity'))
+            yield {'name': item['name'],
+                   'quantity': item.get('you', item.get('quantity'))}
     elif kind == 'eft':
-        yield result['ship'], 1
+        yield {'name': result['ship'], 'quantity': 1}
         for item in result['modules']:
-            yield item['name'], item.get('quantity', 1)
+            yield item
             if item.get('ammo'):
-                yield item['ammo'], 1
+                yield {'name': item['ammo'], 'quantity': 1}
     elif kind == 'killmail':
-        yield result['victim']['destroyed'], 1
+        yield {'name': result['victim']['destroyed'],
+               'quantity': 1,
+               'destroyed': True}
         for item in result['dropped']:
-            yield item['name'], item.get('quantity', 1)
+            item['dropped'] = True
+            yield item
         for item in result['destroyed']:
-            yield item['name'], item.get('quantity', 1)
+            item['destroyed'] = True
+            yield item
     elif kind == 'wallet':
         for item in result:
             if item.get('name'):
-                yield item['name'], item.get('quantity', 1)
+                yield item
     elif kind == 'chat':
         for item in result['items']:
-            yield item['name'], 1
+            item['quantity'] = item.get('quantity', 1)
+            yield item
     else:
         raise ValueError('Invalid kind %s', kind)

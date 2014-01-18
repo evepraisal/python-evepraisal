@@ -66,14 +66,6 @@ def get_market_values(eve_types, options=None):
         if solarsystem_id == '-1':
             buy_price_metric = 'percentile'
             sell_price_metric = 'percentile'
-            # Forge (for jita): 10000002
-            # Metropolis (for hek): 10000042
-            # Heimatar (for rens): 10000030
-            # Sinq Laison region (for dodixie): 10000032
-            # Domain (for amarr): 10000043
-            query += ['regionlimit=10000002', 'regionlimit=10000042',
-                      'regionlimit=10000030', 'regionlimit=10000032',
-                      'regionlimit=10000043']
         else:
             buy_price_metric = 'max'
             sell_price_metric = 'min'

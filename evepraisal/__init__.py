@@ -17,7 +17,7 @@ app = Flask(__name__)
 # configuration
 app.config['DEBUG'] = True
 app.config['VALID_SOLAR_SYSTEMS'] = {
-    '-1': 'Trade Hub Regions',
+    '-1': 'Universe',
     '30000142': 'Jita',
     '30002187': 'Amarr',
     '30002659': 'Dodixie',

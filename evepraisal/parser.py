@@ -44,8 +44,8 @@ def parse(raw_paste):
                 # Verify the results has some valid items and gather unique
                 # items
                 item_count = 0
-                for item_name, _ in iter_types(kind, result):
-                    details = get_type_by_name(item_name)
+                for item in iter_types(kind, result):
+                    details = get_type_by_name(item['name'])
                     if details:
                         unique_items.add(details['typeID'])
                         item_count += 1

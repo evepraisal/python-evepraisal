@@ -7,12 +7,16 @@
 # data. URL: https://github.com/ntt/reverence/
 
 import json
-from reverence import blue
+from reverence import blue, const
 
 
 if __name__ == '__main__':
 
-    COMP_TYPES = [659, 547, 30, 485, 883]
+    COMP_TYPES = [const.groupSupercarrier,
+                  const.groupCarrier,
+                  const.groupTitan,
+                  const.groupDreadnought,
+                  const.groupCapitalIndustrialShip]
     EVEPATH = '/Applications/EVE Online.app/Contents/Resources/' \
               'EVE Online.app/Contents/Resources/transgaming/c_drive/' \
               'Program Files/CCP/EVE'
@@ -22,32 +26,28 @@ if __name__ == '__main__':
     cfg = eve.getconfigmgr()
 
     all_types = []
-    for (typeID, groupID, typeName, marketGroupID, volume) in \
-            cfg.invtypes.Select(
-                'typeID', 'groupID', 'typeName', 'marketGroupID', 'volume'):
-        print("Populating info for: %s" % typeName.encode('utf-8'))
+    for invtype in cfg.invtypes:
+        print("Populating info for: %s" % invtype.typeName.encode('utf-8'))
 
-        hasMarket = marketGroupID is not None
+        hasMarket = invtype.marketGroupID is not None
         d = {
-            'typeID': typeID,
-            'groupID': groupID,
-            'typeName': typeName,
-            'volume': volume,
+            'typeID': invtype.typeID,
+            'groupID': invtype.groupID,
+            'typeName': invtype.typeName,
+            'volume': invtype.volume,
             'market': hasMarket,
         }
 
         # super carrier, carrier, titan, dread, rorq
-        if groupID in COMP_TYPES and typeID in cfg.invtypematerials:
-            components = []
-            for typeID, materialTypeID, qty in cfg.invtypematerials[typeID]:
-                components.append({
-                    'typeID': typeID,
-                    'materialTypeID': materialTypeID,
-                    'quantity': qty,
-                })
+        if all([invtype.groupID in COMP_TYPES,
+                invtype.typeID in cfg.invtypematerials]):
 
-            d['components'] = components
-        name_lower = typeName.lower()
+            d['components'] = [{'typeID': typeID,
+                                'materialTypeID': materialTypeID,
+                                'quantity': qty}
+                               for typeID, materialTypeID, qty
+                               in cfg.invtypematerials[invtype.typeID]]
+
         all_types.append(d)
 
     with open('data/types.json', 'w') as f:

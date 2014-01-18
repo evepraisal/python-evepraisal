@@ -2,35 +2,33 @@
 {% block title %}Latest Appraisals{% endblock %}
 
 {% block body %}
-        <div class="span12">
-          <h4>Latest Appraisals</h4>
-          <table class="table table-condensed table-striped">
-            <thead>
-              <tr>
-                <th class="header">Id</th>
-                <th class="header" style="text-align:right">Created</th>
-                <th class="header" style="text-align:right">Sell Value</th>
-                <th class="header"></th>
-                <th class="header" style="text-align:right">Buy Value</th>
-                <th class="header"></th>
-                <th class="header">Format</th>
-              </tr>
-            </thead>
-            <tbody>
-              {% for appraisal in appraisals %}
-              {% set totals = appraisal.totals() %}
-              <tr>
-                <td><a href="{{ url_for('display_result', result_id=appraisal.Id) }}">#{{ appraisal.Id }}</a></td>
-                <td style="text-align:right">{{ appraisal.Created|relative_time }}</td>
-                <td style="text-align:right">{{ totals.sell|format_isk }}</td>
-                <td><small>{{ totals.sell|format_isk_human }}</small></td>
-                <td style="text-align:right">{{ totals.buy|format_isk }}</td>
-                <td><small>{{ totals.buy|format_isk_human }}</small></td>
-                <td><small>{{ appraisal.Kind|format_kind }}</small></td>
-              </tr>
-              {% endfor %}
-          </table>
-        </div>
-      </div>
-    </div>
+<div class="span12">
+  <h4>Latest Appraisals</h4>
+  <table class="table table-condensed table-striped">
+    <thead>
+      <tr>
+        <th class="header">Id</th>
+        <th class="header">Format</th>
+        <th class="header" colspan="2" style="text-align:center">Created</th>
+        <th class="header" colspan="2" style="text-align:center">Sell Value</th>
+        <th class="header" colspan="2" style="text-align:center">Buy Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for appraisal in appraisals %}
+      {% set totals = appraisal.totals() %}
+      <tr>
+        <td><a href="{{ url_for('display_result', result_id=appraisal.Id) }}">#{{ appraisal.Id }}</a></td>
+        <td><small>{{ appraisal.Kind|format_kind }}</small></td>
+        <td style="text-align:right">{{ appraisal.Created|relative_time }}</td>
+        <td>{{ appraisal.Created|format_time }}</td>
+        <td style="text-align:right">{{ totals.sell|format_isk }}</td>
+        <td><small>{{ totals.sell|format_isk_human }}</small></td>
+        <td style="text-align:right">{{ totals.buy|format_isk }}</td>
+        <td><small>{{ totals.buy|format_isk_human }}</small></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 {% endblock %}

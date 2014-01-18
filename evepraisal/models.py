@@ -41,18 +41,20 @@ class Appraisals(db.Model):
     def totals(self):
         total_sell = total_buy = total_volume = 0
 
-        price_map = dict(self.Prices)
-        for kind, parsed in self.result_list():
-            for item_name, quantity in iter_types(kind, parsed):
-                if quantity in [None, '']:
-                    quantity = 1
-                details = get_type_by_name(item_name)
-                if details:
-                    type_prices = price_map.get(details['typeID'])
-                    if type_prices:
-                        total_sell += type_prices['sell']['price'] * quantity
-                        total_buy += type_prices['buy']['price'] * quantity
-                    total_volume += details['volume'] * quantity
+        for item in self.iter_types():
+            # Don't factor blueprint copies into the total
+            if item.get('bpc'):
+                continue
+
+            if not item.get('market'):
+                continue
+
+            quantity = item['quantity'] or 1
+            if item['prices']:
+                total_sell += item['prices']['sell']['price'] * quantity
+                total_buy += item['prices']['buy']['price'] * quantity
+            if item.get('volume'):
+                total_volume += item['volume'] * quantity
 
         return {'sell': total_sell, 'buy': total_buy, 'volume': total_volume}
 
@@ -65,6 +67,23 @@ class Appraisals(db.Model):
             return self.Parsed
 
         return [[self.Kind, self.Parsed]]
+
+    def iter_types(self):
+        price_map = dict(self.Prices)
+        for kind, parsed in self.result_list():
+            for item in iter_types(kind, parsed):
+                print
+                details = get_type_by_name(item['name'])
+                item['prices'] = None
+                if details:
+                    item.update(details)
+                    item['prices'] = price_map.get(item['typeID'])
+
+                if 'BLUEPRINT COPY' in item.get('details', ''):
+                    item['bpc'] = True
+                    item['prices'] = None
+                print item
+                yield item
 
 
 class Users(db.Model):

@@ -1,6 +1,6 @@
+import datetime
 import time
 import math
-from datetime import timedelta
 from babel.dates import format_timedelta
 from flask import request
 
@@ -87,6 +87,12 @@ def format_kind(value):
     return value.replace('_', ' ').title()
 
 
+@app.template_filter('format_time')
+def format_time(value):
+    d = datetime.datetime.fromtimestamp(value)
+    return d.isoformat()
+
+
 @app.template_filter('relative_time')
 def relative_time(past):
     now = time.time()
@@ -97,7 +103,7 @@ def relative_time(past):
     if past > now:
         postfix = ' in the future'
     try:
-        delta = timedelta(seconds=delta_seconds)
+        delta = datetime.timedelta(seconds=delta_seconds)
         return format_timedelta(delta, locale='en_US') + postfix
     except Exception:
         return ''
