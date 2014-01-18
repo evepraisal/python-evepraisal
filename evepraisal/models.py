@@ -72,7 +72,6 @@ class Appraisals(db.Model):
         price_map = dict(self.Prices)
         for kind, parsed in self.result_list():
             for item in iter_types(kind, parsed):
-                print
                 details = get_type_by_name(item['name'])
                 item['prices'] = None
                 if details:
@@ -82,7 +81,6 @@ class Appraisals(db.Model):
                 if 'BLUEPRINT COPY' in item.get('details', ''):
                     item['bpc'] = True
                     item['prices'] = None
-                print item
                 yield item
 
 

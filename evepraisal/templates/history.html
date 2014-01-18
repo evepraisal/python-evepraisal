@@ -9,6 +9,7 @@
       <tr>
         <th class="header">Id</th>
         <th class="header">Format</th>
+        <th class="header">Location</th>
         <th class="header">Public</th>
         <th class="header" colspan="2" style="text-align:center">Created</th>
         <th class="header" colspan="2" style="text-align:center">Sell Value</th>
@@ -21,6 +22,7 @@
       <tr>
         <td><a href="{{ url_for('display_result', result_id=appraisal.Id) }}">#{{ appraisal.Id }}</a></td>
         <td><small>{{ appraisal.Kind|format_kind }}</small></td>
+        <td><small>{{ appraisal.Market|market_name }}</small></td>
         <td>{{ appraisal.Public }}</td>
         <td style="text-align:right">{{ appraisal.Created|relative_time }}</td>
         <td>{{ appraisal.Created|format_time }}</td>
