@@ -49,7 +49,7 @@ class Appraisals(db.Model):
             if not item.get('market'):
                 continue
 
-            quantity = item['quantity'] or 1
+            quantity = item.get('quantity') or 1
             if item['prices']:
                 total_sell += item['prices']['sell']['price'] * quantity
                 total_buy += item['prices']['buy']['price'] * quantity
