@@ -13,13 +13,14 @@
     {% if item.bpc %}
       {% set name = '%s (Copy)'|format(name) %}
     {% endif %}
+    {% set typeID = item.typeID|default(1) %}
 
     <tr class="line-item-row {% if item.destroyed %}error{%endif%}">
       <td style="text-align:right">{{ item.quantity|comma_separated_int }}</td>
       <td>
           <div class="media">
-            {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(item.typeID) %}
-            {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ item.typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ item.typeID }}_32.png" alt="{{ item.typeName }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a>
+            {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(typeID) %}
+            {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ typeID }}_32.png" alt="{{ item.typeName }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a>
           </div>
       </td>
       <td style="text-align:right">{{ item.volume|format_volume }}</td>
