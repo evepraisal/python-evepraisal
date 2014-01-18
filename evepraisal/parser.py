@@ -17,7 +17,7 @@ def parse(raw_paste):
                    ('loot_history', parsers.parse_loot_history),
                    ('survey_scanner', parsers.parse_survey_scanner),
                    ('pi', parsers.parse_pi),
-                   ('dscan', parsers.parse_dscan),
+                   ('dscan', dscan_parser),
                    ('killmail', parsers.parse_killmail),
                    ('chat', parsers.parse_chat),
                    ('eft', parsers.parse_eft),
@@ -105,6 +105,17 @@ def listing_parser(lines):
 
     return [{'name': name, 'quantity': quantity}
             for name, quantity in results.items()], bad_lines
+
+
+def dscan_parser(lines):
+    results, bad_lines = parsers.parse_dscan(lines)
+    items = defaultdict(int)
+
+    for result in results:
+        items[result['name']] += 1
+
+    return [{'name': name, 'quantity': quantity}
+            for name, quantity in items.items()], bad_lines
 
 
 def tryhard_parser(lines):
