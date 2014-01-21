@@ -81,6 +81,8 @@ class Appraisals(db.Model):
                 if 'BLUEPRINT COPY' in item.get('details', ''):
                     item['bpc'] = True
                     item['prices'] = None
+
+                item['quantity'] = item.get('quantity', 1)
                 yield item
 
 
