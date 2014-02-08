@@ -101,7 +101,23 @@
         <h3>{{_('help tile')}}</h3>
       </div>
       <div class="modal-body">
-        {{_('help text')}}
+      <h4>What is this?</h4>
+      <p>This is a tool for Eve Online aimed at being able to quickly price check items. </p>
+
+      <h4>Why would I use this?</h4>
+      <p>You scan a drake full of original blueprints that you weren't able to quickly see because you sorting through the tabacco, spirits, exotic dancers, T1 planetary comodaties, livestock, garbage, scrap metal, and other random junk you're likely to find in the cargo hold. This tool will allow you to quickly see what's valuable and a rough estimate of how valueable everything is so the few seconds that you have to decide to commit won't be wasted messing messing around with eve's UI. This tool also happens to be pretty decent at doing quick price checks.</p>
+
+      <h4>How are prices calculated?</h4>
+      <p>Prices are pulled from <a href="http://eve-central.com/">Eve-Central.com</a> and (as a backup) <a href="http://eve-marketdata.com/">Eve-Marketdata.com</a>. Capital ship prices are set by the sum of their component parts.</p>
+      
+      <h4>Caveats/Known Issues</h4>
+      <ul>
+        <li>There's no reliable way to get prices of blueprint copies (BPCs). Due to this, I don't even try to guess a price for them.</li>
+        <li>Non-english formats don't always work properly with certain formats.</li>
+      </ul>
+
+      <h4>How do I contact you?</h4>
+      <p>Feel free to send me an in-game mail. My character name is <a href="https://gate.eveonline.com/Profile/Magerawr" target="_blank">Magerawr</a>. If you found an issue, feel free to open an <a href="https://github.com/sudorandom/evepraisal/issues?state=open" target="_blank">issue on github</a>.</p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">{{_('close buton')}}</button>
