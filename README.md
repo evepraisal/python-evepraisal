@@ -4,7 +4,7 @@ This is a tool for Eve Online aimed at being able to quickly price check items. 
 
 Requirements
 ============
-* Python >= 2.6
+* Python > 2.7
 * Flask
 * Memcache
 
