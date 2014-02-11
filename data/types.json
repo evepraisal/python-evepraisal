@@ -11595,7 +11595,7 @@
     "volume": 5000.0, 
     "typeID": 2948, 
     "groupID": 1023, 
-    "market": false, 
+    "market": true, 
     "typeName": "Shadow"
   }, 
   {
@@ -14543,7 +14543,7 @@
     "typeID": 3388, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Production Efficiency"
+    "typeName": "Material Efficiency"
   }, 
   {
     "volume": 0.01, 
@@ -20827,7 +20827,7 @@
     "volume": 1.0, 
     "typeID": 4358, 
     "groupID": 283, 
-    "market": false, 
+    "market": true, 
     "typeName": "Exotic Dancers, Male"
   }, 
   {
@@ -44557,7 +44557,7 @@
     "volume": 5.0, 
     "typeID": 15416, 
     "groupID": 302, 
-    "market": false, 
+    "market": true, 
     "typeName": "Naiyon's Modified Magnetic Field Stabilizer"
   }, 
   {
@@ -45538,7 +45538,7 @@
     "typeID": 15688, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Imperial Navy Reflective Plating Blueprint"
+    "typeName": "Imperial Navy EM Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -45552,7 +45552,7 @@
     "typeID": 15690, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Imperial Navy Reactive Plating Blueprint"
+    "typeName": "Imperial Navy Explosive Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -45566,7 +45566,7 @@
     "typeID": 15692, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Imperial Navy Magnetic Plating Blueprint"
+    "typeName": "Imperial Navy Kinetic Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -45608,7 +45608,7 @@
     "typeID": 15698, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Republic Fleet Reflective Plating Blueprint"
+    "typeName": "Republic Fleet EM Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -45622,7 +45622,7 @@
     "typeID": 15700, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Republic Fleet Reactive Plating Blueprint"
+    "typeName": "Republic Fleet Explosive Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -45636,7 +45636,7 @@
     "typeID": 15702, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Republic Fleet Magnetic Plating Blueprint"
+    "typeName": "Republic Fleet Kinetic Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -56325,7 +56325,7 @@
     "typeID": 17552, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Federation Navy Magnetic Plating Blueprint"
+    "typeName": "Federation Navy Kinetic Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -56339,7 +56339,7 @@
     "typeID": 17554, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Federation Navy Reactive Plating Blueprint"
+    "typeName": "Federation Navy Explosive Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -56353,7 +56353,7 @@
     "typeID": 17556, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Federation Navy Reflective Plating Blueprint"
+    "typeName": "Federation Navy EM Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -84551,7 +84551,7 @@
     "typeID": 23839, 
     "groupID": 133, 
     "market": false, 
-    "typeName": "'Gauntlet' Medium Beam Laser I Blueprint"
+    "typeName": "'Gauntlet' Small Focused Beam Laser I Blueprint"
   }, 
   {
     "volume": 10.0, 
@@ -89354,7 +89354,7 @@
     "typeID": 24572, 
     "groupID": 1216, 
     "market": true, 
-    "typeName": "Capital Energy Emission Systems"
+    "typeName": "Capital Capacitor Emission Systems"
   }, 
   {
     "volume": 10000.0, 
@@ -94954,7 +94954,7 @@
     "typeID": 25747, 
     "groupID": 517, 
     "market": false, 
-    "typeName": "Dars Amene's Myrmidon"
+    "typeName": "Dars Amene's Brutix"
   }, 
   {
     "volume": 26500.0, 
@@ -100540,14 +100540,14 @@
     "typeID": 26755, 
     "groupID": 604, 
     "market": false, 
-    "typeName": "Gurista Guerilla Special Aquirement Division Captain"
+    "typeName": "Gurista Guerilla Special Acquirement Division Captain"
   }, 
   {
     "volume": 101000.0, 
     "typeID": 26756, 
     "groupID": 820, 
     "market": false, 
-    "typeName": "Gurista Special Acquirements Captain"
+    "typeName": "Gurista Special Acquirement Captain"
   }, 
   {
     "volume": 100100.0, 
@@ -110335,7 +110335,7 @@
     "typeID": 28548, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Khanid Navy Magnetic Plating Blueprint"
+    "typeName": "Khanid Navy Kinetic Plating Blueprint"
   }, 
   {
     "volume": 10.0, 
@@ -110370,7 +110370,7 @@
     "typeID": 28553, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Khanid Navy Reactive Plating Blueprint"
+    "typeName": "Khanid Navy Explosive Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -110384,7 +110384,7 @@
     "typeID": 28555, 
     "groupID": 163, 
     "market": false, 
-    "typeName": "Khanid Navy Reflective Plating Blueprint"
+    "typeName": "Khanid Navy EM Plating Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -119242,42 +119242,42 @@
     "typeName": "Fullerene Intercalated Graphite"
   }, 
   {
-    "volume": 1.5, 
+    "volume": 0.75, 
     "typeID": 30306, 
     "groupID": 974, 
     "market": true, 
     "typeName": "Methanofullerene"
   }, 
   {
-    "volume": 2.0, 
+    "volume": 1.0, 
     "typeID": 30307, 
     "groupID": 974, 
     "market": true, 
     "typeName": "Lanthanum Metallofullerene"
   }, 
   {
-    "volume": 2.6, 
+    "volume": 0.65, 
     "typeID": 30308, 
     "groupID": 974, 
     "market": true, 
     "typeName": "Scandium Metallofullerene"
   }, 
   {
-    "volume": 6.0, 
+    "volume": 1.5, 
     "typeID": 30309, 
     "groupID": 974, 
     "market": true, 
     "typeName": "Graphene Nanoribbons"
   }, 
   {
-    "volume": 8.0, 
+    "volume": 0.4, 
     "typeID": 30310, 
     "groupID": 974, 
     "market": true, 
     "typeName": "Carbon-86 Epoxy Resin"
   }, 
   {
-    "volume": 10.0, 
+    "volume": 0.2, 
     "typeID": 30311, 
     "groupID": 974, 
     "market": true, 
@@ -129851,7 +129851,7 @@
     "typeID": 32138, 
     "groupID": 517, 
     "market": false, 
-    "typeName": "Roineron Aviviere's Iteron Mark III"
+    "typeName": "Roineron Aviviere's Epithal"
   }, 
   {
     "volume": 19700.0, 
@@ -131075,7 +131075,7 @@
     "volume": 5.0, 
     "typeID": 32413, 
     "groupID": 208, 
-    "market": false, 
+    "market": true, 
     "typeName": "Shadow Serpentis Remote Sensor Dampener"
   }, 
   {
@@ -132161,7 +132161,7 @@
     "typeID": 32785, 
     "groupID": 1006, 
     "market": false, 
-    "typeName": "Rohan Shadrak's Bellicose"
+    "typeName": "Rohan Shadrak's Scythe"
   }, 
   {
     "volume": 21120.0, 
@@ -135849,7 +135849,7 @@
     "volume": 486000.0, 
     "typeID": 33472, 
     "groupID": 27, 
-    "market": false, 
+    "market": true, 
     "typeName": "Nestor"
   }, 
   {
@@ -135914,6 +135914,34 @@
     "groupID": 226, 
     "market": false, 
     "typeName": "Mobile Shipping Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33482, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Minmatar 1M Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33483, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Caldari 10M Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33484, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Amarr 1M Bounty Reimbursement Tag "
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33485, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Gallente 1M Bounty Reimbursement Tag"
   }, 
   {
     "volume": 1.0, 
@@ -136340,7 +136368,7 @@
     "typeID": 33554, 
     "groupID": 106, 
     "market": false, 
-    "typeName": "Sanctuary Stratios Blueprint"
+    "typeName": "Stratios Emergency Responder Blueprint"
   }, 
   {
     "volume": 1.0, 
@@ -136465,7 +136493,7 @@
     "volume": 0.01, 
     "typeID": 33575, 
     "groupID": 1194, 
-    "market": false, 
+    "market": true, 
     "typeName": "Hull Tanking, Elite"
   }, 
   {
@@ -136488,6 +136516,230 @@
     "groupID": 1089, 
     "market": true, 
     "typeName": "Women's 'Humanitarian' T-shirt YC 115"
+  }, 
+  {
+    "volume": 35.0, 
+    "typeID": 33581, 
+    "groupID": 1247, 
+    "market": true, 
+    "typeName": "Small Mobile 'Hybrid' Siphon Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33582, 
+    "groupID": 1267, 
+    "market": true, 
+    "typeName": "Small Mobile 'Hybrid' Siphon Unit Blueprint"
+  }, 
+  {
+    "volume": 35.0, 
+    "typeID": 33583, 
+    "groupID": 1247, 
+    "market": true, 
+    "typeName": "Small Mobile 'Rote' Siphon Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33584, 
+    "groupID": 1267, 
+    "market": true, 
+    "typeName": "Small Mobile 'Rote' Siphon Unit Blueprint"
+  }, 
+  {
+    "volume": 200.0, 
+    "typeID": 33585, 
+    "groupID": 1273, 
+    "market": true, 
+    "typeName": "Amarr Encounter Surveillance System"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33586, 
+    "groupID": 1277, 
+    "market": false, 
+    "typeName": "Amarr Encounter Surveillance System Blueprint"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 33587, 
+    "groupID": 1274, 
+    "market": false, 
+    "typeName": "Mobile Decoy Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33588, 
+    "groupID": 1268, 
+    "market": false, 
+    "typeName": "Mobile Decoy Unit Blueprint"
+  }, 
+  {
+    "volume": 100.0, 
+    "typeID": 33589, 
+    "groupID": 1275, 
+    "market": true, 
+    "typeName": "Mobile Scan Inhibitor"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33590, 
+    "groupID": 1268, 
+    "market": true, 
+    "typeName": "Mobile Scan Inhibitor Blueprint"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 33591, 
+    "groupID": 1276, 
+    "market": true, 
+    "typeName": "Mobile Micro Jump Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33592, 
+    "groupID": 1270, 
+    "market": true, 
+    "typeName": "Mobile Micro Jump Unit Blueprint"
+  }, 
+  {
+    "volume": 200.0, 
+    "typeID": 33595, 
+    "groupID": 1273, 
+    "market": true, 
+    "typeName": "Caldari Encounter Surveillance System"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33596, 
+    "groupID": 1277, 
+    "market": false, 
+    "typeName": "Caldari Encounter Surveillance System Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33597, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Amarr 100K Bounty Reimbursement Tag "
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33598, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Caldari 100K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33599, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Gallente 100K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33600, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Minmatar 100K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33601, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Amarr 10K Bounty Reimbursement Tag "
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33602, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Caldari 10K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33603, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Gallente 10K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33604, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Minmatar 10K Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33605, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Amarr 10M Bounty Reimbursement Tag "
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33606, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Gallente 10M Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33607, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Minmatar 10M Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 200.0, 
+    "typeID": 33608, 
+    "groupID": 1273, 
+    "market": true, 
+    "typeName": "Gallente Encounter Surveillance System"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33609, 
+    "groupID": 1277, 
+    "market": false, 
+    "typeName": "Gallente Encounter Surveillance System Blueprint"
+  }, 
+  {
+    "volume": 200.0, 
+    "typeID": 33610, 
+    "groupID": 1273, 
+    "market": true, 
+    "typeName": "Minmatar Encounter Surveillance System"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33611, 
+    "groupID": 1277, 
+    "market": false, 
+    "typeName": "Minmatar Encounter Surveillance System Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33612, 
+    "groupID": 1248, 
+    "market": true, 
+    "typeName": "Caldari 1M Bounty Reimbursement Tag"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 33621, 
+    "groupID": 310, 
+    "market": false, 
+    "typeName": "Titanomachy"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 33622, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Titanomachy Monument"
   }, 
   {
     "volume": 0.01, 
