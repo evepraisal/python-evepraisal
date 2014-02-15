@@ -1,6 +1,5 @@
 {% extends "layout.default.html" %}
 {% macro adspace() -%}
-  {% if(request.referrer and request.host not in request.referrer) or is_from_igb() %}
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Leaderboard -->
 <ins class="adsbygoogle"
@@ -10,7 +9,6 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-  {% endif %}
 {%- endmacro %}
 {% block extra_javascript %}
 {{ super() }}
