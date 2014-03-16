@@ -1820,20 +1820,6 @@
     "typeName": "Maulus"
   }, 
   {
-    "volume": 13000.0, 
-    "typeID": 610, 
-    "groupID": 25, 
-    "market": false, 
-    "typeName": "Wraith"
-  }, 
-  {
-    "volume": 13400.0, 
-    "typeID": 611, 
-    "groupID": 25, 
-    "market": false, 
-    "typeName": "Specter"
-  }, 
-  {
     "volume": 19100.0, 
     "typeID": 613, 
     "groupID": 25, 
@@ -2051,13 +2037,6 @@
     "typeName": "Dominix"
   }, 
   {
-    "volume": 441000.0, 
-    "typeID": 647, 
-    "groupID": 27, 
-    "market": false, 
-    "typeName": "Eidolon"
-  }, 
-  {
     "volume": 250000.0, 
     "typeID": 648, 
     "groupID": 28, 
@@ -2126,13 +2105,6 @@
     "groupID": 28, 
     "market": true, 
     "typeName": "Iteron Mark V"
-  }, 
-  {
-    "volume": 240000.0, 
-    "typeID": 658, 
-    "groupID": 28, 
-    "market": false, 
-    "typeName": "Visitant"
   }, 
   {
     "volume": 1000.0, 
@@ -2962,20 +2934,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 957, 
-    "groupID": 105, 
-    "market": false, 
-    "typeName": "Wraith Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 958, 
-    "groupID": 105, 
-    "market": false, 
-    "typeName": "Specter Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 960, 
     "groupID": 105, 
     "market": false, 
@@ -3186,13 +3144,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 993, 
-    "groupID": 108, 
-    "market": false, 
-    "typeName": "Visitant Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 994, 
     "groupID": 107, 
     "market": true, 
@@ -3232,13 +3183,6 @@
     "groupID": 107, 
     "market": true, 
     "typeName": "Dominix Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 1001, 
-    "groupID": 107, 
-    "market": false, 
-    "typeName": "Eidolon Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -17854,13 +17798,6 @@
     "groupID": 10, 
     "market": false, 
     "typeName": "Stargate (Minmatar Constellation)"
-  }, 
-  {
-    "volume": 80000.0, 
-    "typeID": 3878, 
-    "groupID": 26, 
-    "market": false, 
-    "typeName": "Phantom"
   }, 
   {
     "volume": 0.0, 
@@ -75831,7 +75768,7 @@
     "typeID": 22223, 
     "groupID": 306, 
     "market": false, 
-    "typeName": "Guristas Officer's Quarters_Mission_Spy Stash"
+    "typeName": "Guristas Officer's Quarters Mission Spy Stash"
   }, 
   {
     "volume": 27500.0, 
@@ -100970,7 +100907,7 @@
     "typeName": "Okelle Alash_"
   }, 
   {
-    "volume": 585.0, 
+    "volume": 5000000.0, 
     "typeID": 26849, 
     "groupID": 361, 
     "market": false, 
@@ -136728,6 +136665,27 @@
     "typeName": "Caldari 1M Bounty Reimbursement Tag"
   }, 
   {
+    "volume": 0.1, 
+    "typeID": 33618, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Rogue Drone 46-X Nexus Chip"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33619, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Rogue Drone 43-X Nexus Chip"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33620, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Rogue Drone 42-X Nexus Chip"
+  }, 
+  {
     "volume": 1.0, 
     "typeID": 33621, 
     "groupID": 310, 
@@ -136740,6 +136698,1273 @@
     "groupID": 226, 
     "market": false, 
     "typeName": "Titanomachy Monument"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 33623, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Abaddon Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33624, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Abaddon Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 33625, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Abaddon Kador Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33626, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Abaddon Kador Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 33627, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Rokh Nugoeihuvi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33628, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Rokh Nugoeihuvi Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 33629, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Rokh Wiyrkomi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33630, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Rokh Wiyrkomi Edition Blueprint"
+  }, 
+  {
+    "volume": 472500.0, 
+    "typeID": 33631, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Maelstrom Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33632, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Maelstrom Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 472500.0, 
+    "typeID": 33633, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Maelstrom Krusual Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33634, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Maelstrom Krusual Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 33635, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Hyperion Aliastra Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33636, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Hyperion Aliastra Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 33637, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Hyperion Innerzone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33638, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Hyperion Innerzone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 118000.0, 
+    "typeID": 33639, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Omen Kador Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33640, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Omen Kador Edition Blueprint"
+  }, 
+  {
+    "volume": 118000.0, 
+    "typeID": 33641, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Omen Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33642, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Omen Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 92000.0, 
+    "typeID": 33643, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Caracal Nugoeihuvi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33644, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Caracal Nugoeihuvi Edition Blueprint"
+  }, 
+  {
+    "volume": 92000.0, 
+    "typeID": 33645, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Caracal Wiyrkomi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33646, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Caracal Wiyrkomi Edition Blueprint"
+  }, 
+  {
+    "volume": 80000.0, 
+    "typeID": 33647, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Stabber Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33648, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Stabber Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 80000.0, 
+    "typeID": 33649, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Stabber Krusual Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33650, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Stabber Krusual Edition Blueprint"
+  }, 
+  {
+    "volume": 112000.0, 
+    "typeID": 33651, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Thorax Aliastra Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33652, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Thorax Aliastra Edition Blueprint"
+  }, 
+  {
+    "volume": 112000.0, 
+    "typeID": 33653, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "Thorax Innerzone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33654, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Thorax Innerzone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 28600.0, 
+    "typeID": 33655, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Punisher Kador Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33656, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Punisher Kador Edition Blueprint"
+  }, 
+  {
+    "volume": 28600.0, 
+    "typeID": 33657, 
+    "groupID": 25, 
+    "market": false, 
+    "typeName": "Punisher Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33658, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Punisher Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 16500.0, 
+    "typeID": 33659, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Merlin Nugoeihuvi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33660, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Merlin Nugoeihuvi Edition Blueprint"
+  }, 
+  {
+    "volume": 16500.0, 
+    "typeID": 33661, 
+    "groupID": 25, 
+    "market": false, 
+    "typeName": "Merlin Wiyrkomi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33662, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Merlin Wiyrkomi Edition Blueprint"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 33663, 
+    "groupID": 25, 
+    "market": false, 
+    "typeName": "Rifter Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33664, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Rifter Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 33665, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Rifter Krusual Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33666, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Rifter Krusual Edition Blueprint"
+  }, 
+  {
+    "volume": 29500.0, 
+    "typeID": 33667, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Incursus Aliastra Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33668, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Incursus Aliastra Edition Blueprint"
+  }, 
+  {
+    "volume": 29500.0, 
+    "typeID": 33669, 
+    "groupID": 25, 
+    "market": false, 
+    "typeName": "Incursus Innerzone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33670, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Incursus Innerzone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 25.0, 
+    "typeID": 33671, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Heavy Hull Maintenance Bot I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33672, 
+    "groupID": 1144, 
+    "market": true, 
+    "typeName": "Heavy Hull Maintenance Bot I Blueprint"
+  }, 
+  {
+    "volume": 18000.0, 
+    "typeID": 33673, 
+    "groupID": 831, 
+    "market": false, 
+    "typeName": "Whiptail"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33674, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Whiptail Blueprint"
+  }, 
+  {
+    "volume": 96000.0, 
+    "typeID": 33675, 
+    "groupID": 833, 
+    "market": false, 
+    "typeName": "Chameleon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33676, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Chameleon Blueprint"
+  }, 
+  {
+    "volume": 16500.0, 
+    "typeID": 33677, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Police Pursuit Comet"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33678, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Police Pursuit Comet Blueprint"
+  }, 
+  {
+    "volume": 25.0, 
+    "typeID": 33681, 
+    "groupID": 100, 
+    "market": false, 
+    "typeName": "Gecko"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33682, 
+    "groupID": 176, 
+    "market": false, 
+    "typeName": "Gecko Blueprint"
+  }, 
+  {
+    "volume": 150000.0, 
+    "typeID": 33683, 
+    "groupID": 543, 
+    "market": false, 
+    "typeName": "Mackinaw ORE Development Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33684, 
+    "groupID": 477, 
+    "market": false, 
+    "typeName": "Mackinaw ORE Development Edition Blueprint"
+  }, 
+  {
+    "volume": 10250000.0, 
+    "typeID": 33685, 
+    "groupID": 941, 
+    "market": false, 
+    "typeName": "Orca ORE Development Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33686, 
+    "groupID": 945, 
+    "market": false, 
+    "typeName": "Orca ORE Development Edition Blueprint"
+  }, 
+  {
+    "typeID": 33687, 
+    "volume": 14500000.0, 
+    "typeName": "Rorqual ORE Development Edition", 
+    "components": [
+      {
+        "typeID": 33687, 
+        "materialTypeID": 28352, 
+        "quantity": 1
+      }
+    ], 
+    "groupID": 883, 
+    "market": false
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33688, 
+    "groupID": 944, 
+    "market": false, 
+    "typeName": "Rorqual ORE Development Edition Blueprint"
+  }, 
+  {
+    "volume": 275000.0, 
+    "typeID": 33689, 
+    "groupID": 28, 
+    "market": false, 
+    "typeName": "Iteron Inner Zone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33690, 
+    "groupID": 108, 
+    "market": false, 
+    "typeName": "Iteron Inner Zone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 270000.0, 
+    "typeID": 33691, 
+    "groupID": 28, 
+    "market": false, 
+    "typeName": "Tayra Wiyrkomi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33692, 
+    "groupID": 108, 
+    "market": false, 
+    "typeName": "Tayra Wiyrkomi Edition Blueprint"
+  }, 
+  {
+    "volume": 255000.0, 
+    "typeID": 33693, 
+    "groupID": 28, 
+    "market": false, 
+    "typeName": "Mammoth Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33694, 
+    "groupID": 108, 
+    "market": false, 
+    "typeName": "Mammoth Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 260000.0, 
+    "typeID": 33695, 
+    "groupID": 28, 
+    "market": false, 
+    "typeName": "Bestower Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33696, 
+    "groupID": 108, 
+    "market": false, 
+    "typeName": "Bestower Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 29500.0, 
+    "typeID": 33697, 
+    "groupID": 25, 
+    "market": false, 
+    "typeName": "Prospect"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33698, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Prospect Blueprint"
+  }, 
+  {
+    "volume": 125.0, 
+    "typeID": 33700, 
+    "groupID": 1250, 
+    "market": true, 
+    "typeName": "'Packrat' Mobile Tractor Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33701, 
+    "groupID": 1270, 
+    "market": false, 
+    "typeName": "'Packrat' Mobile Tractor Unit Blueprint"
+  }, 
+  {
+    "volume": 100.0, 
+    "typeID": 33702, 
+    "groupID": 1250, 
+    "market": true, 
+    "typeName": "'Magpie' Mobile Tractor Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33703, 
+    "groupID": 1270, 
+    "market": false, 
+    "typeName": "'Magpie' Mobile Tractor Unit Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 33704, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Medium Hull Maintenance Bot I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33705, 
+    "groupID": 1144, 
+    "market": true, 
+    "typeName": "Medium Hull Maintenance Bot I Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 33706, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Light Hull Maintenance Bot I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33707, 
+    "groupID": 1144, 
+    "market": true, 
+    "typeName": "Light Hull Maintenance Bot I Blueprint"
+  }, 
+  {
+    "volume": 25.0, 
+    "typeID": 33708, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Heavy Hull Maintenance Bot II"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33709, 
+    "groupID": 1144, 
+    "market": false, 
+    "typeName": "Heavy Hull Maintenance Bot II Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 33710, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Medium Hull Maintenance Bot II"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33711, 
+    "groupID": 1144, 
+    "market": false, 
+    "typeName": "Medium Hull Maintenance Bot II Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 33712, 
+    "groupID": 640, 
+    "market": true, 
+    "typeName": "Light Hull Maintenance Bot II"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33713, 
+    "groupID": 1144, 
+    "market": false, 
+    "typeName": "Light Hull Maintenance Bot II Blueprint"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33714, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsALF_01/Types/BootsALF_01_blackgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33715, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/JacketALF_01/Types/JacketALF_01_creamgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33716, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsALF_01/Types/BootsALF_01_brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33717, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsALF_01/Types/BootsALF_01_cream.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33718, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsALF_01/Types/BootsALF_01_navy.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33719, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsALF_01/Types/BootsALF_01_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33720, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33721, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33722, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33723, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_felt.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33724, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_mouse.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33725, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/BootsSLF_01/Types/BootsSLF_01_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33726, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_blackgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33727, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_brownpattern.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33728, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_bluesilver.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33729, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_darkgreen.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33730, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_darkredgun.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33731, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_greengold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33732, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketALF_01/Types/JacketALF_01_redsilver.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33733, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33734, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_blackv1.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33735, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33736, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_coppstars.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33737, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Female - Outer/JacketSLF_01/Types/JacketSLF_01_darkgrey.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33738, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Female - Outer/JacketSLF_01/Types/JacketSLF_01_copv1.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33739, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Female - Outer/JacketSLF_01/Types/JacketSLF_01_green.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33740, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_movcircles.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33741, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_redv1.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33742, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_white.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33743, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "female - Outer/JacketSLF_01/Types/JacketSLF_01_whitegreen.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33744, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_blackleather.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33745, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_blackmatte.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33746, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_brownpattern.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33747, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_cream.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33748, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_green.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33749, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_gunpattern.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33750, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_gunshiny.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33751, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_navy.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33752, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33753, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsALF_01/Types/PantsALF_01_redleather.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33754, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33755, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33756, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_camo.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33757, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_greyflat.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33758, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_orangegloss.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33759, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33760, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_reddark.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33761, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "female - bottomOuter/PantsSLF_01/Types/PantsSLF_01_yellowgloss.type"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 33762, 
+    "groupID": 353, 
+    "market": false, 
+    "typeName": "QA Mining Laser Upgrade"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 33765, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "RorqualDot Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 33766, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "OrcaDot Wreck"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33767, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Women's 'New Eden Open I' T-shirt YC114"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33768, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Women's 'New Eden Open II' T-shirt YC116"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33769, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Men's 'New Eden Open I' T-shirt YC114"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33770, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Men's 'New Eden Open II' T-shirt YC116"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33771, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsCLM01/Types/BootsCLM01_White.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33772, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsCLM01/Types/BootsCLM01_Graphite.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33773, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsCLM01/Types/BootsCLM01_Brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33774, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsCLM01/Types/BootsCLM01_BlueShiny.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33775, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsCLM01/Types/BootsCLM01_Black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33776, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsALM01/Types/BootsALM01_WhiteGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33777, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsALM01/Types/BootsALM01_Royal.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33778, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsALM01/Types/BootsALM01_GreySilver.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33779, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsALM01/Types/BootsALM01_DarkRedBlack.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33780, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Male - Feet/BootsALM01/Types/BootsALM01_BrownGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33781, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsCLM01/Types/PantsCLM01_White.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33782, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsCLM01/Types/PantsCLM01_GreenCamo.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33783, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsCLM01/Types/PantsCLM01_Graphite.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33784, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsCLM01/Types/PantsCLM01_DarkRed.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33785, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsCLM01/Types/PantsCLM01_BlackLeather.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33786, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsALM01/Types/PantsALM01_WhiteBlackGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33787, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsALM01/Types/PantsALM01_Royal.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33788, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsALM01/Types/PantsALM01_DarkredBlackGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33789, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsALM01/Types/PantsALM01_BlueShiny.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33790, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "Male - bottomOuter/PantsALM01/Types/PantsALM01_BlackSilver.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33791, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketCLM01/Types/JacketCLM01_White.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33792, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketCLM01/Types/JacketCLM01_GreenCamo.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33793, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketCLM01/Types/JacketCLM01_Graphite.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33794, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketCLM01/Types/JacketCLM01_DarkRed.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33795, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketCLM01/Types/JacketCLM01_BlueShiny.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33796, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketALM01/Types/JacketALM01_WhiteGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33797, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketALM01/Types/JacketALM01_Royal.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33798, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketALM01/Types/JacketALM01_RedGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33799, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketALM01/Types/JacketALM01_BrownBlackGold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33800, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Male - outer/JacketALM01/Types/JacketALM01_BlackSilver.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33803, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Source' Coat (black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33804, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Source' Coat (silver)"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 33805, 
+    "groupID": 695, 
+    "market": false, 
+    "typeName": "DED Officer 1st Class Vessel"
+  }, 
+  {
+    "volume": 1080000.0, 
+    "typeID": 33806, 
+    "groupID": 697, 
+    "market": false, 
+    "typeName": "CONCORD Starship Vessel"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 33807, 
+    "groupID": 300, 
+    "market": true, 
+    "typeName": "Cybernetic 'Source' Subprocessor"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 33808, 
+    "groupID": 300, 
+    "market": true, 
+    "typeName": "Neural 'Source' Boost"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33809, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "New Eden Source"
   }, 
   {
     "volume": 0.01, 
