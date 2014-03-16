@@ -1,11 +1,7 @@
 {% set price_table = appraisal.Prices|make_price_table %}
 {% set totals = appraisal.totals() %}
 {% macro print_price_cell(price_dict, quantity=1) -%}
-  {% if price_dict.volume != 0 %}
-    <span class="nowrap">{{ (price_dict.price * quantity|float)|format_isk }}</span>
-  {% else %}
-    <span class="nowrap warning-message">No Market Volume</span>
-  {% endif %}
+  {% if price_dict.volume != 0 %}<span class="nowrap">{{ (price_dict.price * quantity|float)|format_isk }}</span>{% else %}<span class="nowrap warning-message">No Market Volume</span>{% endif %}
 {%- endmacro %}
 
 {% macro print_row(item) -%}
@@ -14,31 +10,22 @@
       {% set name = '%s (Copy)'|format(name) %}
     {% endif %}
     {% set typeID = item.typeID|default(1) %}
+    {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(typeID) %}
 
     <tr class="line-item-row {% if item.destroyed %}error{%endif%}">
       <td style="text-align:right">{{ item.quantity|comma_separated_int }}</td>
-      <td>
-          <div class="media">
-            {% set market_url = "http://eve-central.com/home/quicklook.html?typeid=%s"|format(typeID) %}
-            {% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="pull-left media-object" src="http://image.eveonline.com/Type/{{ typeID }}_32.png" alt="{{ item.typeName }}"></a> &nbsp;<a href="{{market_url}}" target="_blank">{{ name }}</a>
-          </div>
-      </td>
+      <td class="hidden-phone">{% if is_from_igb() %}<a href="#" onclick="CCPEVE.showMarketDetails({{ typeID }})"> {% else %}<a href="{{market_url}}" target="_blank">{% endif %}<img class="img-responsive inline-block" src="http://image.eveonline.com/Type/{{ typeID }}_32.png" alt="{{ item.typeName }}"></a></td>
+      <td><a href="{{market_url}}" target="_blank">{{ name }}</a></td>
       <td style="text-align:right">{{ item.volume|format_volume }}</td>
       {% if item.prices.buy and item.prices.sell %}
         {% set representative_price = item.prices.sell.price or item.prices.buy.price %}
-        <td style="text-align:right" data-sort="-{{ representative_price }}">
-          {{ print_price_cell(item.prices.sell) }}<br />{{ print_price_cell(item.prices.buy) }}
-        </td>
-        <td style="text-align:right" data-sort="-{{ representative_price * item.quantity|float }}">
-          {{ print_price_cell(item.prices.sell, item.quantity) }}<br />{{ print_price_cell(item.prices.buy, item.quantity) }}
-        </td>
-        <td style="text-align:right" data-sort="-{{ representative_price / (item.volume or 1) }}">
-          {{ print_price_cell(item.prices.sell, 1/(item.volume or 1)) }}<br />{{ print_price_cell(item.prices.buy, 1/(item.volume or 1)) }}
-        </td>
+        <td style="text-align:right" data-sort="-{{ representative_price }}">{{ print_price_cell(item.prices.sell) }}<br />{{ print_price_cell(item.prices.buy) }}</td>
+        <td style="text-align:right" data-sort="-{{ representative_price * item.quantity|float }}">{{ print_price_cell(item.prices.sell, item.quantity) }}<br />{{ print_price_cell(item.prices.buy, item.quantity) }}</td>
+        <td class="hidden-phone" style="text-align:right" data-sort="-{{ representative_price / (item.volume or 1) }}">{{ print_price_cell(item.prices.sell, 1/(item.volume or 1)) }}<br />{{ print_price_cell(item.prices.buy, 1/(item.volume or 1)) }}</td>
       {% else %}
       <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td> 
       <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
-      <td style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
+      <td class="hidden-phone" style="text-align:right" data-sort="-1"><span class="warning-message">Unknown</span></td>
       {% endif %}
     </tr>
 {%- endmacro %}
@@ -53,15 +40,16 @@
     </span>
   </h4>
 
-<table id="results" class="table table-striped table-condensed tablesorter">
+<table id="results" style="width: 100%" class="table table-striped table-condensed tablesorter">
   <thead>
     <tr>
-      <th class="header">Qty</th>
-      <th class="header" style="width: 60%">Item</th>
+      <th class="header" style="width:0%; text-align:right">Qty</th>
+      <th class="header hidden-phone"></th>
+      <th class="header">Item</th>
       <th class="header">Vol (m3)</th>
       <th class="header" style="text-align:right">Single&nbsp;(sell)<br />Single&nbsp;(buy)</th>
       <th class="header" style="text-align:right">Total&nbsp;(sell)<br />Total&nbsp;(buy)</th>
-      <th class="header" style="text-align:right">ISK/m3&nbsp;(sell)<br />ISK/m3&nbsp;(buy)</th>
+      <th class="header hidden-phone" style="text-align:right">ISK/m3&nbsp;(sell)<br />ISK/m3&nbsp;(buy)</th>
     </tr>
   </thead>
   <tbody>
@@ -72,15 +60,17 @@
   </tbody>
   <tfoot>
     <tr>
-      <td colspan="3" style="text-align: right"><span class="nowrap">Total Sell Value</span><br />
-        <span class="nowrap">Total Buy Value</span><br />
-        <span class="nowrap">Total Volume</span></td>
-      <th colspan="2" style="text-align:right">
-        <span class="nowrap">{{ totals.sell|format_isk }}</span><br />
-        <span class="nowrap">{{ totals.buy|format_isk }}</span><br />
-        <span class="nowrap">{{ totals.volume|format_volume }}m<sup>3</sup></span>
-      </th>
-      <td></td>
+      <td colspan="8">
+        <table class="pull-right">
+          <tr><td>Total Sell Value</td><td>{{ totals.sell|format_isk }}</td></tr>
+          <tr><td>Total Buy Value</td><td>{{ totals.buy|format_isk }}</td></tr>
+          <tr><td>Total Volume</td><td>{{ totals.volume|format_volume }}</td></tr>
+
+          <span class="nowrap"></span><br />
+          <span class="nowrap"></span><br />
+          <span class="nowrap"></span>
+        </table>
+      </td>
     </tr>
   </tfoot>
 </table>
