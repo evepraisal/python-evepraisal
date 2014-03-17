@@ -131,7 +131,7 @@ msgstr ""
 
 #: evepraisal/templates/options.html:10
 msgid "autosubmit on paste"
-msgstr "autosubmit on paste. [default: off]"
+msgstr "autosubmit on paste. [default: on]"
 
 #: evepraisal/templates/options.html:11
 msgid "save for sharing"

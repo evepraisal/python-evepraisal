@@ -33,7 +33,7 @@ app.config['CACHE_MEMCACHED_SERVERS'] = ['127.0.0.1:11211']
 app.config['CACHE_DEFAULT_TIMEOUT'] = 10 * 60
 app.config['TEMPLATE'] = 'sudorandom'
 app.config['SECRET_KEY'] = 'SET ME TO SOMETHING SECRET IN THE APP CONFIG!'
-app.config['USER_DEFAULT_OPTIONS'] = {'autosubmit': False, 'share': True}
+app.config['USER_DEFAULT_OPTIONS'] = {'autosubmit': True, 'share': True}
 
 app.config.from_pyfile('../application.cfg', silent=True)
 

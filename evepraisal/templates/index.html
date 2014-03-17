@@ -13,8 +13,6 @@ $(function() {
     $.post("{{ url_for('estimate_cost') }}",
       {
         raw_paste: result.val(),
-        hide_buttons: $("#hide-buttons").is(':checked'),
-        paste_autosubmit: $("#paste-autosubmit").is(':checked'),
         market: $("#market").val(),
         {% if session['options']['share'] %}
           save: true,
@@ -47,17 +45,16 @@ $(function() {
       $('#raw_textarea').focus();
   })
 
-  {% if session['options']['autosubmit'] %}
-    $("#raw_textarea").bind('paste', function(e) {
-        setTimeout(function() {
-          $('#result_form').submit();
-        }, 0);
-    });
-  {% endif %}
 
-  {% if is_from_igb() %}
-    $('#hide-buttons').prop('checked', true);
-    $('#paste-autosubmit').prop('checked', true);
+  {% if session['options']['autosubmit'] %}
+    $('html').bind('paste', function(e) {
+        e.preventDefault();
+        if(e.originalEvent.clipboardData){
+           var text = e.originalEvent.clipboardData.getData("text/plain");
+           $('#raw_textarea').val(text);
+           $('#result_form').submit();
+         }
+    });
   {% endif %}
 });
 </script>
@@ -94,7 +91,7 @@ $(function() {
 
 <div class="row" style="margin-bottom:20px">
   <div class="pull-right">
-    <a href="#paste-modal" data-toggle="modal"><button type="button" class="btn btn-primary">New Estimate</button></a>
+    <strong>Press ctrl + v anywhere</strong>  ...or... click <a href="#paste-modal" data-toggle="modal"><button type="button" class="btn btn-primary">New Estimate</button></a>
   </div>
 </div>
 
