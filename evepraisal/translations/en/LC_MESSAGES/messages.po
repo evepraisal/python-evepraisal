@@ -42,9 +42,9 @@ msgid "what do i do"
 msgstr ""
 "Find something in Eve Online that you want to price check like a "
 "contract, cargo scan result, etc. Press <strong>CTRL + A, CTRL + "
-"C</strong>, then click on the 'New Estimate' button on the top right and "
-"press <strong>CTRL + V</strong>. Click the submit button and you should "
-"see a price breakdown of all the items."
+"C</strong>, then click on the lovely box to the left or above this and "
+"press <strong>CTRL + V</strong>. Submit and you should see a price "
+"breakdown of all the items."
 
 #: evepraisal/templates/index.html:96
 msgid "paste options title"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: evepraisal/templates/options.html:10
 msgid "autosubmit on paste"
-msgstr "autosubmit on paste. [default: on]"
+msgstr "autosubmit on paste. [default: off]"
 
 #: evepraisal/templates/options.html:11
 msgid "save for sharing"

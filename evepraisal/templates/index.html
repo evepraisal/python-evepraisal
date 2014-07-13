@@ -13,6 +13,8 @@ $(function() {
     $.post("{{ url_for('estimate_cost') }}",
       {
         raw_paste: result.val(),
+        hide_buttons: $("#hide-buttons").is(':checked'),
+        paste_autosubmit: $("#paste-autosubmit").is(':checked'),
         market: $("#market").val(),
         {% if session['options']['share'] %}
           save: true,
@@ -28,7 +30,6 @@ $(function() {
         if (typeof(_gaq) != "undefined") {
           _gaq.push(['_trackEvent', 'estimate_cost', 'success']);
         }
-        $('#paste-modal').modal('hide')
       }).error(function() {
         // Enable form components
         result.removeAttr("disabled").removeClass("disabled");
@@ -41,64 +42,52 @@ $(function() {
     return false;
   });
 
-  $('#paste-modal').on('shown', function () {
-      $('#raw_textarea').focus();
-  })
-
-
   {% if session['options']['autosubmit'] %}
-    $('html').bind('paste', function(e) {
-        e.preventDefault();
-        if(e.originalEvent.clipboardData){
-           var text = e.originalEvent.clipboardData.getData("text/plain");
-           $('#raw_textarea').val(text);
-           $('#result_form').submit();
-         }
+    $("#raw_textarea").bind('paste', function(e) {
+        setTimeout(function() {
+          $('#result_form').submit();
+        }, 0);
     });
+{% endif %}
+
+  {% if is_from_igb() %}
+    $('#hide-buttons').prop('checked', true);
+    $('#paste-autosubmit').prop('checked', true);
   {% endif %}
 });
 </script>
 {% endblock %}
 {% block body %}
 
-<div id="paste-modal" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="help-modal" aria-hidden="true">
-  <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>{{_('paste box title')}}</h3>
-  </div>
-  <div class="modal-body">
-    <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
-    <input type="hidden" name="load_full" value="1"/>
-  </div>
-  <div class="modal-footer">
-    <div class="pull-left input-append">
-      <select class="span3" id="market">
-        <option value='30000142'>Jita</option>
-        <option value='30002187'>Amarr</option>
-        <option value='30002659'>Dodixie</option>
-        <option value='30002510'>Rens</option>
-        <option value='30002053'>Hek</option>
-        <option value='-1'>Universe</option>
-      </select>
-    </div>
-    <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">{{_('close buton')}}</button>
-    <button type="reset" class="btn">{{_('reset button')}}</button>
-    <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
-  </div>
-  </form>
-</div>
-
-<div class="row" style="margin-bottom:20px">
-  <div class="pull-right">
-    <strong>Press ctrl + v anywhere</strong>  ...or... click <a href="#paste-modal" data-toggle="modal"><button type="button" class="btn btn-primary">New Estimate</button></a>
-  </div>
-</div>
-
 <div class="row">
-  <div class="span12" id="result_container">
+  <div class="span5">
+    <h4>{{_('paste box title')}}</h4>
+    <form action="{{ url_for('estimate_cost') }}" method="post" style="margin-bottom:10px;" class="well well-small" id="result_form">
+      <textarea class="input-block-level" id="raw_textarea" name="raw_textarea" rows="5" placeholder="{{_('paste box placeholder')}}"></textarea>
+      <input type="hidden" name="load_full" value="1"/>
+      <div class="controls form-inline clearfix">
+        <div id="buttons" class="pull-left">
+          <button type="submit" id="result_submit" class="btn btn-primary">{{_('submit button')}}</button> 
+          <button type="reset" class="btn">{{_('reset button')}}</button>
+        </div>
+
+        <div class="pull-right input-append">
+          <select class="span3" id="market">
+            <option value='30000142'>Jita</option>
+            <option value='30002187'>Amarr</option>
+            <option value='30002659'>Dodixie</option>
+            <option value='30002510'>Rens</option>
+            <option value='30002053'>Hek</option>
+            <option value='-1'>Universe</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="span7" id="result_container">
     {% block results %}
 
+      <div style="text-align:right"><h5>Over {{ '%.4g'|format(appraisal_count)|float|int|comma_separated_int }} Appraisals Performed</h5></div>
       <h4>{{_('what do i do title')}}</h4>
       <p>
          {{_('what do i do')}}

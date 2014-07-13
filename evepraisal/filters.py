@@ -31,17 +31,15 @@ def make_price_table(prices):
 
 
 # Adapted from http://stackoverflow.com/a/3155023/74375
-def millify(n, fmt="{:,.2f}", fmtSubMil="{:,.0f}"):
-    millnames = ['', 'k', 'm', 'bn', 'tr',
+def millify(n, fmt="{:,.2f}"):
+    millnames = ['', 'Thousand', 'Million', 'Billion', 'Trillion',
                  'Quadrillion', 'Quintillion', 'Sextillion', 'Septillion',
                  'Octillion', 'Nonillion', 'Decillion']
     millidx = max(0, min(len(millnames) - 1,
                          int(math.floor(math.log10(abs(n)) / 3.0))))
     num = n / 10 ** (3 * millidx)
-    if millidx > 1:
-        return (fmt + '{}').format(num, millnames[millidx])
-    else:
-        return (fmtSubMil + '{}').format(num, millnames[millidx])
+    return (fmt + ' {}').format(num,
+                                millnames[millidx])
 
 
 @app.template_filter('comma_separated_int')
@@ -65,7 +63,7 @@ def format_isk_human(value):
     if value is None:
         return ""
     if value == 0:
-        return "0"
+        return "0 ISK"
 
     return "%s ISK" % millify(value)
 
