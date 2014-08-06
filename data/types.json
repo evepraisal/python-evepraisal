@@ -2121,77 +2121,77 @@
       {
         "typeID": 671, 
         "materialTypeID": 21009, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21011, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21013, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21017, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21019, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21021, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21023, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21025, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21035, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 21037, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 24545, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 24547, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 24556, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 24558, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 671, 
         "materialTypeID": 24560, 
-        "quantity": 500
+        "quantity": 556
       }
     ], 
     "groupID": 30, 
@@ -10343,7 +10343,7 @@
     "typeID": 2765, 
     "groupID": 1048, 
     "market": true, 
-    "typeName": "Intensive Refining Array Blueprint"
+    "typeName": "Intensive Reprocessing Array Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -10357,7 +10357,7 @@
     "typeID": 2767, 
     "groupID": 1048, 
     "market": true, 
-    "typeName": "Medium Intensive Refining Array Blueprint"
+    "typeName": "Compression Array Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -10371,7 +10371,7 @@
     "typeID": 2769, 
     "groupID": 1048, 
     "market": true, 
-    "typeName": "Refining Array Blueprint"
+    "typeName": "Reprocessing Array Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -10728,7 +10728,7 @@
     "typeID": 2821, 
     "groupID": 891, 
     "market": true, 
-    "typeName": "Mobile Laboratory Blueprint"
+    "typeName": "Research Laboratory Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -13479,35 +13479,35 @@
     "typeID": 3237, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-802"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-802"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3238, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-804"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-804"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3239, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-806"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-806"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3240, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-602"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-602"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3241, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-604"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-604"
   }, 
   {
     "volume": 5.0, 
@@ -13542,28 +13542,28 @@
     "typeID": 3246, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-606"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-606"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3247, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-702"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-702"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3248, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-704"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-704"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3249, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-706"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-706"
   }, 
   {
     "volume": 1.0, 
@@ -13612,21 +13612,21 @@
     "typeID": 3256, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-602"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-602"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3257, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-604"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-604"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3258, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-606"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-606"
   }, 
   {
     "volume": 20000.0, 
@@ -13675,21 +13675,21 @@
     "typeID": 3265, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-602"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-602"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3266, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-604"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-604"
   }, 
   {
     "volume": 1.0, 
     "typeID": 3267, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-606"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-606"
   }, 
   {
     "volume": 1.0, 
@@ -14466,7 +14466,7 @@
     "typeID": 3385, 
     "groupID": 1218, 
     "market": true, 
-    "typeName": "Refining"
+    "typeName": "Reprocessing"
   }, 
   {
     "volume": 0.01, 
@@ -14487,14 +14487,14 @@
     "typeID": 3388, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Material Efficiency"
+    "typeName": "Advanced Industry"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3389, 
     "groupID": 1218, 
     "market": true, 
-    "typeName": "Refinery Efficiency"
+    "typeName": "Reprocessing Efficiency"
   }, 
   {
     "volume": 0.01, 
@@ -15302,62 +15302,62 @@
       {
         "typeID": 3514, 
         "materialTypeID": 21009, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21013, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21017, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21019, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21021, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21023, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21025, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21029, 
-        "quantity": 350
+        "quantity": 389
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21035, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 21037, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 24558, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3514, 
         "materialTypeID": 24560, 
-        "quantity": 200
+        "quantity": 222
       }
     ], 
     "groupID": 659, 
@@ -17051,77 +17051,77 @@
       {
         "typeID": 3764, 
         "materialTypeID": 21009, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21013, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21017, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21019, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21021, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21023, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21025, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21035, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21037, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 21041, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 24545, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 24547, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 24556, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 24558, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 3764, 
         "materialTypeID": 24560, 
-        "quantity": 500
+        "quantity": 556
       }
     ], 
     "groupID": 30, 
@@ -30253,77 +30253,77 @@
     "typeName": "Quantum Physics"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11457, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Viziam"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11458, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Khanid Innovation"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11459, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Carthum Conglomerate"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11460, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Thukker Mix"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11461, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Boundless Creations"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11462, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Core Complexion"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11463, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Ishukone"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11464, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Kaalakiota"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11465, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - Roden Shipyards"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11466, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.Db - CreoDron"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11467, 
     "groupID": 332, 
     "market": true, 
@@ -30379,14 +30379,14 @@
     "typeName": "R.A.M.- Industrial Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11475, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Armor/Hull Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11476, 
     "groupID": 332, 
     "market": true, 
@@ -30400,7 +30400,7 @@
     "typeName": "R.A.M.- Platform Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11478, 
     "groupID": 332, 
     "market": true, 
@@ -30421,42 +30421,42 @@
     "typeName": "R.A.M.- Battleship Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11481, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Robotics"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11482, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Energy Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11483, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Electronics"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11484, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Shield Tech"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11485, 
     "groupID": 332, 
     "market": true, 
     "typeName": "R.A.M.- Cybernetics"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11486, 
     "groupID": 332, 
     "market": true, 
@@ -30904,77 +30904,77 @@
       {
         "typeID": 11567, 
         "materialTypeID": 21009, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21011, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21013, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21017, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21019, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21021, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21023, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21025, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21035, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 21037, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 24545, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 24547, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 24556, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 24558, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 11567, 
         "materialTypeID": 24560, 
-        "quantity": 500
+        "quantity": 556
       }
     ], 
     "groupID": 30, 
@@ -31961,7 +31961,7 @@
     "typeName": "Republic Fleet Scout"
   }, 
   {
-    "volume": 4.0, 
+    "volume": 0.04, 
     "typeID": 11746, 
     "groupID": 332, 
     "market": true, 
@@ -33816,18 +33816,18 @@
     "typeName": "Ship Maintenance Array"
   }, 
   {
-    "volume": 4000.0, 
+    "volume": 6000.0, 
     "typeID": 12238, 
     "groupID": 311, 
     "market": true, 
-    "typeName": "Refining Array"
+    "typeName": "Reprocessing Array"
   }, 
   {
-    "volume": 4000.0, 
+    "volume": 6000.0, 
     "typeID": 12239, 
-    "groupID": 311, 
+    "groupID": 1282, 
     "market": true, 
-    "typeName": "Medium Intensive Refining Array"
+    "typeName": "Compression Array"
   }, 
   {
     "volume": 1150.0, 
@@ -36473,7 +36473,7 @@
     "typeID": 13216, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-603"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-603"
   }, 
   {
     "volume": 1.0, 
@@ -36774,21 +36774,21 @@
     "typeID": 13259, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-803"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-803"
   }, 
   {
     "volume": 1.0, 
     "typeID": 13260, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-603"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-603"
   }, 
   {
     "volume": 1.0, 
     "typeID": 13261, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-603"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-603"
   }, 
   {
     "volume": 1.0, 
@@ -36809,7 +36809,7 @@
     "typeID": 13265, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-703"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-703"
   }, 
   {
     "volume": 3.0, 
@@ -48828,7 +48828,7 @@
     "typeID": 16216, 
     "groupID": 413, 
     "market": true, 
-    "typeName": "Mobile Laboratory"
+    "typeName": "Research Laboratory"
   }, 
   {
     "volume": 100.0, 
@@ -49174,7 +49174,7 @@
     "typeName": "Liquid Ozone"
   }, 
   {
-    "volume": 0.15, 
+    "volume": 0.1, 
     "typeID": 16274, 
     "groupID": 423, 
     "market": true, 
@@ -58267,21 +58267,21 @@
     "typeName": "Recon System Scanner Blueprint"
   }, 
   {
-    "volume": 0.15, 
+    "volume": 0.1, 
     "typeID": 17887, 
     "groupID": 423, 
     "market": true, 
     "typeName": "Oxygen Isotopes"
   }, 
   {
-    "volume": 0.15, 
+    "volume": 0.1, 
     "typeID": 17888, 
     "groupID": 423, 
     "market": true, 
     "typeName": "Nitrogen Isotopes"
   }, 
   {
-    "volume": 0.15, 
+    "volume": 0.1, 
     "typeID": 17889, 
     "groupID": 423, 
     "market": true, 
@@ -62863,7 +62863,7 @@
     "typeID": 19470, 
     "groupID": 311, 
     "market": true, 
-    "typeName": "Intensive Refining Array"
+    "typeName": "Intensive Reprocessing Array"
   }, 
   {
     "volume": 100000000.0, 
@@ -63615,57 +63615,57 @@
       {
         "typeID": 19720, 
         "materialTypeID": 21009, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21011, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21013, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21017, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21019, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21021, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21023, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21035, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21037, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19720, 
         "materialTypeID": 21039, 
-        "quantity": 30
+        "quantity": 33
       }
     ], 
     "groupID": 485, 
@@ -63686,57 +63686,57 @@
       {
         "typeID": 19722, 
         "materialTypeID": 21009, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21011, 
-        "quantity": 40
+        "quantity": 44
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21013, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21017, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21019, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21021, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21023, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21035, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21037, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19722, 
         "materialTypeID": 21039, 
-        "quantity": 40
+        "quantity": 44
       }
     ], 
     "groupID": 485, 
@@ -63757,57 +63757,57 @@
       {
         "typeID": 19724, 
         "materialTypeID": 21009, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21011, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21013, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21017, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21019, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21021, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21023, 
-        "quantity": 15
+        "quantity": 17
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21035, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21037, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 19724, 
         "materialTypeID": 21039, 
-        "quantity": 30
+        "quantity": 33
       }
     ], 
     "groupID": 485, 
@@ -63828,57 +63828,57 @@
       {
         "typeID": 19726, 
         "materialTypeID": 21009, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21013, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21017, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21019, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21021, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21023, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21035, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21037, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21039, 
-        "quantity": 40
+        "quantity": 44
       }, 
       {
         "typeID": 19726, 
         "materialTypeID": 21041, 
-        "quantity": 40
+        "quantity": 44
       }
     ], 
     "groupID": 485, 
@@ -78291,62 +78291,62 @@
       {
         "typeID": 22852, 
         "materialTypeID": 21009, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21013, 
-        "quantity": 75
+        "quantity": 83
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21017, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21019, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21021, 
-        "quantity": 150
+        "quantity": 167
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21023, 
-        "quantity": 150
+        "quantity": 167
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21025, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21029, 
-        "quantity": 525
+        "quantity": 583
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21035, 
-        "quantity": 75
+        "quantity": 83
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 21037, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 24558, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 22852, 
         "materialTypeID": 24560, 
-        "quantity": 200
+        "quantity": 222
       }
     ], 
     "groupID": 659, 
@@ -83785,7 +83785,7 @@
       {
         "typeID": 23757, 
         "materialTypeID": 21009, 
-        "quantity": 6
+        "quantity": 7
       }, 
       {
         "typeID": 23757, 
@@ -83795,17 +83795,17 @@
       {
         "typeID": 23757, 
         "materialTypeID": 21017, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23757, 
         "materialTypeID": 21019, 
-        "quantity": 9
+        "quantity": 10
       }, 
       {
         "typeID": 23757, 
         "materialTypeID": 21021, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23757, 
@@ -83815,12 +83815,12 @@
       {
         "typeID": 23757, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23757, 
         "materialTypeID": 21029, 
-        "quantity": 44
+        "quantity": 49
       }, 
       {
         "typeID": 23757, 
@@ -83830,17 +83830,17 @@
       {
         "typeID": 23757, 
         "materialTypeID": 21037, 
-        "quantity": 7
+        "quantity": 8
       }, 
       {
         "typeID": 23757, 
         "materialTypeID": 24558, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23757, 
         "materialTypeID": 24560, 
-        "quantity": 10
+        "quantity": 11
       }
     ], 
     "groupID": 547, 
@@ -83959,77 +83959,77 @@
       {
         "typeID": 23773, 
         "materialTypeID": 21009, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21011, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21013, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21017, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21019, 
-        "quantity": 300
+        "quantity": 333
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21021, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21023, 
-        "quantity": 400
+        "quantity": 444
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21025, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21035, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 21037, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 24545, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 24547, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 24556, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 24558, 
-        "quantity": 500
+        "quantity": 556
       }, 
       {
         "typeID": 23773, 
         "materialTypeID": 24560, 
-        "quantity": 500
+        "quantity": 556
       }
     ], 
     "groupID": 30, 
@@ -84925,62 +84925,62 @@
       {
         "typeID": 23911, 
         "materialTypeID": 21009, 
-        "quantity": 7
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21013, 
-        "quantity": 7
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21017, 
         "quantity": 8
       }, 
       {
         "typeID": 23911, 
-        "materialTypeID": 21019, 
-        "quantity": 7
+        "materialTypeID": 21013, 
+        "quantity": 8
       }, 
       {
         "typeID": 23911, 
-        "materialTypeID": 21021, 
-        "quantity": 6
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21023, 
-        "quantity": 6
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21025, 
-        "quantity": 10
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21029, 
-        "quantity": 55
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21035, 
-        "quantity": 7
-      }, 
-      {
-        "typeID": 23911, 
-        "materialTypeID": 21037, 
+        "materialTypeID": 21017, 
         "quantity": 9
       }, 
       {
         "typeID": 23911, 
-        "materialTypeID": 24558, 
+        "materialTypeID": 21019, 
+        "quantity": 8
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21021, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21023, 
+        "quantity": 7
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21025, 
+        "quantity": 11
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21029, 
+        "quantity": 61
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21035, 
+        "quantity": 8
+      }, 
+      {
+        "typeID": 23911, 
+        "materialTypeID": 21037, 
         "quantity": 10
       }, 
       {
         "typeID": 23911, 
+        "materialTypeID": 24558, 
+        "quantity": 11
+      }, 
+      {
+        "typeID": 23911, 
         "materialTypeID": 24560, 
-        "quantity": 10
+        "quantity": 11
       }
     ], 
     "groupID": 547, 
@@ -85001,62 +85001,62 @@
       {
         "typeID": 23913, 
         "materialTypeID": 21009, 
-        "quantity": 125
+        "quantity": 139
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21013, 
-        "quantity": 125
+        "quantity": 139
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21017, 
-        "quantity": 150
+        "quantity": 167
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21019, 
-        "quantity": 125
+        "quantity": 139
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21021, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21023, 
-        "quantity": 75
+        "quantity": 83
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21025, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21029, 
-        "quantity": 625
+        "quantity": 694
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21035, 
-        "quantity": 125
+        "quantity": 139
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 21037, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 24558, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23913, 
         "materialTypeID": 24560, 
-        "quantity": 200
+        "quantity": 222
       }
     ], 
     "groupID": 659, 
@@ -85082,7 +85082,7 @@
       {
         "typeID": 23915, 
         "materialTypeID": 21013, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23915, 
@@ -85092,7 +85092,7 @@
       {
         "typeID": 23915, 
         "materialTypeID": 21019, 
-        "quantity": 5
+        "quantity": 6
       }, 
       {
         "typeID": 23915, 
@@ -85102,37 +85102,37 @@
       {
         "typeID": 23915, 
         "materialTypeID": 21023, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 21029, 
-        "quantity": 37
+        "quantity": 41
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 21035, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 21037, 
-        "quantity": 5
+        "quantity": 6
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 24558, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 23915, 
         "materialTypeID": 24560, 
-        "quantity": 10
+        "quantity": 11
       }
     ], 
     "groupID": 547, 
@@ -85153,62 +85153,62 @@
       {
         "typeID": 23917, 
         "materialTypeID": 21009, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21013, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21017, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21019, 
-        "quantity": 75
+        "quantity": 83
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21021, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21023, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21025, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21029, 
-        "quantity": 375
+        "quantity": 417
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21035, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 21037, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 24558, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23917, 
         "materialTypeID": 24560, 
-        "quantity": 200
+        "quantity": 222
       }
     ], 
     "groupID": 659, 
@@ -85229,62 +85229,62 @@
       {
         "typeID": 23919, 
         "materialTypeID": 21009, 
-        "quantity": 100
+        "quantity": 111
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21013, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21017, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21019, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21021, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21023, 
-        "quantity": 50
+        "quantity": 56
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21025, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21029, 
-        "quantity": 450
+        "quantity": 500
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21035, 
-        "quantity": 25
+        "quantity": 28
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 21037, 
-        "quantity": 150
+        "quantity": 167
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 24558, 
-        "quantity": 200
+        "quantity": 222
       }, 
       {
         "typeID": 23919, 
         "materialTypeID": 24560, 
-        "quantity": 200
+        "quantity": 222
       }
     ], 
     "groupID": 659, 
@@ -88485,7 +88485,7 @@
   {
     "volume": 27500.0, 
     "typeID": 24464, 
-    "groupID": 306, 
+    "groupID": 1207, 
     "market": false, 
     "typeName": "Trial of Skill"
   }, 
@@ -88609,17 +88609,17 @@
       {
         "typeID": 24483, 
         "materialTypeID": 21009, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21013, 
-        "quantity": 5
+        "quantity": 6
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21017, 
-        "quantity": 6
+        "quantity": 7
       }, 
       {
         "typeID": 24483, 
@@ -88629,27 +88629,27 @@
       {
         "typeID": 24483, 
         "materialTypeID": 21021, 
-        "quantity": 8
+        "quantity": 9
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21023, 
-        "quantity": 8
+        "quantity": 9
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21029, 
-        "quantity": 48
+        "quantity": 53
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 21035, 
-        "quantity": 6
+        "quantity": 7
       }, 
       {
         "typeID": 24483, 
@@ -88659,12 +88659,12 @@
       {
         "typeID": 24483, 
         "materialTypeID": 24558, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 24483, 
         "materialTypeID": 24560, 
-        "quantity": 10
+        "quantity": 11
       }
     ], 
     "groupID": 547, 
@@ -89305,7 +89305,7 @@
     "typeID": 24575, 
     "groupID": 397, 
     "market": true, 
-    "typeName": "Capital Ship Assembly Array"
+    "typeName": "Supercapital Ship Assembly Array"
   }, 
   {
     "volume": 1.0, 
@@ -89676,7 +89676,7 @@
     "typeID": 24656, 
     "groupID": 397, 
     "market": true, 
-    "typeName": "X-Large Ship Assembly Array"
+    "typeName": "Capital Ship Assembly Array"
   }, 
   {
     "volume": 25000.0, 
@@ -93687,14 +93687,14 @@
     "typeID": 25545, 
     "groupID": 1231, 
     "market": true, 
-    "typeName": "Eifyr and Co. 'Alchemist' Nanite Control NC-903"
+    "typeName": "Eifyr and Co. 'Alchemist' Neurotoxin Control NC-903"
   }, 
   {
     "volume": 1.0, 
     "typeID": 25546, 
     "groupID": 1231, 
     "market": true, 
-    "typeName": "Eifyr and Co. 'Alchemist' Nanite Control NC-905"
+    "typeName": "Eifyr and Co. 'Alchemist' Neurotoxin Control NC-905"
   }, 
   {
     "volume": 1.0, 
@@ -102234,42 +102234,42 @@
     "typeID": 27116, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-805"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-805"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27117, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Management EM-801"
+    "typeName": "Inherent Implants 'Squire' Capacitor Management EM-801"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27118, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-605"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-605"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27119, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Systems Operation EO-601"
+    "typeName": "Inherent Implants 'Squire' Capacitor Systems Operation EO-601"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27120, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-701"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-701"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27121, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Energy Emission Systems ES-705"
+    "typeName": "Inherent Implants 'Squire' Capacitor Emission Systems ES-705"
   }, 
   {
     "volume": 1.0, 
@@ -102304,14 +102304,14 @@
     "typeID": 27126, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-605"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-605"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27127, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Inherent Implants 'Squire' Engineering EG-601"
+    "typeName": "Inherent Implants 'Squire' Power Grid Management EG-601"
   }, 
   {
     "volume": 1.0, 
@@ -102346,14 +102346,14 @@
     "typeID": 27142, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-605"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-605"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27143, 
     "groupID": 741, 
     "market": true, 
-    "typeName": "Zainou 'Gypsy' Electronics EE-601"
+    "typeName": "Zainou 'Gypsy' CPU Management EE-601"
   }, 
   {
     "volume": 1.0, 
@@ -102507,7 +102507,7 @@
     "typeID": 27169, 
     "groupID": 1229, 
     "market": true, 
-    "typeName": "Zainou 'Beancounter' Refining RX-802"
+    "typeName": "Zainou 'Beancounter' Reprocessing RX-802"
   }, 
   {
     "volume": 1.0, 
@@ -102528,14 +102528,14 @@
     "typeID": 27174, 
     "groupID": 1229, 
     "market": true, 
-    "typeName": "Zainou 'Beancounter' Refining RX-804"
+    "typeName": "Zainou 'Beancounter' Reprocessing RX-804"
   }, 
   {
     "volume": 1.0, 
     "typeID": 27175, 
     "groupID": 1229, 
     "market": true, 
-    "typeName": "Zainou 'Beancounter' Refining RX-801"
+    "typeName": "Zainou 'Beancounter' Reprocessing RX-801"
   }, 
   {
     "volume": 1.0, 
@@ -108891,7 +108891,7 @@
     "typeID": 28351, 
     "groupID": 413, 
     "market": true, 
-    "typeName": "Advanced Mobile Laboratory"
+    "typeName": "Design Laboratory"
   }, 
   {
     "typeID": 28352, 
@@ -108901,72 +108901,72 @@
       {
         "typeID": 28352, 
         "materialTypeID": 21009, 
-        "quantity": 8
+        "quantity": 9
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21013, 
-        "quantity": 8
+        "quantity": 9
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21017, 
-        "quantity": 6
+        "quantity": 7
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21019, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21021, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21023, 
-        "quantity": 8
+        "quantity": 9
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21025, 
-        "quantity": 10
+        "quantity": 11
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21027, 
-        "quantity": 20
+        "quantity": 22
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21029, 
-        "quantity": 5
+        "quantity": 6
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21035, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 21037, 
-        "quantity": 40
+        "quantity": 44
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 24547, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 24558, 
-        "quantity": 30
+        "quantity": 33
       }, 
       {
         "typeID": 28352, 
         "materialTypeID": 24560, 
-        "quantity": 15
+        "quantity": 17
       }
     ], 
     "groupID": 883, 
@@ -109043,7 +109043,7 @@
     "typeName": "Drone Coronary Unit"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.08, 
     "typeID": 28367, 
     "groupID": 450, 
     "market": true, 
@@ -109053,7 +109053,7 @@
     "volume": 0.01, 
     "typeID": 28368, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Arkonor Blueprint"
   }, 
   {
@@ -109148,7 +109148,7 @@
     "typeName": "True Sansha Heavy Assault Missile Launcher Blueprint"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.08, 
     "typeID": 28385, 
     "groupID": 450, 
     "market": true, 
@@ -109158,326 +109158,326 @@
     "volume": 0.01, 
     "typeID": 28386, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Crimson Arkonor Blueprint"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.08, 
     "typeID": 28387, 
     "groupID": 450, 
     "market": true, 
     "typeName": "Compressed Prime Arkonor"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 6.11, 
     "typeID": 28388, 
     "groupID": 451, 
     "market": true, 
     "typeName": "Compressed Bistot"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 6.11, 
     "typeID": 28389, 
     "groupID": 451, 
     "market": true, 
     "typeName": "Compressed Monoclinic Bistot"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 6.11, 
     "typeID": 28390, 
     "groupID": 451, 
     "market": true, 
     "typeName": "Compressed Triclinic Bistot"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 7.81, 
     "typeID": 28391, 
     "groupID": 452, 
     "market": true, 
     "typeName": "Compressed Crokite"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 7.81, 
     "typeID": 28392, 
     "groupID": 452, 
     "market": true, 
     "typeName": "Compressed Crystalline Crokite"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 7.81, 
     "typeID": 28393, 
     "groupID": 452, 
     "market": true, 
     "typeName": "Compressed Sharp Crokite"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.27, 
     "typeID": 28394, 
     "groupID": 453, 
     "market": true, 
     "typeName": "Compressed Dark Ochre"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.27, 
     "typeID": 28395, 
     "groupID": 453, 
     "market": true, 
     "typeName": "Compressed Obsidian Ochre"
   }, 
   {
-    "volume": 800.0, 
+    "volume": 3.27, 
     "typeID": 28396, 
     "groupID": 453, 
     "market": true, 
     "typeName": "Compressed Onyx Ochre"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 1.03, 
     "typeID": 28397, 
     "groupID": 467, 
     "market": true, 
     "typeName": "Compressed Gneiss"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 1.03, 
     "typeID": 28398, 
     "groupID": 467, 
     "market": true, 
     "typeName": "Compressed Iridescent Gneiss"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 1.03, 
     "typeID": 28399, 
     "groupID": 467, 
     "market": true, 
     "typeName": "Compressed Prismatic Gneiss"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.14, 
     "typeID": 28400, 
     "groupID": 454, 
     "market": true, 
     "typeName": "Compressed Glazed Hedbergite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.14, 
     "typeID": 28401, 
     "groupID": 454, 
     "market": true, 
     "typeName": "Compressed Hedbergite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.14, 
     "typeID": 28402, 
     "groupID": 454, 
     "market": true, 
     "typeName": "Compressed Vitric Hedbergite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.16, 
     "typeID": 28403, 
     "groupID": 455, 
     "market": true, 
     "typeName": "Compressed Hemorphite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.16, 
     "typeID": 28404, 
     "groupID": 455, 
     "market": true, 
     "typeName": "Compressed Radiant Hemorphite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.16, 
     "typeID": 28405, 
     "groupID": 455, 
     "market": true, 
     "typeName": "Compressed Vivid Hemorphite"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.15, 
     "typeID": 28406, 
     "groupID": 456, 
     "market": true, 
     "typeName": "Compressed Jaspet"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.15, 
     "typeID": 28407, 
     "groupID": 456, 
     "market": true, 
     "typeName": "Compressed Pristine Jaspet"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.15, 
     "typeID": 28408, 
     "groupID": 456, 
     "market": true, 
     "typeName": "Compressed Pure Jaspet"
   }, 
   {
-    "volume": 720.0, 
+    "volume": 0.19, 
     "typeID": 28409, 
     "groupID": 457, 
     "market": true, 
     "typeName": "Compressed Fiery Kernite"
   }, 
   {
-    "volume": 720.0, 
+    "volume": 0.19, 
     "typeID": 28410, 
     "groupID": 457, 
     "market": true, 
     "typeName": "Compressed Kernite"
   }, 
   {
-    "volume": 720.0, 
+    "volume": 0.19, 
     "typeID": 28411, 
     "groupID": 457, 
     "market": true, 
     "typeName": "Compressed Luminous Kernite"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 0.1, 
     "typeID": 28412, 
     "groupID": 468, 
     "market": true, 
     "typeName": "Compressed Magma Mercoxit"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 0.1, 
     "typeID": 28413, 
     "groupID": 468, 
     "market": true, 
     "typeName": "Compressed Mercoxit"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 0.1, 
     "typeID": 28414, 
     "groupID": 468, 
     "market": true, 
     "typeName": "Compressed Vitreous Mercoxit"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.07, 
     "typeID": 28415, 
     "groupID": 469, 
     "market": true, 
     "typeName": "Compressed Golden Omber"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.07, 
     "typeID": 28416, 
     "groupID": 469, 
     "market": true, 
     "typeName": "Compressed Omber"
   }, 
   {
-    "volume": 750.0, 
+    "volume": 0.07, 
     "typeID": 28417, 
     "groupID": 469, 
     "market": true, 
     "typeName": "Compressed Silvery Omber"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 16.0, 
     "typeID": 28418, 
     "groupID": 461, 
     "market": true, 
     "typeName": "Compressed Bright Spodumain"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 16.0, 
     "typeID": 28419, 
     "groupID": 461, 
     "market": true, 
     "typeName": "Compressed Gleaming Spodumain"
   }, 
   {
-    "volume": 1000.0, 
+    "volume": 16.0, 
     "typeID": 28420, 
     "groupID": 461, 
     "market": true, 
     "typeName": "Compressed Spodumain"
   }, 
   {
-    "volume": 292.0, 
+    "volume": 0.15, 
     "typeID": 28421, 
     "groupID": 458, 
     "market": true, 
     "typeName": "Compressed Azure Plagioclase"
   }, 
   {
-    "volume": 292.0, 
+    "volume": 0.15, 
     "typeID": 28422, 
     "groupID": 458, 
     "market": true, 
     "typeName": "Compressed Plagioclase"
   }, 
   {
-    "volume": 292.0, 
+    "volume": 0.15, 
     "typeID": 28423, 
     "groupID": 458, 
     "market": true, 
     "typeName": "Compressed Rich Plagioclase"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.16, 
     "typeID": 28424, 
     "groupID": 459, 
     "market": true, 
     "typeName": "Compressed Pyroxeres"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.16, 
     "typeID": 28425, 
     "groupID": 459, 
     "market": true, 
     "typeName": "Compressed Solid Pyroxeres"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.16, 
     "typeID": 28426, 
     "groupID": 459, 
     "market": true, 
     "typeName": "Compressed Viscous Pyroxeres"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.19, 
     "typeID": 28427, 
     "groupID": 460, 
     "market": true, 
     "typeName": "Compressed Condensed Scordite"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.19, 
     "typeID": 28428, 
     "groupID": 460, 
     "market": true, 
     "typeName": "Compressed Massive Scordite"
   }, 
   {
-    "volume": 375.0, 
+    "volume": 0.19, 
     "typeID": 28429, 
     "groupID": 460, 
     "market": true, 
     "typeName": "Compressed Scordite"
   }, 
   {
-    "volume": 417.0, 
+    "volume": 0.15, 
     "typeID": 28430, 
     "groupID": 462, 
     "market": true, 
     "typeName": "Compressed Concentrated Veldspar"
   }, 
   {
-    "volume": 417.0, 
+    "volume": 0.15, 
     "typeID": 28431, 
     "groupID": 462, 
     "market": true, 
     "typeName": "Compressed Dense Veldspar"
   }, 
   {
-    "volume": 417.0, 
+    "volume": 0.15, 
     "typeID": 28432, 
     "groupID": 462, 
     "market": true, 
@@ -109571,406 +109571,406 @@
     "volume": 0.01, 
     "typeID": 28448, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Prime Arkonor Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28449, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Bistot Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28450, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Monoclinic Bistot Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28451, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Triclinic Bistot Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28452, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Crokite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28453, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Crystalline Crokite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28454, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Sharp Crokite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28455, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Dark Ochre Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28456, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Obsidian Ochre Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28457, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Onyx Ochre Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28458, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Gneiss Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28459, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Iridescent Gneiss Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28460, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Prismatic Gneiss Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28461, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Hedbergite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28462, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Glazed Hedbergite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28463, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Vitric Hedbergite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28464, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Hemorphite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28465, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Radiant Hemorphite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28466, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Vivid Hemorphite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28467, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Jaspet Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28468, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Pristine Jaspet Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28469, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Pure Jaspet Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28470, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Kernite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28471, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Fiery Kernite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28472, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Luminous Kernite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28473, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Magma Mercoxit Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28474, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Mercoxit Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28475, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Vitreous Mercoxit Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28476, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Omber Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28477, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Golden Omber Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28478, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Silvery Omber Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28479, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Azure Plagioclase Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28480, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Plagioclase Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28481, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Rich Plagioclase Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28482, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Pyroxeres Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28483, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Solid Pyroxeres Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28484, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Viscous Pyroxeres Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28485, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Condensed Scordite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28486, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Massive Scordite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28487, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Scordite Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28488, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Bright Spodumain Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28489, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Gleaming Spodumain Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28490, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Spodumain Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28491, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Concentrated Veldspar Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28492, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Dense Veldspar Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28493, 
     "groupID": 888, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Veldspar Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28494, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Blue Ice Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28495, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Clear Icicle Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28496, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Dark Glitter Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28497, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Enriched Clear Icicle Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28498, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Gelidus Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28499, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Glacial Mass Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28500, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Glare Crust Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28501, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Krystallos Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28502, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Pristine White Glaze Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28503, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Smooth Glacial Mass Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28504, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed Thick Blue Ice Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28505, 
     "groupID": 890, 
-    "market": true, 
+    "market": false, 
     "typeName": "Compressed White Glaze Blueprint"
   }, 
   {
@@ -110510,7 +110510,7 @@
     "typeID": 28605, 
     "groupID": 891, 
     "market": true, 
-    "typeName": "Advanced Mobile Laboratory Blueprint"
+    "typeName": "Design Laboratory Blueprint"
   }, 
   {
     "volume": 10250000.0, 
@@ -119575,35 +119575,35 @@
     "typeID": 30382, 
     "groupID": 979, 
     "market": true, 
-    "typeName": "Amarr Hybrid Tech Decryptor"
+    "typeName": "Amarr Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30383, 
     "groupID": 979, 
     "market": true, 
-    "typeName": "Caldari Hybrid Tech Decryptor"
+    "typeName": "Caldari Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30384, 
     "groupID": 979, 
     "market": true, 
-    "typeName": "Minmatar Hybrid Tech Decryptor"
+    "typeName": "Minmatar Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30385, 
     "groupID": 979, 
     "market": true, 
-    "typeName": "Gallente Hybrid Tech Decryptor"
+    "typeName": "Gallente Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30386, 
     "groupID": 716, 
     "market": true, 
-    "typeName": "R.A.M.- Hybrid Technology"
+    "typeName": "R.Db.- Hybrid Technology"
   }, 
   {
     "volume": 0.01, 
@@ -130124,7 +130124,7 @@
     "typeID": 32245, 
     "groupID": 413, 
     "market": true, 
-    "typeName": "Hyasyoda Mobile Laboratory"
+    "typeName": "Hyasyoda Research Laboratory"
   }, 
   {
     "volume": 0.1, 
@@ -136471,7 +136471,7 @@
   {
     "volume": 0.01, 
     "typeID": 33588, 
-    "groupID": 1268, 
+    "groupID": 1295, 
     "market": false, 
     "typeName": "Mobile Decoy Unit Blueprint"
   }, 
@@ -136485,7 +136485,7 @@
   {
     "volume": 0.01, 
     "typeID": 33590, 
-    "groupID": 1268, 
+    "groupID": 1293, 
     "market": true, 
     "typeName": "Mobile Scan Inhibitor Blueprint"
   }, 
@@ -136499,7 +136499,7 @@
   {
     "volume": 0.01, 
     "typeID": 33592, 
-    "groupID": 1270, 
+    "groupID": 1294, 
     "market": true, 
     "typeName": "Mobile Micro Jump Unit Blueprint"
   }, 
@@ -137018,7 +137018,7 @@
     "volume": 18000.0, 
     "typeID": 33673, 
     "groupID": 831, 
-    "market": false, 
+    "market": true, 
     "typeName": "Whiptail"
   }, 
   {
@@ -137032,7 +137032,7 @@
     "volume": 96000.0, 
     "typeID": 33675, 
     "groupID": 833, 
-    "market": false, 
+    "market": true, 
     "typeName": "Chameleon"
   }, 
   {
@@ -138163,6 +138163,20 @@
     "typeName": "Mordu\u2019s Special Warfare Unit Commander"
   }, 
   {
+    "volume": 12500.0, 
+    "typeID": 33867, 
+    "groupID": 397, 
+    "market": true, 
+    "typeName": "Thukker Component Assembly Array"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 33868, 
+    "groupID": 1048, 
+    "market": true, 
+    "typeName": "Thukker Component Assembly Array Blueprint"
+  }, 
+  {
     "volume": 270000.0, 
     "typeID": 33869, 
     "groupID": 419, 
@@ -138434,6 +138448,13 @@
     "groupID": 186, 
     "market": false, 
     "typeName": "Mordus Small Commander Wreck"
+  }, 
+  {
+    "volume": 4000.0, 
+    "typeID": 33910, 
+    "groupID": 494, 
+    "market": false, 
+    "typeName": "Thukker Component Assembly Facility"
   }, 
   {
     "volume": 10.0, 
@@ -138924,6 +138945,20 @@
     "groupID": 526, 
     "market": true, 
     "typeName": "Guristas Data Sequence"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 33990, 
+    "groupID": 1276, 
+    "market": false, 
+    "typeName": "Tournament Micro Jump Unit"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 34112, 
+    "groupID": 310, 
+    "market": false, 
+    "typeName": "Abandoned CRC Monitoring Station"
   }, 
   {
     "volume": 0.01, 
