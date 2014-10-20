@@ -1411,7 +1411,7 @@
     "typeID": 509, 
     "groupID": 768, 
     "market": true, 
-    "typeName": "Basic Capacitor Flux Coil"
+    "typeName": "'Basic' Capacitor Flux Coil"
   }, 
   {
     "volume": 5.0, 
@@ -5835,7 +5835,7 @@
     "typeID": 1982, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Basic LADAR Backup Array"
+    "typeName": "Basic Ladar Backup Array"
   }, 
   {
     "volume": 5.0, 
@@ -9181,14 +9181,14 @@
     "typeID": 2583, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "LADAR Backup Array I"
+    "typeName": "Ladar Backup Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2584, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "LADAR Backup Array II"
+    "typeName": "Ladar Backup Array II"
   }, 
   {
     "volume": 800.0, 
@@ -10280,7 +10280,7 @@
     "typeID": 2756, 
     "groupID": 1048, 
     "market": true, 
-    "typeName": "Capital Ship Assembly Array Blueprint"
+    "typeName": "Supercapital Ship Assembly Array Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -10399,7 +10399,7 @@
     "typeID": 2773, 
     "groupID": 1048, 
     "market": true, 
-    "typeName": "X-Large Ship Assembly Array Blueprint"
+    "typeName": "Capital Ship Assembly Array Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -21535,7 +21535,7 @@
     "typeID": 5091, 
     "groupID": 67, 
     "market": true, 
-    "typeName": "'Regard' Remote Capacitor Transmitter"
+    "typeName": "Small 'Regard' Remote Capacitor Transmitter"
   }, 
   {
     "volume": 5.0, 
@@ -22556,7 +22556,7 @@
     "volume": 5.0, 
     "typeID": 6129, 
     "groupID": 47, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surface Cargo Scanner I"
   }, 
   {
@@ -22564,13 +22564,13 @@
     "typeID": 6131, 
     "groupID": 47, 
     "market": true, 
-    "typeName": "Prototype Freight Sensors"
+    "typeName": "Enduring Cargo Scanner"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6133, 
     "groupID": 47, 
-    "market": true, 
+    "market": false, 
     "typeName": "Interior Type-E Cargo Identifier"
   }, 
   {
@@ -22578,7 +22578,7 @@
     "typeID": 6135, 
     "groupID": 47, 
     "market": true, 
-    "typeName": "PL-0 Shipment Probe"
+    "typeName": "Scoped Cargo Scanner"
   }, 
   {
     "volume": 5.0, 
@@ -22662,7 +22662,7 @@
     "typeID": 6199, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Reserve LADAR Scanners"
+    "typeName": "Reserve Ladar Scanners"
   }, 
   {
     "volume": 5.0, 
@@ -22697,7 +22697,7 @@
     "typeID": 6216, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Emergency LADAR Scanners"
+    "typeName": "Emergency Ladar Scanners"
   }, 
   {
     "volume": 5.0, 
@@ -22718,7 +22718,7 @@
     "typeID": 6222, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Protected LADAR Backup Cluster I"
+    "typeName": "Protected Ladar Backup Cluster I"
   }, 
   {
     "volume": 5.0, 
@@ -22767,7 +22767,7 @@
     "typeID": 6241, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Sealed LADAR Backup Cluster"
+    "typeName": "Sealed Ladar Backup Cluster"
   }, 
   {
     "volume": 5.0, 
@@ -22795,14 +22795,14 @@
     "typeID": 6251, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Surrogate LADAR Reserve Array I"
+    "typeName": "Surrogate Ladar Reserve Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6252, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "F-43 Repetitive LADAR Backup Sensors"
+    "typeName": "F-43 Repetitive Ladar Backup Sensors"
   }, 
   {
     "volume": 5.0, 
@@ -22893,14 +22893,14 @@
     "typeID": 6289, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "Surplus LADAR Reserve Array"
+    "typeName": "Surplus Ladar Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6290, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "F-42 Reiterative LADAR Backup Sensors"
+    "typeName": "F-42 Reiterative Ladar Backup Sensors"
   }, 
   {
     "volume": 5.0, 
@@ -23088,7 +23088,7 @@
     "volume": 5.0, 
     "typeID": 6525, 
     "groupID": 48, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ta3 Perfunctory Vessel Probe"
   }, 
   {
@@ -23096,27 +23096,27 @@
     "typeID": 6527, 
     "groupID": 48, 
     "market": true, 
-    "typeName": "Rudimentary Ship Scanner I"
+    "typeName": "Compact Ship Scanner"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6529, 
     "groupID": 48, 
-    "market": true, 
+    "market": false, 
     "typeName": "Speculative Ship Identifier I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6531, 
     "groupID": 48, 
-    "market": true, 
+    "market": false, 
     "typeName": "Practical Type-E Ship Probe"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6567, 
     "groupID": 49, 
-    "market": true, 
+    "market": false, 
     "typeName": "ML-3 Amphilotite Mining Probe"
   }, 
   {
@@ -23124,20 +23124,20 @@
     "typeID": 6569, 
     "groupID": 49, 
     "market": true, 
-    "typeName": "Residual Survey Scanner I"
+    "typeName": "Scoped Survey Scanner"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6571, 
     "groupID": 49, 
-    "market": true, 
+    "market": false, 
     "typeName": "Rock-Scanning Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6573, 
     "groupID": 49, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Dactyl' Type-E Asteroid Analyzer"
   }, 
   {
@@ -24096,7 +24096,7 @@
     "volume": 5.0, 
     "typeID": 7993, 
     "groupID": 509, 
-    "market": true, 
+    "market": false, 
     "typeName": "Experimental TE-2100 Light Missile Launcher"
   }, 
   {
@@ -24146,20 +24146,20 @@
     "typeID": 8089, 
     "groupID": 509, 
     "market": true, 
-    "typeName": "Upgraded 'Malkuth' Light Missile Launcher"
+    "typeName": "Compact Light Missile Launcher"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8091, 
     "groupID": 509, 
     "market": true, 
-    "typeName": "Limited 'Limos' Light Missile Launcher"
+    "typeName": "Ample Light Missile Launcher"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8093, 
     "groupID": 509, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype 'Arbalest' Light Missile Launcher"
   }, 
   {
@@ -24208,7 +24208,7 @@
     "volume": 5.0, 
     "typeID": 8131, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Power Plant Manager: Capacitor Flux I"
   }, 
   {
@@ -24216,48 +24216,48 @@
     "typeID": 8133, 
     "groupID": 768, 
     "market": true, 
-    "typeName": "Beta Reactor Control: Capacitor Flux I"
+    "typeName": "Compact Capacitor Flux Coil"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8135, 
     "groupID": 768, 
     "market": true, 
-    "typeName": "Type-D Power Core Modification: Capacitor Flux"
+    "typeName": "Restrained Capacitor Flux Coil"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8137, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Generator Refitting: Capacitor Flux"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8163, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Power Plant Manager: Capacitor Flux"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8165, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Reactor Control: Capacitor Flux"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8167, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Power Core Modification: Capacitor Flux"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8169, 
     "groupID": 768, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Generator Refitting: Capacitor Flux"
   }, 
   {
@@ -24376,14 +24376,14 @@
     "volume": 5.0, 
     "typeID": 8251, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Power Plant Manager: Reaction Control"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8253, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Reactor Control: Reaction Control"
   }, 
   {
@@ -24397,21 +24397,21 @@
     "volume": 5.0, 
     "typeID": 8257, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Generator Refitting: Reaction Control"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8259, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Power Plant Manager: Reaction Control I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8261, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Reactor Control: Reaction Control I"
   }, 
   {
@@ -24419,13 +24419,13 @@
     "typeID": 8263, 
     "groupID": 769, 
     "market": true, 
-    "typeName": "Type-D Power Core Modification: Reaction Control"
+    "typeName": "Compact Reactor Control Unit"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8265, 
     "groupID": 769, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Generator Refitting: Reaction Control"
   }, 
   {
@@ -24796,35 +24796,35 @@
     "volume": 5.0, 
     "typeID": 8743, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Nanomechanical CPU Enhancer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8744, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Nanoelectrical Co-Processor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8745, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Photonic CPU Enhancer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8746, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Quantum Co-Processor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8747, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Nanomechanical CPU Enhancer I"
   }, 
   {
@@ -24832,20 +24832,20 @@
     "typeID": 8748, 
     "groupID": 285, 
     "market": true, 
-    "typeName": "Nanoelectrical Co-Processor I"
+    "typeName": "Upgraded Co-Processor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8749, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Photonic CPU Enhancer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8750, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Quantum Co-Processor I"
   }, 
   {
@@ -32126,14 +32126,14 @@
     "typeID": 11824, 
     "groupID": 347, 
     "market": true, 
-    "typeName": "LADAR Backup Array I Blueprint"
+    "typeName": "Ladar Backup Array I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11825, 
     "groupID": 347, 
     "market": false, 
-    "typeName": "LADAR Backup Array II Blueprint"
+    "typeName": "Ladar Backup Array II Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -44529,7 +44529,7 @@
     "volume": 5.0, 
     "typeID": 15425, 
     "groupID": 285, 
-    "market": true, 
+    "market": false, 
     "typeName": "Naiyon's Modified Co-Processor"
   }, 
   {
@@ -44550,14 +44550,14 @@
     "volume": 5.0, 
     "typeID": 15431, 
     "groupID": 52, 
-    "market": false, 
+    "market": true, 
     "typeName": "Makur's Modified Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 15433, 
     "groupID": 52, 
-    "market": false, 
+    "market": true, 
     "typeName": "Makur's Modified Warp Scrambler"
   }, 
   {
@@ -48372,7 +48372,7 @@
     "volume": 5.0, 
     "typeID": 16140, 
     "groupID": 52, 
-    "market": false, 
+    "market": true, 
     "typeName": "CONCORD Modified Warp Scrambler"
   }, 
   {
@@ -50081,27 +50081,27 @@
     "typeID": 16537, 
     "groupID": 339, 
     "market": true, 
-    "typeName": "Micro B66 Core Augmentation"
+    "typeName": "Compact Micro Auxiliary Power Core"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16539, 
     "groupID": 339, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro B88 Core Augmentation"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16541, 
     "groupID": 339, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro K-Exhaust Core Augmentation"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16543, 
     "groupID": 339, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro 'Vigor' Core Augmentation"
   }, 
   {
@@ -71449,14 +71449,14 @@
     "typeID": 21523, 
     "groupID": 203, 
     "market": true, 
-    "typeName": "LADAR Firewall"
+    "typeName": "Ladar Firewall"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21524, 
     "groupID": 347, 
     "market": false, 
-    "typeName": "LADAR Firewall Blueprint"
+    "typeName": "Ladar Firewall Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -72450,7 +72450,7 @@
     "typeID": 21670, 
     "groupID": 533, 
     "market": false, 
-    "typeName": "Quao Kale_"
+    "typeName": "Quao Kale"
   }, 
   {
     "volume": 0.1, 
@@ -99840,7 +99840,7 @@
     "typeID": 26607, 
     "groupID": 134, 
     "market": false, 
-    "typeName": "Miner II China Blueprint"
+    "typeName": "Civilian Miner Blueprint"
   }, 
   {
     "volume": 27500.0, 
@@ -119610,7 +119610,7 @@
     "typeID": 30387, 
     "groupID": 356, 
     "market": false, 
-    "typeName": "R.A.M.- Hybrid Technology Blueprint"
+    "typeName": "R.Db.- Hybrid Technology Blueprint"
   }, 
   {
     "volume": 2000.0, 
@@ -128612,7 +128612,7 @@
     "typeID": 31923, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Small Shield Extender 1 Blueprint"
+    "typeName": "Caldari Navy Small Shield Extender Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -128626,7 +128626,7 @@
     "typeID": 31925, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Small Shield Extender 2 Blueprint"
+    "typeName": "Republic Fleet Small Shield Extender Blueprint"
   }, 
   {
     "volume": 10.0, 
@@ -128640,7 +128640,7 @@
     "typeID": 31927, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Medium Shield Extender 1 Blueprint"
+    "typeName": "Caldari Navy Medium Shield Extender Blueprint"
   }, 
   {
     "volume": 10.0, 
@@ -128654,7 +128654,7 @@
     "typeID": 31929, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Medium Shield Extender 2 Blueprint"
+    "typeName": "Republic Fleet Medium Shield Extender Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -128668,7 +128668,7 @@
     "typeID": 31931, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Large Shield Extender 1 Blueprint"
+    "typeName": "Caldari Navy Large Shield Extender Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -128682,7 +128682,7 @@
     "typeID": 31933, 
     "groupID": 118, 
     "market": false, 
-    "typeName": "Caldari Navy Large Shield Extender 2 Blueprint"
+    "typeName": "Republic Fleet Large Shield Extender Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -131222,7 +131222,7 @@
     "volume": 5.0, 
     "typeID": 32459, 
     "groupID": 52, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Warp Disruptor"
   }, 
   {
@@ -137369,7 +137369,7 @@
     "typeID": 33724, 
     "groupID": 1091, 
     "market": true, 
-    "typeName": "Women's 'Corsair' Heels (beige)"
+    "typeName": "Women's 'Corsair' Heels (gray)"
   }, 
   {
     "volume": 0.1, 
@@ -137656,28 +137656,28 @@
     "typeID": 33767, 
     "groupID": 1089, 
     "market": true, 
-    "typeName": "Women's 'New Eden Open I' T-shirt YC114"
+    "typeName": "Women's 'New Eden Open I' T-shirt YC 114"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33768, 
     "groupID": 1089, 
     "market": true, 
-    "typeName": "Women's 'New Eden Open II' T-shirt YC116"
+    "typeName": "Women's 'New Eden Open II' T-shirt YC 116"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33769, 
     "groupID": 1089, 
     "market": true, 
-    "typeName": "Men's 'New Eden Open I' T-shirt YC114"
+    "typeName": "Men's 'New Eden Open I' T-shirt YC 114"
   }, 
   {
     "volume": 0.1, 
     "typeID": 33770, 
     "groupID": 1089, 
     "market": true, 
-    "typeName": "Men's 'New Eden Open II' T-shirt YC116"
+    "typeName": "Men's 'New Eden Open II' T-shirt YC 116"
   }, 
   {
     "volume": 0.1, 
@@ -138947,6 +138947,13 @@
     "typeName": "Guristas Data Sequence"
   }, 
   {
+    "volume": 0.1, 
+    "typeID": 33989, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (black)"
+  }, 
+  {
     "volume": 1.0, 
     "typeID": 33990, 
     "groupID": 1276, 
@@ -138954,11 +138961,1264 @@
     "typeName": "Tournament Micro Jump Unit"
   }, 
   {
+    "volume": 0.1, 
+    "typeID": 33992, 
+    "groupID": 1083, 
+    "market": false, 
+    "typeName": "Accessories/Glasses/Monocle_01/Types/MonocleM01_RightBlack.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33993, 
+    "groupID": 1083, 
+    "market": false, 
+    "typeName": "Accessories/Glasses/Monocle_F_T02/Types/Monocle_F_T02_black_left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33995, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve01/Types/Sleeve01_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33996, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve02/Types/Sleeve02_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33997, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve03/Types/Sleeve03_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33998, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve06/Types/Sleeve06_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 33999, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve07/Types/Sleeve07_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34000, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve09/Types/Sleeve09_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34001, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve10/Types/Sleeve10_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34002, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve11/Types/Sleeve11_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34003, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve12/Types/Sleeve12_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34004, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve13/Types/Sleeve13_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34005, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmLeft/Sleeve15/Types/Sleeve15_F_Left.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34006, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve01/Type/Sleeve01_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34007, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve02/Type/Sleeve02_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34008, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve03/Type/Sleeve03_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34009, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve06/Type/Sleeve06_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34010, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve07/Type/Sleeve07_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34011, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve09/Type/Sleeve09_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34012, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve10/Type/Sleeve10_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34013, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve11/Type/Sleeve11_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34014, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve12/Type/Sleeve12_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34015, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve13/Type/Sleeve13_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34016, 
+    "groupID": 1084, 
+    "market": false, 
+    "typeName": "Tattoo/ArmRight/Sleeve15/Type/Sleeve15_F_Right.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34017, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (matte black left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34018, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black and orange ringed left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34019, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black ringed left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34020, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black and yellow left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34021, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (blue and black ringed left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34022, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (blue and white left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34023, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (white and gray ringed left)"
+  }, 
+  {
+    "volume": 0.5, 
+    "typeID": 34024, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and orange left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34025, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and red left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34026, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and yellow left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34027, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (blue and white left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34028, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (green camo left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34029, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (green and yellow left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34030, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (gunmetal left)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34031, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (matte black right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34032, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black and orange ringed right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34033, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black ringed right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34034, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (black and yellow right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34035, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (blue and black ringed right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34036, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (blue and white right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34037, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Women's 'Vise' Cybernetic Arm (white and gray ringed right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34038, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and orange right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34039, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and red right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34040, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (black and yellow right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34041, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (blue and white right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34042, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (green camo  right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34043, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (green and yellow right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34044, 
+    "groupID": 1271, 
+    "market": true, 
+    "typeName": "Men's 'Crusher' Cybernetic Arm (gunmetal right)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34045, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (light)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34046, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (orange)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34047, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (pink)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34048, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (red)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34049, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (opaque black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34050, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (opaque blue)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34051, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (opaque gray)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34052, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (matte black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34053, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (opaque purple)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34054, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (white)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34055, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Hover' Tights (yellow)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34056, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Nova' Headwear (black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34057, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Tectonic' Headwear (matte black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34058, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Tectonic' Headwear (white)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34059, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Nova' Headwear (silver)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34060, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Nova' Headwear (gold)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34061, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Nova' Headwear (bronze)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34062, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Tectonic' Headwear (metal)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34063, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Men's 'Tectonic' Headwear (shiny black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34064, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Aeriform' Headwear (cyan)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34065, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Blades' Headwear (gunmetal)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34066, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Aeriform' Headwear (blue)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34067, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Blades' Headwear (platinum)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34068, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Spiderweb' Headwear (black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34069, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Blades' Headwear (gold)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34070, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Aeriform' Headwear (orange)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34071, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Blades' Headwear (black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34072, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Spiderweb' Headwear (copper)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34073, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Spiderweb' Headwear (metallic)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34074, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Blades' Headwear (jade)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34075, 
+    "groupID": 1092, 
+    "market": false, 
+    "typeName": "hair/Hair_Medium_Hp_01/Types/Hair_Medium_Hp_01_Simple.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34076, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Aeriform' Headwear (clear)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34077, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Spiderweb' Headwear (golden)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34078, 
+    "groupID": 1092, 
+    "market": true, 
+    "typeName": "Women's 'Aeriform' Headwear (black)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34079, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34080, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_blackgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34081, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34082, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34083, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_greengold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34084, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_orange.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34085, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34086, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_redblack.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34087, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_stealth.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34088, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_white.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34089, 
+    "groupID": 1091, 
+    "market": false, 
+    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_yellow.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34090, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34091, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_blackgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34092, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34093, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34094, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_greengold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34095, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_orange.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34096, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34097, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_redblack.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34098, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_stealth.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34099, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_white.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34100, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_yellow.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34101, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_black.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34102, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_blackgold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34103, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_blue.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34104, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_brown.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34105, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_greengold.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34106, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_orange.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34107, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_red.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34108, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_redblack.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34109, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_stealth.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34110, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_white.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34111, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_yellow.type"
+  }, 
+  {
     "volume": 1.0, 
     "typeID": 34112, 
     "groupID": 310, 
     "market": false, 
     "typeName": "Abandoned CRC Monitoring Station"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34118, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Megathron Quafe Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34119, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Megathron Quafe Edition Blueprint"
+  }, 
+  {
+    "volume": 3500.0, 
+    "typeID": 34122, 
+    "groupID": 1299, 
+    "market": true, 
+    "typeName": "Limited Jump Drive Economizer"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34123, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Limited Jump Drive Economizer Blueprint"
+  }, 
+  {
+    "volume": 3500.0, 
+    "typeID": 34124, 
+    "groupID": 1299, 
+    "market": true, 
+    "typeName": "Experimental Jump Drive Economizer"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34125, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Experimental Jump Drive Economizer Blueprint"
+  }, 
+  {
+    "volume": 3500.0, 
+    "typeID": 34126, 
+    "groupID": 1299, 
+    "market": true, 
+    "typeName": "Prototype Jump Drive Economizer"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34127, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Prototype Jump Drive Economizer Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34132, 
+    "groupID": 1301, 
+    "market": true, 
+    "typeName": "Pilot's Body Resculpt Certificate"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34133, 
+    "groupID": 1301, 
+    "market": true, 
+    "typeName": "Multiple Pilot Training Certificate"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34134, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole E004"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34135, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole L005"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34136, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole Z006"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34137, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole M001"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34138, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole C008"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34139, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole G008"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34140, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole Q003"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34141, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Dramiel"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34142, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Worm"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34143, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Daredevil"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34144, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Cruor"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34145, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Succubus"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34151, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Rattlesnake Victory Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34153, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Rattlesnake Victory Edition Blueprint"
+  }, 
+  {
+    "volume": 17100.0, 
+    "typeID": 34154, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Burst"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 34155, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Jaguar"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34156, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Caldari)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34157, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Amarr)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34158, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Minmatar)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34159, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Gallente)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34160, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (ORE)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34161, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Sisters of EVE)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34162, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Mordu's Legion)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34163, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (interBus)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34164, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Angel Cartel)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34165, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34166, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34167, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34168, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Marshal' Jacket (Serpentis)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34169, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Caldari)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34170, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Amarr)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34171, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Minmatar)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34172, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Gallente)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34173, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (ORE)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34174, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Sisters of EVE)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34175, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Mordu's Legion)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34176, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (interBus)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34177, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Angel Cartel)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34178, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34179, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34180, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34181, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Gunner' Jacket (Serpentis)"
+  }, 
+  {
+    "volume": 17100.0, 
+    "typeID": 34182, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Bantam"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 34183, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Hawk"
+  }, 
+  {
+    "volume": 28600.0, 
+    "typeID": 34184, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Inquisitor"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 34185, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Vengeance"
+  }, 
+  {
+    "volume": 28600.0, 
+    "typeID": 34186, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Navitas"
+  }, 
+  {
+    "volume": 27289.0, 
+    "typeID": 34187, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Burner Enyo"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34210, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Men's 'Quafethron' T-shirt"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34211, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Women's 'Quafethron' T-shirt"
   }, 
   {
     "volume": 0.01, 
@@ -153638,5 +154898,390 @@
     "groupID": 350858, 
     "market": true, 
     "typeName": "Militia Mass Driver"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367380, 
+    "groupID": 351648, 
+    "market": false, 
+    "typeName": ""
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367382, 
+    "groupID": 351648, 
+    "market": true, 
+    "typeName": "Nova Knife Fitting Optimization"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367436, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Ion Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367437, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Bolt Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367439, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Magsec SMG"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367440, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Heavy Machine Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367442, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frontline Special Issue Mk II-A"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367443, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frontline Special Issue Mk II-C"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367450, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frontline Special Issue Mk II-M"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367451, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frontline Special Issue Mk II-G"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367453, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Defender Special Issue Mk II-A"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367455, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Defender Special Issue Mk II-C"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367456, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Defender Special Issue Mk II-M"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367457, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Defender Special Issue Mk II-G"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367472, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Flaylock Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367477, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Kubo\u2019s GMK-16 Plasma Cannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367489, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Beacon\u2019s ELI-74 Swarm Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367500, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Symb's FORK-5 Sniper Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367502, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Agimus' Modified AGO-56 Mass Driver"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367511, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Luis' Modified VC-107 Combat Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367517, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Kalante's RXS-05 Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367519, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Ghalag's Modified MRT-17 Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367528, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Darth's GIO-66 Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367541, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Viktor\u2019s NEG-1 Laser Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367548, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Alex's Modified ZX-030 Heavy Machine Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367549, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Alldin's IMP-10 Forge Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367552, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Bons' SIN-7 Shotgun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367586, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Nova Knives"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367587, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Flaylock Pistol Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367589, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Bolt Pistol Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367590, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Ion Pistol Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367591, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Nova Knife Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367592, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Magsec SMG Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367621, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Scrambler Rifle Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367622, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Laser Rifle Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367623, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Rail Rifle Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367624, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Combat Rifle Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367625, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Plasma Cannon Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367627, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Heavy Machine Gun Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367628, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Forge Gun Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367629, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Mass Driver Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367630, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Flux Grenade"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367631, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Flux Grenade Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367632, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia AV Grenade"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367633, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia AV Grenade Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367634, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Sentinel G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367650, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Sentinel C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367651, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Sentinel A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367652, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Sentinel M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367653, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Assault G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367654, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Assault A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367655, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Assault M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367656, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Scout C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367657, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Scout A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367658, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Scout M-I"
   }
 ]
