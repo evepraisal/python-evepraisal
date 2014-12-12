@@ -14536,28 +14536,28 @@
     "typeID": 3395, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Frigate Construction"
+    "typeName": "Advanced Small Ship Construction"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3396, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Industrial Construction"
+    "typeName": "Advanced Industrial Ship Construction"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3397, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Cruiser Construction"
+    "typeName": "Advanced Medium Ship Construction"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3398, 
     "groupID": 268, 
     "market": true, 
-    "typeName": "Battleship Construction"
+    "typeName": "Advanced Large Ship Construction"
   }, 
   {
     "volume": 0.01, 
@@ -14606,7 +14606,7 @@
     "typeID": 3408, 
     "groupID": 270, 
     "market": true, 
-    "typeName": "Reverse Engineering"
+    "typeName": "Sleeper Encryption Methods"
   }, 
   {
     "volume": 0.01, 
@@ -25528,7 +25528,7 @@
     "typeName": "Large YF-12a Smartbomb"
   }, 
   {
-    "volume": 2.0, 
+    "volume": 0.01, 
     "typeID": 9826, 
     "groupID": 280, 
     "market": true, 
@@ -30173,7 +30173,7 @@
     "typeID": 11444, 
     "groupID": 270, 
     "market": true, 
-    "typeName": "Amarrian Starship Engineering"
+    "typeName": "Amarr Starship Engineering"
   }, 
   {
     "volume": 0.01, 
@@ -30215,7 +30215,7 @@
     "typeID": 11450, 
     "groupID": 270, 
     "market": true, 
-    "typeName": "Gallentean Starship Engineering"
+    "typeName": "Gallente Starship Engineering"
   }, 
   {
     "volume": 0.01, 
@@ -30512,7 +30512,7 @@
     "typeName": "Datacore - Takmahl Tech 3"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 11496, 
     "groupID": 333, 
     "market": true, 
@@ -58309,28 +58309,28 @@
     "typeName": "Drugdealer Passcard to Storage Area"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.01, 
     "typeID": 17893, 
     "groupID": 314, 
     "market": true, 
     "typeName": "High-Tech Data Chip"
   }, 
   {
-    "volume": 2.0, 
+    "volume": 0.01, 
     "typeID": 17894, 
     "groupID": 314, 
     "market": true, 
     "typeName": "High-Tech Scanner"
   }, 
   {
-    "volume": 100.0, 
+    "volume": 0.01, 
     "typeID": 17895, 
     "groupID": 314, 
     "market": true, 
     "typeName": "High-Tech Manufacturing Tools"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 0.01, 
     "typeID": 17897, 
     "groupID": 314, 
     "market": true, 
@@ -64865,21 +64865,21 @@
     "typeName": "Datacore - Jove Tech 1"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20114, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Propulsion Subsystems Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20115, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Engineering Subsystems Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20116, 
     "groupID": 333, 
     "market": true, 
@@ -65033,14 +65033,14 @@
     "typeName": "Habitation Module"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20171, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Hydromagnetic Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20172, 
     "groupID": 333, 
     "market": true, 
@@ -66020,84 +66020,84 @@
     "typeName": "Armored Warfare Link - Passive Defense I"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20410, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Gallentean Starship Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20411, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - High Energy Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20412, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Plasma Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20413, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Laser Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20414, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Quantum Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20415, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Molecular Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20416, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Nanite Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20417, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Electromagnetic Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20418, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Electronic Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20419, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Graviton Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20420, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Rocket Science"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20421, 
     "groupID": 333, 
     "market": true, 
@@ -66111,21 +66111,21 @@
     "typeName": "Data Interface - Talocan Weapon Systems"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20423, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Nuclear Physics"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20424, 
     "groupID": 333, 
     "market": true, 
     "typeName": "Datacore - Mechanical Engineering"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 20425, 
     "groupID": 333, 
     "market": true, 
@@ -71791,70 +71791,70 @@
     "volume": 1.0, 
     "typeID": 21573, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Process"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21574, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Accelerant"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21575, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Symmetry"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21576, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21577, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Attainment"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21579, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Process"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21580, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Accelerant"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21581, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Symmetry"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21582, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 21583, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Attainment"
   }, 
   {
@@ -71879,70 +71879,70 @@
     "typeName": "Sleeper Virtual Energizer"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21587, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Electronic Link"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21588, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Spare Parts"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21589, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Power Couplings"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21590, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Armor Blocks"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21591, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Computer Chips"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21592, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Electric Conduit"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21593, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Mechanic Parts"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21594, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Energy Cells"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21595, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Construction Alloy"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 21596, 
     "groupID": 530, 
     "market": true, 
@@ -79921,70 +79921,70 @@
     "typeName": "Serpentis Multi-tasking Processor"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23158, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Positron Cord"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23159, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Auxiliary Parts"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23160, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Force Cable"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23161, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Elemental Crux"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23162, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Analog Panel"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23163, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Current Amplifier"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23164, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Second-hand Parts"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23165, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Heat Depressor"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23166, 
     "groupID": 530, 
     "market": true, 
     "typeName": "Internal Bulkhead"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 23167, 
     "groupID": 530, 
     "market": true, 
@@ -80064,70 +80064,70 @@
     "volume": 1.0, 
     "typeID": 23178, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Process"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23179, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Accelerant"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23180, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Symmetry"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23181, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23182, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Attainment"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23183, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Process"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23184, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Accelerant"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23185, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Symmetry"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23186, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 23187, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Attainment"
   }, 
   {
@@ -93742,28 +93742,28 @@
     "volume": 1.0, 
     "typeID": 25553, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 25554, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 25555, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 25556, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Data Interface"
   }, 
   {
@@ -95233,7 +95233,7 @@
     "volume": 1.0, 
     "typeID": 25851, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Ship Data Interface"
   }, 
   {
@@ -95247,7 +95247,7 @@
     "volume": 1.0, 
     "typeID": 25853, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Ship Data Interface"
   }, 
   {
@@ -95261,7 +95261,7 @@
     "volume": 1.0, 
     "typeID": 25855, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Ship Data Interface"
   }, 
   {
@@ -95275,7 +95275,7 @@
     "volume": 1.0, 
     "typeID": 25857, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Ship Data Interface"
   }, 
   {
@@ -95447,7 +95447,7 @@
     "typeName": "Rogue Drone Saboteur"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 0.1, 
     "typeID": 25887, 
     "groupID": 333, 
     "market": true, 
@@ -99769,7 +99769,7 @@
     "volume": 1.0, 
     "typeID": 26597, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Tuner Data Interface"
   }, 
   {
@@ -99783,7 +99783,7 @@
     "volume": 1.0, 
     "typeID": 26599, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Tuner Data Interface"
   }, 
   {
@@ -99797,7 +99797,7 @@
     "volume": 1.0, 
     "typeID": 26601, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Tuner Data Interface"
   }, 
   {
@@ -99811,7 +99811,7 @@
     "volume": 1.0, 
     "typeID": 26603, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Tuner Data Interface"
   }, 
   {
@@ -113597,14 +113597,14 @@
     "typeID": 29159, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wrecked Battleship"
+    "typeName": "Wrecked Battleship"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29160, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wrecked Cruiser"
+    "typeName": "Wrecked Cruiser"
   }, 
   {
     "volume": 0.0, 
@@ -119574,35 +119574,35 @@
     "volume": 1.0, 
     "typeID": 30382, 
     "groupID": 979, 
-    "market": true, 
+    "market": false, 
     "typeName": "Amarr Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30383, 
     "groupID": 979, 
-    "market": true, 
+    "market": false, 
     "typeName": "Caldari Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30384, 
     "groupID": 979, 
-    "market": true, 
+    "market": false, 
     "typeName": "Minmatar Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30385, 
     "groupID": 979, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gallente Subsystems Data Interface"
   }, 
   {
     "volume": 1.0, 
     "typeID": 30386, 
     "groupID": 716, 
-    "market": true, 
+    "market": false, 
     "typeName": "R.Db.- Hybrid Technology"
   }, 
   {
@@ -135058,84 +135058,84 @@
     "volume": 1.0, 
     "typeID": 33315, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Occult Parity"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33316, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Occult Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33317, 
     "groupID": 728, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Occult Attainment"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33318, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cryptic Parity"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33319, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Esoteric Parity"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33320, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incognito Parity"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33321, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Cryptic Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33322, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Esoteric Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33323, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Incognito Augmentation"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33324, 
     "groupID": 729, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Cryptic Attainment"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33325, 
     "groupID": 731, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Esoteric Attainment"
   }, 
   {
     "volume": 1.0, 
     "typeID": 33326, 
     "groupID": 730, 
-    "market": true, 
+    "market": false, 
     "typeName": "Optimized Incognito Attainment"
   }, 
   {
@@ -138132,14 +138132,14 @@
     "typeID": 33857, 
     "groupID": 310, 
     "market": false, 
-    "typeName": "\ud95b\udcf0\uddd3\udf1a\udfe4\udc57\uda12\udbe4\uddcc\ud916\udd04"
+    "typeName": "\u6cf0\u5766\u4f1a\u6218\u9057\u5740"
   }, 
   {
     "volume": 0.0, 
     "typeID": 33858, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "\ud95b\udcf0\uddd3\udf1a\ufd1f\udeaa\u7891\u0296\uf9a3\udfd9\ufd1f\udeaa"
+    "typeName": "\u6cf0\u5766\u4f1a\u6218\u7eaa\u5ff5\u7891"
   }, 
   {
     "volume": 19700.0, 
@@ -139573,8 +139573,8 @@
     "volume": 0.1, 
     "typeID": 34080, 
     "groupID": 1091, 
-    "market": false, 
-    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_blackgold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Boots (Black/Gold)"
   }, 
   {
     "volume": 0.1, 
@@ -139594,8 +139594,8 @@
     "volume": 0.1, 
     "typeID": 34083, 
     "groupID": 1091, 
-    "market": false, 
-    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_greengold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Boots (Olive)"
   }, 
   {
     "volume": 0.1, 
@@ -139615,8 +139615,8 @@
     "volume": 0.1, 
     "typeID": 34086, 
     "groupID": 1091, 
-    "market": false, 
-    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_redblack.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Boots (Black/Red)"
   }, 
   {
     "volume": 0.1, 
@@ -139629,15 +139629,15 @@
     "volume": 0.1, 
     "typeID": 34088, 
     "groupID": 1091, 
-    "market": false, 
-    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_white.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Boots (White)"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34089, 
     "groupID": 1091, 
-    "market": false, 
-    "typeName": "Feet/SpaceBoots01F/Types/spaceboots01f_yellow.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Boots (Yellow)"
   }, 
   {
     "volume": 0.1, 
@@ -139650,8 +139650,8 @@
     "volume": 0.1, 
     "typeID": 34091, 
     "groupID": 1088, 
-    "market": false, 
-    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_blackgold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit Top (Black/Gold)"
   }, 
   {
     "volume": 0.1, 
@@ -139671,8 +139671,8 @@
     "volume": 0.1, 
     "typeID": 34094, 
     "groupID": 1088, 
-    "market": false, 
-    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_greengold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit Top (Olive)"
   }, 
   {
     "volume": 0.1, 
@@ -139692,8 +139692,8 @@
     "volume": 0.1, 
     "typeID": 34097, 
     "groupID": 1088, 
-    "market": false, 
-    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_redblack.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit Top (Black/Red)"
   }, 
   {
     "volume": 0.1, 
@@ -139706,15 +139706,15 @@
     "volume": 0.1, 
     "typeID": 34099, 
     "groupID": 1088, 
-    "market": false, 
-    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_white.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit Top (White)"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34100, 
     "groupID": 1088, 
-    "market": false, 
-    "typeName": "Outer/SpaceSuit_Top_01/Types/spacesuit_01_top_f_yellow.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit Top (Yellow)"
   }, 
   {
     "volume": 0.1, 
@@ -139727,8 +139727,8 @@
     "volume": 0.1, 
     "typeID": 34102, 
     "groupID": 1090, 
-    "market": false, 
-    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_blackgold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit (Black/Gold)"
   }, 
   {
     "volume": 0.1, 
@@ -139748,8 +139748,8 @@
     "volume": 0.1, 
     "typeID": 34105, 
     "groupID": 1090, 
-    "market": false, 
-    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_greengold.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit (Olive)"
   }, 
   {
     "volume": 0.1, 
@@ -139769,8 +139769,8 @@
     "volume": 0.1, 
     "typeID": 34108, 
     "groupID": 1090, 
-    "market": false, 
-    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_redblack.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit (Black/Red)"
   }, 
   {
     "volume": 0.1, 
@@ -139783,15 +139783,15 @@
     "volume": 0.1, 
     "typeID": 34110, 
     "groupID": 1090, 
-    "market": false, 
-    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_white.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit (White)"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34111, 
     "groupID": 1090, 
-    "market": false, 
-    "typeName": "bottomOuter/SpaceSuit_01/Types/spacesuit_01_f_yellow.type"
+    "market": true, 
+    "typeName": "Women's 'Eternity' Suit (Yellow)"
   }, 
   {
     "volume": 1.0, 
@@ -139813,6 +139813,20 @@
     "groupID": 107, 
     "market": false, 
     "typeName": "Megathron Quafe Edition Blueprint"
+  }, 
+  {
+    "volume": 300.0, 
+    "typeID": 34120, 
+    "groupID": 1297, 
+    "market": false, 
+    "typeName": "Mobile Competitive Vault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34121, 
+    "groupID": 1268, 
+    "market": false, 
+    "typeName": "Mobile Competitive Vault Blueprint"
   }, 
   {
     "volume": 3500.0, 
@@ -140207,6 +140221,118 @@
     "typeName": "Burner Enyo"
   }, 
   {
+    "volume": 0.0, 
+    "typeID": 34190, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Amarr Battleship Wreck 1"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34191, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Amarr Battleship Wreck 2"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34192, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Caldari Battleship Wreck 1"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34193, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Caldari Battleship Wreck 2"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34194, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Gallente Battleship Wreck 1"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34195, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Gallente Battleship Wreck 2"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34196, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Minmatar Battleship Wreck 1"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34197, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Minmatar Battleship Wreck 2"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34201, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Accelerant Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34202, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Attainment Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34203, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Augmentation Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34204, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Parity Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34205, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Process Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34206, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Symmetry Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34207, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Optimized Attainment Decryptor"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34208, 
+    "groupID": 1304, 
+    "market": true, 
+    "typeName": "Optimized Augmentation Decryptor"
+  }, 
+  {
     "volume": 0.1, 
     "typeID": 34210, 
     "groupID": 1089, 
@@ -140219,6 +140345,1574 @@
     "groupID": 1089, 
     "market": true, 
     "typeName": "Women's 'Quafethron' T-shirt"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34213, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Apocalypse Blood Raider Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34214, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Apocalypse Blood Raider Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34215, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Apocalypse Kador Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34216, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Apocalypse Kador Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34217, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Apocalypse Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34218, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Apocalypse Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34219, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Paladin Blood Raider Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34220, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Paladin Blood Raider Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34221, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Paladin Kador Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34222, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Paladin Kador Edition Blueprint"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34223, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Paladin Tash-Murkon Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34224, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Paladin Tash-Murkon Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34225, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Raven Guristas Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34226, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Raven Guristas Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34227, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Raven Kaalakiota Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34228, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Raven Kaalakiota Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34229, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Raven Nugoeihuvi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34230, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Raven Nugoeihuvi Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34231, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Golem Guristas Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34232, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Golem Guristas Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34233, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Golem Kaalakiota Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34234, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Golem Kaalakiota Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34235, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Golem Nugoeihuvi Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34236, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Golem Nugoeihuvi Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34237, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Megathron Police Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34238, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Megathron Police Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34239, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Megathron Innerzone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34240, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Megathron Innerzone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34241, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Kronos Police Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34242, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Kronos Police Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34243, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Kronos Quafe Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34244, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Kronos Quafe Edition Blueprint"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34245, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Kronos Innerzone Shipping Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34246, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Kronos Innerzone Shipping Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34247, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Tempest Justice Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34248, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Tempest Justice Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34249, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Tempest Krusual Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34250, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Tempest Krusual Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34251, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "Tempest Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34252, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Tempest Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34253, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Vargur Justice Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34254, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Vargur Justice Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34255, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Vargur Krusual Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34256, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Vargur Krusual Edition Blueprint"
+  }, 
+  {
+    "volume": 450000.0, 
+    "typeID": 34257, 
+    "groupID": 900, 
+    "market": false, 
+    "typeName": "Vargur Nefantar Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34258, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Vargur Nefantar Edition Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34260, 
+    "groupID": 548, 
+    "market": true, 
+    "typeName": "Surgical Warp Disrupt Probe"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34261, 
+    "groupID": 486, 
+    "market": false, 
+    "typeName": "Surgical Warp Disrupt Probe Blueprint"
+  }, 
+  {
+    "volume": 75.0, 
+    "typeID": 34264, 
+    "groupID": 864, 
+    "market": true, 
+    "typeName": "Focused Void Bomb"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34265, 
+    "groupID": 172, 
+    "market": false, 
+    "typeName": "Focused Void Bomb Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34266, 
+    "groupID": 1308, 
+    "market": true, 
+    "typeName": "Small Higgs Anchor I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34267, 
+    "groupID": 787, 
+    "market": true, 
+    "typeName": "Small Higgs Anchor I Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 34268, 
+    "groupID": 1308, 
+    "market": true, 
+    "typeName": "Medium Higgs Anchor I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34269, 
+    "groupID": 787, 
+    "market": true, 
+    "typeName": "Medium Higgs Anchor I Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34271, 
+    "groupID": 53, 
+    "market": false, 
+    "typeName": "Test Resistance Small Laser 2"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34272, 
+    "groupID": 53, 
+    "market": true, 
+    "typeName": "Polarized Small Pulse Laser"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34273, 
+    "groupID": 133, 
+    "market": false, 
+    "typeName": "Polarized Small Pulse Laser Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 34274, 
+    "groupID": 53, 
+    "market": true, 
+    "typeName": "Polarized Heavy Pulse Laser"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34275, 
+    "groupID": 133, 
+    "market": false, 
+    "typeName": "Polarized Heavy Pulse Laser Blueprint"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 34276, 
+    "groupID": 53, 
+    "market": true, 
+    "typeName": "Polarized Mega Pulse Laser"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34277, 
+    "groupID": 133, 
+    "market": false, 
+    "typeName": "Polarized Mega Pulse Laser Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34278, 
+    "groupID": 74, 
+    "market": true, 
+    "typeName": "Polarized Light Neutron Blaster"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34279, 
+    "groupID": 154, 
+    "market": false, 
+    "typeName": "Polarized Light Neutron Blaster Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 34280, 
+    "groupID": 74, 
+    "market": true, 
+    "typeName": "Polarized Heavy Neutron Blaster"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34281, 
+    "groupID": 154, 
+    "market": false, 
+    "typeName": "Polarized Heavy Neutron Blaster Blueprint"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 34282, 
+    "groupID": 74, 
+    "market": true, 
+    "typeName": "Polarized Neutron Blaster Cannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34283, 
+    "groupID": 154, 
+    "market": false, 
+    "typeName": "Polarized Neutron Blaster Cannon Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34284, 
+    "groupID": 55, 
+    "market": true, 
+    "typeName": "Polarized 200mm AutoCannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34285, 
+    "groupID": 135, 
+    "market": false, 
+    "typeName": "Polarized 200mm AutoCannon Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 34286, 
+    "groupID": 55, 
+    "market": true, 
+    "typeName": "Polarized 425mm AutoCannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34287, 
+    "groupID": 135, 
+    "market": false, 
+    "typeName": "Polarized 425mm AutoCannon Blueprint"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 34288, 
+    "groupID": 55, 
+    "market": true, 
+    "typeName": "Polarized 800mm Repeating Cannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34289, 
+    "groupID": 135, 
+    "market": false, 
+    "typeName": "Polarized 800mm Repeating Cannon Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34290, 
+    "groupID": 507, 
+    "market": true, 
+    "typeName": "Polarized Rocket Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34291, 
+    "groupID": 136, 
+    "market": false, 
+    "typeName": "Polarized Rocket Launcher Blueprint"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 34292, 
+    "groupID": 771, 
+    "market": true, 
+    "typeName": "Polarized Heavy Assault Missile Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34293, 
+    "groupID": 136, 
+    "market": false, 
+    "typeName": "Polarized Heavy Assault Missile Launcher Blueprint"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 34294, 
+    "groupID": 508, 
+    "market": true, 
+    "typeName": "Polarized Torpedo Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34295, 
+    "groupID": 136, 
+    "market": false, 
+    "typeName": "Polarized Torpedo Launcher Blueprint"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34299, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Mangled Storage Depot"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34300, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Dented Storage Depot"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34301, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Remote Pressure Control Unit"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34302, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Plasma Chamber Debris"
+  }, 
+  {
+    "volume": 100000000.0, 
+    "typeID": 34303, 
+    "groupID": 319, 
+    "market": false, 
+    "typeName": "Plasma Chamber"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34304, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Wrecked Storage Depot"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34305, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Remote Defense Grid Unit"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 34306, 
+    "groupID": 1308, 
+    "market": true, 
+    "typeName": "Large Higgs Anchor I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34307, 
+    "groupID": 787, 
+    "market": true, 
+    "typeName": "Large Higgs Anchor I Blueprint"
+  }, 
+  {
+    "volume": 40.0, 
+    "typeID": 34308, 
+    "groupID": 1308, 
+    "market": true, 
+    "typeName": "Capital Higgs Anchor I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34309, 
+    "groupID": 787, 
+    "market": true, 
+    "typeName": "Capital Higgs Anchor I Blueprint"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34310, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Unidentified Structure"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34311, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Honorary Fabricator-General Baton"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34312, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Honorary Brigadier of Engineers Insignia"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34313, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Honorary Federal Harbormaster Pennon"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34314, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Honorary Fleet Architect Badge"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34315, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Hyperfluct Generator"
+  }, 
+  {
+    "volume": 100000000.0, 
+    "typeID": 34316, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Damaged Spatial Concealment Chamber"
+  }, 
+  {
+    "volume": 47000.0, 
+    "typeID": 34317, 
+    "groupID": 1305, 
+    "market": true, 
+    "typeName": "Confessor"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34318, 
+    "groupID": 1309, 
+    "market": false, 
+    "typeName": "Confessor Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34319, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Defense Mode"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34320, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Defensive Mode Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34321, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Sharpshooter Mode"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34322, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Sniper Mode Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34323, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Propulsion Mode"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34324, 
+    "groupID": 158, 
+    "market": false, 
+    "typeName": "Amarr Tactical Destroyer Speed Mode Blueprint"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 34325, 
+    "groupID": 15, 
+    "market": false, 
+    "typeName": "Sisters of EVE Logistics Station"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 34326, 
+    "groupID": 15, 
+    "market": false, 
+    "typeName": "Sisters of EVE Industrial Station"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34327, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "ORE Freighter"
+  }, 
+  {
+    "volume": 17550000.0, 
+    "typeID": 34328, 
+    "groupID": 513, 
+    "market": true, 
+    "typeName": "Bowhead"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34329, 
+    "groupID": 525, 
+    "market": true, 
+    "typeName": "Bowhead Blueprint"
+  }, 
+  {
+    "volume": 2750.0, 
+    "typeID": 34330, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Resource Container"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 34331, 
+    "groupID": 6, 
+    "market": false, 
+    "typeName": "Sun A0IV (Turbulent Blue Subgiant)"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34332, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Expedition Command Outpost Wreck"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34333, 
+    "groupID": 227, 
+    "market": false, 
+    "typeName": "Cloud Rings"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34334, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Planetary Colonization Office Wreck"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34335, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Testing Facilities Wreck"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34336, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Exotic Specimen Warehouse Wreck"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34337, 
+    "groupID": 1307, 
+    "market": false, 
+    "typeName": "Circadian Seeker"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34338, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole T458"
+  }, 
+  {
+    "typeID": 34339, 
+    "volume": 17550000.0, 
+    "typeName": "Moros Interbus Edition", 
+    "components": [
+      {
+        "typeID": 34339, 
+        "materialTypeID": 19724, 
+        "quantity": 1
+      }
+    ], 
+    "groupID": 485, 
+    "market": true
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34340, 
+    "groupID": 537, 
+    "market": false, 
+    "typeName": "Moros Interbus Edition Blueprint"
+  }, 
+  {
+    "typeID": 34341, 
+    "volume": 15500000.0, 
+    "typeName": "Naglfar Justice Edition", 
+    "components": [
+      {
+        "typeID": 34341, 
+        "materialTypeID": 19722, 
+        "quantity": 1
+      }
+    ], 
+    "groupID": 485, 
+    "market": true
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34342, 
+    "groupID": 537, 
+    "market": false, 
+    "typeName": "Naglfar Justice Edition Blueprint"
+  }, 
+  {
+    "typeID": 34343, 
+    "volume": 16250000.0, 
+    "typeName": "Phoenix Wiyrkomi Edition", 
+    "components": [
+      {
+        "typeID": 34343, 
+        "materialTypeID": 19726, 
+        "quantity": 1
+      }
+    ], 
+    "groupID": 485, 
+    "market": true
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34344, 
+    "groupID": 537, 
+    "market": false, 
+    "typeName": "Phoenix Wiyrkomi Edition Blueprint"
+  }, 
+  {
+    "typeID": 34345, 
+    "volume": 18500000.0, 
+    "typeName": "Revelation Sarum Edition", 
+    "components": [
+      {
+        "typeID": 34345, 
+        "materialTypeID": 19720, 
+        "quantity": 1
+      }
+    ], 
+    "groupID": 485, 
+    "market": true
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34346, 
+    "groupID": 537, 
+    "market": false, 
+    "typeName": "Revelation Sarum Edition Blueprint"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34347, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Jacket (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34348, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Jacket (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34349, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Jacket (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34350, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Coat (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34351, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Coat (Guristas)"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34352, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Revenant Wreckage"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34353, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Coat (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34354, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Pants (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34355, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Pants (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34356, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Pants (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34357, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Pants (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34358, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Pants (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34359, 
+    "groupID": 1090, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Pants (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34360, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Boots (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34361, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Boots (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34362, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Boots (Guristas)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34363, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Boots (Blood Raiders)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34364, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Boots (Sansha's Nation)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34365, 
+    "groupID": 1091, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Boots (Guristas)"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34366, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole M164"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34367, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole L031"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34368, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole Q063"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34369, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole V898"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34370, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole E587"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34371, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole F353"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34372, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole F135"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34373, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Remote Calibration Device - Low Power"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34374, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Remote Calibration Device - High Power"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34375, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Coordinate Plotting Device"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34378, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Intact Storage Depot"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34379, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Inactive Sentry Gun"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34381, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "X-Axis Calibration Coordinate"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34382, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Y-Axis Calibration Coordinate"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34383, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Z-Axis Calibration Coordinate"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34384, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Immobile Tractor Beam"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34385, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Pristine Storage Depot"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34386, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Impenetrable Storage Depot"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34387, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Spatial Rift"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34388, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Communication Relay"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34389, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Matyrhan Lakat-Hro"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34390, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Amarr Tactical Destroyer"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34391, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Solray Gamma Alignment Unit"
+  }, 
+  {
+    "volume": 100000000.0, 
+    "typeID": 34392, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Bioinformatics Processing Cells"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34393, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Men's 'Outlaw' Jacket (Burnt Orange)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34394, 
+    "groupID": 1088, 
+    "market": true, 
+    "typeName": "Women's 'Outlaw' Coat (Burnt Orange)"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34395, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Amarr Advanced Destroyer Wreck"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34396, 
+    "groupID": 964, 
+    "market": true, 
+    "typeName": "Self-Assembling Nanolattice"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34397, 
+    "groupID": 965, 
+    "market": true, 
+    "typeName": "Self-Assembling Nanolattice Blueprint"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34398, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Solray Infrared Alignment Unit"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34399, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Solray Radio Alignment Unit"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34400, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Gamma Ray Modulate Disc"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34401, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Infrared Ray Modulate Disc"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34402, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Radio Ray Modulate Disc"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34403, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Solray Observational Unit"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34404, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Solray Unaligned Power Terminal"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34405, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Solray Aligned Power Terminal"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34406, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Remote Reroute Unit"
+  }, 
+  {
+    "volume": 30.0, 
+    "typeID": 34412, 
+    "groupID": 997, 
+    "market": true, 
+    "typeName": "Small Intact Hull Section"
+  }, 
+  {
+    "volume": 30.0, 
+    "typeID": 34414, 
+    "groupID": 997, 
+    "market": true, 
+    "typeName": "Small Malfunctioning Hull Section"
+  }, 
+  {
+    "volume": 30.0, 
+    "typeID": 34416, 
+    "groupID": 997, 
+    "market": true, 
+    "typeName": "Small Wrecked Hull Section"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34417, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Manufacturing Union\u2019s Placard"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34418, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "The Galactic Party Planning Guide"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34419, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Jump Fatigue Recovery Agent"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34420, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Cooking With Veldspar"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34421, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Chribba\u2019s Modified Strip Miner"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34422, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Rooks & Kings \u2013 The Clarion Call Compilation"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34423, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Pre-Completed CSM 10 Ballot Paper"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34424, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Titanium Plated Cranial Shielding"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34425, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "SCC Guidelines \u2013 Lotteries For Dummies"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34426, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Sort Dragon\u2019s Guide To Diplomacy"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34427, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Polaris Eviction Notice"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34428, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Jump Portal Generation Instruction Holoreel"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34429, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Vincent Pryce\u2019s Warp Disruption Field Generator"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34430, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "My God, It\u2019s Full Of Holes!"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34431, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Guillome Renard\u2019s Sleeper Loot Stash"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34432, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Sister\u2019s Of EVE Charity Statue"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34433, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "The Damsel\u2019s Drunk Bodyguard"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34434, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Alice Saki\u2019s Good Posting Guide"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34435, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Soxfour\u2019s Spaceboots"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 34436, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "The Friend Ship"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34437, 
+    "groupID": 319, 
+    "market": false, 
+    "typeName": "Rewired Sentry Gun"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34438, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Sentry Repair Station"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34439, 
+    "groupID": 988, 
+    "market": false, 
+    "typeName": "Wormhole A009"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34440, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Sleeper Medium Wreck "
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34447, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Cerebrum Maintenance Chamber"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34448, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Smoldering Archive Ruins"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34449, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Central Archive Cerebrum"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34450, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Intravenous Oscillation Fluid"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34451, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Nanoplastic Membrane Patch"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34452, 
+    "groupID": 314, 
+    "market": false, 
+    "typeName": "Self-regulating Machine Gears"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34453, 
+    "groupID": 306, 
+    "market": false, 
+    "typeName": "Vessel Rejuvenation Battery"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 34454, 
+    "groupID": 383, 
+    "market": false, 
+    "typeName": "Archive Sentry Tower"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 34455, 
+    "groupID": 383, 
+    "market": false, 
+    "typeName": "Impaired Archive Sentry Tower"
   }, 
   {
     "volume": 0.01, 
@@ -148379,7 +150073,7 @@
     "volume": 0.01, 
     "typeID": 363570, 
     "groupID": 350858, 
-    "market": false, 
+    "market": true, 
     "typeName": "Assault Scrambler Rifle"
   }, 
   {
@@ -148402,6 +150096,13 @@
     "groupID": 350858, 
     "market": true, 
     "typeName": "Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 363770, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Assault Rail Rifle"
   }, 
   {
     "volume": 0.0, 
@@ -151111,6 +152812,13 @@
     "groupID": 351648, 
     "market": true, 
     "typeName": "Magsec SMG Rapid Reload"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 365409, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Assault Combat Rifle"
   }, 
   {
     "volume": 0.01, 
@@ -155019,6 +156727,13 @@
     "typeName": "Beacon\u2019s ELI-74 Swarm Launcher"
   }, 
   {
+    "volume": 0.0, 
+    "typeID": 367499, 
+    "groupID": 367487, 
+    "market": true, 
+    "typeName": "Skill Tree Reset and Refund"
+  }, 
+  {
     "volume": 0.01, 
     "typeID": 367500, 
     "groupID": 350858, 
@@ -155089,6 +156804,13 @@
     "typeName": "Bons' SIN-7 Shotgun"
   }, 
   {
+    "volume": 0.0, 
+    "typeID": 367578, 
+    "groupID": 367580, 
+    "market": true, 
+    "typeName": "Jara Kumora - Contract"
+  }, 
+  {
     "volume": 0.01, 
     "typeID": 367586, 
     "groupID": 350858, 
@@ -155129,6 +156851,34 @@
     "groupID": 350858, 
     "market": true, 
     "typeName": "Militia Magsec SMG Blueprint"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367596, 
+    "groupID": 367487, 
+    "market": false, 
+    "typeName": "Instant Booster 2X"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367597, 
+    "groupID": 367487, 
+    "market": false, 
+    "typeName": "Instant Booster 3X"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367598, 
+    "groupID": 367487, 
+    "market": false, 
+    "typeName": "Instant Booster 4X"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367600, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Dominus' Sentinel"
   }, 
   {
     "volume": 0.01, 
@@ -155283,5 +157033,544 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "'Quafe' Scout M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367677, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Shogun' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367679, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Atlas' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367681, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Warlord' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367685, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Rasetsu' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367687, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Spartan' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367689, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Nomad' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367691, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Opus' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367693, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Kampo' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367695, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Chiron' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367697, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Shaman' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367699, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Seraph' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367701, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Hawk' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367703, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Serpent' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367705, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Tiger' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367707, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Dragon' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367709, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Samurai' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367711, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Centurion' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367713, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Renegade' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367715, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Paladin' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367716, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Archduke's Modified Sentinel mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367738, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frame's Modified Assault ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367742, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Scotsman's Modified Scout gk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367751, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Logibro's Modified Logistics mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367760, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Rattati's Modified Assault gk.0"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367765, 
+    "groupID": 367774, 
+    "market": true, 
+    "typeName": "Encrypted Strongbox"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367770, 
+    "groupID": 367776, 
+    "market": true, 
+    "typeName": "Hacked Decryptor Key"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367777, 
+    "groupID": 367776, 
+    "market": true, 
+    "typeName": "Basic Decryptor2"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367778, 
+    "groupID": 367776, 
+    "market": true, 
+    "typeName": "Enhanced Decryptor1"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367779, 
+    "groupID": 367776, 
+    "market": true, 
+    "typeName": "Complex Decryptor_test"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367811, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "State 'Shogun' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367813, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Republic Assault Combat Rifle"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367843, 
+    "groupID": 367487, 
+    "market": false, 
+    "typeName": "mission_reroll"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367845, 
+    "groupID": 367487, 
+    "market": false, 
+    "typeName": "instant_booster4"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367848, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Federation Burst Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367854, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Imperial 'Opus' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367856, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Republic 'Shaman' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367863, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Federation 'Serpent' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367864, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Federation 'Centurion' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367885, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Storm Raider's Modified Commando ak.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367895, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Archduke's Modified Sentinel mk.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367896, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Logibro's Modified Logistics mk.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367897, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Rattati's Modified Assault gk.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367898, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Storm Raider's Modified Commando ak.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367899, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Frame's Modified Assault ck.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367900, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Scotsman's Modified Scout gk.0 (Master)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367948, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Federation 'Atlas' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367955, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "State 'Rasetsu' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367959, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Imperial 'Seraph' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367960, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Republic 'Tiger' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367963, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Republic 'Renegade' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367987, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Atlas' Sentinel vX.1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367988, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Nomad' Assault vX.1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367989, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "APEX 'Dragon' Scout vX.1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367992, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Assault Combat Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367994, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Assault Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367996, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Militia Assault Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367998, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Republic 'Warlord' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 367999, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Federation 'Spartan' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368000, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "State 'Kampo' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368001, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Imperial 'Dragon' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368003, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Imperial 'Paladin' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368014, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Imperial Assault Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368015, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "State Assault Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368016, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Federation Breach Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368022, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Imperial 'Dominus' Sentinel"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368023, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Republic 'Nomad' Assault"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368024, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "Federation 'Chiron' Logistics"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368025, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "State 'Hawk' Scout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368026, 
+    "groupID": 367594, 
+    "market": true, 
+    "typeName": "State 'Samurai' Commando"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368061, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Amarr Combat Standard Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368062, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Amarr Combat Advanced Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368064, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Gallente Combat Standard Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368065, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Gallente Combat Advanced Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368066, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Minmatar Combat Standard Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368067, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Minmatar Combat Advanced Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368069, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Caldari Combat Standard Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368071, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Caldari Combat Advanced Loadout"
   }
 ]
