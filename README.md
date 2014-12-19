@@ -6,13 +6,15 @@ Requirements
 ============
 * Python > 2.7
 * Flask
-* Memcache
+* Memcached
 
 First Run
 =========
-First, you need to download the source.
+First, you need to install Memcache and libmemcache. 
+
+Next, download the source.
 ```
-git clone https://github.com/sudorandom/evepraisal.git
+git clone https://github.com/evepraisal/evepraisal.git
 cd evepraisal
 ```
 
