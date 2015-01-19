@@ -1082,7 +1082,7 @@
     "typeID": 421, 
     "groupID": 43, 
     "market": true, 
-    "typeName": "Basic Capacitor Recharger"
+    "typeName": "'Basic' Capacitor Recharger"
   }, 
   {
     "volume": 10.0, 
@@ -1397,7 +1397,7 @@
     "typeID": 506, 
     "groupID": 767, 
     "market": true, 
-    "typeName": "Basic Capacitor Power Relay"
+    "typeName": "'Basic' Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
@@ -3882,7 +3882,7 @@
     "typeID": 1192, 
     "groupID": 764, 
     "market": true, 
-    "typeName": "Basic Overdrive Injector System"
+    "typeName": "'Basic' Overdrive Injector System"
   }, 
   {
     "volume": 5.0, 
@@ -4120,14 +4120,14 @@
     "typeID": 1240, 
     "groupID": 78, 
     "market": true, 
-    "typeName": "Basic Reinforced Bulkheads"
+    "typeName": "'Basic' Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1242, 
     "groupID": 763, 
     "market": true, 
-    "typeName": "Basic Nanofiber Internal Structure"
+    "typeName": "'Basic' Nanofiber Internal Structure"
   }, 
   {
     "volume": 5.0, 
@@ -4379,7 +4379,7 @@
     "typeID": 1315, 
     "groupID": 765, 
     "market": true, 
-    "typeName": "Basic Expanded Cargohold"
+    "typeName": "'Basic' Expanded Cargohold"
   }, 
   {
     "volume": 5.0, 
@@ -4575,35 +4575,35 @@
     "typeID": 1401, 
     "groupID": 762, 
     "market": true, 
-    "typeName": "Basic Inertia Stabilizers"
+    "typeName": "'Basic' Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1403, 
     "groupID": 762, 
     "market": true, 
-    "typeName": "Inertia Stabilizers I"
+    "typeName": "Inertial Stabilizers I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 1404, 
     "groupID": 158, 
     "market": true, 
-    "typeName": "Inertia Stabilizers I Blueprint"
+    "typeName": "Inertial Stabilizers I Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1405, 
     "groupID": 762, 
     "market": true, 
-    "typeName": "Inertia Stabilizers II"
+    "typeName": "Inertial Stabilizers II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 1406, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Inertia Stabilizers II Blueprint"
+    "typeName": "Inertial Stabilizers II Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -4694,7 +4694,7 @@
     "typeID": 1537, 
     "groupID": 766, 
     "market": true, 
-    "typeName": "Basic Power Diagnostic System"
+    "typeName": "'Basic' Power Diagnostic System"
   }, 
   {
     "volume": 5.0, 
@@ -7270,7 +7270,7 @@
     "typeID": 2234, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Sansha's Battletower LCO"
+    "typeName": "Sansha's Battletower"
   }, 
   {
     "volume": 1.0, 
@@ -7424,14 +7424,14 @@
     "typeID": 2284, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Megathron (Roden)"
+    "typeName": "Megathron (Roden)"
   }, 
   {
     "volume": 0.0, 
     "typeID": 2285, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Dominix (Roden)"
+    "typeName": "Dominix (Roden)"
   }, 
   {
     "volume": 0.01, 
@@ -8495,7 +8495,7 @@
     "typeID": 2468, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Structure II"
+    "typeName": "Fortified Drone Structure II"
   }, 
   {
     "volume": 0.0, 
@@ -10875,7 +10875,7 @@
     "typeID": 2842, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Station"
+    "typeName": "Serpentis Station"
   }, 
   {
     "volume": 100100.0, 
@@ -11267,7 +11267,7 @@
     "typeID": 2902, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Acceleration Gate"
+    "typeName": "Deactivated Acceleration Gate"
   }, 
   {
     "volume": 27500.0, 
@@ -11407,14 +11407,14 @@
     "typeID": 2927, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Deadspace Particle Accelerator"
+    "typeName": "Fortified Deadspace Particle Accelerator"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 2928, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Asteroid Colony"
+    "typeName": "Fortified Asteroid Colony"
   }, 
   {
     "volume": 20.0, 
@@ -12219,7 +12219,7 @@
     "typeID": 3056, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Deadspace Outpost I"
+    "typeName": "Fortified Sansha Deadspace Outpost I"
   }, 
   {
     "volume": 20.0, 
@@ -12240,7 +12240,7 @@
     "typeID": 3059, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Starbase Control Tower"
+    "typeName": "Sansha Starbase Control Tower"
   }, 
   {
     "volume": 0.0, 
@@ -15264,7 +15264,7 @@
     "typeID": 3509, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Logistics Control Array"
+    "typeName": "Sansha Logistics Control Array"
   }, 
   {
     "volume": 100000000.0, 
@@ -15900,7 +15900,7 @@
     "typeID": 3591, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Angel Control Tower"
+    "typeName": "Angel Control Tower"
   }, 
   {
     "volume": 0.0, 
@@ -16103,7 +16103,7 @@
     "typeID": 3620, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Starbase Shield Generator"
+    "typeName": "Fortified Starbase Shield Generator"
   }, 
   {
     "volume": 27500.0, 
@@ -18007,7 +18007,7 @@
     "typeID": 3920, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Industrial Station LCO"
+    "typeName": "Fortified Amarr Industrial Station"
   }, 
   {
     "volume": 24500.0, 
@@ -18182,7 +18182,7 @@
     "typeID": 3952, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Archon"
+    "typeName": "Fortified Archon"
   }, 
   {
     "volume": 25.0, 
@@ -18217,7 +18217,7 @@
     "typeID": 3957, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Stronghold"
+    "typeName": "Serpentis Stronghold"
   }, 
   {
     "volume": 0.1, 
@@ -18280,7 +18280,7 @@
     "typeID": 3967, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Gallente Station 7 LCO"
+    "typeName": "Fortified Gallente Station 7"
   }, 
   {
     "volume": 0.0, 
@@ -18504,7 +18504,7 @@
     "typeID": 4007, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Minmatar Station LCO"
+    "typeName": "Fortified Minmatar Station"
   }, 
   {
     "volume": 0.1, 
@@ -19036,14 +19036,14 @@
     "typeID": 4099, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Factory Outpost LCO"
+    "typeName": "Amarr Factory Outpost"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 4100, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Research Outpost LCO"
+    "typeName": "Caldari Research Outpost"
   }, 
   {
     "volume": 0.1, 
@@ -21107,42 +21107,42 @@
     "volume": 5.0, 
     "typeID": 4421, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-a10 Buffer Capacitor Regenerator"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4423, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "Industrial Capacitor Recharger"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4425, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "AGM Capacitor Charge Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4427, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "Secondary Parallel Link-Capacitor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4431, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-b10 Nominal Capacitor Regenerator"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4433, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "Barton Reactor Capacitor Recharger I"
   }, 
   {
@@ -21150,13 +21150,13 @@
     "typeID": 4435, 
     "groupID": 43, 
     "market": true, 
-    "typeName": "Eutectic Capacitor Charge Array"
+    "typeName": "Eutectic Compact Cap Recharger"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4437, 
     "groupID": 43, 
-    "market": true, 
+    "market": false, 
     "typeName": "Fixed Parallel Link-Capacitor I"
   }, 
   {
@@ -21632,7 +21632,7 @@
     "volume": 5.0, 
     "typeID": 5231, 
     "groupID": 54, 
-    "market": true, 
+    "market": false, 
     "typeName": "EP-R Argon Ion Basic Excavation Pulse"
   }, 
   {
@@ -21646,14 +21646,14 @@
     "volume": 5.0, 
     "typeID": 5235, 
     "groupID": 54, 
-    "market": true, 
+    "market": false, 
     "typeName": "Xenon Basic Drilling Beam"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5237, 
     "groupID": 54, 
-    "market": true, 
+    "market": false, 
     "typeName": "Rubin Basic Particle Bore Stream"
   }, 
   {
@@ -21661,20 +21661,20 @@
     "typeID": 5239, 
     "groupID": 54, 
     "market": true, 
-    "typeName": "EP-S Gaussian Excavation Pulse"
+    "typeName": "EP-S Gaussian Scoped Mining Laser"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5241, 
     "groupID": 54, 
-    "market": true, 
+    "market": false, 
     "typeName": "Dual Diode Mining Laser I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5243, 
     "groupID": 54, 
-    "market": true, 
+    "market": false, 
     "typeName": "XeCl Drilling Beam I"
   }, 
   {
@@ -21682,7 +21682,7 @@
     "typeID": 5245, 
     "groupID": 54, 
     "market": true, 
-    "typeName": "Cu Vapor Particle Bore Stream I"
+    "typeName": "Particle Bore Compact Mining Laser"
   }, 
   {
     "volume": 5.0, 
@@ -21884,49 +21884,49 @@
     "volume": 5.0, 
     "typeID": 5479, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Modified SS Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5481, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Hull Conversion Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5483, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Hull Mod Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5485, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Altered SS Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5487, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Modified SS Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5489, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Hull Conversion Expanded Cargo I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5491, 
     "groupID": 765, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Hull Mod Expanded Cargo"
   }, 
   {
@@ -21934,55 +21934,55 @@
     "typeID": 5493, 
     "groupID": 765, 
     "market": true, 
-    "typeName": "Type-D Altered SS Expanded Cargo"
+    "typeName": "Type-D Restrained Expanded Cargo"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5519, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Modified SS Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5521, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Hull Conversion Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5523, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Hull Mod Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5525, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Altered SS Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5527, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Modified SS Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5529, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Hull Conversion Inertial Stabilizers I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5531, 
     "groupID": 762, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Hull Mod Inertial Stabilizers"
   }, 
   {
@@ -21990,48 +21990,48 @@
     "typeID": 5533, 
     "groupID": 762, 
     "market": true, 
-    "typeName": "Type-D Altered SS Inertial Stabilizers"
+    "typeName": "Type-D Restrained Inertial Stabilizers"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5559, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Hull Conversion Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5561, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Hull Conversion Nanofiber Structure I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5591, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Hull Mod Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5593, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Altered SS Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5595, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Modified SS Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5597, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Hull Mod Nanofiber Structure"
   }, 
   {
@@ -22039,55 +22039,55 @@
     "typeID": 5599, 
     "groupID": 763, 
     "market": true, 
-    "typeName": "Type-D Altered SS Nanofiber Structure"
+    "typeName": "Type-D Restrained Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5601, 
     "groupID": 763, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Modified SS Nanofiber Structure"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5611, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Hull Conversion Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5613, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Hull Mod Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5615, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Altered SS Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5617, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Modified SS Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5627, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Hull Conversion Overdrive Injector I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5629, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Hull Mod Overdrive Injector"
   }, 
   {
@@ -22095,27 +22095,27 @@
     "typeID": 5631, 
     "groupID": 764, 
     "market": true, 
-    "typeName": "Type-D Altered SS Overdrive Injector"
+    "typeName": "Type-D Restrained Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5633, 
     "groupID": 764, 
-    "market": true, 
+    "market": false, 
     "typeName": "Mark I Modified SS Overdrive Injector"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5643, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Hull Conversion Reinforced Bulkheads I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5645, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Hull Mod Reinforced Bulkheads"
   }, 
   {
@@ -22123,41 +22123,41 @@
     "typeID": 5647, 
     "groupID": 78, 
     "market": true, 
-    "typeName": "Type-D Altered SS Reinforced Bulkheads"
+    "typeName": "Type-D Restrained Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5649, 
     "groupID": 78, 
     "market": true, 
-    "typeName": "Mark I Modified SS Reinforced Bulkheads"
+    "typeName": "Mark I Compact Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5675, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Hull Conversion Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5677, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Hull Mod Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5679, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Altered SS Reinforced Bulkheads"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5681, 
     "groupID": 78, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Modified SS Reinforced Bulkheads"
   }, 
   {
@@ -24264,14 +24264,14 @@
     "volume": 5.0, 
     "typeID": 8171, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Power Plant Manager: Capacity Power Relay I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8173, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Reactor Control: Capacitor Power Relay I"
   }, 
   {
@@ -24279,90 +24279,90 @@
     "typeID": 8175, 
     "groupID": 767, 
     "market": true, 
-    "typeName": "Type-D Power Core Modification: Capacitor Power Relay"
+    "typeName": "Type-D Restrained Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8177, 
     "groupID": 767, 
     "market": true, 
-    "typeName": "Mark I Generator Refitting: Capacitor Power Relay"
+    "typeName": "Mark I Compact Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8203, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Power Plant Manager: Capacity Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8205, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Reactor Control: Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8207, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Power Core Modification: Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8209, 
     "groupID": 767, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Generator Refitting: Capacitor Power Relay"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8211, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Power Plant Manager: Diagnostic System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8213, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alpha Reactor Control: Diagnostic System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8215, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Power Core Modification: Diagnostic System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8217, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Marked Generator Refitting: Diagnostic System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8219, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Local Power Plant Manager: Diagnostic System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8221, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta Reactor Control: Diagnostic System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8223, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-D Power Core Modification: Diagnostic System"
   }, 
   {
@@ -24370,7 +24370,7 @@
     "typeID": 8225, 
     "groupID": 766, 
     "market": true, 
-    "typeName": "Mark I Generator Refitting: Diagnostic System"
+    "typeName": "Mark I Compact Power Diagnostic System"
   }, 
   {
     "volume": 5.0, 
@@ -24390,7 +24390,7 @@
     "volume": 5.0, 
     "typeID": 8255, 
     "groupID": 766, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Power Core Modification: Reaction Control"
   }, 
   {
@@ -25728,7 +25728,7 @@
     "typeID": 9876, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Commercial Station Ruins"
+    "typeName": "Fortified Amarr Commercial Station Ruins"
   }, 
   {
     "volume": 0.0, 
@@ -25763,7 +25763,7 @@
     "typeID": 9881, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Station Ruins - Huge & Sprawling"
+    "typeName": "Fortified Caldari Station Ruins - Huge & Sprawling"
   }, 
   {
     "volume": 0.0, 
@@ -25777,7 +25777,7 @@
     "typeID": 9883, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Station Ruins - Flat Hulk"
+    "typeName": "Fortified Caldari Station Ruins - Flat Hulk"
   }, 
   {
     "volume": 0.0, 
@@ -51327,7 +51327,7 @@
     "typeID": 16748, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "Amarr Bunker"
+    "typeName": "Occupied Amarr Bunker"
   }, 
   {
     "volume": 100000000.0, 
@@ -63903,7 +63903,7 @@
     "typeID": 19729, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "Gallente Bunker_UDI"
+    "typeName": "Gallente Bunker UDI"
   }, 
   {
     "volume": 0.1, 
@@ -71225,28 +71225,28 @@
     "typeID": 21491, 
     "groupID": 764, 
     "market": true, 
-    "typeName": "Synthetic Hull Conversion Overdrive Injector I"
+    "typeName": "Synthetic Hull Conversion Overdrive Injector"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21492, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Synthetic Hull Conversion Overdrive Injector I Blueprint"
+    "typeName": "Synthetic Hull Conversion Overdrive Injector Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21493, 
     "groupID": 765, 
     "market": true, 
-    "typeName": "Limited Expanded 'Archiver' Cargo I"
+    "typeName": "Limited Expanded 'Archiver' Cargo"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21494, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Limited Expanded 'Archiver' Cargo I Blueprint"
+    "typeName": "Limited Expanded 'Archiver' Cargo Blueprint"
   }, 
   {
     "volume": 20250.0, 
@@ -71260,42 +71260,42 @@
     "typeID": 21496, 
     "groupID": 78, 
     "market": true, 
-    "typeName": "Synthetic Hull Conversion Reinforced Bulkheads I"
+    "typeName": "Synthetic Hull Conversion Reinforced Bulkheads"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21497, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Synthetic Hull Conversion Reinforced Bulkheads I Blueprint"
+    "typeName": "Synthetic Hull Conversion Reinforced Bulkheads Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21498, 
     "groupID": 762, 
     "market": true, 
-    "typeName": "Synthetic Hull Conversion Inertia Stabilizers I"
+    "typeName": "Synthetic Hull Conversion Inertia Stabilizers"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21499, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Synthetic Hull Conversion Inertia Stabilizers I Blueprint"
+    "typeName": "Synthetic Hull Conversion Inertia Stabilizers Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21500, 
     "groupID": 763, 
     "market": true, 
-    "typeName": "Synthetic Hull Conversion Nanofiber Structure I"
+    "typeName": "Synthetic Hull Conversion Nanofiber Structure"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21501, 
     "groupID": 158, 
     "market": false, 
-    "typeName": "Synthetic Hull Conversion Nanofiber Structure I Blueprint"
+    "typeName": "Synthetic Hull Conversion Nanofiber Structure Blueprint"
   }, 
   {
     "volume": 1.0, 
@@ -73206,7 +73206,7 @@
     "typeID": 21797, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Arena"
+    "typeName": "Arena"
   }, 
   {
     "volume": 0.0, 
@@ -73220,7 +73220,7 @@
     "typeID": 21799, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Pleasure Hub"
+    "typeName": "Pleasure Hub"
   }, 
   {
     "volume": 1.0, 
@@ -73262,7 +73262,7 @@
     "typeID": 21807, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Junction"
+    "typeName": "Fortified Caldari Junction"
   }, 
   {
     "volume": 0.1, 
@@ -73353,21 +73353,21 @@
     "typeID": 21820, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Outpost"
+    "typeName": "Fortified Gallente Outpost"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21821, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Brothel"
+    "typeName": "Habitation Brothel"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21822, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Prison"
+    "typeName": "Habitation Prison"
   }, 
   {
     "volume": 0.0, 
@@ -73381,35 +73381,35 @@
     "typeID": 21824, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Pleasure Hub"
+    "typeName": "Habitation Pleasure Hub"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21825, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Casino"
+    "typeName": "Habitation Casino"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21826, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Police Dpt"
+    "typeName": "Habitation Police Dpt"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21827, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Roadhouse"
+    "typeName": "Habitation Roadhouse"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21828, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Habitation Drughouse"
+    "typeName": "Habitation Drughouse"
   }, 
   {
     "volume": 0.0, 
@@ -73423,63 +73423,63 @@
     "typeID": 21830, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Wall"
+    "typeName": "Fortified Minmatar Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21831, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Fence"
+    "typeName": "Fortified Minmatar Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21832, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Junction"
+    "typeName": "Fortified Minmatar Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21833, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Lookout"
+    "typeName": "Fortified Minmatar Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21834, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Barrier"
+    "typeName": "Fortified Minmatar Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21835, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Bunker"
+    "typeName": "Fortified Minmatar Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21836, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Barricade"
+    "typeName": "Fortified Minmatar Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21837, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Battery"
+    "typeName": "Fortified Minmatar Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 21838, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Minmatar Elevator"
+    "typeName": "Fortified Minmatar Elevator"
   }, 
   {
     "volume": 0.1, 
@@ -75908,7 +75908,7 @@
     "typeID": 22247, 
     "groupID": 306, 
     "market": false, 
-    "typeName": "Nefantar Debris_Mission"
+    "typeName": "Nefantar Debris II"
   }, 
   {
     "volume": 5.0, 
@@ -76447,7 +76447,7 @@
     "typeID": 22343, 
     "groupID": 306, 
     "market": false, 
-    "typeName": "Nefantar_Debris_Mission2"
+    "typeName": "Nefantar Debris I"
   }, 
   {
     "volume": 0.0, 
@@ -76964,7 +76964,7 @@
     "volume": 5.0, 
     "typeID": 22609, 
     "groupID": 546, 
-    "market": true, 
+    "market": false, 
     "typeName": "Erin Mining Laser Upgrade"
   }, 
   {
@@ -76972,27 +76972,27 @@
     "typeID": 22611, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Elara Mining Laser Upgrade"
+    "typeName": "Elara Restrained Mining Laser Upgrade"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22613, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Carpo Mining Laser Upgrade"
+    "typeName": "'Carpo' Mining Laser Upgrade"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22615, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Aoede Mining Laser Upgrade"
+    "typeName": "'Aoede' Mining Laser Upgrade"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22617, 
     "groupID": 546, 
-    "market": true, 
+    "market": false, 
     "typeName": "Crisium Ice Harvester Upgrade"
   }, 
   {
@@ -77000,21 +77000,21 @@
     "typeID": 22619, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Frigoris Ice Harvester Upgrade"
+    "typeName": "Frigoris Restrained Ice Harvester Upgrade"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22621, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Anguis Ice Harvester Upgrade"
+    "typeName": "'Anguis' Ice Harvester Upgrade"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22623, 
     "groupID": 546, 
     "market": true, 
-    "typeName": "Ingenii Ice Harvester Upgrade"
+    "typeName": "'Ingenii' Ice Harvester Upgrade"
   }, 
   {
     "volume": 0.0, 
@@ -80373,70 +80373,70 @@
     "typeID": 23222, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCOSerpentis Barricade"
+    "typeName": "Serpentis Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23223, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Barricade"
+    "typeName": "Fortified Serpentis Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23224, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Barrier"
+    "typeName": "Fortified Serpentis Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23225, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Battery"
+    "typeName": "Fortified Serpentis Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23226, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Bunker"
+    "typeName": "Fortified Serpentis Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23227, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Elevator"
+    "typeName": "Fortified Gallente Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23228, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Fence"
+    "typeName": "Fortified Serpentis Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23229, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Junction"
+    "typeName": "Fortified Serpentis Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23230, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Lookout"
+    "typeName": "Fortified Serpentis Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 23231, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Wall"
+    "typeName": "Fortified Serpentis Wall"
   }, 
   {
     "volume": 0.0, 
@@ -82585,7 +82585,7 @@
     "typeID": 23553, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Pleasure Cruiser"
+    "typeName": "Pleasure Cruiser"
   }, 
   {
     "volume": 1.0, 
@@ -83691,14 +83691,14 @@
     "typeID": 23741, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Shipyard"
+    "typeName": "Fortified Shipyard"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 23742, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Pulsating Sensor"
+    "typeName": "Pulsating Sensor"
   }, 
   {
     "volume": 100000000.0, 
@@ -83872,21 +83872,21 @@
     "typeID": 23761, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Starbase Control Tower_LCO"
+    "typeName": "Amarr Starbase Control Tower"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 23762, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Lookout"
+    "typeName": "Fortified Amarr Lookout"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 23763, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Cargo Rig"
+    "typeName": "Fortified Cargo Rig"
   }, 
   {
     "volume": 0.1, 
@@ -84397,7 +84397,7 @@
     "typeID": 23826, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Battery"
+    "typeName": "Fortified Amarr Battery"
   }, 
   {
     "volume": 1100000.0, 
@@ -84446,7 +84446,7 @@
     "typeID": 23833, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Wall"
+    "typeName": "Fortified Amarr Wall"
   }, 
   {
     "volume": 5.0, 
@@ -84621,21 +84621,21 @@
     "typeID": 23858, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Amarr Bunker"
+    "typeName": "Amarr Bunker"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 23859, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCO Amarr Administration Complex"
+    "typeName": "Amarr Administration Complex"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 23860, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCO Docked Bestower"
+    "typeName": "Docked Bestower"
   }, 
   {
     "volume": 1.0, 
@@ -85561,7 +85561,7 @@
     "typeID": 23963, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Stargate (Gallente 1)"
+    "typeName": "Stargate Gallente 1"
   }, 
   {
     "volume": 100000000.0, 
@@ -85582,7 +85582,7 @@
     "typeID": 23968, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Barrier"
+    "typeName": "Fortified Blood Raider Barrier"
   }, 
   {
     "volume": 16450.0, 
@@ -86009,7 +86009,7 @@
     "typeID": 24029, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Fence"
+    "typeName": "Fortified Blood Raider Fence"
   }, 
   {
     "volume": 0.1, 
@@ -86030,7 +86030,7 @@
     "typeID": 24032, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Human Farm"
+    "typeName": "Human Farm"
   }, 
   {
     "volume": 16450.0, 
@@ -87507,7 +87507,7 @@
     "typeID": 24245, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Smuggler Stargate"
+    "typeName": "Smuggler Stargate"
   }, 
   {
     "volume": 1.0, 
@@ -87556,7 +87556,7 @@
     "typeID": 24252, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Smuggler Stargate"
+    "typeName": "Fortified Smuggler Stargate"
   }, 
   {
     "volume": 1.0, 
@@ -87892,7 +87892,7 @@
     "typeID": 24310, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Amarr Citadel"
+    "typeName": "Amarr Citadel"
   }, 
   {
     "volume": 0.01, 
@@ -88452,14 +88452,14 @@
     "typeID": 24457, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Bunker"
+    "typeName": "Fortified Blood Raider Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 24458, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Junction"
+    "typeName": "Fortified Blood Raider Junction"
   }, 
   {
     "volume": 100000000.0, 
@@ -88592,7 +88592,7 @@
     "typeID": 24480, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Spatial Rift"
+    "typeName": "Fortified Spatial Rift"
   }, 
   {
     "volume": 0.1, 
@@ -89242,14 +89242,14 @@
     "typeID": 24565, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Stargate (Caldari 1)"
+    "typeName": "Stargate - Caldari 1"
   }, 
   {
     "volume": 0.0, 
     "typeID": 24566, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Stargate (Caldari 1)"
+    "typeName": "Stargate - Caldari "
   }, 
   {
     "volume": 3000.0, 
@@ -89375,14 +89375,14 @@
     "typeID": 24587, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Amarr Stargate"
+    "typeName": "Amarr Stargate"
   }, 
   {
     "volume": 0.0, 
     "typeID": 24588, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 4)"
+    "typeName": "Station Caldari 4"
   }, 
   {
     "volume": 0.0, 
@@ -89473,7 +89473,7 @@
     "typeID": 24609, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Stargate"
+    "typeName": "Gallente Stargate"
   }, 
   {
     "volume": 0.01, 
@@ -89781,7 +89781,7 @@
     "typeID": 24685, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Stargate (Minmatar 1)"
+    "typeName": "Stargate Minmatar 1"
   }, 
   {
     "volume": 486000.0, 
@@ -89970,7 +89970,7 @@
     "typeID": 24716, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 6)"
+    "typeName": "Station Caldari 6"
   }, 
   {
     "volume": 0.1, 
@@ -90320,21 +90320,21 @@
     "typeID": 24768, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS (Gallente Station 7)"
+    "typeName": "Gallente Station 7"
   }, 
   {
     "volume": 0.0, 
     "typeID": 24769, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS (Gallente Station 8)"
+    "typeName": "Gallente Station 8"
   }, 
   {
     "volume": 0.0, 
     "typeID": 24770, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS (Gallente Station 4)"
+    "typeName": "Gallente Station 4"
   }, 
   {
     "volume": 100000000.0, 
@@ -92126,14 +92126,14 @@
     "typeID": 25231, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Stargate (Minmatar 1)"
+    "typeName": "Stargate - Minmatar"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 25232, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Stargate (Gallente 1)"
+    "typeName": "Stargate - Gallente"
   }, 
   {
     "volume": 0.01, 
@@ -92791,35 +92791,35 @@
     "typeID": 25355, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 1)"
+    "typeName": "Station Caldari 1"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25356, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 2)"
+    "typeName": "Station Caldari 2"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25357, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 3)"
+    "typeName": "Station Caldari 3"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25358, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari 5)"
+    "typeName": "Station Caldari 5"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25359, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Caldari Research Outpost)"
+    "typeName": "Station Caldari Research Outpost"
   }, 
   {
     "volume": 0.0, 
@@ -92910,7 +92910,7 @@
     "typeID": 25375, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Control Tower"
+    "typeName": "Fortified Guristas Control Tower"
   }, 
   {
     "volume": 1150.0, 
@@ -93736,7 +93736,7 @@
     "typeID": 25552, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Blood Raider Bhaalgorn"
+    "typeName": "Blood Raider Bhaalgorn"
   }, 
   {
     "volume": 1.0, 
@@ -95066,7 +95066,7 @@
     "typeID": 25819, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Amarr Trade Post"
+    "typeName": "Amarr Trade Post"
   }, 
   {
     "volume": 112000.0, 
@@ -95115,7 +95115,7 @@
     "typeID": 25826, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS (Minmatar Mining Station)"
+    "typeName": "Minmatar Mining Station"
   }, 
   {
     "volume": 1000.0, 
@@ -95129,7 +95129,7 @@
     "typeID": 25828, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Drug Lab"
+    "typeName": "Fortified Drug Lab"
   }, 
   {
     "volume": 0.0, 
@@ -95290,7 +95290,7 @@
     "typeID": 25859, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "Amarr Battlestation_2"
+    "typeName": "Amarr Battlestation 2"
   }, 
   {
     "volume": 0.0, 
@@ -95976,21 +95976,21 @@
     "typeID": 25992, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Conquerable Station 3"
+    "typeName": "Conquerable Station 3"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25993, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Conquerable Station 2"
+    "typeName": "Conquerable Station 2"
   }, 
   {
     "volume": 0.0, 
     "typeID": 25994, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Conquerable Station 1"
+    "typeName": "Conquerable Station 1"
   }, 
   {
     "volume": 100100.0, 
@@ -96683,7 +96683,7 @@
     "typeID": 26121, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "Amarr Battlestation_3"
+    "typeName": "Amarr Battlestation 3"
   }, 
   {
     "volume": 0.1, 
@@ -97320,77 +97320,77 @@
     "typeID": 26229, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Minmatar Trade Station Ruins_No Description"
+    "typeName": "Fortified Minmatar Trade Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26230, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Minmatar Mining Station Ruins - no description"
+    "typeName": "Fortified Minmatar Mining Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26231, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Minmatar Commercial Station Ruins- no description"
+    "typeName": "Fortified Minmatar Commercial Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26232, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Commercial Station Ruins-no description"
+    "typeName": "Amarr Commercial Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26233, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Mining Station Ruins- no description"
+    "typeName": "Fortified Amarr Mining Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26234, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Amarr Research Station Ruins- no description"
+    "typeName": "Fortified Amarr Research Station Ruins"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26235, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Station Ruins - Flat Hulk- no description"
+    "typeName": "Caldari Station Ruins - Flat Hulk"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26236, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Station Ruins - Huge & Sprawling - no description"
+    "typeName": "Caldari Station Ruins - Huge & Sprawling"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26237, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Gallente Station Ruins - Fathom -no description"
+    "typeName": "Fortified Gallente Station Ruins - Fathom"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26238, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Gallente Station Ruins - Military-no description"
+    "typeName": "Fortified Gallente Station Ruins - Military"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26239, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Gallente Station Ruins - Ugly Industrial- no description"
+    "typeName": "Fortified Gallente Station Ruins - Ugly Industrial"
   }, 
   {
     "volume": 1150.0, 
@@ -100092,7 +100092,7 @@
     "typeID": 26695, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Station (Angel Serpentis)"
+    "typeName": "Station Angel Serpentis"
   }, 
   {
     "volume": 0.1, 
@@ -100365,14 +100365,14 @@
     "typeID": 26739, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Bursar"
+    "typeName": "Fortified Bursar"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 26740, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Bursar"
+    "typeName": "Bursar"
   }, 
   {
     "volume": 1120000.0, 
@@ -100393,7 +100393,7 @@
     "typeID": 26743, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Prorator"
+    "typeName": "Amarr Prorator Industrial"
   }, 
   {
     "volume": 200000.0, 
@@ -100414,7 +100414,7 @@
     "typeID": 26746, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Crane"
+    "typeName": "Caldari Crane Industrial"
   }, 
   {
     "volume": 1000.0, 
@@ -100750,7 +100750,7 @@
     "typeID": 26794, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Viator"
+    "typeName": "Gallente Viator Industrial"
   }, 
   {
     "volume": 190000.0, 
@@ -100939,21 +100939,21 @@
     "typeID": 26853, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Drug Lab_Crash"
+    "typeName": "Drug Lab Crash"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26854, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Drug Lab_Exile"
+    "typeName": "Drug Lab Exile"
   }, 
   {
     "volume": 0.0, 
     "typeID": 26855, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Drug Lab_Mindflood"
+    "typeName": "Drug Lab Mindflood"
   }, 
   {
     "volume": 1000.0, 
@@ -100988,7 +100988,7 @@
     "typeID": 26860, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Docked Mammoth"
+    "typeName": "Docked Mammoth"
   }, 
   {
     "volume": 19100.0, 
@@ -101499,7 +101499,7 @@
     "typeID": 26968, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Bunker"
+    "typeName": "Fortified Drone Bunker"
   }, 
   {
     "volume": 1120000.0, 
@@ -106000,28 +106000,28 @@
     "typeID": 27879, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Gallente Station 150k"
+    "typeName": "Gallente Station 150k"
   }, 
   {
     "volume": 0.0, 
     "typeID": 27880, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Minmatar Station 150k"
+    "typeName": "Minmatar Station 150k"
   }, 
   {
     "volume": 0.0, 
     "typeID": 27881, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Caldari Station 150k"
+    "typeName": "Caldari Station 150k"
   }, 
   {
     "volume": 0.0, 
     "typeID": 27882, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Amarr Station 150k"
+    "typeName": "Amarr Station 150k"
   }, 
   {
     "volume": 0.005, 
@@ -108884,7 +108884,7 @@
     "typeID": 28340, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Drug Lab_noloot"
+    "typeName": "Drug Lab"
   }, 
   {
     "volume": 3000.0, 
@@ -113583,14 +113583,14 @@
     "typeID": 29157, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wrecked Revelation"
+    "typeName": "Wrecked Revelation"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29158, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wrecked Archon"
+    "typeName": "Wrecked Archon"
   }, 
   {
     "volume": 0.0, 
@@ -113611,7 +113611,7 @@
     "typeID": 29161, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wrecked Frigate"
+    "typeName": "Wrecked Frigate"
   }, 
   {
     "volume": 0.25, 
@@ -113877,14 +113877,14 @@
     "typeID": 29208, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Billboard"
+    "typeName": "Fortified Billboard"
   }, 
   {
     "volume": 1.0, 
     "typeID": 29209, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "LCS Billboard"
+    "typeName": "Billboard"
   }, 
   {
     "volume": 0.1, 
@@ -114101,14 +114101,14 @@
     "typeID": 29250, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Large EM Forcefield"
+    "typeName": "Fortified Large EM Forcefield"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 29251, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Starbase Explosion Dampening Array"
+    "typeName": "Fortified Starbase Explosion Dampening Array"
   }, 
   {
     "volume": 2.0, 
@@ -114178,7 +114178,7 @@
     "typeID": 29279, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Station (Caldari 5)"
+    "typeName": "Station - Caldari"
   }, 
   {
     "volume": 2.0, 
@@ -114815,63 +114815,63 @@
     "typeID": 29452, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Bunker"
+    "typeName": "Fortified Gallente Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29453, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Lookout"
+    "typeName": "Fortified Gallente Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29454, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Barricade"
+    "typeName": "Fortified Gallente Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29455, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Barrier"
+    "typeName": "Fortified Gallente Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29456, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Battery"
+    "typeName": "Fortified Gallente Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29457, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Fence"
+    "typeName": "Fortified Gallente Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29458, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Junction"
+    "typeName": "Fortified Gallente Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29459, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Gallente Wall"
+    "typeName": "Fortified Gallente Wall"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 29460, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Gallente Starbase Control Tower_LCO"
+    "typeName": "Gallente Starbase Control Tower"
   }, 
   {
     "volume": 1150.0, 
@@ -115081,35 +115081,35 @@
     "typeID": 29505, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Bunker"
+    "typeName": "Fortified Amarr Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29506, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Bunker"
+    "typeName": "Fortified Caldari Bunker"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 29507, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Caldari Starbase Control Tower_LCO"
+    "typeName": "Caldari Starbase Control Tower"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29508, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Lookout"
+    "typeName": "Fortified Caldari Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29509, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Elevator"
+    "typeName": "Fortified Caldari Elevator"
   }, 
   {
     "volume": 0.0, 
@@ -115144,7 +115144,7 @@
     "typeID": 29546, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Revelation"
+    "typeName": "Amarr Revelation Dreadnought"
   }, 
   {
     "volume": 27500.0, 
@@ -115158,357 +115158,357 @@
     "typeID": 29551, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Barricade"
+    "typeName": "Fortified Angel Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29552, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Barrier"
+    "typeName": "Fortified Angel Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29553, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Battery"
+    "typeName": "Fortified Angel Battery"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 29554, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Bunker"
+    "typeName": "Fortified Angel Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29555, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Elevator"
+    "typeName": "Fortified Angel Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29556, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Fence"
+    "typeName": "Fortified Angel Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29557, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Junction"
+    "typeName": "Fortified Angel Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29558, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Lookout"
+    "typeName": "Fortified Angel Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29559, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Angel Wall"
+    "typeName": "Fortified Angel Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29561, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Barricade"
+    "typeName": "Fortified Blood Raider Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29562, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Battery"
+    "typeName": "Fortified Blood Raider Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29563, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Elevator"
+    "typeName": "Fortified Blood Raider Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29564, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Lookout"
+    "typeName": "Fortified Blood Raider Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29565, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Blood Raider Wall"
+    "typeName": "Fortified Blood Raider Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29566, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Barricade"
+    "typeName": "Fortified Amarr Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29567, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Barrier"
+    "typeName": "Fortified Amarr Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29568, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Elevator"
+    "typeName": "Fortified Amarr Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29569, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Fence"
+    "typeName": "Fortified Amarr Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29570, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Junction"
+    "typeName": "Fortified Amarr Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29571, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Barricade"
+    "typeName": "Fortified Caldari Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29572, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Barrier"
+    "typeName": "Fortified Caldari Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29573, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Battery"
+    "typeName": "Fortified Caldari Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29574, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Fence"
+    "typeName": "Fortified Caldari Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29575, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Caldari Wall"
+    "typeName": "Fortified Caldari Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29576, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Barricade"
+    "typeName": "Fortified Guristas Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29577, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Barrier"
+    "typeName": "Fortified Guristas Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29578, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Battery"
+    "typeName": "Fortified Guristas Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29579, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Wall"
+    "typeName": "Fortified Guristas Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29580, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Lookout"
+    "typeName": "Fortified Guristas Lookout "
   }, 
   {
     "volume": 0.0, 
     "typeID": 29581, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Junction"
+    "typeName": "Fortified Guristas Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29582, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Fence"
+    "typeName": "Fortified Guristas Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29583, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Elevator"
+    "typeName": "Fortified Guristas Elevator"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 29584, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Guristas Bunker"
+    "typeName": "Fortified Guristas Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29585, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Barricade"
+    "typeName": "Fortified Drone Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29586, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Barrier"
+    "typeName": "Fortified Drone Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29589, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Battery"
+    "typeName": "Fortified Drone Battery"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29590, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Elevator"
+    "typeName": "Fortified Drone Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29591, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Fence"
+    "typeName": "Fortified Drone Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29592, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Junction"
+    "typeName": "Fortified Drone Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29593, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Lookout"
+    "typeName": "Fortified Drone Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29594, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Wall"
+    "typeName": "Fortified Drone Wall"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29595, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Serpentis Elevator"
+    "typeName": "Fortified Serpentis Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29596, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Barricade"
+    "typeName": "Fortified Sansha Barricade"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29597, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Barrier"
+    "typeName": "Fortified Sansha Barrier"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29598, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Battery"
+    "typeName": "Fortified Sansha Battery"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 29599, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Bunker"
+    "typeName": "Fortified Sansha Bunker"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29600, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Elevator"
+    "typeName": "Fortified Sansha Elevator"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29601, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Fence"
+    "typeName": "Fortified Sansha Fence"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29602, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Junction"
+    "typeName": "Fortified Sansha Junction"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29603, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Lookout"
+    "typeName": "Fortified Sansha Lookout"
   }, 
   {
     "volume": 0.0, 
     "typeID": 29604, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Sansha Wall"
+    "typeName": "Fortified Sansha Wall"
   }, 
   {
     "volume": 0.0, 
@@ -121591,7 +121591,7 @@
     "typeID": 30789, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Starbase Auxiliary Power Array"
+    "typeName": "Fortified Starbase Auxiliary Power Array"
   }, 
   {
     "volume": 1080000.0, 
@@ -122200,28 +122200,28 @@
     "typeID": 30895, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Raven"
+    "typeName": "Caldari Raven Battleship"
   }, 
   {
     "volume": 0.0, 
     "typeID": 30896, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Tempest"
+    "typeName": "Minmatar Tempest Battleship"
   }, 
   {
     "volume": 1010000.0, 
     "typeID": 30897, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Dominix"
+    "typeName": "Gallente Dominix Battleship"
   }, 
   {
     "volume": 0.0, 
     "typeID": 30898, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Wreathe"
+    "typeName": "Minmatar Wreathe industrial"
   }, 
   {
     "volume": 0.0, 
@@ -122235,7 +122235,7 @@
     "typeID": 30900, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Drone Structure I"
+    "typeName": "Fortified Drone Structure I"
   }, 
   {
     "volume": 100000000.0, 
@@ -129725,63 +129725,63 @@
     "typeID": 32128, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Partially Constructed Megathron"
+    "typeName": "Fortified Partially Constructed Megathron"
   }, 
   {
     "volume": 100000000.0, 
     "typeID": 32129, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Small Armory"
+    "typeName": "Small Armory"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 32131, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Starbase Capital Shipyard"
+    "typeName": "Fortified Starbase Capital Shipyard"
   }, 
   {
     "volume": 1150.0, 
     "typeID": 32132, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Starbase Hangar"
+    "typeName": "Fortified Starbase Hangar"
   }, 
   {
     "volume": 0.0, 
     "typeID": 32133, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Megathron"
+    "typeName": "Gallente Megathron Battleship"
   }, 
   {
     "volume": 0.0, 
     "typeID": 32134, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Thorax"
+    "typeName": "Gallente Thorax Cruiser"
   }, 
   {
     "volume": 0.0, 
     "typeID": 32135, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Occator"
+    "typeName": "Gallente Occator Industrial"
   }, 
   {
     "volume": 0.0, 
     "typeID": 32136, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Incursus"
+    "typeName": "Gallente Incursus Frigate"
   }, 
   {
     "volume": 190000.0, 
     "typeID": 32137, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Obelisk"
+    "typeName": "Gallente Obelisk Freighter"
   }, 
   {
     "volume": 0.0, 
@@ -129949,7 +129949,7 @@
     "typeID": 32216, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Cathedral"
+    "typeName": "Fortified Amarr Cathedral"
   }, 
   {
     "volume": 27500.0, 
@@ -130292,7 +130292,7 @@
     "typeID": 32275, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Amarr Chapel"
+    "typeName": "Fortified Amarr Chapel"
   }, 
   {
     "volume": 27500.0, 
@@ -131055,21 +131055,21 @@
     "typeID": 32419, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Charon"
+    "typeName": "Caldari Charon Freighter"
   }, 
   {
     "volume": 0.0, 
     "typeID": 32420, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Orca"
+    "typeName": "Fortified Orca"
   }, 
   {
     "volume": 195000.0, 
     "typeID": 32421, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Hulk"
+    "typeName": "Fortified Hulk"
   }, 
   {
     "volume": 400000.0, 
@@ -131083,7 +131083,7 @@
     "typeID": 32423, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "LCO Kestrel"
+    "typeName": "Caldari Kestrel Frigate"
   }, 
   {
     "volume": 0.01, 
@@ -136767,14 +136767,14 @@
     "typeID": 33637, 
     "groupID": 27, 
     "market": true, 
-    "typeName": "Hyperion Innerzone Shipping Edition"
+    "typeName": "Hyperion Inner Zone Shipping Edition"
   }, 
   {
     "volume": 0.01, 
     "typeID": 33638, 
     "groupID": 107, 
     "market": false, 
-    "typeName": "Hyperion Innerzone Shipping Edition Blueprint"
+    "typeName": "Hyperion Inner Zone Shipping Edition Blueprint"
   }, 
   {
     "volume": 118000.0, 
@@ -136879,14 +136879,14 @@
     "typeID": 33653, 
     "groupID": 26, 
     "market": true, 
-    "typeName": "Thorax Innerzone Shipping Edition"
+    "typeName": "Thorax Inner Zone Shipping Edition"
   }, 
   {
     "volume": 0.01, 
     "typeID": 33654, 
     "groupID": 106, 
     "market": false, 
-    "typeName": "Thorax Innerzone Shipping Edition Blueprint"
+    "typeName": "Thorax Inner Zone Shipping Edition Blueprint"
   }, 
   {
     "volume": 28600.0, 
@@ -136991,14 +136991,14 @@
     "typeID": 33669, 
     "groupID": 25, 
     "market": true, 
-    "typeName": "Incursus Innerzone Shipping Edition"
+    "typeName": "Incursus Inner Zone Shipping Edition"
   }, 
   {
     "volume": 0.01, 
     "typeID": 33670, 
     "groupID": 105, 
     "market": false, 
-    "typeName": "Incursus Innerzone Shipping Edition Blueprint"
+    "typeName": "Incursus Inner Zone Shipping Edition Blueprint"
   }, 
   {
     "volume": 25.0, 
@@ -140533,14 +140533,14 @@
     "typeID": 34239, 
     "groupID": 27, 
     "market": false, 
-    "typeName": "Megathron Innerzone Shipping Edition"
+    "typeName": "Megathron Inner Zone Shipping Edition"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34240, 
     "groupID": 107, 
     "market": false, 
-    "typeName": "Megathron Innerzone Shipping Edition Blueprint"
+    "typeName": "Megathron Inner Zone Shipping Edition Blueprint"
   }, 
   {
     "volume": 486000.0, 
@@ -140575,14 +140575,14 @@
     "typeID": 34245, 
     "groupID": 900, 
     "market": false, 
-    "typeName": "Kronos Innerzone Shipping Edition"
+    "typeName": "Kronos Inner Zone Shipping Edition"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34246, 
     "groupID": 107, 
     "market": false, 
-    "typeName": "Kronos Innerzone Shipping Edition Blueprint"
+    "typeName": "Kronos Inner Zone Shipping Edition Blueprint"
   }, 
   {
     "volume": 450000.0, 
@@ -141686,147 +141686,147 @@
   {
     "volume": 3.0, 
     "typeID": 34417, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Manufacturing Union\u2019s Placard"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34418, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "The Galactic Party Planning Guide"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34419, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Jump Fatigue Recovery Agent"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34420, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Cooking With Veldspar"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34421, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Chribba\u2019s Modified Strip Miner"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34422, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Rooks & Kings \u2013 The Clarion Call Compilation"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34423, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Pre-Completed CSM 10 Ballot Paper"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34424, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Titanium Plated Cranial Shielding"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34425, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "SCC Guidelines \u2013 Lotteries For Dummies"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34426, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Sort Dragon\u2019s Guide To Diplomacy"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34427, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Polaris Eviction Notice"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34428, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Jump Portal Generation Instruction Holoreel"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34429, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Vincent Pryce\u2019s Warp Disruption Field Generator"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34430, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "My God, It\u2019s Full Of Holes!"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34431, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Guillome Renard\u2019s Sleeper Loot Stash"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34432, 
-    "groupID": 314, 
-    "market": false, 
-    "typeName": "Sister\u2019s Of EVE Charity Statue"
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "Sisters Of EVE Charity Statue"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34433, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "The Damsel\u2019s Drunk Bodyguard"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34434, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Alice Saki\u2019s Good Posting Guide"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34435, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "Soxfour\u2019s Spaceboots"
   }, 
   {
     "volume": 3.0, 
     "typeID": 34436, 
-    "groupID": 314, 
-    "market": false, 
+    "groupID": 1194, 
+    "market": true, 
     "typeName": "The Friend Ship"
   }, 
   {
     "volume": 0.0, 
     "typeID": 34437, 
-    "groupID": 319, 
+    "groupID": 383, 
     "market": false, 
     "typeName": "Rewired Sentry Gun"
   }, 
@@ -141850,6 +141850,48 @@
     "groupID": 186, 
     "market": false, 
     "typeName": "Sleeper Medium Wreck "
+  }, 
+  {
+    "volume": 454500.0, 
+    "typeID": 34441, 
+    "groupID": 27, 
+    "market": true, 
+    "typeName": "Dominix Quafe Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34442, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "Dominix Quafe Edition Blueprint"
+  }, 
+  {
+    "volume": 26500.0, 
+    "typeID": 34443, 
+    "groupID": 25, 
+    "market": true, 
+    "typeName": "Tristan Quafe Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34444, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Tristan Quafe Edition Blueprint"
+  }, 
+  {
+    "volume": 115000.0, 
+    "typeID": 34445, 
+    "groupID": 26, 
+    "market": true, 
+    "typeName": "Vexor Quafe Edition"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34446, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Vexor Quafe Edition Blueprint"
   }, 
   {
     "volume": 27500.0, 
@@ -141913,6 +141955,216 @@
     "groupID": 383, 
     "market": false, 
     "typeName": "Impaired Archive Sentry Tower"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34456, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Angel Fence"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34457, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u672b\u65e5\u6c99\u573a\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34458, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u672b\u65e5\u6c99\u573a\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34459, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u5730\u72f1\u5929\u4f7f\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34460, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u5730\u72f1\u5929\u4f7f\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 595000.0, 
+    "typeID": 34461, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u9a6c\u514b\u745e\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34462, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u9a6c\u514b\u745e\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34463, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u54cd\u5c3e\u86c7\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34464, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u54cd\u5c3e\u86c7\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 454500.0, 
+    "typeID": 34465, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u591a\u7c73\u5c3c\u514b\u65af\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34466, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u591a\u7c73\u5c3c\u514b\u65af\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34467, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u4e07\u738b\u5b9d\u5ea7\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34468, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u4e07\u738b\u5b9d\u5ea7\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 486000.0, 
+    "typeID": 34469, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u4e4c\u9e26\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34470, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u4e4c\u9e26\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 34471, 
+    "groupID": 27, 
+    "market": false, 
+    "typeName": "\u707e\u96be\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34472, 
+    "groupID": 107, 
+    "market": false, 
+    "typeName": "\u707e\u96be\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 252000.0, 
+    "typeID": 34473, 
+    "groupID": 419, 
+    "market": false, 
+    "typeName": "\u5e7c\u9f99\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34474, 
+    "groupID": 489, 
+    "market": false, 
+    "typeName": "\u5e7c\u9f99\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 34475, 
+    "groupID": 26, 
+    "market": false, 
+    "typeName": "\u6bd2\u8725\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34476, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "\u6bd2\u8725\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 34477, 
+    "groupID": 358, 
+    "market": false, 
+    "typeName": "\u94f6\u9e70\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34478, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "\u94f6\u9e70\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 115000.0, 
+    "typeID": 34479, 
+    "groupID": 358, 
+    "market": false, 
+    "typeName": "\u4f0a\u4ec0\u5854\u7ea7YC117\u5e74\u7279\u522b\u7248"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34480, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "\u4f0a\u4ec0\u5854\u7ea7YC117\u5e74\u7279\u522b\u7248\u84dd\u56fe"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34481, 
+    "groupID": 762, 
+    "market": true, 
+    "typeName": "Domination Inertial Stabilizers"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34483, 
+    "groupID": 762, 
+    "market": true, 
+    "typeName": "Shadow Serpentis Inertial Stabilizers"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34485, 
+    "groupID": 78, 
+    "market": true, 
+    "typeName": "ORE Reinforced Bulkheads"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34487, 
+    "groupID": 78, 
+    "market": true, 
+    "typeName": "Syndicate Reinforced Bulkheads"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34489, 
+    "groupID": 765, 
+    "market": true, 
+    "typeName": "ORE Expanded Cargohold"
   }, 
   {
     "volume": 0.01, 
@@ -142801,7 +143053,7 @@
     "typeID": 352591, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Frontline"
+    "typeName": "Frontline - CA"
   }, 
   {
     "volume": 0.01, 
@@ -146175,14 +146427,14 @@
     "typeID": 354934, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Sniper"
+    "typeName": "Sniper - CA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 354935, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor"
+    "typeName": "Anti-Armor - CA"
   }, 
   {
     "volume": 0.01, 
@@ -148961,7 +149213,7 @@
     "typeID": 356559, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Medic"
+    "typeName": "Medic - CA"
   }, 
   {
     "volume": 0.01, 
@@ -151719,84 +151971,84 @@
     "typeID": 364726, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor"
+    "typeName": "Anti-Armor - AM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364732, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor"
+    "typeName": "Anti-Armor - GA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364736, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor"
+    "typeName": "Anti-Armor - MN"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364738, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Medic"
+    "typeName": "Medic - AM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364739, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Sniper"
+    "typeName": "Sniper - AM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364740, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Frontline"
+    "typeName": "Frontline - AM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364741, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Medic"
+    "typeName": "Medic - GA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364742, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Sniper"
+    "typeName": "Sniper - GA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364743, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Frontline"
+    "typeName": "Frontline - GA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364744, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Medic"
+    "typeName": "Medic - MN"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364745, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Frontline"
+    "typeName": "Frontline - MN"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364746, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Sniper"
+    "typeName": "Sniper - MN"
   }, 
   {
     "volume": 0.0, 
@@ -154471,6 +154723,13 @@
     "groupID": 351844, 
     "market": true, 
     "typeName": "Republic Boundless Repair Tool"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 366131, 
+    "groupID": 351210, 
+    "market": false, 
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -157572,5 +157831,131 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "Caldari Combat Advanced Loadout"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368242, 
+    "groupID": 351844, 
+    "market": true, 
+    "typeName": "Boundless Packed Remote Explosive"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368243, 
+    "groupID": 351844, 
+    "market": true, 
+    "typeName": "Packed Remote Explosive"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368244, 
+    "groupID": 351844, 
+    "market": true, 
+    "typeName": "F/45 Packed Remote Explosive"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368245, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "X-MS15 Snowball Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368518, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "CreoDron Methana vX.1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368519, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "X-MS Snowball Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368524, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Imperial Scout A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368574, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Imperial Scout A/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368579, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Imperial Scout ak.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368586, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Scout C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368594, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Scout C/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368614, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Scout ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368615, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Commando C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368616, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Commando C/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368617, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Commando ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368618, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Sentinel C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368619, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Sentinel C/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368620, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "State Sentinel ck.0"
   }
 ]
