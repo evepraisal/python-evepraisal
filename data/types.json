@@ -157957,5 +157957,89 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "State Sentinel ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368631, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Commando G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368632, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Commando G/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368633, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Commando gk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368634, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Sentinel G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368635, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Sentinel G/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368636, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Federation Sentinel gk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368638, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Commando M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368640, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Commando M/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368647, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Commando mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368649, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Sentinel M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368650, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Sentinel M/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368651, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Republic Sentinel mk.0"
   }
 ]
