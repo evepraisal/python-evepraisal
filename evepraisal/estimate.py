@@ -138,7 +138,7 @@ def get_market_values_2(eve_types, options=None):
     for types in [eve_types[i:i + 200] for i in range(0, len(eve_types), 200)]:
         typeIds_str = 'type_ids=%s' % ','.join(str(type_id)
                                                for type_id in types)
-        query = ['typeid=%s' % typeIds_str]
+        query = [typeIds_str]
 
         if solarsystem_id != '-1':
             query += ['usesystem=%s' % solarsystem_id]
