@@ -85,7 +85,8 @@ def get_market_values(eve_types, options=None):
                 for stat_type in ['sell', 'buy', 'all']:
                     props = {}
                     for stat in marketstat.find(stat_type):
-                        props[stat.tag] = float(stat.text)
+                        if not stat.tag == "generated":
+                            props[stat.tag] = float(stat.text)
                     v[stat_type] = props
                 v['all']['price'] = v['all'][all_price_metric]
                 v['buy']['price'] = v['buy'][buy_price_metric]
