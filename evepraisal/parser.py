@@ -1,5 +1,6 @@
 from collections import defaultdict
 from itertools import takewhile
+from re import sub
 
 import evepaste
 from evepaste import parsers
@@ -13,8 +14,7 @@ def parse(raw_paste):
     representative_kind = 'unknown'
     largest_kind_num = 0
 
-    parser_list = [('bill_of_materials', parsers.parse_bill_of_materials),
-                   ('loot_history', parsers.parse_loot_history),
+    parser_list = [('loot_history', parsers.parse_loot_history),
                    ('survey_scanner', parsers.parse_survey_scanner),
                    ('pi', parsers.parse_pi),
                    ('dscan', dscan_parser),
@@ -183,6 +183,6 @@ def tryhard_parser(lines):
 
 def int_convert(s):
     try:
-        return int(s.translate({"'": '', ',': '', '.': '', ' ': '', 'x': ''}))
+        return int(sub(r"[,'\. 'x]", '', s))
     except ValueError:
         return
