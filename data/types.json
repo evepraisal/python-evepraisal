@@ -22564,7 +22564,7 @@
     "typeID": 6131, 
     "groupID": 47, 
     "market": true, 
-    "typeName": "Enduring Cargo Scanner"
+    "typeName": "Type-E Enduring Cargo Scanner"
   }, 
   {
     "volume": 5.0, 
@@ -22578,7 +22578,7 @@
     "typeID": 6135, 
     "groupID": 47, 
     "market": true, 
-    "typeName": "Scoped Cargo Scanner"
+    "typeName": "PL-0 Scoped Cargo Scanner"
   }, 
   {
     "volume": 5.0, 
@@ -23096,7 +23096,7 @@
     "typeID": 6527, 
     "groupID": 48, 
     "market": true, 
-    "typeName": "Compact Ship Scanner"
+    "typeName": "Ta3 Compact Ship Scanner"
   }, 
   {
     "volume": 5.0, 
@@ -23124,7 +23124,7 @@
     "typeID": 6569, 
     "groupID": 49, 
     "market": true, 
-    "typeName": "Scoped Survey Scanner"
+    "typeName": "ML-3 Scoped Survey Scanner"
   }, 
   {
     "volume": 5.0, 
@@ -24146,14 +24146,14 @@
     "typeID": 8089, 
     "groupID": 509, 
     "market": true, 
-    "typeName": "Compact Light Missile Launcher"
+    "typeName": "Arbalest Compact Light Missile Launcher"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8091, 
     "groupID": 509, 
     "market": true, 
-    "typeName": "Ample Light Missile Launcher"
+    "typeName": "TE-2100 Ample Light Missile Launcher"
   }, 
   {
     "volume": 5.0, 
@@ -24216,14 +24216,14 @@
     "typeID": 8133, 
     "groupID": 768, 
     "market": true, 
-    "typeName": "Compact Capacitor Flux Coil"
+    "typeName": "Mark I Compact Capacitor Flux Coil"
   }, 
   {
     "volume": 5.0, 
     "typeID": 8135, 
     "groupID": 768, 
     "market": true, 
-    "typeName": "Restrained Capacitor Flux Coil"
+    "typeName": "Type-D Restrained Capacitor Flux Coil"
   }, 
   {
     "volume": 5.0, 
@@ -24419,7 +24419,7 @@
     "typeID": 8263, 
     "groupID": 769, 
     "market": true, 
-    "typeName": "Compact Reactor Control Unit"
+    "typeName": "Mark I Compact Reactor Control Unit"
   }, 
   {
     "volume": 5.0, 
@@ -24832,7 +24832,7 @@
     "typeID": 8748, 
     "groupID": 285, 
     "market": true, 
-    "typeName": "Upgraded Co-Processor"
+    "typeName": "Photonic Upgraded Co-Processor"
   }, 
   {
     "volume": 5.0, 
@@ -50081,7 +50081,7 @@
     "typeID": 16537, 
     "groupID": 339, 
     "market": true, 
-    "typeName": "Compact Micro Auxiliary Power Core"
+    "typeName": "Vigor Compact Micro Auxiliary Power Core"
   }, 
   {
     "volume": 5.0, 
@@ -88336,7 +88336,7 @@
     "typeName": "Drone Navigation Computer II Blueprint"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 25.0, 
     "typeID": 24427, 
     "groupID": 647, 
     "market": true, 
@@ -107274,7 +107274,7 @@
     "typeID": 28074, 
     "groupID": 366, 
     "market": false, 
-    "typeName": "Pathfinder Gate_New"
+    "typeName": "Pathfinder Gate"
   }, 
   {
     "volume": 1.0, 
@@ -139972,7 +139972,7 @@
     "volume": 486000.0, 
     "typeID": 34151, 
     "groupID": 27, 
-    "market": false, 
+    "market": true, 
     "typeName": "Rattlesnake Victory Edition"
   }, 
   {
@@ -140676,25 +140676,11 @@
     "typeName": "Surgical Warp Disrupt Probe"
   }, 
   {
-    "volume": 0.01, 
-    "typeID": 34261, 
-    "groupID": 486, 
-    "market": false, 
-    "typeName": "Surgical Warp Disrupt Probe Blueprint"
-  }, 
-  {
     "volume": 75.0, 
     "typeID": 34264, 
     "groupID": 864, 
     "market": true, 
     "typeName": "Focused Void Bomb"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 34265, 
-    "groupID": 172, 
-    "market": false, 
-    "typeName": "Focused Void Bomb Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -141044,42 +141030,21 @@
     "typeID": 34319, 
     "groupID": 1306, 
     "market": false, 
-    "typeName": "Amarr Tactical Destroyer Defense Mode"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 34320, 
-    "groupID": 158, 
-    "market": false, 
-    "typeName": "Amarr Tactical Destroyer Defensive Mode Blueprint"
+    "typeName": "Confessor Defense Mode"
   }, 
   {
     "volume": 5.0, 
     "typeID": 34321, 
     "groupID": 1306, 
     "market": false, 
-    "typeName": "Amarr Tactical Destroyer Sharpshooter Mode"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 34322, 
-    "groupID": 158, 
-    "market": false, 
-    "typeName": "Amarr Tactical Destroyer Sniper Mode Blueprint"
+    "typeName": "Confessor Sharpshooter Mode"
   }, 
   {
     "volume": 5.0, 
     "typeID": 34323, 
     "groupID": 1306, 
     "market": false, 
-    "typeName": "Amarr Tactical Destroyer Propulsion Mode"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 34324, 
-    "groupID": 158, 
-    "market": false, 
-    "typeName": "Amarr Tactical Destroyer Speed Mode Blueprint"
+    "typeName": "Confessor Propulsion Mode"
   }, 
   {
     "volume": 1.0, 
@@ -142165,6 +142130,132 @@
     "groupID": 765, 
     "market": true, 
     "typeName": "ORE Expanded Cargohold"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34494, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Unidentified Wormhole"
+  }, 
+  {
+    "volume": 109000.0, 
+    "typeID": 34495, 
+    "groupID": 1310, 
+    "market": false, 
+    "typeName": "Drifter Battleship"
+  }, 
+  {
+    "volume": 5000.0, 
+    "typeID": 34496, 
+    "groupID": 31, 
+    "market": true, 
+    "typeName": "Council Diplomatic Shuttle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34497, 
+    "groupID": 111, 
+    "market": false, 
+    "typeName": "Council Diplomatic Shuttle Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34533, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Minmatar Tactical Destroyer"
+  }, 
+  {
+    "volume": 109000.0, 
+    "typeID": 34561, 
+    "groupID": 1310, 
+    "market": false, 
+    "typeName": "Drifter Battleship 2"
+  }, 
+  {
+    "volume": 47000.0, 
+    "typeID": 34562, 
+    "groupID": 1305, 
+    "market": true, 
+    "typeName": "Svipul"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34563, 
+    "groupID": 1309, 
+    "market": false, 
+    "typeName": "Svipul Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34564, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Svipul Defense Mode"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34566, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Svipul Propulsion Mode"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 34570, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Svipul Sharpshooter Mode"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34573, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Unidentified Structure"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34574, 
+    "groupID": 1, 
+    "market": false, 
+    "typeName": "CharacterDrifter"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34579, 
+    "groupID": 286, 
+    "market": false, 
+    "typeName": "Clonejacker Punk"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34580, 
+    "groupID": 53, 
+    "market": false, 
+    "typeName": "Lux Kontos"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34584, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Minmatar Advanced Destroyer Wreck"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34588, 
+    "groupID": 286, 
+    "market": false, 
+    "typeName": "Belter Hoodlum"
+  }, 
+  {
+    "volume": 19700.0, 
+    "typeID": 34589, 
+    "groupID": 286, 
+    "market": false, 
+    "typeName": "Narco Pusher"
   }, 
   {
     "volume": 0.01, 
@@ -156826,6 +156917,41 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 366967, 
+    "groupID": 368656, 
+    "market": true, 
+    "typeName": "Mangled Coil Assembly"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 366968, 
+    "groupID": 368656, 
+    "market": true, 
+    "typeName": "Crushed Magazine Housing"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 366969, 
+    "groupID": 368656, 
+    "market": true, 
+    "typeName": "Broken Optronic Sight"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 366970, 
+    "groupID": 368656, 
+    "market": true, 
+    "typeName": "Shattered Heat Shield"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 366971, 
+    "groupID": 368656, 
+    "market": true, 
+    "typeName": "Melted Heat Sink"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 367223, 
     "groupID": 350858, 
     "market": true, 
@@ -157862,6 +157988,13 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 368497, 
+    "groupID": 368666, 
+    "market": true, 
+    "typeName": "Warbarge Component"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 368518, 
     "groupID": 351210, 
     "market": true, 
@@ -157883,10 +158016,269 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 368531, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Gunnlogi"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368532, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Madrugar"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368533, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Grimsnes"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368534, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Myron"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368537, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Saga"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368539, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Methana"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368540, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' ST-201 Missile Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368541, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' ST-1 Missile Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368542, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' 80GJ Blaster"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368543, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' 20GJ Blaster"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368544, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' 80GJ Railgun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368545, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' 20GJ Railgun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368546, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Saga Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368547, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "'Quafe' Methana Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368548, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Logistics A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368549, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Logistics C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368550, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Logistics G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368551, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Logistics M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368552, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Commando A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368553, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Commando C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368554, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Commando G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368555, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Quafe' Commando M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368556, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Heavy Machine Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368557, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Forge Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368558, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Nova Knives"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368559, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Mass Driver"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368560, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Swarm Launcher"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368561, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368562, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Plasma Cannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368563, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Shotgun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368564, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368565, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Sniper Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368566, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Laser Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368567, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368568, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "'Quafe' Combat Rifle"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 368574, 
     "groupID": 351064, 
     "market": true, 
     "typeName": "Imperial Scout A/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368576, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Brutor' Logistics M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368577, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Tash Murkon' Scout A-I"
   }, 
   {
     "volume": 0.01, 
@@ -157897,6 +158289,48 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 368580, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Tash Murkon' Sentinel A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368581, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Brutor' Commando M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368582, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Kaalakiota' Assault C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368583, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Kaalakiota' Scout C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368584, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Roden' Scout G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368585, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Roden' Commando G-I"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 368586, 
     "groupID": 351064, 
     "market": true, 
@@ -157904,10 +158338,185 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 368587, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Solar's PAR-8 Flaylock Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368588, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Kubo's PE-165 Ion Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368589, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Ghalag's OCT-91 Bolt Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368590, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Nanaki's LORB-7 Magsec SMG"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368591, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Kubo's PX-6 Scrambler Pistol"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368592, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Nothi's NOS-47 Nova Knives"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368593, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Alex's Modified VC-107 SMG"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 368594, 
     "groupID": 351064, 
     "market": true, 
     "typeName": "State Scout C/1-Series"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368595, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Heavy Machine Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368596, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Forge Gun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368597, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Mass Driver"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368598, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Swarm Launcher"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368599, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368600, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Plasma Cannon"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368601, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Shotgun"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368602, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368603, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Sniper Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368604, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Laser Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368605, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368606, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Combat Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368607, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Assault Combat Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368608, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Assault Scrambler Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368609, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Assault Rail Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368610, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Tactical Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368611, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Breach Assault Rifle"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368612, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Experimental Burst Assault Rifle"
   }, 
   {
     "volume": 0.01, 
