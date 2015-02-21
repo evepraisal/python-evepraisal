@@ -14,21 +14,7 @@ def login_required(func):
 
 
 def iter_types(kind, result):
-    if kind in ['assets',
-                'contract',
-                'dscan',
-                'fitting',
-                'listing',
-                'cargo_scan',
-                'loot_history',
-                'pi',
-                'survey_scanner',
-                'view_contents',
-                'heuristic']:
-        for item in result:
-            item['quantity'] = item.get('quantity', 1)
-            yield item
-    elif kind == 'bill_of_materials':
+    if kind == 'bill_of_materials':
         for item in result:
             yield {'name': item['name'],
                    'quantity': item.get('you', item.get('quantity'))}
@@ -57,4 +43,6 @@ def iter_types(kind, result):
             item['quantity'] = item.get('quantity', 1)
             yield item
     else:
-        raise ValueError('Invalid kind %s', kind)
+        for item in result:
+            item['quantity'] = item.get('quantity', 1)
+            yield item

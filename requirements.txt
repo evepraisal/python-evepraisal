@@ -6,5 +6,5 @@ Flask-Cache
 Flask-Babel
 flask_openid
 flask-sqlalchemy
-evepaste
+evepaste>=0.9
 git+git://github.com/ntt/reverence.git

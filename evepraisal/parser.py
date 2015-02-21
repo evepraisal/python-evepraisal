@@ -14,21 +14,10 @@ def parse(raw_paste):
     representative_kind = 'unknown'
     largest_kind_num = 0
 
-    parser_list = [('loot_history', parsers.parse_loot_history),
-                   ('survey_scanner', parsers.parse_survey_scanner),
-                   ('pi', parsers.parse_pi),
-                   ('dscan', dscan_parser),
-                   ('killmail', parsers.parse_killmail),
-                   ('chat', parsers.parse_chat),
-                   ('eft', parsers.parse_eft),
-                   ('fitting', parsers.parse_fitting),
-                   ('contract', parsers.parse_contract),
-                   ('assets', parsers.parse_assets),
-                   ('view_contents', parsers.parse_view_contents),
-                   ('wallet', parsers.parse_wallet),
-                   ('cargo_scan', parsers.parse_cargo_scan),
-                   ('listing', listing_parser),
-                   ('heuristic', tryhard_parser)]
+    parser_list = list(evepaste.PARSER_TABLE) + [
+        ('listing', listing_parser),
+        ('heuristic', tryhard_parser),
+    ]
 
     iterations = 0
     while iterations < 10:
