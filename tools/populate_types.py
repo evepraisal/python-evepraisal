@@ -8,6 +8,7 @@ import bz2
 import collections
 import json
 import os
+import shutil
 import sqlite3
 import tempfile
 import urllib2
@@ -102,22 +103,25 @@ FROM invtypes'''):
 
 def main():
     temp_dir = tempfile.mkdtemp()
-    db_path = os.path.join(temp_dir, 'eve-db.sqlite')
-    print("Writing sqlite database to %s" % db_path)
-    download_database(db_path)
+    try:
+        db_path = os.path.join(temp_dir, 'eve-db.sqlite')
+        print("Writing sqlite database to %s" % db_path)
+        download_database(db_path)
 
-    print("Opening database file")
-    conn = sqlite3.connect(db_path)
-    conn.row_factory = sqlite3.Row
-    c = conn.cursor()
+        print("Opening database file")
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        c = conn.cursor()
 
-    print("Build type information")
-    all_types = list(build_all_types(c))
+        print("Build type information")
+        all_types = list(build_all_types(c))
 
-    types_output_file = 'data/types.json'
-    print("Output types to %s" % types_output_file)
-    with open(types_output_file, 'w') as f:
-        f.write(json.dumps(all_types, indent=2))
+        types_output_file = 'data/types.json'
+        print("Output types to %s" % types_output_file)
+        with open(types_output_file, 'w') as f:
+            f.write(json.dumps(all_types, indent=2))
+    finally:
+        shutil.rmtree(temp_dir)
 
 
 if __name__ == '__main__':
