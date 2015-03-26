@@ -48,9 +48,9 @@ def download_database(destination_path):
                   float(bytes_read)/total_bytes * 100,
                   ))
 
-            compressed_data = decompressor.decompress(data)
-            if compressed_data is not None:
-                f.write(compressed_data)
+            decompressed_data = decompressor.decompress(data)
+            if decompressed_data is not None:
+                f.write(decompressed_data)
 
 
 def build_all_types(cursor):
