@@ -1977,7 +1977,7 @@
     "volume": 115000.0, 
     "typeID": 635, 
     "groupID": 26, 
-    "market": false, 
+    "market": true, 
     "typeName": "Opux Luxury Yacht"
   }, 
   {
@@ -6346,7 +6346,7 @@
     "typeID": 2071, 
     "groupID": 15, 
     "market": false, 
-    "typeName": "Station (Interbus)"
+    "typeName": "Station (InterBus)"
   }, 
   {
     "volume": 118000.0, 
@@ -20555,7 +20555,7 @@
     "typeID": 4318, 
     "groupID": 1025, 
     "market": false, 
-    "typeName": "Interbus Customs Office"
+    "typeName": "InterBus Customs Office"
   }, 
   {
     "volume": 0.0, 
@@ -73583,7 +73583,7 @@
     "volume": 0.01, 
     "typeID": 21854, 
     "groupID": 142, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Armor Repairer Blueprint"
   }, 
   {
@@ -73597,7 +73597,7 @@
     "volume": 0.01, 
     "typeID": 21856, 
     "groupID": 158, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Expanded Cargohold Blueprint"
   }, 
   {
@@ -73611,7 +73611,7 @@
     "volume": 0.01, 
     "typeID": 21858, 
     "groupID": 126, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Afterburner Blueprint"
   }, 
   {
@@ -114640,7 +114640,7 @@
     "typeID": 29363, 
     "groupID": 226, 
     "market": false, 
-    "typeName": "Naglfar Lower Half"
+    "typeName": "Naglfar Wreck"
   }, 
   {
     "volume": 0.0, 
@@ -119329,28 +119329,28 @@
     "volume": 5.0, 
     "typeID": 30328, 
     "groupID": 65, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Stasis Webifier"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30329, 
     "groupID": 145, 
-    "market": false, 
-    "typeName": "Civilian Stasis Webifier I Blueprint"
+    "market": true, 
+    "typeName": "Civilian Stasis Webifier Blueprint"
   }, 
   {
     "volume": 20.0, 
     "typeID": 30342, 
     "groupID": 77, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Thermic Dissipation Field"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30343, 
     "groupID": 157, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Thermic Dissipation Field Blueprint"
   }, 
   {
@@ -119784,42 +119784,42 @@
     "volume": 20.0, 
     "typeID": 30420, 
     "groupID": 77, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian EM Ward Field"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30421, 
     "groupID": 157, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian EM Ward Field Blueprint"
   }, 
   {
     "volume": 20.0, 
     "typeID": 30422, 
     "groupID": 77, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Explosive Deflection Field"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30423, 
     "groupID": 157, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Explosive Deflection Field Blueprint"
   }, 
   {
     "volume": 20.0, 
     "typeID": 30424, 
     "groupID": 77, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Kinetic Deflection Field"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30425, 
     "groupID": 157, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Kinetic Deflection Field Blueprint"
   }, 
   {
@@ -121891,14 +121891,14 @@
     "volume": 5.0, 
     "typeID": 30839, 
     "groupID": 60, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Damage Control"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30840, 
     "groupID": 140, 
-    "market": false, 
+    "market": true, 
     "typeName": "Civilian Damage Control Blueprint"
   }, 
   {
@@ -121913,14 +121913,14 @@
     "typeID": 30842, 
     "groupID": 31, 
     "market": true, 
-    "typeName": "Interbus Shuttle"
+    "typeName": "InterBus Shuttle"
   }, 
   {
     "volume": 0.01, 
     "typeID": 30843, 
     "groupID": 111, 
     "market": false, 
-    "typeName": "Interbus Shuttle Blueprint"
+    "typeName": "InterBus Shuttle Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -140050,7 +140050,7 @@
     "typeID": 34163, 
     "groupID": 1088, 
     "market": true, 
-    "typeName": "Men's 'Marshal' Jacket (interBus)"
+    "typeName": "Men's 'Marshal' Jacket (InterBus)"
   }, 
   {
     "volume": 0.1, 
@@ -140141,7 +140141,7 @@
     "typeID": 34176, 
     "groupID": 1088, 
     "market": true, 
-    "typeName": "Women's 'Gunner' Jacket (interBus)"
+    "typeName": "Women's 'Gunner' Jacket (InterBus)"
   }, 
   {
     "volume": 0.1, 
@@ -142223,6 +142223,20 @@
     "typeName": "CharacterDrifter"
   }, 
   {
+    "volume": 0.1, 
+    "typeID": 34575, 
+    "groupID": 1314, 
+    "market": true, 
+    "typeName": "Antikythera Element"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34576, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Test SKIN DO NOT TRANSLATE"
+  }, 
+  {
     "volume": 19700.0, 
     "typeID": 34579, 
     "groupID": 286, 
@@ -142256,6 +142270,167 @@
     "groupID": 286, 
     "market": false, 
     "typeName": "Narco Pusher"
+  }, 
+  {
+    "volume": 115000.0, 
+    "typeID": 34590, 
+    "groupID": 26, 
+    "market": true, 
+    "typeName": "Victorieux Luxury Yacht"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34591, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Victorieux Luxury Yacht Blueprint"
+  }, 
+  {
+    "volume": 2.0, 
+    "typeID": 34598, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Corpse"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34717, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34761, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34762, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34763, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34764, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34765, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Jove Observatory"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 34768, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Drifter Battleship Wreck"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34769, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 1 Electee Archive Script "
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34770, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 2 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34771, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 3 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34772, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 4 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34773, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 5 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34774, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 6 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34775, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 7 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34776, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 8 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34777, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 9 Electee Archive Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 34778, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "CSM 10 Electee Archive Script "
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 34784, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Sleeper Vessel"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34824, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Men's 'Emergent Threats' T-shirt YC 117"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 34825, 
+    "groupID": 1089, 
+    "market": true, 
+    "typeName": "Women's 'Emergent Threats' T-shirt YC 117"
   }, 
   {
     "volume": 0.01, 
@@ -142297,14 +142472,7 @@
     "typeID": 351278, 
     "groupID": 351210, 
     "market": true, 
-    "typeName": "Gunnlogi"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 351296, 
-    "groupID": 350858, 
-    "market": true, 
-    "typeName": "Blaster"
+    "typeName": "Gunnlogi C-I"
   }, 
   {
     "volume": 0.01, 
@@ -142626,7 +142794,7 @@
     "typeID": 351824, 
     "groupID": 351210, 
     "market": true, 
-    "typeName": "Madrugar"
+    "typeName": "Madrugar G-I"
   }, 
   {
     "volume": 0.01, 
@@ -142788,13 +142956,6 @@
     "groupID": 351121, 
     "market": true, 
     "typeName": "'Vector' Complex CPU Upgrade"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 352044, 
-    "groupID": 351121, 
-    "market": false, 
-    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -143078,13 +143239,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 352522, 
-    "groupID": 350858, 
-    "market": true, 
-    "typeName": "Miasma Grenade"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 352526, 
     "groupID": 350858, 
     "market": false, 
@@ -143180,20 +143334,6 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "Militia Gallente Light Frame"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 352597, 
-    "groupID": 351064, 
-    "market": true, 
-    "typeName": "[DEV] Amarr Crusader Dropsuit"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 352598, 
-    "groupID": 351064, 
-    "market": true, 
-    "typeName": "[DEV] Amarr Crusader Dropsuit"
   }, 
   {
     "volume": 0.01, 
@@ -144517,13 +144657,6 @@
     "groupID": 351648, 
     "market": false, 
     "typeName": "Gallente LAV"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 353393, 
-    "groupID": 351648, 
-    "market": false, 
-    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -146525,7 +146658,7 @@
     "typeID": 354935, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor - CA"
+    "typeName": "Armor AV - CA"
   }, 
   {
     "volume": 0.01, 
@@ -148708,22 +148841,22 @@
     "volume": 0.01, 
     "typeID": 355928, 
     "groupID": 351121, 
-    "market": false, 
-    "typeName": "Active Heat Sink I"
+    "market": true, 
+    "typeName": "Basic Heat Sink"
   }, 
   {
     "volume": 0.01, 
     "typeID": 355929, 
     "groupID": 351121, 
-    "market": false, 
-    "typeName": "Azeotripic Coolant Pump"
+    "market": true, 
+    "typeName": "Enhanced Heat Sink"
   }, 
   {
     "volume": 0.01, 
     "typeID": 355930, 
     "groupID": 351121, 
-    "market": false, 
-    "typeName": "Active Heat Sink II"
+    "market": true, 
+    "typeName": "Complex Heat Sink"
   }, 
   {
     "volume": 0.01, 
@@ -150106,13 +150239,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 356915, 
-    "groupID": 351648, 
-    "market": true, 
-    "typeName": "Neural Trainer"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 356918, 
     "groupID": 351844, 
     "market": true, 
@@ -151113,13 +151239,6 @@
     "typeName": "Militia Afterburner"
   }, 
   {
-    "volume": 0.0, 
-    "typeID": 364269, 
-    "groupID": 351648, 
-    "market": false, 
-    "typeName": ""
-  }, 
-  {
     "volume": 0.01, 
     "typeID": 364317, 
     "groupID": 351064, 
@@ -151258,13 +151377,6 @@
     "groupID": 351844, 
     "market": true, 
     "typeName": "Duvolle Focused Active Scanner"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 364430, 
-    "groupID": 351648, 
-    "market": false, 
-    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -152062,21 +152174,21 @@
     "typeID": 364726, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor - AM"
+    "typeName": "Armor AV - AM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364732, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor - GA"
+    "typeName": "Armor AV - GA"
   }, 
   {
     "volume": 0.01, 
     "typeID": 364736, 
     "groupID": 351064, 
     "market": false, 
-    "typeName": "Anti-Armor - MN"
+    "typeName": "Armor AV - MN"
   }, 
   {
     "volume": 0.01, 
@@ -153176,13 +153288,6 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "'Harbinger' Amarr Medium Frame A-I"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 365422, 
-    "groupID": 351121, 
-    "market": false, 
-    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -154814,13 +154919,6 @@
     "groupID": 351844, 
     "market": true, 
     "typeName": "Republic Boundless Repair Tool"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 366131, 
-    "groupID": 351210, 
-    "market": false, 
-    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -156994,13 +157092,6 @@
   }, 
   {
     "volume": 0.0, 
-    "typeID": 367380, 
-    "groupID": 351648, 
-    "market": false, 
-    "typeName": ""
-  }, 
-  {
-    "volume": 0.0, 
     "typeID": 367382, 
     "groupID": 351648, 
     "market": true, 
@@ -158650,5 +158741,180 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "Republic Sentinel mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368777, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Krin\u2019s LEX -71 Damage Modifier"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368880, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Marduk G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368881, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Madrugar G/1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368882, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Madrugar Gv.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368884, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Marduk G/1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368885, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Marduk Gv.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368887, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Gladius C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368888, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Gunnlogi C/1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368889, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Gunnlogi Cv.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368890, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Gladius C/1"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368891, 
+    "groupID": 351210, 
+    "market": true, 
+    "typeName": "Gladius Cv.0"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368893, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Basic Shield Regulator"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368894, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Enhanced Shield Regulator"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368895, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Complex Shield Regulator"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368898, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Basic Dispersion Stabilizer"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368899, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Enhanced Dispersion Stabilizer"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 368900, 
+    "groupID": 351121, 
+    "market": true, 
+    "typeName": "Complex Dispersion Stabilizer"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368908, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Shield AV - AM"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368909, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Recon - AM"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368910, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Shield AV - CA"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368911, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Recon - CA"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368912, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Shield AV - GA"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368913, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Recon - GA"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368914, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Shield AV - MN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 368915, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Recon - MN"
   }
 ]
