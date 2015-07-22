@@ -1001,7 +1001,7 @@
     "typeName": "Scourge Rocket"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 267, 
     "groupID": 89, 
     "market": true, 
@@ -7140,7 +7140,7 @@
     "typeName": "Arnon Epithalamus"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2210, 
     "groupID": 89, 
     "market": false, 
@@ -8743,7 +8743,7 @@
     "typeName": "Command Center Upgrades"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2506, 
     "groupID": 89, 
     "market": true, 
@@ -8757,7 +8757,7 @@
     "typeName": "Mjolnir Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2508, 
     "groupID": 89, 
     "market": true, 
@@ -8771,7 +8771,7 @@
     "typeName": "Nova Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2510, 
     "groupID": 89, 
     "market": true, 
@@ -10591,7 +10591,7 @@
     "typeName": "Jump Bridge Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2801, 
     "groupID": 657, 
     "market": true, 
@@ -10654,7 +10654,7 @@
     "typeName": "Medium Artillery Battery Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 2811, 
     "groupID": 657, 
     "market": true, 
@@ -88895,7 +88895,7 @@
     "typeName": "Mjolnir Precision Heavy Missile Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24519, 
     "groupID": 657, 
     "market": true, 
@@ -88909,7 +88909,7 @@
     "typeName": "Nova Rage Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24521, 
     "groupID": 657, 
     "market": true, 
@@ -88923,7 +88923,7 @@
     "typeName": "Scourge Rage Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24523, 
     "groupID": 657, 
     "market": true, 
@@ -88937,7 +88937,7 @@
     "typeName": "Mjolnir Rage Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24525, 
     "groupID": 657, 
     "market": true, 
@@ -88951,7 +88951,7 @@
     "typeName": "Inferno Javelin Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24527, 
     "groupID": 657, 
     "market": true, 
@@ -88965,7 +88965,7 @@
     "typeName": "Mjolnir Javelin Torpedo Blueprint"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 24529, 
     "groupID": 657, 
     "market": true, 
@@ -103294,56 +103294,56 @@
     "typeName": "Dread Guristas Scourge Rocket"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27337, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Guristas Mjolnir Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27339, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Caldari Navy Mjolnir Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27341, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Dread Guristas Mjolnir Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27343, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Guristas Scourge Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27345, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Caldari Navy Scourge Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27347, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Dread Guristas Scourge Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27349, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Guristas Inferno Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27351, 
     "groupID": 89, 
     "market": true, 
@@ -103357,21 +103357,21 @@
     "typeName": "Guristas Scourge Light Missile"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27355, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Dread Guristas Inferno Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27357, 
     "groupID": 89, 
     "market": true, 
     "typeName": "Guristas Nova Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27359, 
     "groupID": 89, 
     "market": true, 
@@ -103385,7 +103385,7 @@
     "typeName": "Caldari Navy Scourge Light Missile"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27363, 
     "groupID": 89, 
     "market": true, 
@@ -106038,14 +106038,14 @@
     "typeName": "True Sansha Thunderbolt Heavy Missile"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27891, 
     "groupID": 89, 
     "market": false, 
     "typeName": "Sansha Mjolnir Torpedo"
   }, 
   {
-    "volume": 0.1, 
+    "volume": 0.05, 
     "typeID": 27892, 
     "groupID": 89, 
     "market": false, 
@@ -122273,13 +122273,6 @@
     "typeName": "Verification Key"
   }, 
   {
-    "volume": 0.1, 
-    "typeID": 30952, 
-    "groupID": 314, 
-    "market": false, 
-    "typeName": "Dossier   Author Unknown"
-  }, 
-  {
     "volume": 27500.0, 
     "typeID": 30953, 
     "groupID": 952, 
@@ -130666,20 +130659,6 @@
     "typeName": "Assembly Station DC105-A"
   }, 
   {
-    "volume": 0.1, 
-    "typeID": 32371, 
-    "groupID": 314, 
-    "market": false, 
-    "typeName": "Capital Ship Design    Dictator "
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 32372, 
-    "groupID": 283, 
-    "market": false, 
-    "typeName": "Minedrill   E518 Crew"
-  }, 
-  {
     "volume": 0.5, 
     "typeID": 32374, 
     "groupID": 280, 
@@ -130741,13 +130720,6 @@
     "groupID": 306, 
     "market": false, 
     "typeName": "Damaged Caldari Shuttle"
-  }, 
-  {
-    "volume": 0.1, 
-    "typeID": 32383, 
-    "groupID": 314, 
-    "market": false, 
-    "typeName": "Guristas  Dirty' Explosive System"
   }, 
   {
     "volume": 5000.0, 
@@ -130848,13 +130820,6 @@
     "typeName": "Yada Vinjivas's Gila"
   }, 
   {
-    "volume": 1.0, 
-    "typeID": 32398, 
-    "groupID": 283, 
-    "market": false, 
-    "typeName": "Lieutenant Kipo  Foxfire  Tekira"
-  }, 
-  {
     "volume": 0.0, 
     "typeID": 32399, 
     "groupID": 226, 
@@ -130909,13 +130874,6 @@
     "groupID": 306, 
     "market": false, 
     "typeName": "Caldari Storage Warehouse"
-  }, 
-  {
-    "volume": 0.5, 
-    "typeID": 32407, 
-    "groupID": 314, 
-    "market": false, 
-    "typeName": "Holoreel   Torture Log I15B"
   }, 
   {
     "volume": 0.5, 
@@ -133432,13 +133390,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 33041, 
-    "groupID": 1195, 
-    "market": true, 
-    "typeName": "NEO YC 114: Africa s Finest"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 33042, 
     "groupID": 1195, 
     "market": true, 
@@ -133467,24 +133418,10 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 33046, 
-    "groupID": 1195, 
-    "market": true, 
-    "typeName": "NEO YC 114: ISN   Incursion Shiny Network"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 33047, 
     "groupID": 1195, 
     "market": true, 
     "typeName": "NEO YC 114: Baaaramu"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 33048, 
-    "groupID": 1195, 
-    "market": true, 
-    "typeName": "NEO YC 114: Asine Hitama s team"
   }, 
   {
     "volume": 0.01, 
@@ -138076,35 +138013,14 @@
     "typeID": 33857, 
     "groupID": 310, 
     "market": false, 
-    "typeName": " "
+    "typeName": "??????"
   }, 
   {
     "volume": 0.0, 
     "typeID": 33858, 
     "groupID": 226, 
     "market": false, 
-    "typeName": " "
-  }, 
-  {
-    "volume": 19700.0, 
-    "typeID": 33864, 
-    "groupID": 1285, 
-    "market": false, 
-    "typeName": "Mordu s Special Warfare Unit Operative"
-  }, 
-  {
-    "volume": 92000.0, 
-    "typeID": 33865, 
-    "groupID": 1286, 
-    "market": false, 
-    "typeName": "Mordu s Special Warfare Unit Specialist"
-  }, 
-  {
-    "volume": 486000.0, 
-    "typeID": 33866, 
-    "groupID": 1287, 
-    "market": false, 
-    "typeName": "Mordu s Special Warfare Unit Commander"
+    "typeName": "???????"
   }, 
   {
     "volume": 12500.0, 
@@ -141594,13 +141510,6 @@
   }, 
   {
     "volume": 3.0, 
-    "typeID": 34417, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Manufacturing Union s Placard"
-  }, 
-  {
-    "volume": 3.0, 
     "typeID": 34418, 
     "groupID": 1194, 
     "market": true, 
@@ -141622,20 +141531,6 @@
   }, 
   {
     "volume": 3.0, 
-    "typeID": 34421, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Chribba s Modified Strip Miner"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34422, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Rooks & Kings   The Clarion Call Compilation"
-  }, 
-  {
-    "volume": 3.0, 
     "typeID": 34423, 
     "groupID": 1194, 
     "market": true, 
@@ -141647,20 +141542,6 @@
     "groupID": 1194, 
     "market": true, 
     "typeName": "Titanium Plated Cranial Shielding"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34425, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "SCC Guidelines   Lotteries For Dummies"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34426, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Sort Dragon s Guide To Diplomacy"
   }, 
   {
     "volume": 3.0, 
@@ -141678,52 +141559,10 @@
   }, 
   {
     "volume": 3.0, 
-    "typeID": 34429, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Vincent Pryce s Warp Disruption Field Generator"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34430, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "My God, It s Full Of Holes!"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34431, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Guillome Renard s Sleeper Loot Stash"
-  }, 
-  {
-    "volume": 3.0, 
     "typeID": 34432, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Sisters Of EVE Charity Statue"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34433, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "The Damsel s Drunk Bodyguard"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34434, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Alice Saki s Good Posting Guide"
-  }, 
-  {
-    "volume": 3.0, 
-    "typeID": 34435, 
-    "groupID": 1194, 
-    "market": true, 
-    "typeName": "Soxfour s Spaceboots"
   }, 
   {
     "volume": 3.0, 
@@ -141877,168 +141716,168 @@
     "typeID": 34457, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34458, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117??????"
   }, 
   {
     "volume": 495000.0, 
     "typeID": 34459, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34460, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117??????"
   }, 
   {
     "volume": 595000.0, 
     "typeID": 34461, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34462, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117??????"
   }, 
   {
     "volume": 486000.0, 
     "typeID": 34463, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34464, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117??????"
   }, 
   {
     "volume": 454500.0, 
     "typeID": 34465, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "??????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34466, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "??????YC117??????"
   }, 
   {
     "volume": 486000.0, 
     "typeID": 34467, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34468, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "?????YC117??????"
   }, 
   {
     "volume": 486000.0, 
     "typeID": 34469, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34470, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117??????"
   }, 
   {
     "volume": 495000.0, 
     "typeID": 34471, 
     "groupID": 27, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34472, 
     "groupID": 107, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117??????"
   }, 
   {
     "volume": 252000.0, 
     "typeID": 34473, 
     "groupID": 419, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34474, 
     "groupID": 489, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117??????"
   }, 
   {
     "volume": 101000.0, 
     "typeID": 34475, 
     "groupID": 26, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34476, 
     "groupID": 106, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117??????"
   }, 
   {
     "volume": 101000.0, 
     "typeID": 34477, 
     "groupID": 358, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34478, 
     "groupID": 106, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "???YC117??????"
   }, 
   {
     "volume": 115000.0, 
     "typeID": 34479, 
     "groupID": 358, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117????"
   }, 
   {
     "volume": 0.01, 
     "typeID": 34480, 
     "groupID": 106, 
     "market": false, 
-    "typeName": " YC117 "
+    "typeName": "????YC117??????"
   }, 
   {
     "volume": 5.0, 
@@ -143515,7 +143354,7 @@
     "typeID": 34718, 
     "groupID": 1311, 
     "market": true, 
-    "typeName": "Comet Police Pursuit SKIN (Permanent)"
+    "typeName": "Federation Navy Comet Police Pursuit SKIN (Permanent)"
   }, 
   {
     "volume": 0.01, 
@@ -144230,13 +144069,6 @@
     "groupID": 1313, 
     "market": false, 
     "typeName": "QA Entosis Link"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 34827, 
-    "groupID": 1318, 
-    "market": false, 
-    "typeName": "QA Entosis Link Blueprint"
   }, 
   {
     "volume": 47000.0, 
@@ -145902,28 +145734,28 @@
     "typeID": 35069, 
     "groupID": 1311, 
     "market": false, 
-    "typeName": "Comet Police Pursuit SKIN (7 Days)"
+    "typeName": "Federation Navy Comet Police Pursuit SKIN (7 Days)"
   }, 
   {
     "volume": 0.01, 
     "typeID": 35070, 
     "groupID": 1311, 
     "market": false, 
-    "typeName": "Comet Police Pursuit SKIN (30 Days)"
+    "typeName": "Federation Navy Comet Police Pursuit SKIN (30 Days)"
   }, 
   {
     "volume": 0.01, 
     "typeID": 35071, 
     "groupID": 1311, 
     "market": false, 
-    "typeName": "Comet Police Pursuit SKIN (90 Days)"
+    "typeName": "Federation Navy Comet Police Pursuit SKIN (90 Days)"
   }, 
   {
     "volume": 0.01, 
     "typeID": 35072, 
     "groupID": 1311, 
     "market": false, 
-    "typeName": "Comet Police Pursuit SKIN (365 Days)"
+    "typeName": "Federation Navy Comet Police Pursuit SKIN (365 Days)"
   }, 
   {
     "volume": 0.01, 
@@ -150084,6 +149916,48 @@
     "typeName": "Women's 'Humanitarian' T-shirt YC 117"
   }, 
   {
+    "volume": 47000.0, 
+    "typeID": 35683, 
+    "groupID": 1305, 
+    "market": true, 
+    "typeName": "Hecate"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35684, 
+    "groupID": 1309, 
+    "market": false, 
+    "typeName": "Hecate Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35685, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Gallente Tactical Destroyer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35686, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Hecate Defense Mode"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35687, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Hecate Propulsion Mode"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35688, 
+    "groupID": 1306, 
+    "market": false, 
+    "typeName": "Hecate Sharpshooter Mode"
+  }, 
+  {
     "volume": 19700.0, 
     "typeID": 35689, 
     "groupID": 818, 
@@ -150094,7 +149968,7 @@
     "volume": 0.01, 
     "typeID": 35690, 
     "groupID": 1311, 
-    "market": false, 
+    "market": true, 
     "typeName": "Astero Sanctuary SKIN (Permanent)"
   }, 
   {
@@ -150129,7 +150003,7 @@
     "volume": 0.01, 
     "typeID": 35695, 
     "groupID": 1311, 
-    "market": false, 
+    "market": true, 
     "typeName": "Stratios Sanctuary SKIN (Permanent)"
   }, 
   {
@@ -150164,7 +150038,7 @@
     "volume": 0.01, 
     "typeID": 35700, 
     "groupID": 1311, 
-    "market": false, 
+    "market": true, 
     "typeName": "Nestor Sanctuary SKIN (Permanent)"
   }, 
   {
@@ -150235,42 +150109,1533 @@
     "typeID": 35764, 
     "groupID": 319, 
     "market": false, 
-    "typeName": "EVE/Evetypes/Types/Names:505970"
+    "typeName": "Unstable Signal Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 35770, 
     "groupID": 1395, 
     "market": true, 
-    "typeName": "EVE/Evetypes/Types/Names:505984"
+    "typeName": "Missile Guidance Enhancer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 35771, 
     "groupID": 1395, 
     "market": true, 
-    "typeName": "EVE/Evetypes/Types/Names:505986"
+    "typeName": "Missile Guidance Enhancer II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 35772, 
     "groupID": 1397, 
     "market": true, 
-    "typeName": "EVE/Evetypes/Types/Names:505989"
+    "typeName": "Missile Guidance Enhancer I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 35773, 
     "groupID": 1397, 
     "market": false, 
-    "typeName": "EVE/Evetypes/Types/Names:505991"
+    "typeName": "Missile Guidance Enhancer II Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 35774, 
     "groupID": 1395, 
     "market": true, 
-    "typeName": "EVE/Evetypes/Types/Names:505993"
+    "typeName": "Pro-Nav Compact Missile Guidance Enhancer"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35776, 
+    "groupID": 366, 
+    "market": false, 
+    "typeName": "Large Acceleration Gate"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35777, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Sail Charger"
+  }, 
+  {
+    "volume": 28600.0, 
+    "typeID": 35779, 
+    "groupID": 831, 
+    "market": true, 
+    "typeName": "Imp"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35780, 
+    "groupID": 105, 
+    "market": false, 
+    "typeName": "Imp Blueprint"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 35781, 
+    "groupID": 894, 
+    "market": true, 
+    "typeName": "Fiend"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35782, 
+    "groupID": 106, 
+    "market": false, 
+    "typeName": "Fiend Blueprint"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35788, 
+    "groupID": 1396, 
+    "market": true, 
+    "typeName": "Missile Guidance Computer I"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35789, 
+    "groupID": 1396, 
+    "market": true, 
+    "typeName": "Astro-Inertial Compact Missile Guidance Computer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 35790, 
+    "groupID": 1396, 
+    "market": true, 
+    "typeName": "Missile Guidance Computer II"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35791, 
+    "groupID": 1399, 
+    "market": true, 
+    "typeName": "Missile Guidance Computer I Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35792, 
+    "groupID": 1399, 
+    "market": false, 
+    "typeName": "Missile Guidance Computer II Blueprint"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 35794, 
+    "groupID": 1400, 
+    "market": true, 
+    "typeName": "Missile Range Script"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 35795, 
+    "groupID": 1400, 
+    "market": true, 
+    "typeName": "Missile Precision Script"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35796, 
+    "groupID": 912, 
+    "market": true, 
+    "typeName": "Missile Range Script Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 35797, 
+    "groupID": 912, 
+    "market": true, 
+    "typeName": "Missile Precision Script Blueprint"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35799, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 3 to 4 Victory"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35800, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 5 to 7 Victory"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35801, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 8+ Victory"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35802, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 3 to 4 Defeat"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35803, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 5 to 7 Defeat"
+  }, 
+  {
+    "volume": 20.0, 
+    "typeID": 35804, 
+    "groupID": 920, 
+    "market": false, 
+    "typeName": "Drifter Incursion 8+ Defeat"
+  }, 
+  {
+    "volume": 495000.0, 
+    "typeID": 35812, 
+    "groupID": 1402, 
+    "market": false, 
+    "typeName": "Amarr Navy Apocalypse"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35813, 
+    "groupID": 1413, 
+    "market": false, 
+    "typeName": "Amarr Navy Guardian"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35814, 
+    "groupID": 1411, 
+    "market": false, 
+    "typeName": "Amarr Navy Omen"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35815, 
+    "groupID": 1411, 
+    "market": false, 
+    "typeName": "Amarr Navy Augoror"
+  }, 
+  {
+    "volume": 1100000.0, 
+    "typeID": 35816, 
+    "groupID": 1402, 
+    "market": false, 
+    "typeName": "Amarr Navy Armageddon"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35819, 
+    "groupID": 1412, 
+    "market": false, 
+    "typeName": "Amarr Navy Archon"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 35820, 
+    "groupID": 1414, 
+    "market": false, 
+    "typeName": "Amarr Navy Crucifier"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36274, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Executioner EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36275, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Inquisitor EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36276, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tormentor EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36277, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Punisher EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36278, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maller EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36279, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Augoror EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36280, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Arbitrator EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36281, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Apocalypse EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36282, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Armageddon EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36283, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bestower EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36284, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Omen EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36285, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36286, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Oracle EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36287, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Crusader EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36288, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Malediction EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36289, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Anathema EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36290, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Sentinel EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36291, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Vengeance EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36292, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Retribution EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36293, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Avatar EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36294, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pilgrim EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36295, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Guardian EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36296, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Zealot EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36297, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Devoter EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36298, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sacrilege EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36299, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Purifier EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36300, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prorator EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36301, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Impel EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36302, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prophecy EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36303, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Coercer EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36304, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Imperial Navy Slicer EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36305, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Omen Navy Issue EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36306, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Apocalypse Navy Issue EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36307, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Revelation EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36308, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sigil EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36309, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Curse EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36310, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Providence EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36311, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Redeemer EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36312, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Absolution EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36313, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Heretic EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36314, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Damnation EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36315, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Archon EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36316, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Aeon EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36317, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Abaddon EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36318, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Harbinger EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36319, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Paladin EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36320, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ark EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36321, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magnate EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36322, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Augoror Navy Issue EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36323, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Armageddon Navy Issue EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36324, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Dragoon EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36325, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Harbinger Navy Issue EoM SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36326, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bantam Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36327, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Condor Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36328, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36329, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Heron Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36330, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Moa Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36331, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Blackbird Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36332, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scorpion Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36333, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Badger Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36334, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Leviathan Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36335, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Crow Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36336, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Raptor Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36337, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Buzzard Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36338, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Kitsune Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36339, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hawk Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36340, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Harpy Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36341, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Falcon Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36342, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rook Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36343, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Basilisk Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36344, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cerberus Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36345, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Onyx Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36346, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Eagle Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36347, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Manticore Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36348, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crane Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36349, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bustard Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36350, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ferox Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36351, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cormorant Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36352, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Caldari Navy Hookbill Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36353, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Caracal Navy Issue Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36354, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Raven Navy Issue Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36355, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Widow Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36356, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vulture Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36357, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Flycatcher Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36358, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nighthawk Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36359, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Chimera Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36360, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Drake Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36361, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Golem Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36362, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rhea Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36363, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Osprey Navy Issue Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36364, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scorpion Navy Issue Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36365, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Corax Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36366, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Drake Navy Issue Wiyrkomi SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36367, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tristan Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36368, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Incursus Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36369, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thorax Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36370, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nereus Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36371, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kryos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36372, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Epithal Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36373, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Miasmos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36374, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Iteron Mark V Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36375, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Erebus Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36376, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36377, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Helios Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36378, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Keres Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36379, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Taranis Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36380, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Ares Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36381, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Nemesis Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36382, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Arazu Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36383, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Lachesis Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36384, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Oneiros Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36385, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ishtar Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36386, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Phobos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36387, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deimos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36388, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Ishkur Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36389, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Enyo Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36390, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Viator Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36391, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Occator Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36392, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Megathron Navy Issue Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36393, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Federation Navy Comet Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36394, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vexor Navy Issue Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36395, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Moros Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36396, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Obelisk Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36397, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sin Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36398, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Eos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36399, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Eris Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36400, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Astarte Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36401, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thanatos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36402, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nyx Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36403, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyperion Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36404, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kronos Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36405, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Anshar Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36406, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Exequror Navy Issue Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36407, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Dominix Navy Issue Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36408, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Brutix Navy Issue Intaki Syndicate SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36409, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36410, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36411, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36412, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36413, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36414, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36415, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36416, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36417, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36418, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36419, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36420, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36421, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36422, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36423, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36424, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Cheetah Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36425, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Claw Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36426, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Stiletto Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36427, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Wolf Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36428, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hyena Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36429, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Jaguar Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36430, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36431, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36432, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36433, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36434, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36435, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36436, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hound Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36437, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36438, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36439, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36440, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36441, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Fleet Issue Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36442, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Fleet Issue Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36443, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Republic Fleet Firetail Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36444, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36445, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36446, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36447, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Sabre Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36448, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36449, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36450, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36451, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36452, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36453, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36454, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36455, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Fleet Issue Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36456, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Fleet Issue Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36457, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Justice SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 36458, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Fleet Issue Justice SKIN (Permanent)"
   }, 
   {
     "volume": 0.01, 
@@ -150313,6 +151678,13 @@
     "groupID": 351210, 
     "market": true, 
     "typeName": "Gunnlogi C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 351296, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Blaster"
   }, 
   {
     "volume": 0.01, 
@@ -150802,7 +152174,7 @@
     "typeID": 352044, 
     "groupID": 351121, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -151086,6 +152458,13 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 352522, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "Miasma Grenade"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 352526, 
     "groupID": 350858, 
     "market": false, 
@@ -151181,6 +152560,20 @@
     "groupID": 351064, 
     "market": true, 
     "typeName": "Militia Gallente Light Frame"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 352597, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "[DEV] Amarr Crusader Dropsuit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 352598, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "[DEV] Amarr Crusader Dropsuit"
   }, 
   {
     "volume": 0.01, 
@@ -152510,7 +153903,7 @@
     "typeID": 353393, 
     "groupID": 351648, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -158093,6 +159486,13 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 356915, 
+    "groupID": 351648, 
+    "market": true, 
+    "typeName": "Neural Trainer"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 356918, 
     "groupID": 351844, 
     "market": true, 
@@ -158862,6 +160262,20 @@
     "typeName": "Sentinel gk.0"
   }, 
   {
+    "volume": 0.0, 
+    "typeID": 364043, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "[TEST] Dropsuit missing CATMA data"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 364050, 
+    "groupID": 351064, 
+    "market": false, 
+    "typeName": "Coming Soon"
+  }, 
+  {
     "volume": 0.01, 
     "typeID": 364094, 
     "groupID": 354641, 
@@ -159090,7 +160504,7 @@
     "typeID": 364269, 
     "groupID": 351648, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -159237,7 +160651,7 @@
     "typeID": 364430, 
     "groupID": 351648, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -161155,7 +162569,7 @@
     "typeID": 365422, 
     "groupID": 351121, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -162793,7 +164207,7 @@
     "typeID": 366131, 
     "groupID": 351210, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.01, 
@@ -164970,7 +166384,7 @@
     "typeID": 367380, 
     "groupID": 351648, 
     "market": false, 
-    "typeName": " "
+    "typeName": ""
   }, 
   {
     "volume": 0.0, 
@@ -165012,28 +166426,28 @@
     "typeID": 367442, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Frontline Special Issue Mk II-A"
+    "typeName": "'Sarak' Assault A-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 367443, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Frontline Special Issue Mk II-C"
+    "typeName": "'Ukko' Assault C-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 367450, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Frontline Special Issue Mk II-M"
+    "typeName": "'Magni' Assault M-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 367451, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Frontline Special Issue Mk II-G"
+    "typeName": "'Memnon' Assault G-I"
   }, 
   {
     "volume": 0.01, 
@@ -165069,20 +166483,6 @@
     "groupID": 350858, 
     "market": true, 
     "typeName": "Militia Flaylock Pistol"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 367477, 
-    "groupID": 350858, 
-    "market": true, 
-    "typeName": "Kubo s GMK-16 Plasma Cannon"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 367489, 
-    "groupID": 350858, 
-    "market": true, 
-    "typeName": "Beacon s ELI-74 Swarm Launcher"
   }, 
   {
     "volume": 0.0, 
@@ -165132,13 +166532,6 @@
     "groupID": 350858, 
     "market": true, 
     "typeName": "Darth's GIO-66 Scrambler Rifle"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 367541, 
-    "groupID": 350858, 
-    "market": true, 
-    "typeName": "Viktor s NEG-1 Laser Rifle"
   }, 
   {
     "volume": 0.01, 
@@ -165237,6 +166630,13 @@
     "groupID": 367594, 
     "market": true, 
     "typeName": "APEX 'Dominus' Sentinel"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 367607, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Test Suit"
   }, 
   {
     "volume": 0.01, 
@@ -165887,56 +167287,56 @@
     "typeID": 368061, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Amarr Combat Standard Loadout"
+    "typeName": "'Hastati' Basic-M A-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368062, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Amarr Combat Advanced Loadout"
+    "typeName": "'Principe' Basic-M ak.0"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368064, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Gallente Combat Standard Loadout"
+    "typeName": "'Toxotai' Basic-M G-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368065, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Gallente Combat Advanced Loadout"
+    "typeName": "'Phalanx' Basic-M gk.0"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368066, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Minmatar Combat Standard Loadout"
+    "typeName": "'Grettir' Basic-M M-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368067, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Minmatar Combat Advanced Loadout"
+    "typeName": "'Kari' Basic-M mk.0"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368069, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Caldari Combat Standard Loadout"
+    "typeName": "'Kullervo' Basic-M C-I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 368071, 
     "groupID": 351064, 
     "market": true, 
-    "typeName": "Caldari Combat Advanced Loadout"
+    "typeName": "'Tarapitha' Basic-M ck.0"
   }, 
   {
     "volume": 0.01, 
@@ -166661,13 +168061,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 368777, 
-    "groupID": 351121, 
-    "market": true, 
-    "typeName": "Krin s LEX -71 Damage Modifier"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 368880, 
     "groupID": 351210, 
     "market": true, 
@@ -166927,10 +168320,24 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 369113, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Blood Raiders' AM-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 369115, 
     "groupID": 368726, 
     "market": true, 
     "typeName": "'Serpentis' GA-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369116, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Angel Cartel' MN-M SKIN"
   }, 
   {
     "volume": 0.01, 
@@ -167092,5 +168499,712 @@
     "groupID": 368726, 
     "market": true, 
     "typeName": "'Thukker' MN-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369246, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Kador' AM-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369247, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Ishukone' CA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369248, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Duvolle' GA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369249, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Thukker' MN-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369250, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Guristas' CA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369251, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Serpentis' GA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369255, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Legacy' AM-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369256, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Legacy' CA-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369257, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Legacy' GA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369258, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Legacy' MN-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369263, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Tash-Murkon' AM-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369264, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Kaalakiota' CA-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369265, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Roden' GA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369266, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Brutor' MN-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369267, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Tash-Murkon' AM-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369268, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Kaalakiota' CA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369269, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Roden' GA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369270, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Brutor' MN-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369271, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' AM-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369272, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' CA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369273, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' GA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369274, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' MN-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369275, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' AM-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369276, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' CA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369277, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' GA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369278, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' MN-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369279, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' AM-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369280, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' CA-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369281, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' GA-M SKIN"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 369282, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Quafe' MN-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369294, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Sever' AM-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369295, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Sever' CA-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369296, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Valor' GA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369297, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Raven' MN-L SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369408, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Assault A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369409, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Assault C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369410, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Assault G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369411, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Assault M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369412, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Commando A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369413, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Commando C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369414, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Commando G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369415, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Commando M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369416, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Logistics A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369417, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Logistics C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369418, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Logistics G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369419, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Logistics M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369420, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Scout A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369421, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Scout C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369422, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Scout G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369423, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Scout M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369424, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Sentinel A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369425, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Sentinel C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369426, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Sentinel G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369427, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "Standard Sentinel M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369434, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Krin's' MN-M SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369435, 
+    "groupID": 368726, 
+    "market": true, 
+    "typeName": "'Lethe' GA-H SKIN"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369438, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Egil' Basic-M M/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369439, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Thrud' Assault M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369440, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Vidir' Assault mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369441, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Forseti' Assault M/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369442, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Modi' Assault mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369443, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Hermod' Assault M/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369451, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Jokul' Basic-M M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369452, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Starkad' Basic-M mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369453, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Kakali' Basic-M M/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369469, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Numeri' Basic-M A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369470, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Legio' Basic-M ak.0"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 369471, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Vexillatio' Basic-M A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369472, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Triari' Basic-M A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369475, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Nakir' Assault A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369476, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Malik' Assault A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369477, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Tuoni' Assault C/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369478, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Stallo' Assault C/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369479, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Celeus' Assault G/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369480, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Theseus' Assault G/I"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 369481, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Marras' Basic-M C/I"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 369482, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Agema' Basic-M G/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369507, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Halberd' Basic-L A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369508, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Partisan' Basic-L ak.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369509, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Ranseur' Basic-L A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369510, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Piru' Basic-L C-I"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 369511, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Lempo' Basic-L ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369512, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Perkele' Basic-L C/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369513, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Melete' Basic-L G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369514, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Aoide' Basic-L gk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369515, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Calliope' Basic-L G/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369516, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Skadi' Basic-L M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369517, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Jord' Basic-L mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369518, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Sol' Basic-L M/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369539, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Aventail' Basic-H A-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369540, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Vambrace' Basic-H ak.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369541, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Cuirass' Basic-H A/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369542, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Guruwa' Basic-H C-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369543, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Kote' Basic-H ck.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369544, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Menpo' Basic-H C/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369545, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Hecaton' Basic-H G-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369546, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Alcyon' Basic-H gk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369547, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Mimas' Basic-H G/I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369548, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Basilo' Basic-H M-I"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369549, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Dorudon' Basic-H mk.0"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 369550, 
+    "groupID": 351064, 
+    "market": true, 
+    "typeName": "'Loceros' Basic-H M/I"
   }
 ]

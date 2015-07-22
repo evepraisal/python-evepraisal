@@ -74,14 +74,18 @@ SELECT
     marketGroupID
 FROM invtypes'''):
 
-        print("Populating info for: %s" % type_name.encode('utf-8'))
+        print("Populating info for: %s" % type_name)
+        try:
+            type_name = type_name.decode('utf-8')
+        except UnicodeDecodeError:
+            continue
 
         has_market = market_group_id is not None
         d = {
             'typeID': type_id,
             'groupID': group_id,
             'typeName': type_name,
-            'volume': volume,
+            'volume': volume or 0.0,
             'market': has_market,
         }
 
@@ -111,6 +115,7 @@ def main():
         print("Opening database file")
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
+        conn.text_factory = str
         c = conn.cursor()
 
         print("Build type information")
