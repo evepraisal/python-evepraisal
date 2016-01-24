@@ -1068,7 +1068,7 @@
     "typeID": 405, 
     "groupID": 41, 
     "market": true, 
-    "typeName": "Micro' Remote Shield Booster"
+    "typeName": "'Micro' Remote Shield Booster"
   }, 
   {
     "volume": 2.5, 
@@ -21759,7 +21759,7 @@
     "typeID": 5321, 
     "groupID": 291, 
     "market": true, 
-    "typeName": "C-IR Compact Guidance Disruptor I"
+    "typeName": "C-IR Compact Guidance Disruptor"
   }, 
   {
     "volume": 5.0, 
@@ -29903,7 +29903,7 @@
     "typeName": "Medium Remote Armor Repairer I Blueprint"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 25.0, 
     "typeID": 11359, 
     "groupID": 325, 
     "market": true, 
@@ -33767,7 +33767,7 @@
     "typeName": "Capital Remote Capacitor Transmitter II Blueprint"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 5.0, 
     "typeID": 12225, 
     "groupID": 67, 
     "market": true, 
@@ -49755,14 +49755,14 @@
     "typeName": "Medium Solace Scoped Remote Armor Repairer"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 25.0, 
     "typeID": 16449, 
     "groupID": 325, 
     "market": true, 
     "typeName": "Large I-ax Enduring Remote Armor Repairer"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 25.0, 
     "typeID": 16451, 
     "groupID": 325, 
     "market": true, 
@@ -49776,7 +49776,7 @@
     "typeName": "Large 'Arup' Remote Armor Repairer"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 25.0, 
     "typeID": 16455, 
     "groupID": 325, 
     "market": true, 
@@ -78854,14 +78854,14 @@
     "typeID": 22931, 
     "groupID": 291, 
     "market": true, 
-    "typeName": "'Distributor' Guidance Disruptor I"
+    "typeName": "'Distributor' Guidance Disruptor"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22932, 
     "groupID": 343, 
     "market": false, 
-    "typeName": "'Distributor' Guidance Disruptor I Blueprint"
+    "typeName": "'Distributor' Guidance Disruptor Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -81643,7 +81643,7 @@
     "typeName": "'Brotherhood' Small Remote Armor Repairer Blueprint"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 25.0, 
     "typeID": 23416, 
     "groupID": 325, 
     "market": true, 
@@ -110639,7 +110639,7 @@
     "typeName": "Covert Cynosural Field Generator I Blueprint"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 65449847.0, 
     "typeID": 28650, 
     "groupID": 897, 
     "market": false, 
@@ -111272,7 +111272,7 @@
     "volume": 585.0, 
     "typeID": 28770, 
     "groupID": 361, 
-    "market": false, 
+    "market": true, 
     "typeName": "Syndicate Mobile Large Warp Disruptor"
   }, 
   {
@@ -111286,7 +111286,7 @@
     "volume": 195.0, 
     "typeID": 28772, 
     "groupID": 361, 
-    "market": false, 
+    "market": true, 
     "typeName": "Syndicate Mobile Medium Warp Disruptor"
   }, 
   {
@@ -111300,7 +111300,7 @@
     "volume": 65.0, 
     "typeID": 28774, 
     "groupID": 361, 
-    "market": false, 
+    "market": true, 
     "typeName": "Syndicate Mobile Small Warp Disruptor"
   }, 
   {
@@ -128657,7 +128657,7 @@
     "typeName": "Republic Fleet Target Painter Blueprint"
   }, 
   {
-    "volume": 50.0, 
+    "volume": 5.0, 
     "typeID": 31946, 
     "groupID": 67, 
     "market": true, 
@@ -150389,21 +150389,21 @@
     "typeID": 35832, 
     "groupID": 1320, 
     "market": false, 
-    "typeName": "Medium Citadel"
+    "typeName": "Astrahus"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35833, 
     "groupID": 1320, 
     "market": false, 
-    "typeName": "Large Citadel"
+    "typeName": "Fortizar"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35834, 
     "groupID": 1320, 
     "market": false, 
-    "typeName": "X-Large Citadel"
+    "typeName": "Keepstar"
   }, 
   {
     "volume": 4000.0, 
@@ -150809,301 +150809,301 @@
     "typeID": 35921, 
     "groupID": 1327, 
     "market": false, 
-    "typeName": "Anti-Ship Launcher"
+    "typeName": "Structure Anti-Ship Launcher"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35922, 
-    "groupID": 1327, 
+    "groupID": 1562, 
     "market": false, 
-    "typeName": "Flak Launcher"
+    "typeName": "Structure Flak Launcher"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35923, 
     "groupID": 1328, 
     "market": false, 
-    "typeName": "AoE Missile Launcher"
+    "typeName": "Structure AoE Missile Launcher"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35924, 
     "groupID": 1329, 
     "market": false, 
-    "typeName": "LXL Energy Neutralizer"
+    "typeName": "Structure LXL Energy Neutralizer"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35925, 
     "groupID": 1329, 
     "market": false, 
-    "typeName": "SM Energy Neutralizer"
+    "typeName": "Structure SM Energy Neutralizer"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35926, 
     "groupID": 1330, 
     "market": false, 
-    "typeName": "Point Defense Battery"
+    "typeName": "Structure Point Defense Battery"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35927, 
     "groupID": 1434, 
     "market": false, 
-    "typeName": "Ship Tractor Beam"
+    "typeName": "Structure Ship Tractor Beam"
   }, 
   {
     "volume": 64000.0, 
     "typeID": 35928, 
     "groupID": 1333, 
     "market": false, 
-    "typeName": "Doomsday Zapping Beam"
+    "typeName": "Structure Doomsday Zapping Beam"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35929, 
     "groupID": 1439, 
     "market": false, 
-    "typeName": "Remote Capacitor Transmitter"
+    "typeName": "Structure Remote Capacitor Transmitter"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35930, 
     "groupID": 1418, 
     "market": false, 
-    "typeName": "Armored Targeted Link"
+    "typeName": "Structure Armored Targeted Link"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35931, 
     "groupID": 1418, 
     "market": false, 
-    "typeName": "Information Targeted Link"
+    "typeName": "Structure Information Targeted Link"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35932, 
     "groupID": 1418, 
     "market": false, 
-    "typeName": "Siege Targeted Link"
+    "typeName": "Structure Siege Targeted Link"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35933, 
     "groupID": 1418, 
     "market": false, 
-    "typeName": "Skirmish Targeted Link"
+    "typeName": "Structure Skirmish Targeted Link"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35934, 
     "groupID": 1418, 
     "market": false, 
-    "typeName": "Mining Targeted Link"
+    "typeName": "Structure Mining Targeted Link"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35935, 
     "groupID": 1419, 
     "market": false, 
-    "typeName": "Remote Armor Repairer"
+    "typeName": "Structure Remote Armor Repairer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35936, 
     "groupID": 1438, 
     "market": false, 
-    "typeName": "Remote Hull Repairer"
+    "typeName": "Structure Remote Hull Repairer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35937, 
     "groupID": 1437, 
     "market": false, 
-    "typeName": "Remote Shield Booster"
+    "typeName": "Structure Remote Shield Booster"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35938, 
     "groupID": 1420, 
     "market": false, 
-    "typeName": "Drone Link Augmentor"
+    "typeName": "Structure Drone Link Augmentor"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35939, 
     "groupID": 1331, 
     "market": false, 
-    "typeName": "Bumping Module"
+    "typeName": "Structure Bumping Module"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35940, 
     "groupID": 1332, 
     "market": false, 
-    "typeName": "Multi-spectrum ECM"
+    "typeName": "Structure Multi-spectrum ECM"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35941, 
     "groupID": 1431, 
     "market": false, 
-    "typeName": "Remote Sensor Dampener"
+    "typeName": "Structure Remote Sensor Dampener"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35943, 
     "groupID": 1441, 
     "market": false, 
-    "typeName": "Stasis Webifier"
+    "typeName": "Structure Stasis Webifier"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35944, 
     "groupID": 1441, 
     "market": false, 
-    "typeName": "Stasis Webifier Generator"
+    "typeName": "Structure Stasis Webifier Generator"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35945, 
     "groupID": 1432, 
     "market": false, 
-    "typeName": "Tracking Disruptor"
+    "typeName": "Structure Tracking Disruptor"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35947, 
     "groupID": 1433, 
     "market": false, 
-    "typeName": "Target Painter"
+    "typeName": "Structure Target Painter"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35949, 
     "groupID": 1442, 
     "market": false, 
-    "typeName": "Warp Disruptor"
+    "typeName": "Structure Warp Disruptor"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35950, 
     "groupID": 1442, 
     "market": false, 
-    "typeName": "Warp Disruptor Generator"
+    "typeName": "Structure Warp Disruptor Generator"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35951, 
     "groupID": 1332, 
     "market": false, 
-    "typeName": "ECCM Projector"
+    "typeName": "Structure ECCM Projector"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35952, 
     "groupID": 1425, 
     "market": false, 
-    "typeName": "Remote Sensor Booster"
+    "typeName": "Structure Remote Sensor Booster"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35953, 
     "groupID": 1424, 
     "market": false, 
-    "typeName": "Sensor Booster"
+    "typeName": "Structure Sensor Booster"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35954, 
     "groupID": 1427, 
     "market": false, 
-    "typeName": "Remote Missile Guidance Computer"
+    "typeName": "Structure Remote Missile Guidance Computer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35955, 
     "groupID": 1421, 
     "market": false, 
-    "typeName": "Remote Tracking Computer"
+    "typeName": "Structure Remote Tracking Computer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35956, 
     "groupID": 1423, 
     "market": false, 
-    "typeName": "Tracking Computer"
+    "typeName": "Structure Tracking Computer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35957, 
     "groupID": 1426, 
     "market": false, 
-    "typeName": "Missile Guidance Computer"
+    "typeName": "Structure Missile Guidance Computer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35958, 
     "groupID": 1428, 
     "market": false, 
-    "typeName": "Drone Navigation Computer"
+    "typeName": "Structure Drone Navigation Computer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35959, 
     "groupID": 1429, 
     "market": false, 
-    "typeName": "Missile Weapon Upgrade"
+    "typeName": "Structure Ballistic Control System"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35961, 
     "groupID": 1443, 
     "market": false, 
-    "typeName": "Tracking Enhancer"
+    "typeName": "Structure Tracking Enhancer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35962, 
     "groupID": 1444, 
     "market": false, 
-    "typeName": "Guidance Enhancer"
+    "typeName": "Structure Guidance Enhancer"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35963, 
     "groupID": 1430, 
     "market": false, 
-    "typeName": "Co-Processor"
+    "typeName": "Structure Co-Processor"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35964, 
     "groupID": 1436, 
     "market": false, 
-    "typeName": "Power Diagnostic System"
+    "typeName": "Structure Power Diagnostic System"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35965, 
     "groupID": 1435, 
     "market": false, 
-    "typeName": "Reactor Control Unit"
+    "typeName": "Structure Reactor Control Unit"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35966, 
     "groupID": 1440, 
     "market": false, 
-    "typeName": "Drone Damage Amplifier"
+    "typeName": "Structure Drone Damage Amplifier"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35967, 
     "groupID": 1445, 
     "market": false, 
-    "typeName": "Drone Tracking Enhancer"
+    "typeName": "Structure Drone Tracking Enhancer"
   }, 
   {
     "volume": 0.01, 
@@ -154708,21 +154708,21 @@
     "typeID": 36966, 
     "groupID": 1462, 
     "market": false, 
-    "typeName": "Medium Citadel Blueprint"
+    "typeName": "Astrahus Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 36967, 
     "groupID": 1462, 
     "market": false, 
-    "typeName": "Large Citadel Blueprint"
+    "typeName": "Fortizar Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 36968, 
     "groupID": 1462, 
     "market": false, 
-    "typeName": "X-Large Citadel Blueprint"
+    "typeName": "Keepstar Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155903,371 +155903,371 @@
   {
     "volume": 10.0, 
     "typeID": 37146, 
-    "groupID": 1509, 
+    "groupID": 1570, 
     "market": false, 
     "typeName": "Medium Tech I Small Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37147, 
-    "groupID": 1509, 
+    "groupID": 1570, 
     "market": false, 
     "typeName": "Medium Tech I Small Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37148, 
-    "groupID": 1509, 
+    "groupID": 1579, 
     "market": false, 
     "typeName": "Medium Tech I Medium Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37149, 
-    "groupID": 1509, 
+    "groupID": 1579, 
     "market": false, 
     "typeName": "Medium Tech I Medium Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37150, 
-    "groupID": 1509, 
+    "groupID": 1580, 
     "market": false, 
     "typeName": "Medium Tech I Large Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37151, 
-    "groupID": 1509, 
+    "groupID": 1580, 
     "market": false, 
     "typeName": "Medium Tech I Large Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37152, 
-    "groupID": 1509, 
+    "groupID": 1581, 
     "market": false, 
     "typeName": "Medium Tech II Small Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37153, 
-    "groupID": 1509, 
+    "groupID": 1581, 
     "market": false, 
     "typeName": "Medium Tech II Small Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37154, 
-    "groupID": 1509, 
+    "groupID": 1582, 
     "market": false, 
     "typeName": "Medium Tech II Medium Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37155, 
-    "groupID": 1509, 
+    "groupID": 1582, 
     "market": false, 
     "typeName": "Medium Tech II Medium Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37156, 
-    "groupID": 1509, 
+    "groupID": 1583, 
     "market": false, 
     "typeName": "Medium Tech II Large Ship Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37157, 
-    "groupID": 1509, 
+    "groupID": 1583, 
     "market": false, 
     "typeName": "Medium Tech II Large Ship Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37158, 
-    "groupID": 1509, 
+    "groupID": 1584, 
     "market": false, 
     "typeName": "Medium Drone Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37159, 
-    "groupID": 1509, 
+    "groupID": 1584, 
     "market": false, 
     "typeName": "Medium Drone Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37160, 
-    "groupID": 1509, 
+    "groupID": 1585, 
     "market": false, 
     "typeName": "Medium Consumable Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37161, 
-    "groupID": 1509, 
+    "groupID": 1585, 
     "market": false, 
     "typeName": "Medium Consumable Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37162, 
-    "groupID": 1509, 
+    "groupID": 1586, 
     "market": false, 
     "typeName": "Medium Module Manufacturing I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37163, 
-    "groupID": 1509, 
+    "groupID": 1586, 
     "market": false, 
     "typeName": "Medium Module Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37164, 
-    "groupID": 1509, 
+    "groupID": 1587, 
     "market": false, 
     "typeName": "Large Module, Consumable, Drone Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37165, 
-    "groupID": 1509, 
+    "groupID": 1587, 
     "market": false, 
     "typeName": "Large Module, Consumable, Drone Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37166, 
-    "groupID": 1509, 
+    "groupID": 1588, 
     "market": false, 
     "typeName": "Large Tech I Ship Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37167, 
-    "groupID": 1509, 
+    "groupID": 1588, 
     "market": false, 
     "typeName": "Large Tech I Ship Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37168, 
-    "groupID": 1509, 
+    "groupID": 1589, 
     "market": false, 
     "typeName": "Large Tech II Ship Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37169, 
-    "groupID": 1509, 
+    "groupID": 1589, 
     "market": false, 
     "typeName": "Large Tech II Ship Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37170, 
-    "groupID": 1509, 
+    "groupID": 1590, 
     "market": false, 
     "typeName": "Large Tech II Component Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37171, 
-    "groupID": 1509, 
+    "groupID": 1590, 
     "market": false, 
     "typeName": "Large Tech II Component Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37172, 
-    "groupID": 1509, 
+    "groupID": 1591, 
     "market": false, 
     "typeName": "Large Tech I Capital Component Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37173, 
-    "groupID": 1509, 
+    "groupID": 1591, 
     "market": false, 
     "typeName": "Large Tech I Capital Component Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37174, 
-    "groupID": 1509, 
+    "groupID": 1592, 
     "market": false, 
     "typeName": "Large Structure Component Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37175, 
-    "groupID": 1509, 
+    "groupID": 1592, 
     "market": false, 
     "typeName": "Large Structure Component Manufacturing II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37176, 
-    "groupID": 1509, 
+    "groupID": 1593, 
     "market": false, 
     "typeName": "Large Tech I Subsystem Manufacturing I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37177, 
-    "groupID": 1509, 
+    "groupID": 1593, 
     "market": false, 
     "typeName": "Large Tech I Subsystem Manufacturing II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37178, 
-    "groupID": 1509, 
+    "groupID": 1594, 
     "market": false, 
     "typeName": "X-Large Equipment Manufacturing I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37179, 
-    "groupID": 1509, 
+    "groupID": 1594, 
     "market": false, 
     "typeName": "X-Large Equipment Manufacturing II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37180, 
-    "groupID": 1509, 
+    "groupID": 1595, 
     "market": false, 
     "typeName": "X-Large Ship Manufacturing I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37181, 
-    "groupID": 1509, 
+    "groupID": 1595, 
     "market": false, 
     "typeName": "X-Large Ship Manufacturing II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37182, 
-    "groupID": 1509, 
+    "groupID": 1596, 
     "market": false, 
     "typeName": "X-Large All Components Manufacturing I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37183, 
-    "groupID": 1509, 
+    "groupID": 1596, 
     "market": false, 
     "typeName": "X-Large All Components Manufacturing II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37184, 
-    "groupID": 1510, 
+    "groupID": 1598, 
     "market": false, 
     "typeName": "Medium Tech I Small Ship Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37185, 
-    "groupID": 1510, 
+    "groupID": 1598, 
     "market": false, 
     "typeName": "Medium Tech I Small Ship Research II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37186, 
-    "groupID": 1510, 
+    "groupID": 1599, 
     "market": false, 
     "typeName": "Medium Tech I Medium Ship Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37187, 
-    "groupID": 1510, 
+    "groupID": 1599, 
     "market": false, 
     "typeName": "Medium Tech I Medium Ship Research II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37188, 
-    "groupID": 1510, 
+    "groupID": 1600, 
     "market": false, 
     "typeName": "Medium Tech I Large Ship Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37190, 
-    "groupID": 1510, 
+    "groupID": 1601, 
     "market": false, 
     "typeName": "Medium Drone Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37191, 
-    "groupID": 1510, 
+    "groupID": 1601, 
     "market": false, 
     "typeName": "Medium Drone Research II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37192, 
-    "groupID": 1510, 
+    "groupID": 1602, 
     "market": false, 
     "typeName": "Medium Consumable Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37193, 
-    "groupID": 1510, 
+    "groupID": 1602, 
     "market": false, 
     "typeName": "Medium Consumable Research II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37194, 
-    "groupID": 1510, 
+    "groupID": 1603, 
     "market": false, 
     "typeName": "Medium Module Research I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37195, 
-    "groupID": 1510, 
+    "groupID": 1603, 
     "market": false, 
     "typeName": "Medium Module Research II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37196, 
-    "groupID": 1510, 
+    "groupID": 1604, 
     "market": false, 
     "typeName": "Large Module, Consumable, Drone Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37197, 
-    "groupID": 1510, 
+    "groupID": 1604, 
     "market": false, 
     "typeName": "Large Module, Consumable, Drone Research II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37198, 
-    "groupID": 1510, 
+    "groupID": 1605, 
     "market": false, 
     "typeName": "Large Tech I Ship Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37199, 
-    "groupID": 1510, 
+    "groupID": 1605, 
     "market": false, 
     "typeName": "Large Tech I Ship Research II"
   }, 
@@ -156288,588 +156288,588 @@
   {
     "volume": 20.0, 
     "typeID": 37202, 
-    "groupID": 1510, 
+    "groupID": 1606, 
     "market": false, 
     "typeName": "Large Tech II Component Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37203, 
-    "groupID": 1510, 
+    "groupID": 1606, 
     "market": false, 
     "typeName": "Large Tech II Component Research II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37204, 
-    "groupID": 1510, 
+    "groupID": 1607, 
     "market": false, 
     "typeName": "Large Tech I Capital Component Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37205, 
-    "groupID": 1510, 
+    "groupID": 1607, 
     "market": false, 
     "typeName": "Large Tech I Capital Component Research II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37206, 
-    "groupID": 1510, 
+    "groupID": 1608, 
     "market": false, 
     "typeName": "Large Structure Component Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37207, 
-    "groupID": 1510, 
+    "groupID": 1608, 
     "market": false, 
     "typeName": "Large Structure Component Research II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37208, 
-    "groupID": 1510, 
+    "groupID": 1609, 
     "market": false, 
     "typeName": "Large Tech I Subsystem Research I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37209, 
-    "groupID": 1510, 
+    "groupID": 1609, 
     "market": false, 
     "typeName": "Large Tech I Subsystem Research II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37210, 
-    "groupID": 1510, 
+    "groupID": 1610, 
     "market": false, 
     "typeName": "X-Large Equipment Research I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37211, 
-    "groupID": 1510, 
+    "groupID": 1610, 
     "market": false, 
     "typeName": "X-Large Equipment Research II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37212, 
-    "groupID": 1510, 
+    "groupID": 1611, 
     "market": false, 
     "typeName": "X-Large Ship Research I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37213, 
-    "groupID": 1510, 
+    "groupID": 1611, 
     "market": false, 
     "typeName": "X-Large Ship Research II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37214, 
-    "groupID": 1510, 
+    "groupID": 1612, 
     "market": false, 
     "typeName": "X-Large All Components Research I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37215, 
-    "groupID": 1510, 
+    "groupID": 1612, 
     "market": false, 
     "typeName": "X-Large All Components Research II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37216, 
-    "groupID": 1511, 
+    "groupID": 1613, 
     "market": false, 
     "typeName": "Medium Missile Application I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37217, 
-    "groupID": 1511, 
+    "groupID": 1613, 
     "market": false, 
     "typeName": "Medium Missile Application II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37218, 
-    "groupID": 1511, 
+    "groupID": 1615, 
     "market": false, 
     "typeName": "Medium Energy Neutralizer Projection I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37219, 
-    "groupID": 1511, 
+    "groupID": 1615, 
     "market": false, 
     "typeName": "Medium Energy Neutralizer Projection II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37220, 
-    "groupID": 1511, 
+    "groupID": 1614, 
     "market": false, 
     "typeName": "Medium Missile Projection I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37221, 
-    "groupID": 1511, 
+    "groupID": 1614, 
     "market": false, 
     "typeName": "Medium Missile Projection II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37222, 
-    "groupID": 1511, 
+    "groupID": 1616, 
     "market": false, 
     "typeName": "Medium Energy Neutralizer Cap Reduction I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37223, 
-    "groupID": 1511, 
+    "groupID": 1616, 
     "market": false, 
     "typeName": "Medium Energy Neutralizer Cap Reduction II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37224, 
-    "groupID": 1511, 
+    "groupID": 1617, 
     "market": false, 
     "typeName": "Medium Drone Application I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37225, 
-    "groupID": 1511, 
+    "groupID": 1617, 
     "market": false, 
     "typeName": "Medium Drone Application II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37226, 
-    "groupID": 1511, 
+    "groupID": 1618, 
     "market": false, 
     "typeName": "Medium Drone Projection I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37227, 
-    "groupID": 1511, 
+    "groupID": 1618, 
     "market": false, 
     "typeName": "Medium Drone Projection II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37228, 
-    "groupID": 1511, 
+    "groupID": 1619, 
     "market": false, 
     "typeName": "Medium Electronic Warfare Projection I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37229, 
-    "groupID": 1511, 
+    "groupID": 1619, 
     "market": false, 
     "typeName": "Medium Electronic Warfare Projection II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37230, 
-    "groupID": 1511, 
+    "groupID": 1620, 
     "market": false, 
     "typeName": "Medium Electronic Warfare Cap Reduction I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37231, 
-    "groupID": 1511, 
+    "groupID": 1620, 
     "market": false, 
     "typeName": "Medium Electronic Warfare Cap Reduction II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37232, 
-    "groupID": 1511, 
+    "groupID": 1621, 
     "market": false, 
     "typeName": "Medium Structure Targeting I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37233, 
-    "groupID": 1511, 
+    "groupID": 1621, 
     "market": false, 
     "typeName": "Medium Structure Targeting II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37234, 
-    "groupID": 1511, 
+    "groupID": 1622, 
     "market": false, 
     "typeName": "Medium Structure Sensor Resolution I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37235, 
-    "groupID": 1511, 
+    "groupID": 1622, 
     "market": false, 
     "typeName": "Medium Structure Sensor Resolution II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37236, 
-    "groupID": 1511, 
+    "groupID": 1623, 
     "market": false, 
     "typeName": "Medium Office Number I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37237, 
-    "groupID": 1511, 
+    "groupID": 1623, 
     "market": false, 
     "typeName": "Medium Office Number II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37238, 
-    "groupID": 1511, 
+    "groupID": 1624, 
     "market": false, 
     "typeName": "Medium Jump Clone Number I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37239, 
-    "groupID": 1511, 
+    "groupID": 1624, 
     "market": false, 
     "typeName": "Medium Jump Clone Number II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37240, 
-    "groupID": 1511, 
+    "groupID": 1625, 
     "market": false, 
     "typeName": "Medium Jump Clone Tax I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37241, 
-    "groupID": 1511, 
+    "groupID": 1625, 
     "market": false, 
     "typeName": "Medium Jump Clone Tax II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37242, 
-    "groupID": 1511, 
+    "groupID": 1626, 
     "market": false, 
     "typeName": "Medium Planetary Production Increase I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37243, 
-    "groupID": 1511, 
+    "groupID": 1626, 
     "market": false, 
     "typeName": "Medium Planetary Production Increase II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37244, 
-    "groupID": 1511, 
+    "groupID": 1627, 
     "market": false, 
     "typeName": "Medium Customs Office Tax Reduction I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37245, 
-    "groupID": 1511, 
+    "groupID": 1627, 
     "market": false, 
     "typeName": "Medium Customs Office Tax Reduction II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37247, 
-    "groupID": 1511, 
+    "groupID": 1628, 
     "market": false, 
     "typeName": "Medium Loyalty Point Store Reduction II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37248, 
-    "groupID": 1511, 
+    "groupID": 1629, 
     "market": false, 
     "typeName": "Large Missile Application and Projection I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37249, 
-    "groupID": 1511, 
+    "groupID": 1629, 
     "market": false, 
     "typeName": "Large Missile Application and Projection II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37250, 
-    "groupID": 1511, 
+    "groupID": 1630, 
     "market": false, 
     "typeName": "Large Energy Neutralizer Projection and Cap Reduction I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37251, 
-    "groupID": 1511, 
+    "groupID": 1630, 
     "market": false, 
     "typeName": "Large Energy Neutralizer Projection and Cap Reduction II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37252, 
-    "groupID": 1511, 
+    "groupID": 1631, 
     "market": false, 
     "typeName": "Large Drone Application and Projection I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37253, 
-    "groupID": 1511, 
+    "groupID": 1631, 
     "market": false, 
     "typeName": "Large Drone Application and Projection II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37254, 
-    "groupID": 1511, 
+    "groupID": 1632, 
     "market": false, 
     "typeName": "Large Electronic Warfare Projection and Cap Reduction I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37255, 
-    "groupID": 1511, 
+    "groupID": 1632, 
     "market": false, 
     "typeName": "Large Electronic Warfare Projection and Cap Reduction II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37256, 
-    "groupID": 1511, 
+    "groupID": 1633, 
     "market": false, 
     "typeName": "Large AoE Launcher Application and Projection I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37257, 
-    "groupID": 1511, 
+    "groupID": 1633, 
     "market": false, 
     "typeName": "Large AoE Launcher Application and Projection II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37258, 
-    "groupID": 1511, 
+    "groupID": 1634, 
     "market": false, 
     "typeName": "Large Point Defense Battery Application and Projection I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37259, 
-    "groupID": 1511, 
+    "groupID": 1634, 
     "market": false, 
     "typeName": "Large Point Defense Battery Application and Projection II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37260, 
-    "groupID": 1511, 
+    "groupID": 1635, 
     "market": false, 
     "typeName": "Large Structure Targeting and Sensor Resolution I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37261, 
-    "groupID": 1511, 
+    "groupID": 1635, 
     "market": false, 
     "typeName": "Large Structure Targeting and Sensor Resolution II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37262, 
-    "groupID": 1511, 
+    "groupID": 1636, 
     "market": false, 
     "typeName": "Large Office, Jump Clone Number and Tax I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37263, 
-    "groupID": 1511, 
+    "groupID": 1636, 
     "market": false, 
     "typeName": "Large Office, Jump Clone Number and Tax II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37264, 
-    "groupID": 1511, 
+    "groupID": 1637, 
     "market": false, 
     "typeName": "Large Planetary Production, Customs Office Tax Reduction I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37265, 
-    "groupID": 1511, 
+    "groupID": 1637, 
     "market": false, 
     "typeName": "Large Planetary Production, Customs Office Tax Reduction II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37266, 
-    "groupID": 1511, 
+    "groupID": 1638, 
     "market": false, 
     "typeName": "Large Market and Loyalty Point Store Tax I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37267, 
-    "groupID": 1511, 
+    "groupID": 1638, 
     "market": false, 
     "typeName": "Large Market and Loyalty Point Store Tax II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37268, 
-    "groupID": 1511, 
+    "groupID": 1639, 
     "market": false, 
     "typeName": "X-Large Missile and AoE Missile Launcher Application and Projection I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37269, 
-    "groupID": 1511, 
+    "groupID": 1639, 
     "market": false, 
     "typeName": "X-Large Missile and AoE Missile Launcher Application and Projection II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37270, 
-    "groupID": 1511, 
+    "groupID": 1640, 
     "market": false, 
     "typeName": "X-Large Drone and Point Defense Battery Application and Projection I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37271, 
-    "groupID": 1511, 
+    "groupID": 1640, 
     "market": false, 
     "typeName": "X-Large Drone and Point Defense Battery Application and Projection II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37272, 
-    "groupID": 1511, 
+    "groupID": 1641, 
     "market": false, 
     "typeName": "X-Large Energy Neutralizer and Electronic Warfare Projection and Cap Reduction I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37273, 
-    "groupID": 1511, 
+    "groupID": 1641, 
     "market": false, 
     "typeName": "X-Large Energy Neutralizer and Electronic Warfare Projection and Cap Reduction II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37274, 
-    "groupID": 1511, 
+    "groupID": 1642, 
     "market": false, 
     "typeName": "X-Large Doomsday Application and Projection I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37275, 
-    "groupID": 1511, 
+    "groupID": 1642, 
     "market": false, 
     "typeName": "X-Large Doomsday Application and Projection II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37276, 
-    "groupID": 1511, 
+    "groupID": 1643, 
     "market": false, 
     "typeName": "X-Large Targeting and Sensor Resolution I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37277, 
-    "groupID": 1511, 
+    "groupID": 1643, 
     "market": false, 
     "typeName": "X-Large Targeting and Sensor Resolution II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37278, 
-    "groupID": 1511, 
+    "groupID": 1644, 
     "market": false, 
     "typeName": "X-Large Office, Jump Clone, Planetary, Customs Office and Market Improvement I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37279, 
-    "groupID": 1511, 
+    "groupID": 1644, 
     "market": false, 
     "typeName": "X-Large Office, Jump Clone, Planetary, Customs Office and Market Improvement II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37280, 
-    "groupID": 1512, 
+    "groupID": 1647, 
     "market": false, 
     "typeName": "Medium Reprocessing Efficiency I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37281, 
-    "groupID": 1512, 
+    "groupID": 1647, 
     "market": false, 
     "typeName": "Medium Reprocessing Efficiency II"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37282, 
-    "groupID": 1512, 
+    "groupID": 1648, 
     "market": false, 
     "typeName": "Large Reprocessing Efficiency I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37283, 
-    "groupID": 1512, 
+    "groupID": 1648, 
     "market": false, 
     "typeName": "Large Reprocessing Efficiency II"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37284, 
-    "groupID": 1512, 
+    "groupID": 1649, 
     "market": false, 
     "typeName": "X-Large Reprocessing Efficiency I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37285, 
-    "groupID": 1512, 
+    "groupID": 1649, 
     "market": false, 
     "typeName": "X-Large Reprocessing Efficiency II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37286, 
-    "groupID": 1511, 
+    "groupID": 1628, 
     "market": false, 
     "typeName": "Medium Loyalty Point Store Reduction I"
   }, 
@@ -158164,7 +158164,7 @@
   {
     "volume": 10.0, 
     "typeID": 37475, 
-    "groupID": 1510, 
+    "groupID": 1600, 
     "market": false, 
     "typeName": " Medium Tech I Large Ship Research II"
   }, 
@@ -158537,7 +158537,7 @@
     "typeID": 37532, 
     "groupID": 1535, 
     "market": false, 
-    "typeName": "Signal Amplifier"
+    "typeName": "Structure Signal Amplifier"
   }, 
   {
     "volume": 4000.0, 
@@ -158621,14 +158621,14 @@
     "typeID": 37544, 
     "groupID": 291, 
     "market": true, 
-    "typeName": "Highstroke Scoped Guidance Disruptor I"
+    "typeName": "Highstroke Scoped Guidance Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 37545, 
     "groupID": 291, 
     "market": true, 
-    "typeName": "A-211 Enduring Guidance Disruptor I"
+    "typeName": "A-211 Enduring Guidance Disruptor"
   }, 
   {
     "volume": 5.0, 
@@ -158992,7 +158992,7 @@
     "typeID": 37599, 
     "groupID": 1537, 
     "market": false, 
-    "typeName": "SupportCat"
+    "typeName": "SupportCatAmarr"
   }, 
   {
     "volume": 0.1, 
@@ -160773,98 +160773,98 @@
     "typeName": "Serpentis Secure Hold"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37874, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Project Compass Star Charts"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37875, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Contraband Amarrian Walnuts"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37877, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Cerebrum In A Container"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37878, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Sansha Claws Fairytale Book"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37879, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Festive Firecrackers"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37880, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Max Amarria"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37881, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Grand Teigjon Casino Chip"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37882, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "YC117 Symposium On Emergent Threats Access Pass"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37883, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "95th Interstellar Mindclash Championship Tickets"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37884, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Feawen's Approval Documentation"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37885, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Meat Popsicle"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37886, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Capital Parking Ticket"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37887, 
     "groupID": 1194, 
     "market": true, 
     "typeName": "Counterfeit Dominix Model"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37888, 
     "groupID": 1194, 
     "market": true, 
@@ -161296,6 +161296,20 @@
     "groupID": 1311, 
     "market": false, 
     "typeName": "Moa Lai Dai Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 4000.0, 
+    "typeID": 37963, 
+    "groupID": 1563, 
+    "market": false, 
+    "typeName": "Structure Resistance Switcher"
+  }, 
+  {
+    "volume": 4000.0, 
+    "typeID": 37964, 
+    "groupID": 1564, 
+    "market": false, 
+    "typeName": "Structure Resistance Switcher Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -177735,6 +177749,13 @@
   }, 
   {
     "volume": 0.01, 
+    "typeID": 40329, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nyx Quafe Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
     "typeID": 40330, 
     "groupID": 1311, 
     "market": true, 
@@ -177802,6 +177823,1133 @@
     "groupID": 343, 
     "market": false, 
     "typeName": "Guidance Disruptor II Blueprint"
+  }, 
+  {
+    "volume": 4000.0, 
+    "typeID": 40340, 
+    "groupID": 1320, 
+    "market": false, 
+    "typeName": "X-Large Posh Citadel"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40344, 
+    "groupID": 1083, 
+    "market": false, 
+    "typeName": "Test Item"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40345, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "SupportCatCaldari"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40346, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "SupportCatGallente"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40347, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "SupportCatMinmatar"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40348, 
+    "groupID": 329, 
+    "market": false, 
+    "typeName": "6400mm Steel Plates I"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40349, 
+    "groupID": 329, 
+    "market": false, 
+    "typeName": "6400mm Crystalline Carbonide Restrained Plates"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40350, 
+    "groupID": 329, 
+    "market": false, 
+    "typeName": "6400mm Rolled Tungsten Compact Plates"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40351, 
+    "groupID": 329, 
+    "market": false, 
+    "typeName": "6400mm Steel Plates II"
+  }, 
+  {
+    "volume": 2.5, 
+    "typeID": 40354, 
+    "groupID": 38, 
+    "market": false, 
+    "typeName": "Capital Shield Extender I"
+  }, 
+  {
+    "volume": 2.5, 
+    "typeID": 40355, 
+    "groupID": 38, 
+    "market": false, 
+    "typeName": "Capital Azeotropic Restrained Shield Extender"
+  }, 
+  {
+    "volume": 2.5, 
+    "typeID": 40356, 
+    "groupID": 38, 
+    "market": false, 
+    "typeName": "Capital F-S9 Regolith Compact Shield Extender"
+  }, 
+  {
+    "volume": 2.5, 
+    "typeID": 40357, 
+    "groupID": 38, 
+    "market": false, 
+    "typeName": "Capital Shield Extender II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40358, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "LightCatAmarr"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40359, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "LightCatCaldari"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40360, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "LightCatGallente"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40361, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "LightCatMinmatar"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40362, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "HeavyCatAmarr"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40363, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "HeavyCatCaldari"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40364, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "HeavyCatGallente"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40365, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "HeavyCatMinmatar"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40366, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maulus Navy Issue Intaki Syndicate Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40367, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maulus Navy Issue Intaki Syndicate Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40368, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maulus Navy Issue Intaki Syndicate Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40369, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maulus Navy Issue Intaki Syndicate Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40370, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maulus Navy Issue Intaki Syndicate Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40371, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Navy Issue Wiyrkomi Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40372, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Navy Issue Wiyrkomi Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40373, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Navy Issue Wiyrkomi Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40374, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Navy Issue Wiyrkomi Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40375, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Griffin Navy Issue Wiyrkomi Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40376, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Fleet Issue Justice Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40377, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Fleet Issue Justice Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40378, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Fleet Issue Justice Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40379, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Fleet Issue Justice Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40380, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Fleet Issue Justice Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40381, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier Navy Issue EoM Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40382, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier Navy Issue EoM Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40383, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier Navy Issue EoM Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40384, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier Navy Issue EoM Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40385, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Crucifier Navy Issue EoM Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40386, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deacon Raata Sunset Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40387, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deacon Raata Sunset Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40388, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deacon Raata Sunset Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40389, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deacon Raata Sunset Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40390, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Deacon Raata Sunset Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40391, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pontifex Raata Sunset Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40392, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pontifex Raata Sunset Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40393, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pontifex Raata Sunset Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40394, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pontifex Raata Sunset Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40395, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Pontifex Raata Sunset Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40396, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kirin Blue Tiger Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40397, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kirin Blue Tiger Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40398, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kirin Blue Tiger Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40399, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kirin Blue Tiger Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40400, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Kirin Blue Tiger Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40401, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stork Blue Tiger Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40402, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stork Blue Tiger Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40403, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stork Blue Tiger Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40404, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stork Blue Tiger Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40405, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stork Blue Tiger Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40406, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thalia Valimor Legacy Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40407, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thalia Valimor Legacy Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40408, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thalia Valimor Legacy Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40409, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thalia Valimor Legacy Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40410, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thalia Valimor Legacy Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40411, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magus Valimor Legacy Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40412, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magus Valimor Legacy Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40413, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magus Valimor Legacy Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40414, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magus Valimor Legacy Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40415, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Magus Valimor Legacy Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40416, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Valklear Glory Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40417, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Valklear Glory Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40418, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Valklear Glory Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40419, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Valklear Glory Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40420, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Valklear Glory Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40421, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Valklear Glory Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40422, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Valklear Glory Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40423, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Valklear Glory Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40424, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Valklear Glory Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40425, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Valklear Glory Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40426, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Combat' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40427, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Combat' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40428, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Combat' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40429, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Combat' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40430, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Combat' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40431, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Combat' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40432, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Combat' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40433, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Combat' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40434, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Combat' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40435, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Combat' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40436, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Combat' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40437, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Combat' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40438, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Combat' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40439, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Combat' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40440, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Combat' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40441, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Parade' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40442, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Parade' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40443, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Parade' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40444, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Parade' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40445, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Garmur Waschi Uprising 'Parade' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40446, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Parade' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40447, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Parade' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40448, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Parade' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40449, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Parade' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40450, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Orthrus Waschi Uprising 'Parade' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40451, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Parade' Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40452, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Parade' Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40453, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Parade' Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40454, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Parade' Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40455, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Barghest Waschi Uprising 'Parade' Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 40456, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Research Component"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40467, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Breacher Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40468, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Burst Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40469, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Probe Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40470, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rifter Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40471, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Slasher Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40472, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Vigil Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40473, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Jaguar Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40474, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Wolf Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40475, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Cheetah Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40476, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hound Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40477, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hyena Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40478, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Claw Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40479, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Stiletto Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40480, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Talwar Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40481, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Thrasher Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40482, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Sabre Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40484, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Bellicose Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40485, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rupture Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40486, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Scythe Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40487, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Stabber Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40488, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Muninn Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40489, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Vagabond Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40490, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Broadsword Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40491, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Scimitar Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40492, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Huginn Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40493, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rapier Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40495, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Cyclone Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40496, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hurricane Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40497, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Tornado Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40498, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Claymore Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40499, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Sleipnir Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40500, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Maelstrom Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40501, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Tempest Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40502, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Typhoon Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40503, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Panther Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40504, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Vargur Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40505, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Naglfar Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40506, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Nidhoggur Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40507, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hel Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40508, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Ragnarok Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40509, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hoarder Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40510, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Mammoth Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40511, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Wreathe Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40512, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Prowler Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40513, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Mastodon Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40514, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Fenrir Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40515, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Nomad Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40516, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Scalpel Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40517, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Bifrost Tronhadar Ink SKIN (Permanent)"
   }, 
   {
     "volume": 0.01, 
@@ -195498,5 +196646,12 @@
     "groupID": 351844, 
     "market": true, 
     "typeName": "Council's Modified Repair Tool"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 371027, 
+    "groupID": 350858, 
+    "market": true, 
+    "typeName": "X-MS16 Snowball Launcher"
   }
 ]
