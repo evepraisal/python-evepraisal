@@ -365,6 +365,13 @@
   }, 
   {
     "volume": 1.0, 
+    "typeID": 60, 
+    "groupID": 1319, 
+    "market": false, 
+    "typeName": "Asset Safety Wrap"
+  }, 
+  {
+    "volume": 1.0, 
     "typeID": 164, 
     "groupID": 23, 
     "market": false, 
@@ -1418,7 +1425,7 @@
     "typeID": 518, 
     "groupID": 59, 
     "market": true, 
-    "typeName": "Basic Gyrostabilizer"
+    "typeName": "'Basic' Gyrostabilizer"
   }, 
   {
     "volume": 5.0, 
@@ -1439,14 +1446,14 @@
     "typeID": 521, 
     "groupID": 60, 
     "market": true, 
-    "typeName": "Basic Damage Control"
+    "typeName": "'Basic' Damage Control"
   }, 
   {
     "volume": 2.5, 
     "typeID": 522, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Micro Capacitor Battery I"
+    "typeName": "'Micro' Cap Battery"
   }, 
   {
     "volume": 5.0, 
@@ -1621,7 +1628,7 @@
     "typeID": 580, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "ECM Burst I"
+    "typeName": "Burst Jammer I"
   }, 
   {
     "volume": 25.0, 
@@ -3854,14 +3861,14 @@
     "typeID": 1185, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Small Capacitor Battery I"
+    "typeName": "Small Cap Battery I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 1186, 
     "groupID": 141, 
     "market": true, 
-    "typeName": "Small Capacitor Battery I Blueprint"
+    "typeName": "Small Cap Battery I Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -3966,7 +3973,7 @@
     "typeID": 1210, 
     "groupID": 160, 
     "market": true, 
-    "typeName": "ECM Burst I Blueprint"
+    "typeName": "Burst Jammer I Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -5569,7 +5576,7 @@
     "typeID": 1893, 
     "groupID": 205, 
     "market": true, 
-    "typeName": "Basic Heat Sink"
+    "typeName": "'Basic' Heat Sink"
   }, 
   {
     "volume": 20400.0, 
@@ -5701,14 +5708,14 @@
     "volume": 5.0, 
     "typeID": 1946, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Basic RADAR Backup Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1947, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Radar I"
   }, 
   {
@@ -5716,21 +5723,21 @@
     "typeID": 1948, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Ion Field Projector I"
+    "typeName": "Magnetometric ECM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1949, 
     "groupID": 210, 
     "market": true, 
-    "typeName": "Basic Signal Amplifier"
+    "typeName": "'Basic' Signal Amplifier"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1951, 
     "groupID": 211, 
     "market": true, 
-    "typeName": "Basic Tracking Enhancer"
+    "typeName": "'Basic' Tracking Enhancer"
   }, 
   {
     "volume": 5.0, 
@@ -5744,41 +5751,41 @@
     "typeID": 1955, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Spatial Destabilizer I"
+    "typeName": "Gravimetric ECM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1956, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - White Noise Generator I"
+    "typeName": "Radar ECM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1957, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Multispectral Jammer I"
+    "typeName": "Multispectral ECM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1958, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Phase Inverter I"
+    "typeName": "Ladar ECM I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 1959, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM Projector I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1960, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM Projector II"
   }, 
   {
@@ -5834,28 +5841,28 @@
     "volume": 5.0, 
     "typeID": 1982, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Basic Ladar Backup Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1983, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Basic Gravimetric Backup Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1984, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Basic Magnetometric Backup Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 1985, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Basic Multi Sensor Backup Array"
   }, 
   {
@@ -5897,28 +5904,28 @@
     "volume": 5.0, 
     "typeID": 2002, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Ladar I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2003, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Magnetometric I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2004, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Gravimetric I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2005, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Omni I"
   }, 
   {
@@ -6010,28 +6017,28 @@
     "typeID": 2018, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Medium Capacitor Battery I"
+    "typeName": "Medium Cap Battery I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 2019, 
     "groupID": 141, 
     "market": true, 
-    "typeName": "Medium Capacitor Battery I Blueprint"
+    "typeName": "Medium Cap Battery I Blueprint"
   }, 
   {
     "volume": 15.0, 
     "typeID": 2020, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Large Capacitor Battery I"
+    "typeName": "Large Cap Battery I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 2021, 
     "groupID": 141, 
     "market": true, 
-    "typeName": "Large Capacitor Battery I Blueprint"
+    "typeName": "Large Cap Battery I Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -6563,14 +6570,14 @@
     "typeID": 2117, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "ECM Burst II"
+    "typeName": "Burst Jammer II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 2118, 
     "groupID": 160, 
     "market": false, 
-    "typeName": "ECM Burst II Blueprint"
+    "typeName": "Burst Jammer II Blueprint"
   }, 
   {
     "volume": 0.0, 
@@ -6920,7 +6927,7 @@
     "typeID": 2178, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Guristas Nova Citadel Cruise Missile"
+    "typeName": "Guristas Nova XL Cruise Missile"
   }, 
   {
     "volume": 0.01, 
@@ -6934,7 +6941,7 @@
     "typeID": 2180, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Guristas Scourge Citadel Cruise Missile"
+    "typeName": "Guristas Scourge XL Cruise Missile"
   }, 
   {
     "volume": 100000000.0, 
@@ -6948,7 +6955,7 @@
     "typeID": 2182, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Guristas Inferno Citadel Cruise Missile"
+    "typeName": "Guristas Inferno XL Cruise Missile"
   }, 
   {
     "volume": 10.0, 
@@ -6990,7 +6997,7 @@
     "typeID": 2188, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Guristas Mjolnir Citadel Cruise Missile"
+    "typeName": "Guristas Mjolnir XL Cruise Missile"
   }, 
   {
     "volume": 1010000.0, 
@@ -7332,35 +7339,35 @@
     "volume": 5.0, 
     "typeID": 2258, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Omni II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2259, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Gravimetric II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2260, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Ladar II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2261, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Magnetometric II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2262, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Radar II"
   }, 
   {
@@ -9062,7 +9069,7 @@
     "typeID": 2559, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Phase Inverter II"
+    "typeName": "Ladar ECM II"
   }, 
   {
     "volume": 0.0, 
@@ -9090,21 +9097,21 @@
     "typeID": 2563, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Ion Field Projector II"
+    "typeName": "Magnetometric ECM II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2567, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Multispectral Jammer II"
+    "typeName": "Multispectral ECM II"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2571, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - Spatial Destabilizer II"
+    "typeName": "Gravimetric ECM II"
   }, 
   {
     "volume": 0.0, 
@@ -9125,7 +9132,7 @@
     "typeID": 2575, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "ECM - White Noise Generator II"
+    "typeName": "Radar ECM II"
   }, 
   {
     "volume": 800.0, 
@@ -9152,14 +9159,14 @@
     "volume": 5.0, 
     "typeID": 2579, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gravimetric Backup Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2580, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gravimetric Backup Array II"
   }, 
   {
@@ -9180,14 +9187,14 @@
     "volume": 5.0, 
     "typeID": 2583, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ladar Backup Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2584, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ladar Backup Array II"
   }, 
   {
@@ -9208,14 +9215,14 @@
     "volume": 5.0, 
     "typeID": 2587, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Magnetometric Backup Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 2588, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Magnetometric Backup Array II"
   }, 
   {
@@ -9229,14 +9236,14 @@
     "volume": 20.0, 
     "typeID": 2591, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Multi Sensor Backup Array I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 2592, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Multi Sensor Backup Array II"
   }, 
   {
@@ -10153,7 +10160,7 @@
     "volume": 0.01, 
     "typeID": 2738, 
     "groupID": 1045, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sovereignty Blockade Unit Blueprint"
   }, 
   {
@@ -10735,7 +10742,7 @@
     "typeID": 2822, 
     "groupID": 871, 
     "market": true, 
-    "typeName": "Citadel Torpedo Battery Blueprint"
+    "typeName": "XL Torpedo Battery Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -14380,7 +14387,7 @@
   {
     "volume": 0.01, 
     "typeID": 3373, 
-    "groupID": 266, 
+    "groupID": 1545, 
     "market": true, 
     "typeName": "Starbase Defense Management"
   }, 
@@ -15060,7 +15067,7 @@
     "volume": 2.5, 
     "typeID": 3480, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro Capacitor Battery II"
   }, 
   {
@@ -15117,14 +15124,14 @@
     "typeID": 3488, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Small Capacitor Battery II"
+    "typeName": "Small Cap Battery II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3489, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "Small Capacitor Battery II Blueprint"
+    "typeName": "Small Cap Battery II Blueprint"
   }, 
   {
     "volume": 100100.0, 
@@ -15173,14 +15180,14 @@
     "typeID": 3496, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Medium Capacitor Battery II"
+    "typeName": "Medium Cap Battery II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3497, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "Medium Capacitor Battery II Blueprint"
+    "typeName": "Medium Cap Battery II Blueprint"
   }, 
   {
     "volume": 27500.0, 
@@ -15229,14 +15236,14 @@
     "typeID": 3504, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Large Capacitor Battery II"
+    "typeName": "Large Cap Battery II"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3505, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "Large Capacitor Battery II Blueprint"
+    "typeName": "Large Cap Battery II Blueprint"
   }, 
   {
     "volume": 27500.0, 
@@ -15522,7 +15529,7 @@
     "typeID": 3537, 
     "groupID": 350, 
     "market": false, 
-    "typeName": "Capital Coaxial Remote Armor Repairer Blueprint"
+    "typeName": "CONCORD Capital Remote Armor Repairer Blueprint"
   }, 
   {
     "volume": 50.0, 
@@ -15578,7 +15585,7 @@
     "typeID": 3545, 
     "groupID": 121, 
     "market": false, 
-    "typeName": "Capital Murky Remote Shield Booster Blueprint"
+    "typeName": "CONCORD Capital Remote Shield Booster Blueprint"
   }, 
   {
     "volume": 4000.0, 
@@ -15704,21 +15711,21 @@
     "typeID": 3563, 
     "groupID": 524, 
     "market": true, 
-    "typeName": "'Limos' Citadel Cruise Launcher I"
+    "typeName": "'Limos' XL Cruise Launcher I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 3564, 
     "groupID": 136, 
     "market": false, 
-    "typeName": "'Limos' Citadel Cruise Launcher I Blueprint"
+    "typeName": "'Limos' XL Cruise Launcher I Blueprint"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 3565, 
     "groupID": 524, 
     "market": true, 
-    "typeName": "Shock 'Limos' Citadel Torpedo Bay I"
+    "typeName": "Shock 'Limos' XL Torpedo Bay I"
   }, 
   {
     "volume": 5.0, 
@@ -15753,7 +15760,7 @@
     "typeID": 3570, 
     "groupID": 136, 
     "market": false, 
-    "typeName": "Shock 'Limos' Citadel Torpedo Bay I Blueprint"
+    "typeName": "Shock 'Limos' XL Torpedo Bay I Blueprint"
   }, 
   {
     "volume": 4000.0, 
@@ -18545,14 +18552,14 @@
     "volume": 5.0, 
     "typeID": 4013, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "RADAR Backup Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4014, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "RADAR Backup Array II"
   }, 
   {
@@ -18630,7 +18637,7 @@
     "typeID": 4025, 
     "groupID": 65, 
     "market": true, 
-    "typeName": "X5 Prototype Engine Enervator"
+    "typeName": "X5 Enduring Stasis Webifier"
   }, 
   {
     "volume": 0.1, 
@@ -18644,7 +18651,7 @@
     "typeID": 4027, 
     "groupID": 65, 
     "market": true, 
-    "typeName": "Fleeting Propulsion Inhibitor I"
+    "typeName": "Fleeting Compact Stasis Webifier"
   }, 
   {
     "volume": 0.1, 
@@ -18657,7 +18664,7 @@
     "volume": 5.0, 
     "typeID": 4029, 
     "groupID": 65, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Langour' Drive Disruptor I"
   }, 
   {
@@ -18671,7 +18678,7 @@
     "volume": 5.0, 
     "typeID": 4031, 
     "groupID": 65, 
-    "market": true, 
+    "market": false, 
     "typeName": "Patterned Stasis Web I"
   }, 
   {
@@ -18791,7 +18798,7 @@
     "typeID": 4051, 
     "groupID": 1136, 
     "market": true, 
-    "typeName": "Caldari Fuel Block"
+    "typeName": "Nitrogen Fuel Block"
   }, 
   {
     "volume": 0.1, 
@@ -20065,14 +20072,14 @@
     "typeID": 4246, 
     "groupID": 1136, 
     "market": true, 
-    "typeName": "Minmatar Fuel Block"
+    "typeName": "Hydrogen Fuel Block"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4247, 
     "groupID": 1136, 
     "market": true, 
-    "typeName": "Amarr Fuel Block"
+    "typeName": "Helium Fuel Block"
   }, 
   {
     "volume": 50.0, 
@@ -20520,35 +20527,35 @@
     "typeID": 4312, 
     "groupID": 1136, 
     "market": true, 
-    "typeName": "Gallente Fuel Block"
+    "typeName": "Oxygen Fuel Block"
   }, 
   {
     "volume": 0.01, 
     "typeID": 4313, 
     "groupID": 1137, 
     "market": true, 
-    "typeName": "Gallente Fuel Block Blueprint"
+    "typeName": "Oxygen Fuel Block Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 4314, 
     "groupID": 1137, 
     "market": true, 
-    "typeName": "Caldari Fuel Block Blueprint"
+    "typeName": "Nitrogen Fuel Block Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 4315, 
     "groupID": 1137, 
     "market": true, 
-    "typeName": "Amarr Fuel Block Blueprint"
+    "typeName": "Helium Fuel Block Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 4316, 
     "groupID": 1137, 
     "market": true, 
-    "typeName": "Minmatar Fuel Block Blueprint"
+    "typeName": "Hydrogen Fuel Block Blueprint"
   }, 
   {
     "volume": 100000000.0, 
@@ -21289,35 +21296,35 @@
     "volume": 2.5, 
     "typeID": 4745, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro F-4a Ld-Sulfate Capacitor Charge Unit"
   }, 
   {
     "volume": 2.5, 
     "typeID": 4747, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro Ld-Acid Capacitor Battery I"
   }, 
   {
     "volume": 2.5, 
     "typeID": 4749, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro Peroxide Capacitor Power Cell"
   }, 
   {
     "volume": 2.5, 
     "typeID": 4751, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Micro Ohm Capacitor Reserve I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4785, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Small F-4a Ld-Sulfate Capacitor Charge Unit"
   }, 
   {
@@ -21325,20 +21332,20 @@
     "typeID": 4787, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Small Ld-Acid Capacitor Battery I"
+    "typeName": "Small Compact Pb-Acid Cap Battery "
   }, 
   {
     "volume": 5.0, 
     "typeID": 4789, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Small Peroxide Capacitor Power Cell"
   }, 
   {
     "volume": 5.0, 
     "typeID": 4791, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Small Ohm Capacitor Reserve I"
   }, 
   {
@@ -21373,7 +21380,7 @@
     "volume": 15.0, 
     "typeID": 4869, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Large F-4a Ld-Sulfate Capacitor Charge Unit"
   }, 
   {
@@ -21381,20 +21388,20 @@
     "typeID": 4871, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Large Ld-Acid Capacitor Battery I"
+    "typeName": "Large Compact Pb-Acid Cap Battery"
   }, 
   {
     "volume": 15.0, 
     "typeID": 4873, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Large Peroxide Capacitor Power Cell"
   }, 
   {
     "volume": 15.0, 
     "typeID": 4875, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Large Ohm Capacitor Reserve I"
   }, 
   {
@@ -21689,13 +21696,13 @@
     "typeID": 5279, 
     "groupID": 290, 
     "market": true, 
-    "typeName": "F-23 Reciprocal Remote Sensor Booster"
+    "typeName": "F-23 Compact Remote Sensor Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5280, 
     "groupID": 290, 
-    "market": true, 
+    "market": false, 
     "typeName": "Connected Remote Sensor Booster"
   }, 
   {
@@ -21703,27 +21710,27 @@
     "typeID": 5281, 
     "groupID": 290, 
     "market": true, 
-    "typeName": "Coadjunct Linked Remote Sensor Booster"
+    "typeName": "Coadjunct Scoped Remote Sensor Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5282, 
     "groupID": 290, 
     "market": true, 
-    "typeName": "Linked Remote Sensor Booster"
+    "typeName": "Linked Enduring Sensor Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5299, 
     "groupID": 208, 
     "market": true, 
-    "typeName": "Low Frequency Sensor Suppressor I"
+    "typeName": "LFT Enduring Sensor Dampener"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5300, 
     "groupID": 208, 
-    "market": true, 
+    "market": false, 
     "typeName": "Indirect Scanning Dampening Unit I"
   }, 
   {
@@ -21731,14 +21738,14 @@
     "typeID": 5301, 
     "groupID": 208, 
     "market": true, 
-    "typeName": "Kapteyn Sensor Array Inhibitor I"
+    "typeName": "Kapteyn Compact Sensor Dampener"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5302, 
     "groupID": 208, 
     "market": true, 
-    "typeName": "Phased Muon Sensor Disruptor I"
+    "typeName": "Phased Muon Scoped Sensor Dampener"
   }, 
   {
     "volume": 5.0, 
@@ -21773,20 +21780,20 @@
     "typeID": 5339, 
     "groupID": 209, 
     "market": true, 
-    "typeName": "F-293 Nutation Remote Tracking Computer"
+    "typeName": "F-293 Scoped Remote Tracking Computer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5340, 
     "groupID": 209, 
     "market": true, 
-    "typeName": "Phase Switching Remote Tracking Computer"
+    "typeName": "P-S Compact Remote Tracking Computer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5341, 
     "groupID": 209, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Prayer' Remote Tracking Computer"
   }, 
   {
@@ -21794,13 +21801,13 @@
     "typeID": 5342, 
     "groupID": 209, 
     "market": true, 
-    "typeName": "Alfven Surface Remote Tracking Computer"
+    "typeName": "Alfven Enduring Remote Tracking Computer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5359, 
     "groupID": 80, 
-    "market": true, 
+    "market": false, 
     "typeName": "1Z-3 Subversive ECM Eruption"
   }, 
   {
@@ -21808,34 +21815,34 @@
     "typeID": 5361, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "'Deluge' ECM Burst I"
+    "typeName": "Deluge Enduring Burst Jammer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5363, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "'Rash' ECM Emission I"
+    "typeName": "Rash Compact Burst Jammer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5365, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "'Cetus' ECM Shockwave I"
+    "typeName": "Cetus Scoped Burst Jammer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5399, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "J5 Prototype Warp Disruptor I"
+    "typeName": "J5 Enduring Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5401, 
     "groupID": 52, 
-    "market": true, 
+    "market": false, 
     "typeName": "Fleeting Warp Disruptor I"
   }, 
   {
@@ -21843,27 +21850,27 @@
     "typeID": 5403, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Faint Warp Disruptor I"
+    "typeName": "Faint Scoped Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5405, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Initiated Warp Disruptor I"
+    "typeName": "Initiated Compact Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5439, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "J5b Phased Prototype Warp Scrambler I"
+    "typeName": "J5b Enduring Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5441, 
     "groupID": 52, 
-    "market": true, 
+    "market": false, 
     "typeName": "Fleeting Progressive Warp Scrambler I"
   }, 
   {
@@ -21871,14 +21878,14 @@
     "typeID": 5443, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Faint Epsilon Warp Scrambler I"
+    "typeName": "Faint Epsilon Scoped Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5445, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Initiated Harmonic Warp Scrambler I"
+    "typeName": "Initiated Compact Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
@@ -22248,35 +22255,35 @@
     "volume": 5.0, 
     "typeID": 5829, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "GLFF Containment Field"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5831, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "Interior Force Field Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5833, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "Systematic Damage Control"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5835, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "F84 Local Damage System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5837, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "Pseudoelectron Containment Field I"
   }, 
   {
@@ -22284,34 +22291,34 @@
     "typeID": 5839, 
     "groupID": 60, 
     "market": true, 
-    "typeName": "Internal Force Field Array I"
+    "typeName": "IFFA Compact Damage Control"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5841, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency Damage Control I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5843, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "F85 Peripheral Damage System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5845, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "Heat Exhaust System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5846, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "Thermal Exhaust System I"
   }, 
   {
@@ -22319,41 +22326,41 @@
     "typeID": 5849, 
     "groupID": 205, 
     "market": true, 
-    "typeName": "Extruded Heat Sink I"
+    "typeName": "Extruded Compact Heat Sink"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5854, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "Stamped Heat Sink"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5855, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Boreas' Coolant System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5856, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "C3S Convection Thermal Radiator"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5857, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Skadi' Coolant System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5858, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "C4S Coiled Circuit Thermal Radiator"
   }, 
   {
@@ -22388,42 +22395,42 @@
     "volume": 5.0, 
     "typeID": 5913, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Hydraulic Stabilization Actuator"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5915, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Lateral Gyrostabilizer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5917, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Stabilized Weapon Mounts"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5919, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-M2 Weapon Inertial Suspensor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5929, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Pneumatic Stabilization Actuator I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5931, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Cross-Lateral Gyrostabilizer I"
   }, 
   {
@@ -22431,13 +22438,13 @@
     "typeID": 5933, 
     "groupID": 59, 
     "market": true, 
-    "typeName": "Counterbalanced Weapon Mounts I"
+    "typeName": "Counterbalanced Compact Gyrostabilizer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 5935, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-M3 Munition Inertial Suspensor"
   }, 
   {
@@ -22529,27 +22536,27 @@
     "typeID": 6073, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "Medium Ld-Acid Capacitor Battery I"
+    "typeName": "Medium Compact Pb-Acid Cap Battery"
   }, 
   {
     "volume": 10.0, 
     "typeID": 6083, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Medium Peroxide Capacitor Power Cell"
   }, 
   {
     "volume": 10.0, 
     "typeID": 6097, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Medium Ohm Capacitor Reserve I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 6111, 
     "groupID": 61, 
-    "market": true, 
+    "market": false, 
     "typeName": "Medium F-4a Ld-Sulfate Capacitor Charge Unit"
   }, 
   {
@@ -22584,14 +22591,14 @@
     "volume": 5.0, 
     "typeID": 6157, 
     "groupID": 212, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Scanning CPU I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6158, 
     "groupID": 212, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype Sensor Booster"
   }, 
   {
@@ -22599,34 +22606,34 @@
     "typeID": 6159, 
     "groupID": 212, 
     "market": true, 
-    "typeName": "Alumel-Wired Sensor Augmentation"
+    "typeName": "Alumel-Wired Enduring Sensor Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6160, 
     "groupID": 212, 
     "market": true, 
-    "typeName": "F-90 Positional Sensor Subroutines"
+    "typeName": "F-90 Compact Sensor Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6173, 
     "groupID": 213, 
     "market": true, 
-    "typeName": "Optical Tracking Computer I"
+    "typeName": "Optical Compact Tracking Computer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6174, 
     "groupID": 213, 
-    "market": true, 
+    "market": false, 
     "typeName": "Monopulse Tracking Mechanism I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6175, 
     "groupID": 213, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Orion' Tracking CPU I"
   }, 
   {
@@ -22634,307 +22641,307 @@
     "typeID": 6176, 
     "groupID": 213, 
     "market": true, 
-    "typeName": "F-12 Nonlinear Tracking Processor"
+    "typeName": "F-12 Enduring Tracking Computer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6193, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency Magnetometric Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6194, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency Multi-Frequency Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6195, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Reserve Gravimetric Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6199, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Reserve Ladar Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6202, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency RADAR Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6203, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Reserve Magnetometric Scanners"
   }, 
   {
     "volume": 20.0, 
     "typeID": 6207, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Reserve Multi-Frequency Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6212, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Reserve RADAR Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6216, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency Ladar Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6217, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Emergency Gravimetric Scanners"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6218, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Protected Gravimetric Backup Cluster I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6222, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Protected Ladar Backup Cluster I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6225, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sealed RADAR Backup Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6226, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Protected Magnetometric Backup Cluster I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 6230, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Protected Multi-Frequency Backup Cluster I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6234, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Protected RADAR Backup Cluster I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6238, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sealed Magnetometric Backup Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6239, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sealed Multi-Frequency Backup Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6241, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sealed Ladar Backup Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6242, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sealed Gravimetric Backup Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6243, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surrogate Gravimetric Reserve Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6244, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-43 Repetitive Gravimetric Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6251, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surrogate Ladar Reserve Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6252, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-43 Repetitive Ladar Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6257, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surplus RADAR Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6258, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-42 Reiterative RADAR Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6259, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surrogate Magnetometric Reserve Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6260, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-43 Repetitive Magnetometric Backup Sensors"
   }, 
   {
     "volume": 20.0, 
     "typeID": 6267, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surrogate Multi-Frequency Reserve Array I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 6268, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-43 Repetitive Multi-Frequency Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6275, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surrogate RADAR Reserve Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6276, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-43 Repetitive RADAR Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6283, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surplus Magnetometric Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6284, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-42 Reiterative Magnetometric Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6285, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surplus Multi-Frequency Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6286, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-42 Reiterative Multi-Frequency Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6289, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surplus Ladar Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6290, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-42 Reiterative Ladar Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6291, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Surplus Gravimetric Reserve Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6292, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-42 Reiterative Gravimetric Backup Sensors"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6293, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "Wavelength Signal Enhancer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6294, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Mendicant' Signal Booster I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6295, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-D Attenuation Signal Augmentation"
   }, 
   {
@@ -22942,62 +22949,62 @@
     "typeID": 6296, 
     "groupID": 210, 
     "market": true, 
-    "typeName": "F-89 Synchronized Signal Amplifier"
+    "typeName": "F-89 Compact Signal Amplifier"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6309, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "Amplitude Signal Enhancer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6310, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Acolyth' Signal Booster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6311, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "Type-E Discriminative Signal Augmentation"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6312, 
     "groupID": 210, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-90 Positional Signal Amplifier"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6321, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beam Parallax Tracking Program"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6322, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "Beta-Nought Tracking Mode"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6323, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "Azimuth Descalloping Tracking Enhancer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6324, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-AQ Delay-Line Scan Tracking Subroutines"
   }, 
   {
@@ -23005,27 +23012,27 @@
     "typeID": 6325, 
     "groupID": 211, 
     "market": true, 
-    "typeName": "Fourier Transform Tracking Program"
+    "typeName": "Fourier Compact Tracking Enhancer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6326, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "Sigma-Nought Tracking Mode I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6327, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "Auto-Gain Control Tracking Enhancer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 6328, 
     "groupID": 211, 
-    "market": true, 
+    "market": false, 
     "typeName": "F-aQ Phase Code Tracking Subroutines"
   }, 
   {
@@ -23508,28 +23515,28 @@
     "volume": 5.0, 
     "typeID": 7217, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "Spot Pulsing ECCM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7218, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "Piercing ECCM Emitter I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7219, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "Scattering ECCM Projector I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7220, 
     "groupID": 289, 
-    "market": true, 
+    "market": false, 
     "typeName": "Phased Muon ECCM Caster I"
   }, 
   {
@@ -23956,140 +23963,140 @@
     "volume": 5.0, 
     "typeID": 7867, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Ladar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7869, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Gravimetric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7870, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Omni ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7887, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Radar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7889, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Supplemental Magnetometric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7892, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype ECCM Radar Sensor Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7893, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype ECCM Ladar Sensor Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7895, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype ECCM Gravimetric Sensor Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7896, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype ECCM Omni Sensor Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7914, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Prototype ECCM Magnetometric Sensor Cluster"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7917, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alumel Radar ECCM Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7918, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alumel Ladar ECCM Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7922, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alumel Gravimetric ECCM Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7926, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alumel Omni ECCM Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7937, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Alumel Magnetometric ECCM Sensor Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7948, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gravimetric Positional ECCM Sensor System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7964, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Radar Positional ECCM Sensor System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7965, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Omni Positional ECCM Sensor System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7966, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ladar Positional ECCM Sensor System I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 7970, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Magnetometric Positional ECCM Sensor System I"
   }, 
   {
@@ -25293,21 +25300,21 @@
     "volume": 5.0, 
     "typeID": 9518, 
     "groupID": 201, 
-    "market": true, 
+    "market": false, 
     "typeName": "Initiated Ion Field ECM I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 9519, 
     "groupID": 201, 
-    "market": true, 
+    "market": false, 
     "typeName": "FZ-3 Subversive Spatial Destabilizer ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 9520, 
     "groupID": 201, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Penumbra' White Noise ECM"
   }, 
   {
@@ -25315,13 +25322,13 @@
     "typeID": 9521, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Initiated Multispectral ECM I"
+    "typeName": "Initiated Enduring Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 9522, 
     "groupID": 201, 
-    "market": true, 
+    "market": false, 
     "typeName": "Faint Phase Inversion ECM I"
   }, 
   {
@@ -26932,7 +26939,7 @@
     "typeID": 10188, 
     "groupID": 302, 
     "market": true, 
-    "typeName": "Basic Magnetic Field Stabilizer"
+    "typeName": "'Basic' Magnetic Field Stabilizer"
   }, 
   {
     "volume": 5.0, 
@@ -28814,14 +28821,14 @@
     "volume": 5.0, 
     "typeID": 11101, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Linear Flux Stabilizer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11103, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Insulated Stabilizer Array I"
   }, 
   {
@@ -28829,41 +28836,41 @@
     "typeID": 11105, 
     "groupID": 302, 
     "market": true, 
-    "typeName": "Magnetic Vortex Stabilizer I"
+    "typeName": "Vortex Compact Magnetic Field Stabilizer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11107, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gauss Field Balancer I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11109, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Linear Flux Stabilizer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11111, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Insulated Stabilizer Array"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11113, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Magnetic Vortex Stabilizer"
   }, 
   {
     "volume": 5.0, 
     "typeID": 11115, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gauss Field Balancer"
   }, 
   {
@@ -31025,7 +31032,7 @@
   {
     "volume": 0.01, 
     "typeID": 11584, 
-    "groupID": 266, 
+    "groupID": 1545, 
     "market": true, 
     "typeName": "Anchoring"
   }, 
@@ -31236,35 +31243,35 @@
     "volume": 0.01, 
     "typeID": 11622, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Gravimetric I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11623, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Ladar I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11624, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Magnetometric I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11625, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Radar I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11626, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM - Omni I Blueprint"
   }, 
   {
@@ -31272,35 +31279,35 @@
     "typeID": 11628, 
     "groupID": 130, 
     "market": true, 
-    "typeName": "ECM - Ion Field Projector I Blueprint"
+    "typeName": "Magnetometric ECM I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11629, 
     "groupID": 130, 
     "market": true, 
-    "typeName": "ECM - Multispectral Jammer I Blueprint"
+    "typeName": "Multispectral ECM I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11630, 
     "groupID": 130, 
     "market": true, 
-    "typeName": "ECM - Phase Inverter I Blueprint"
+    "typeName": "Ladar ECM I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11631, 
     "groupID": 130, 
     "market": true, 
-    "typeName": "ECM - Spatial Destabilizer I Blueprint"
+    "typeName": "Gravimetric ECM I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11632, 
     "groupID": 130, 
     "market": true, 
-    "typeName": "ECM - White Noise Generator I Blueprint"
+    "typeName": "Radar ECM I Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -31999,7 +32006,7 @@
     "volume": 0.01, 
     "typeID": 11770, 
     "groupID": 131, 
-    "market": true, 
+    "market": false, 
     "typeName": "ECCM Projector I Blueprint"
   }, 
   {
@@ -32014,35 +32021,35 @@
     "typeID": 11775, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "ECM - Ion Field Projector II Blueprint"
+    "typeName": "Magnetometric ECM II Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11779, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "ECM - Multispectral Jammer II Blueprint"
+    "typeName": "Multispectral ECM II Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11783, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "ECM - Phase Inverter II Blueprint"
+    "typeName": "Ladar ECM II Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11787, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "ECM - Spatial Destabilizer II Blueprint"
+    "typeName": "Gravimetric ECM II Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 11791, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "ECM - White Noise Generator II Blueprint"
+    "typeName": "Radar ECM II Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -36282,7 +36289,7 @@
   {
     "volume": 109000.0, 
     "typeID": 13105, 
-    "groupID": 705, 
+    "groupID": 683, 
     "market": false, 
     "typeName": "Republic Fleet Officer"
   }, 
@@ -41632,56 +41639,56 @@
     "typeID": 14656, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Mizuro's Modified Warp Disruptor"
+    "typeName": "Mizuro's Modified Heavy Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14658, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Hakim's Modified Warp Disruptor"
+    "typeName": "Hakim's Modified Heavy Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14660, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Gotan's Modified Warp Disruptor"
+    "typeName": "Gotan's Modified Heavy Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14662, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Tobias' Modified Warp Disruptor"
+    "typeName": "Tobias' Modified Heavy Warp Disruptor"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14664, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Mizuro's Modified Warp Scrambler"
+    "typeName": "Mizuro's Modified Heavy Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14666, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Hakim's Modified Warp Scrambler"
+    "typeName": "Hakim's Modified Heavy Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14668, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Gotan's Modified Warp Scrambler"
+    "typeName": "Gotan's Modified Heavy Warp Scrambler"
   }, 
   {
     "volume": 5.0, 
     "typeID": 14670, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Tobias' Modified Warp Scrambler"
+    "typeName": "Tobias' Modified Heavy Warp Scrambler"
   }, 
   {
     "volume": 20.0, 
@@ -49787,27 +49794,27 @@
     "typeID": 16457, 
     "groupID": 367, 
     "market": true, 
-    "typeName": "Cross-linked Bolt Array I"
+    "typeName": "Crosslink Compact Ballistic Control System"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16459, 
     "groupID": 367, 
-    "market": true, 
+    "market": false, 
     "typeName": "Muon Coil Bolt Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16461, 
     "groupID": 367, 
-    "market": true, 
+    "market": false, 
     "typeName": "Multiphasic Bolt Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 16463, 
     "groupID": 367, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Pandemonium' Ballistic Enhancement"
   }, 
   {
@@ -57585,7 +57592,7 @@
     "typeID": 17773, 
     "groupID": 417, 
     "market": true, 
-    "typeName": "Citadel Torpedo Battery"
+    "typeName": "XL Torpedo Battery"
   }, 
   {
     "volume": 1.0, 
@@ -58082,56 +58089,56 @@
     "typeID": 17857, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Mjolnir Citadel Torpedo"
+    "typeName": "Mjolnir XL Torpedo"
   }, 
   {
     "volume": 0.01, 
     "typeID": 17858, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Mjolnir Citadel Torpedo Blueprint"
+    "typeName": "Mjolnir XL Torpedo Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 17859, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Scourge Citadel Torpedo"
+    "typeName": "Scourge XL Torpedo"
   }, 
   {
     "volume": 0.01, 
     "typeID": 17860, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Scourge Citadel Torpedo Blueprint"
+    "typeName": "Scourge XL Torpedo Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 17861, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Inferno Citadel Torpedo"
+    "typeName": "Inferno XL Torpedo"
   }, 
   {
     "volume": 0.01, 
     "typeID": 17862, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Inferno Citadel Torpedo Blueprint"
+    "typeName": "Inferno XL Torpedo Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 17863, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Nova Citadel Torpedo"
+    "typeName": "Nova XL Torpedo"
   }, 
   {
     "volume": 0.01, 
     "typeID": 17864, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Nova Citadel Torpedo Blueprint"
+    "typeName": "Nova XL Torpedo Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -64147,7 +64154,7 @@
     "volume": 5.0, 
     "typeID": 19808, 
     "groupID": 379, 
-    "market": true, 
+    "market": false, 
     "typeName": "Partial Weapon Navigation"
   }, 
   {
@@ -64162,7 +64169,7 @@
     "typeID": 19810, 
     "groupID": 379, 
     "market": true, 
-    "typeName": "Peripheral Weapon Navigation Diameter"
+    "typeName": "Peripheral Compact Target Painter"
   }, 
   {
     "volume": 0.01, 
@@ -64176,7 +64183,7 @@
     "typeID": 19812, 
     "groupID": 379, 
     "market": true, 
-    "typeName": "Parallel Weapon Navigation Transmitter"
+    "typeName": "Parallel Enduring Target Painter"
   }, 
   {
     "volume": 0.01, 
@@ -64190,7 +64197,7 @@
     "typeID": 19814, 
     "groupID": 379, 
     "market": true, 
-    "typeName": "Phased Weapon Navigation Array Generation Extron"
+    "typeName": "Phased Scoped Target Painter"
   }, 
   {
     "volume": 0.01, 
@@ -64218,41 +64225,41 @@
     "typeID": 19923, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Induced Ion Field ECM I"
+    "typeName": "Morpheus Enduring Magnetometric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19925, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Compulsive Ion Field ECM I"
+    "typeName": "Aergia Compact Magnetometric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19927, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Hypnos' Ion Field ECM I"
+    "typeName": "Hypnos Scoped Magnetometric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19929, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Induced Multispectral ECM I"
+    "typeName": "Induced Compact Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19931, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Compulsive Multispectral ECM I"
+    "typeName": "Compulsive Scoped Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19933, 
     "groupID": 201, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Hypnos' Multispectral ECM I"
   }, 
   {
@@ -64260,63 +64267,63 @@
     "typeID": 19935, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Languid Phase Inversion ECM I"
+    "typeName": "Languid Enduring Ladar ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19937, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Halting Phase Inversion ECM I"
+    "typeName": "Halting Compact Ladar ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19939, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Enfeebling Phase Inversion ECM I"
+    "typeName": "Enfeebling Scoped Ladar ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19942, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "FZ-3a Disruptive Spatial Destabilizer ECM"
+    "typeName": "FZ-3a Enduring Gravimetric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19944, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "CZ-4 Concussive Spatial Destabilizer ECM"
+    "typeName": "CZ-4 Compact Gravimetric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19946, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "BZ-5 Neutralizing Spatial Destabilizer ECM"
+    "typeName": "BZ-5 Scoped Gravimetric ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19948, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Gloom' White Noise ECM"
+    "typeName": "Gloom Enduring Radar ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19950, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Shade' White Noise ECM"
+    "typeName": "Shade Compact Radar ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 19952, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Umbra' White Noise ECM"
+    "typeName": "Umbra Scoped Radar ECM"
   }, 
   {
     "volume": 0.1, 
@@ -65149,35 +65156,35 @@
     "typeID": 20199, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Dread Guristas ECM Multispectral Jammer"
+    "typeName": "Dread Guristas Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20201, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Kaikka's Modified ECM Multispectral Jammer"
+    "typeName": "Kaikka's Modified Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20203, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Thon's Modified ECM Multispectral Jammer"
+    "typeName": "Thon's Modified Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20205, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Vepas' Modified ECM Multispectral Jammer"
+    "typeName": "Vepas' Modified Multispectral ECM"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20207, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Estamel's Modified ECM Multispectral Jammer"
+    "typeName": "Estamel's Modified Multispectral ECM"
   }, 
   {
     "volume": 0.01, 
@@ -65218,21 +65225,21 @@
     "volume": 5.0, 
     "typeID": 20214, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Extra Radar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20216, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incremental Radar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20218, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Conjunctive Radar ECCM Scanning Array I"
   }, 
   {
@@ -65246,21 +65253,21 @@
     "volume": 5.0, 
     "typeID": 20220, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Extra Ladar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20222, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incremental Ladar ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20224, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Conjunctive Ladar ECCM Scanning Array I"
   }, 
   {
@@ -65274,21 +65281,21 @@
     "volume": 5.0, 
     "typeID": 20226, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Extra Gravimetric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20228, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incremental Gravimetric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20230, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Conjunctive Gravimetric ECCM Scanning Array I"
   }, 
   {
@@ -65302,21 +65309,21 @@
     "volume": 5.0, 
     "typeID": 20232, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Extra Magnetometric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20234, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Incremental Magnetometric ECCM Scanning Array I"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20236, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "Conjunctive Magnetometric ECCM Scanning Array I"
   }, 
   {
@@ -65330,7 +65337,7 @@
     "volume": 5.0, 
     "typeID": 20238, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Secure Gravimetric Backup Cluster I"
   }, 
   {
@@ -65344,7 +65351,7 @@
     "volume": 5.0, 
     "typeID": 20240, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Shielded Gravimetric Backup Cluster I"
   }, 
   {
@@ -65358,7 +65365,7 @@
     "volume": 5.0, 
     "typeID": 20242, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Warded Gravimetric Backup Cluster I"
   }, 
   {
@@ -65372,7 +65379,7 @@
     "volume": 5.0, 
     "typeID": 20244, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Secure Ladar Backup Cluster I"
   }, 
   {
@@ -65386,7 +65393,7 @@
     "volume": 5.0, 
     "typeID": 20246, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Shielded Ladar Backup Cluster I"
   }, 
   {
@@ -65400,7 +65407,7 @@
     "volume": 5.0, 
     "typeID": 20248, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Warded Ladar Backup Cluster I"
   }, 
   {
@@ -65414,7 +65421,7 @@
     "volume": 5.0, 
     "typeID": 20250, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Secure Magnetometric Backup Cluster I"
   }, 
   {
@@ -65428,7 +65435,7 @@
     "volume": 5.0, 
     "typeID": 20252, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Shielded Magnetometric Backup Cluster I"
   }, 
   {
@@ -65442,7 +65449,7 @@
     "volume": 5.0, 
     "typeID": 20254, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Warded Magnetometric Backup Cluster I"
   }, 
   {
@@ -65456,7 +65463,7 @@
     "volume": 5.0, 
     "typeID": 20260, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Secure Radar Backup Cluster I"
   }, 
   {
@@ -65470,7 +65477,7 @@
     "volume": 5.0, 
     "typeID": 20262, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Shielded Radar Backup Cluster I"
   }, 
   {
@@ -65484,7 +65491,7 @@
     "volume": 5.0, 
     "typeID": 20264, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Warded Radar Backup Cluster I"
   }, 
   {
@@ -66801,14 +66808,14 @@
     "typeID": 20539, 
     "groupID": 524, 
     "market": true, 
-    "typeName": "Citadel Torpedo Launcher I"
+    "typeName": "XL Torpedo Launcher I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20540, 
     "groupID": 136, 
     "market": true, 
-    "typeName": "Citadel Torpedo Launcher I Blueprint"
+    "typeName": "XL Torpedo Launcher I Blueprint"
   }, 
   {
     "volume": 100.0, 
@@ -67004,70 +67011,70 @@
     "typeID": 20573, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Marshall' Ion Field Projector"
+    "typeName": "'Marshall' Magnetometric ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20574, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "'Marshall' Ion Field Projector Blueprint"
+    "typeName": "'Marshall' Magnetometric ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20575, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Gambler' Phase Inverter"
+    "typeName": "'Gambler' Ladar ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20576, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "'Gambler' Phase Inverter Blueprint"
+    "typeName": "'Gambler' Ladar ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20577, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Plunderer' Spatial Destabilizer"
+    "typeName": "'Plunderer' Gravimetric ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20578, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "'Plunderer' Spatial Destabilizer Blueprint"
+    "typeName": "'Plunderer' Gravimetric ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20579, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "'Heist' White Noise Generator"
+    "typeName": "'Heist' Radar ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20580, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "'Heist' White Noise Generator Blueprint"
+    "typeName": "'Heist' Radar ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 20581, 
     "groupID": 80, 
     "market": true, 
-    "typeName": "'Ghost' ECM Burst"
+    "typeName": "'Ghost' Burst Jammer"
   }, 
   {
     "volume": 0.01, 
     "typeID": 20582, 
     "groupID": 160, 
     "market": false, 
-    "typeName": "'Ghost' ECM Burst Blueprint"
+    "typeName": "'Ghost' Burst Jammer Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -71147,7 +71154,7 @@
     "volume": 5.0, 
     "typeID": 21482, 
     "groupID": 367, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ballistic 'Purge' Targeting System I"
   }, 
   {
@@ -71162,34 +71169,34 @@
     "typeID": 21484, 
     "groupID": 367, 
     "market": true, 
-    "typeName": "'Full Duplex' Ballistic Targeting System"
+    "typeName": "'Full Duplex' Ballistic Control System"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21485, 
     "groupID": 400, 
     "market": false, 
-    "typeName": "'Full Duplex' Ballistic Targeting System Blueprint"
+    "typeName": "'Full Duplex' Ballistic Control System Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21486, 
     "groupID": 59, 
     "market": true, 
-    "typeName": "'Kindred' Stabilization Actuator I"
+    "typeName": "'Kindred' Gyrostabilizer"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21487, 
     "groupID": 139, 
     "market": false, 
-    "typeName": "'Kindred' Stabilization Actuator I Blueprint"
+    "typeName": "'Kindred' Gyrostabilizer Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21488, 
     "groupID": 59, 
-    "market": true, 
+    "market": false, 
     "typeName": "Monophonic Stabilization Actuator I"
   }, 
   {
@@ -71344,14 +71351,14 @@
     "typeID": 21510, 
     "groupID": 52, 
     "market": true, 
-    "typeName": "Process-Interruptive Warp Disruptor"
+    "typeName": "'Interruptive' Warp Disruptor"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21511, 
     "groupID": 132, 
     "market": false, 
-    "typeName": "Process-Interruptive Warp Disruptor Blueprint"
+    "typeName": "'Interruptive' Warp Disruptor Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -71420,7 +71427,7 @@
     "volume": 5.0, 
     "typeID": 21521, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Gravimetric Firewall"
   }, 
   {
@@ -71434,7 +71441,7 @@
     "volume": 5.0, 
     "typeID": 21523, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Ladar Firewall"
   }, 
   {
@@ -71448,7 +71455,7 @@
     "volume": 5.0, 
     "typeID": 21525, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "Magnetometric Firewall"
   }, 
   {
@@ -71461,22 +71468,22 @@
   {
     "volume": 20.0, 
     "typeID": 21527, 
-    "groupID": 203, 
+    "groupID": 210, 
     "market": true, 
-    "typeName": "Multi Sensor Firewall"
+    "typeName": "'Firewall' Signal Amplifier"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21528, 
     "groupID": 347, 
     "market": false, 
-    "typeName": "Multi Sensor Firewall Blueprint"
+    "typeName": "'Firewall' Signal Amplifier Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 21529, 
     "groupID": 203, 
-    "market": true, 
+    "market": false, 
     "typeName": "RADAR Firewall"
   }, 
   {
@@ -71547,14 +71554,14 @@
     "typeID": 21540, 
     "groupID": 379, 
     "market": true, 
-    "typeName": "'Inception' Target Painter I"
+    "typeName": "'Inception' Target Painter"
   }, 
   {
     "volume": 0.01, 
     "typeID": 21541, 
     "groupID": 504, 
     "market": false, 
-    "typeName": "'Inception' Target Painter I Blueprint"
+    "typeName": "'Inception' Target Painter Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -72422,7 +72429,7 @@
     "typeID": 21668, 
     "groupID": 256, 
     "market": true, 
-    "typeName": "Citadel Torpedoes"
+    "typeName": "XL Torpedoes"
   }, 
   {
     "volume": 0.1, 
@@ -78587,7 +78594,7 @@
     "volume": 5.0, 
     "typeID": 22893, 
     "groupID": 60, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Gonzo' Damage Control I"
   }, 
   {
@@ -78600,22 +78607,22 @@
   {
     "volume": 5.0, 
     "typeID": 22895, 
-    "groupID": 202, 
+    "groupID": 212, 
     "market": true, 
-    "typeName": "'Shady' ECCM - Gravimetric I"
+    "typeName": "'Shady' Sensor Booster"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22896, 
-    "groupID": 131, 
+    "groupID": 223, 
     "market": false, 
-    "typeName": "'Shady' ECCM - Gravimetric I Blueprint"
+    "typeName": "'Shady' Sensor Booster Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22897, 
     "groupID": 202, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Forger' ECCM - Magnetometric I"
   }, 
   {
@@ -78755,7 +78762,7 @@
     "volume": 5.0, 
     "typeID": 22917, 
     "groupID": 302, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Capitalist' Magnetic Field Stabilizer I"
   }, 
   {
@@ -78770,14 +78777,14 @@
     "typeID": 22919, 
     "groupID": 302, 
     "market": true, 
-    "typeName": "'Monopoly' Magnetic Field Stabilizer I"
+    "typeName": "'Monopoly' Magnetic Field Stabilizer"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22920, 
     "groupID": 139, 
     "market": false, 
-    "typeName": "'Monopoly' Magnetic Field Stabilizer I Blueprint"
+    "typeName": "'Monopoly' Magnetic Field Stabilizer Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -78810,22 +78817,22 @@
   {
     "volume": 5.0, 
     "typeID": 22925, 
-    "groupID": 289, 
+    "groupID": 290, 
     "market": true, 
-    "typeName": "'Bootleg' ECCM Projector I"
+    "typeName": "'Bootleg' Remote Sensor Booster"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22926, 
-    "groupID": 131, 
+    "groupID": 223, 
     "market": false, 
-    "typeName": "'Bootleg' ECCM Projector I Blueprint"
+    "typeName": "'Bootleg' Remote Sensor Booster Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 22927, 
     "groupID": 213, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Economist' Tracking Computer I"
   }, 
   {
@@ -78840,14 +78847,14 @@
     "typeID": 22929, 
     "groupID": 213, 
     "market": true, 
-    "typeName": "'Marketeer' Tracking Computer I"
+    "typeName": "'Marketeer' Tracking Computer"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22930, 
     "groupID": 224, 
     "market": false, 
-    "typeName": "'Marketeer' Tracking Computer I Blueprint"
+    "typeName": "'Marketeer' Tracking Computer Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -78881,7 +78888,7 @@
     "volume": 5.0, 
     "typeID": 22935, 
     "groupID": 209, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Tycoon' Remote Tracking Computer"
   }, 
   {
@@ -78909,7 +78916,7 @@
     "volume": 5.0, 
     "typeID": 22939, 
     "groupID": 290, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Boss' Remote Sensor Booster"
   }, 
   {
@@ -78923,7 +78930,7 @@
     "volume": 5.0, 
     "typeID": 22941, 
     "groupID": 290, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Entrepreneur' Remote Sensor Booster"
   }, 
   {
@@ -78937,7 +78944,7 @@
     "volume": 5.0, 
     "typeID": 22943, 
     "groupID": 208, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Broker' Remote Sensor Dampener I"
   }, 
   {
@@ -78952,14 +78959,14 @@
     "typeID": 22945, 
     "groupID": 208, 
     "market": true, 
-    "typeName": "'Executive' Remote Sensor Dampener I"
+    "typeName": "'Executive' Remote Sensor Dampener"
   }, 
   {
     "volume": 0.01, 
     "typeID": 22946, 
     "groupID": 223, 
     "market": false, 
-    "typeName": "'Executive' Remote Sensor Dampener I Blueprint"
+    "typeName": "'Executive' Remote Sensor Dampener Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -81661,14 +81668,14 @@
     "typeID": 23418, 
     "groupID": 60, 
     "market": true, 
-    "typeName": "'Radical' Damage Control I"
+    "typeName": "'Radical' Damage Control"
   }, 
   {
     "volume": 0.01, 
     "typeID": 23419, 
     "groupID": 140, 
     "market": false, 
-    "typeName": "'Radical' Damage Control I Blueprint"
+    "typeName": "'Radical' Damage Control Blueprint"
   }, 
   {
     "volume": 1.0, 
@@ -84215,42 +84222,42 @@
     "typeID": 23801, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "'Crucible' Small Capacitor Battery I"
+    "typeName": "'Crucible' Small Cap Battery"
   }, 
   {
     "volume": 0.01, 
     "typeID": 23802, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "'Crucible' Small Capacitor Battery I Blueprint"
+    "typeName": "'Crucible' Small Cap Battery Blueprint"
   }, 
   {
     "volume": 10.0, 
     "typeID": 23803, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "'Censer' Medium Capacitor Battery I"
+    "typeName": "'Censer' Medium Cap Battery"
   }, 
   {
     "volume": 0.01, 
     "typeID": 23804, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "'Censer' Medium Capacitor Battery I Blueprint"
+    "typeName": "'Censer' Medium Cap Battery Blueprint"
   }, 
   {
     "volume": 15.0, 
     "typeID": 23805, 
     "groupID": 61, 
     "market": true, 
-    "typeName": "'Thurifer' Large Capacitor Battery I"
+    "typeName": "'Thurifer' Large Cap Battery"
   }, 
   {
     "volume": 0.01, 
     "typeID": 23806, 
     "groupID": 141, 
     "market": false, 
-    "typeName": "'Thurifer' Large Capacitor Battery I Blueprint"
+    "typeName": "'Thurifer' Large Cap Battery Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -84844,7 +84851,7 @@
     "volume": 5.0, 
     "typeID": 23900, 
     "groupID": 205, 
-    "market": true, 
+    "market": false, 
     "typeName": "'Mangonel' Heat Sink I"
   }, 
   {
@@ -84866,7 +84873,7 @@
     "typeID": 23903, 
     "groupID": 218, 
     "market": false, 
-    "typeName": "'Trebuchet' Heat Sink I Blueprint"
+    "typeName": "'Trebuchet' Heat Sink Blueprint"
   }, 
   {
     "volume": 1200.0, 
@@ -104110,14 +104117,14 @@
     "typeID": 27560, 
     "groupID": 417, 
     "market": true, 
-    "typeName": "Guristas Citadel Torpedo Battery"
+    "typeName": "Guristas XL Torpedo Battery"
   }, 
   {
     "volume": 5000.0, 
     "typeID": 27562, 
     "groupID": 417, 
     "market": true, 
-    "typeName": "Dread Guristas Citadel Torpedo Battery"
+    "typeName": "Dread Guristas XL Torpedo Battery"
   }, 
   {
     "volume": 4000.0, 
@@ -106357,7 +106364,7 @@
     "typeID": 27944, 
     "groupID": 871, 
     "market": false, 
-    "typeName": "Guristas Citadel Torpedo Battery Blueprint"
+    "typeName": "Guristas XL Torpedo Battery Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -106392,7 +106399,7 @@
     "typeID": 27949, 
     "groupID": 871, 
     "market": false, 
-    "typeName": "Dread Guristas Citadel Torpedo Battery Blueprint"
+    "typeName": "Dread Guristas XL Torpedo Battery Blueprint"
   }, 
   {
     "volume": 4000.0, 
@@ -111042,70 +111049,70 @@
     "typeID": 28729, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Legion ECM Ion Field Projector"
+    "typeName": "Legion Magnetometric ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28730, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "Legion ECM Ion Field Projector Blueprint"
+    "typeName": "Legion Magnetometric ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 28731, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Legion ECM Multispectral Jammer"
+    "typeName": "Legion Multispectral ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28732, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "Legion ECM Multispectral Jammer Blueprint"
+    "typeName": "Legion Multispectral ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 28733, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Legion ECM Phase Inverter"
+    "typeName": "Legion Ladar ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28734, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "Legion ECM Phase Inverter Blueprint"
+    "typeName": "Legion Ladar ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 28735, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Legion ECM Spatial Destabilizer"
+    "typeName": "Legion Gravimetric ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28736, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "Legion ECM Spatial Destabilizer Blueprint"
+    "typeName": "Legion Gravimetric ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
     "typeID": 28737, 
     "groupID": 201, 
     "market": true, 
-    "typeName": "Legion ECM White Noise Generator"
+    "typeName": "Legion Radar ECM"
   }, 
   {
     "volume": 0.01, 
     "typeID": 28738, 
     "groupID": 130, 
     "market": false, 
-    "typeName": "Legion ECM White Noise Generator Blueprint"
+    "typeName": "Legion Radar ECM Blueprint"
   }, 
   {
     "volume": 5.0, 
@@ -115494,28 +115501,28 @@
     "typeID": 29616, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Guristas Nova Citadel Torpedo"
+    "typeName": "Guristas Nova XL Torpedo"
   }, 
   {
     "volume": 0.3, 
     "typeID": 29618, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Guristas Inferno Citadel Torpedo"
+    "typeName": "Guristas Inferno XL Torpedo"
   }, 
   {
     "volume": 0.3, 
     "typeID": 29620, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Guristas Scourge Citadel Torpedo"
+    "typeName": "Guristas Scourge XL Torpedo"
   }, 
   {
     "volume": 0.3, 
     "typeID": 29622, 
     "groupID": 476, 
     "market": true, 
-    "typeName": "Guristas Mjolnir Citadel Torpedo"
+    "typeName": "Guristas Mjolnir XL Torpedo"
   }, 
   {
     "volume": 10000000.0, 
@@ -130992,77 +130999,77 @@
     "typeID": 32435, 
     "groupID": 256, 
     "market": true, 
-    "typeName": "Citadel Cruise Missiles"
+    "typeName": "XL Cruise Missiles"
   }, 
   {
     "volume": 0.3, 
     "typeID": 32436, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Scourge Citadel Cruise Missile"
+    "typeName": "Scourge XL Cruise Missile"
   }, 
   {
     "volume": 0.01, 
     "typeID": 32437, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Scourge Citadel Cruise Missile Blueprint"
+    "typeName": "Scourge XL Cruise Missile Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 32438, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Nova Citadel Cruise Missile"
+    "typeName": "Nova XL Cruise Missile"
   }, 
   {
     "volume": 0.01, 
     "typeID": 32439, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Nova Citadel Cruise Missile Blueprint"
+    "typeName": "Nova XL Cruise Missile Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 32440, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Inferno Citadel Cruise Missile"
+    "typeName": "Inferno XL Cruise Missile"
   }, 
   {
     "volume": 0.01, 
     "typeID": 32441, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Inferno Citadel Cruise Missile Blueprint"
+    "typeName": "Inferno XL Cruise Missile Blueprint"
   }, 
   {
     "volume": 0.3, 
     "typeID": 32442, 
     "groupID": 1019, 
     "market": true, 
-    "typeName": "Mjolnir Citadel Cruise Missile"
+    "typeName": "Mjolnir XL Cruise Missile"
   }, 
   {
     "volume": 0.01, 
     "typeID": 32443, 
     "groupID": 166, 
     "market": true, 
-    "typeName": "Mjolnir Citadel Cruise Missile Blueprint"
+    "typeName": "Mjolnir XL Cruise Missile Blueprint"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 32444, 
     "groupID": 524, 
     "market": true, 
-    "typeName": "Citadel Cruise Launcher I"
+    "typeName": "XL Cruise Launcher I"
   }, 
   {
     "volume": 0.01, 
     "typeID": 32445, 
     "groupID": 136, 
     "market": true, 
-    "typeName": "Citadel Cruise Launcher I Blueprint"
+    "typeName": "XL Cruise Launcher I Blueprint"
   }, 
   {
     "volume": 200000.0, 
@@ -142240,70 +142247,70 @@
     "volume": 0.1, 
     "typeID": 34540, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Sentinel Sequence 0"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34541, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Sentinel Sequence 1"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34542, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Barbican Sequence 0"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34543, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Barbican Sequence 1"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34544, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Vidette Sequence 0"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34545, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Vidette Sequence 1"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34546, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Conflux Sequence 0"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34547, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Conflux Sequence 1"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34548, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Redoubt Sequence 0"
   }, 
   {
     "volume": 0.1, 
     "typeID": 34549, 
     "groupID": 1314, 
-    "market": false, 
+    "market": true, 
     "typeName": "Redoubt Sequence 1"
   }, 
   {
@@ -150387,14 +150394,14 @@
   {
     "volume": 4000.0, 
     "typeID": 35832, 
-    "groupID": 1320, 
+    "groupID": 1657, 
     "market": false, 
     "typeName": "Astrahus"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35833, 
-    "groupID": 1320, 
+    "groupID": 1658, 
     "market": false, 
     "typeName": "Fortizar"
   }, 
@@ -150483,20 +150490,6 @@
     "typeName": "X-Large Advertisement Center"
   }, 
   {
-    "volume": 64000.0, 
-    "typeID": 35875, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Supercapital Assembly Array"
-  }, 
-  {
-    "volume": 2000.0, 
-    "typeID": 35876, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Ammunition Assembly Array"
-  }, 
-  {
     "volume": 32000.0, 
     "typeID": 35877, 
     "groupID": 1415, 
@@ -150512,13 +150505,6 @@
   }, 
   {
     "volume": 4000.0, 
-    "typeID": 35879, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Drone Assembly Array"
-  }, 
-  {
-    "volume": 4000.0, 
     "typeID": 35880, 
     "groupID": 1415, 
     "market": false, 
@@ -150529,49 +150515,14 @@
     "typeID": 35881, 
     "groupID": 1415, 
     "market": false, 
-    "typeName": "Large Ship Assembly Array"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35882, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Medium Ship Assembly Array"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35883, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Small Ship Assembly Array"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35884, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Subsystem Assembly Array"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35885, 
-    "groupID": 1415, 
-    "market": false, 
-    "typeName": "Drug Assembly Array"
+    "typeName": "Ship Assembly Array"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35886, 
     "groupID": 1416, 
     "market": false, 
-    "typeName": "Advanced Laboratory"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35887, 
-    "groupID": 1416, 
-    "market": false, 
-    "typeName": "Experimental Laboratory"
+    "typeName": "Invention Laboratory"
   }, 
   {
     "volume": 8000.0, 
@@ -150670,20 +150621,6 @@
     "groupID": 1322, 
     "market": false, 
     "typeName": "Moon Drilling"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35902, 
-    "groupID": 1322, 
-    "market": false, 
-    "typeName": "Simple Reactor Array"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35903, 
-    "groupID": 1322, 
-    "market": false, 
-    "typeName": "Complex Reactor Array"
   }, 
   {
     "volume": 32000.0, 
@@ -150809,21 +150746,21 @@
     "typeID": 35921, 
     "groupID": 1327, 
     "market": false, 
-    "typeName": "Structure Anti-Ship Launcher"
+    "typeName": "Structure Anticapital Launcher"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35922, 
     "groupID": 1562, 
     "market": false, 
-    "typeName": "Structure Flak Launcher"
+    "typeName": "Structure Antisupcapital Launcher"
   }, 
   {
     "volume": 8000.0, 
     "typeID": 35923, 
     "groupID": 1328, 
     "market": false, 
-    "typeName": "Structure AoE Missile Launcher"
+    "typeName": "Structure Guided Bomb Launcher"
   }, 
   {
     "volume": 8000.0, 
@@ -150858,7 +150795,7 @@
     "typeID": 35928, 
     "groupID": 1333, 
     "market": false, 
-    "typeName": "Structure Doomsday Zapping Beam"
+    "typeName": "Structure Arcing Vorton Projector"
   }, 
   {
     "volume": 4000.0, 
@@ -150935,7 +150872,7 @@
     "typeID": 35939, 
     "groupID": 1331, 
     "market": false, 
-    "typeName": "Structure Bumping Module"
+    "typeName": "Structure Repulsor Field"
   }, 
   {
     "volume": 4000.0, 
@@ -150984,14 +150921,14 @@
     "typeID": 35949, 
     "groupID": 1442, 
     "market": false, 
-    "typeName": "Structure Warp Disruptor"
+    "typeName": "Structure Warp Scrambler"
   }, 
   {
     "volume": 4000.0, 
     "typeID": 35950, 
     "groupID": 1442, 
     "market": false, 
-    "typeName": "Structure Warp Disruptor Generator"
+    "typeName": "Structure Warp Scrambler Generator"
   }, 
   {
     "volume": 4000.0, 
@@ -151012,7 +150949,7 @@
     "typeID": 35953, 
     "groupID": 1424, 
     "market": false, 
-    "typeName": "Structure Sensor Booster"
+    "typeName": "Structure Scan Resolution Booster"
   }, 
   {
     "volume": 4000.0, 
@@ -151027,13 +150964,6 @@
     "groupID": 1421, 
     "market": false, 
     "typeName": "Structure Remote Tracking Computer"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35956, 
-    "groupID": 1423, 
-    "market": false, 
-    "typeName": "Structure Tracking Computer"
   }, 
   {
     "volume": 4000.0, 
@@ -151068,7 +150998,7 @@
     "typeID": 35962, 
     "groupID": 1444, 
     "market": false, 
-    "typeName": "Structure Guidance Enhancer"
+    "typeName": "Structure Missile Guidance Enhancer"
   }, 
   {
     "volume": 4000.0, 
@@ -151076,13 +151006,6 @@
     "groupID": 1430, 
     "market": false, 
     "typeName": "Structure Co-Processor"
-  }, 
-  {
-    "volume": 4000.0, 
-    "typeID": 35964, 
-    "groupID": 1436, 
-    "market": false, 
-    "typeName": "Structure Power Diagnostic System"
   }, 
   {
     "volume": 4000.0, 
@@ -154624,7 +154547,7 @@
     "typeID": 36953, 
     "groupID": 447, 
     "market": true, 
-    "typeName": "Structure Telescope Lens Blueprint"
+    "typeName": "Structure Electromagnetic Sensor Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -154645,7 +154568,7 @@
     "typeID": 36956, 
     "groupID": 536, 
     "market": true, 
-    "typeName": "Structure Telescope Lens"
+    "typeName": "Structure Electromagnetic Sensor"
   }, 
   {
     "volume": 100000.0, 
@@ -154932,56 +154855,42 @@
     "typeID": 37003, 
     "groupID": 1506, 
     "market": false, 
-    "typeName": "Armored Targeted Link Blueprint"
+    "typeName": "Structure Armored Targeted Link Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37004, 
     "groupID": 1506, 
     "market": false, 
-    "typeName": "Information Targeted Link Blueprint"
+    "typeName": "Structure Information Targeted Link Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37005, 
     "groupID": 1506, 
     "market": false, 
-    "typeName": "Siege Targeted Link Blueprint"
+    "typeName": "Structure Siege Targeted Link Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37006, 
     "groupID": 1506, 
     "market": false, 
-    "typeName": "Skirmish Targeted Link Blueprint"
+    "typeName": "Structure Skirmish Targeted Link Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37007, 
     "groupID": 1506, 
     "market": false, 
-    "typeName": "Mining Targeted Link Blueprint"
+    "typeName": "Structure Mining Targeted Link Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37008, 
     "groupID": 1469, 
     "market": false, 
-    "typeName": "AoE Missile Launcher Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37009, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Supercapital Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.0, 
-    "typeID": 37010, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Ammunition Assembly Array Blueprint"
+    "typeName": "Structure Guided Bomb Launcher Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -154999,13 +154908,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 37013, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Drone Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 37014, 
     "groupID": 1470, 
     "market": false, 
@@ -155016,49 +154918,21 @@
     "typeID": 37015, 
     "groupID": 1470, 
     "market": false, 
-    "typeName": "Large Ship Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37016, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Medium Ship Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37017, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Small Ship Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37018, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Subsystem Assembly Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37019, 
-    "groupID": 1470, 
-    "market": false, 
-    "typeName": "Drug Assembly Array Blueprint"
+    "typeName": "Ship Assembly Array Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37020, 
     "groupID": 1471, 
     "market": false, 
-    "typeName": "Missile Weapon Upgrade Blueprint"
+    "typeName": "Structure Ballistic Control System Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37021, 
     "groupID": 1472, 
     "market": false, 
-    "typeName": "Repulsor Field Blueprint"
+    "typeName": "Structure Repulsor Field Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155107,21 +154981,21 @@
     "typeID": 37028, 
     "groupID": 1474, 
     "market": false, 
-    "typeName": "Co-Processor Blueprint"
+    "typeName": "Structure Co-Processor Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37029, 
     "groupID": 1475, 
     "market": false, 
-    "typeName": "Point Defense Battery Blueprint"
+    "typeName": "Structure Point Defense Battery Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37030, 
     "groupID": 1476, 
     "market": false, 
-    "typeName": "Doomsday Zapping Beam Blueprint"
+    "typeName": "Structure Arcing Vorton Projector Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155153,101 +155027,87 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 37035, 
-    "groupID": 1477, 
-    "market": false, 
-    "typeName": "Simple Reactor Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37036, 
-    "groupID": 1477, 
-    "market": false, 
-    "typeName": "Complex Reactor Array Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 37037, 
     "groupID": 1478, 
     "market": false, 
-    "typeName": "Drone Link Augmentor Blueprint"
+    "typeName": "Structure Drone Link Augmentor Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37038, 
     "groupID": 1479, 
     "market": false, 
-    "typeName": "Drone Damage Amplifier Blueprint"
+    "typeName": "Structure Drone Damage Amplifier Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37039, 
     "groupID": 1508, 
     "market": false, 
-    "typeName": "Drone Navigation Computer Blueprint"
+    "typeName": "Structure Drone Navigation Computer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37040, 
     "groupID": 1480, 
     "market": false, 
-    "typeName": "Drone Tracking Enhancer Blueprint"
+    "typeName": "Structure Drone Tracking Enhancer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37041, 
     "groupID": 1481, 
     "market": false, 
-    "typeName": "Multi-spectrum ECM Blueprint"
+    "typeName": "Structure Multi-spectrum ECM Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37042, 
     "groupID": 1481, 
     "market": false, 
-    "typeName": "ECCM Projector Blueprint"
+    "typeName": "Structure ECCM Projector Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37043, 
     "groupID": 1482, 
     "market": false, 
-    "typeName": "LXL Energy Neutralizer Blueprint"
+    "typeName": "Structure LXL Energy Neutralizer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37044, 
     "groupID": 1482, 
     "market": false, 
-    "typeName": "SM Energy Neutralizer Blueprint"
+    "typeName": "Structure SM Energy Neutralizer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37045, 
     "groupID": 1483, 
     "market": false, 
-    "typeName": "Guidance Enhancer Blueprint"
+    "typeName": "Structure Missile Guidance Enhancer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37046, 
     "groupID": 1484, 
     "market": false, 
-    "typeName": "Missile Guidance Computer Blueprint"
+    "typeName": "Structure Missile Guidance Computer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37047, 
     "groupID": 1485, 
     "market": false, 
-    "typeName": "Anti-Ship Launcher Blueprint"
+    "typeName": "Structure Anticapital Launcher Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37048, 
     "groupID": 1485, 
     "market": false, 
-    "typeName": "Flak Launcher Blueprint"
+    "typeName": "Structure Antisubcapital Launcher Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155266,7 +155126,7 @@
   {
     "volume": 0.01, 
     "typeID": 37051, 
-    "groupID": 1467, 
+    "groupID": 1486, 
     "market": false, 
     "typeName": "Capsuleer Tracking Array Blueprint"
   }, 
@@ -155321,87 +155181,73 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 37059, 
-    "groupID": 1487, 
-    "market": false, 
-    "typeName": "Power Diagnostic System Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 37060, 
     "groupID": 1488, 
     "market": false, 
-    "typeName": "Reactor Control Unit Blueprint"
+    "typeName": "Structure Reactor Control Unit Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37061, 
     "groupID": 1489, 
     "market": false, 
-    "typeName": "Remote Armor Repairer Blueprint"
+    "typeName": "Structure Remote Armor Repairer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37062, 
     "groupID": 1490, 
     "market": false, 
-    "typeName": "Remote Capacitor Transmitter Blueprint"
+    "typeName": "Structure Remote Capacitor Transmitter Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37063, 
     "groupID": 1491, 
     "market": false, 
-    "typeName": "Remote Hull Repairer Blueprint"
+    "typeName": "Structure Remote Hull Repairer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37064, 
     "groupID": 1492, 
     "market": false, 
-    "typeName": "Remote Missile Guidance Computer Blueprint"
+    "typeName": "Structure Remote Missile Guidance Computer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37065, 
     "groupID": 1493, 
     "market": false, 
-    "typeName": "Remote Sensor Booster Blueprint"
+    "typeName": "Structure Remote Sensor Booster Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37066, 
     "groupID": 1494, 
     "market": false, 
-    "typeName": "Remote Sensor Dampener Blueprint"
+    "typeName": "Structure Remote Sensor Dampener Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37067, 
     "groupID": 1495, 
     "market": false, 
-    "typeName": "Remote Shield Booster Blueprint"
+    "typeName": "Structure Remote Shield Booster Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37068, 
     "groupID": 1496, 
     "market": false, 
-    "typeName": "Remote Tracking Computer Blueprint"
+    "typeName": "Structure Remote Tracking Computer Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37069, 
     "groupID": 1497, 
     "market": false, 
-    "typeName": "Advanced Laboratory Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37070, 
-    "groupID": 1497, 
-    "market": false, 
-    "typeName": "Experimental Laboratory Blueprint"
+    "typeName": "Invention Laboratory Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155436,7 +155282,7 @@
     "typeID": 37075, 
     "groupID": 1498, 
     "market": false, 
-    "typeName": "Sensor Booster Blueprint"
+    "typeName": "Structure Scan Resolution Booster Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155471,28 +155317,21 @@
     "typeID": 37080, 
     "groupID": 1500, 
     "market": false, 
-    "typeName": "Stasis Webifier Blueprint"
+    "typeName": "Structure Stasis Webifier Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37081, 
     "groupID": 1501, 
     "market": false, 
-    "typeName": "Target Painter Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37082, 
-    "groupID": 1502, 
-    "market": false, 
-    "typeName": "Tracking Computer Blueprint"
+    "typeName": "Structure Target Painter Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37083, 
     "groupID": 1503, 
     "market": false, 
-    "typeName": "Tracking Disruptor Blueprint"
+    "typeName": "Structure Tracking Disruptor Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -155506,14 +155345,14 @@
     "typeID": 37085, 
     "groupID": 1505, 
     "market": false, 
-    "typeName": "Ship Tractor Beam Blueprint"
+    "typeName": "Structure Ship Tractor Beam Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37087, 
     "groupID": 1507, 
     "market": false, 
-    "typeName": "Warp Disruptor Blueprint"
+    "typeName": "Structure Warp Scrambler Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -156273,20 +156112,6 @@
   }, 
   {
     "volume": 20.0, 
-    "typeID": 37200, 
-    "groupID": 1510, 
-    "market": false, 
-    "typeName": "Large Tech II Ship Research I"
-  }, 
-  {
-    "volume": 20.0, 
-    "typeID": 37201, 
-    "groupID": 1510, 
-    "market": false, 
-    "typeName": "Large Tech II Ship Research II"
-  }, 
-  {
-    "volume": 20.0, 
     "typeID": 37202, 
     "groupID": 1606, 
     "market": false, 
@@ -156444,28 +156269,28 @@
     "typeID": 37224, 
     "groupID": 1617, 
     "market": false, 
-    "typeName": "Medium Drone Application I"
+    "typeName": "Medium Drone Hitpoints I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37225, 
     "groupID": 1617, 
     "market": false, 
-    "typeName": "Medium Drone Application II"
+    "typeName": "Medium Drone Hitpoints II"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37226, 
     "groupID": 1618, 
     "market": false, 
-    "typeName": "Medium Drone Projection I"
+    "typeName": "Medium Drone Speed I"
   }, 
   {
     "volume": 10.0, 
     "typeID": 37227, 
     "groupID": 1618, 
     "market": false, 
-    "typeName": "Medium Drone Projection II"
+    "typeName": "Medium Drone Speed II"
   }, 
   {
     "volume": 10.0, 
@@ -156633,14 +156458,14 @@
     "typeID": 37252, 
     "groupID": 1631, 
     "market": false, 
-    "typeName": "Large Drone Application and Projection I"
+    "typeName": "Large Drone Hitpoints and Speed I"
   }, 
   {
     "volume": 20.0, 
     "typeID": 37253, 
     "groupID": 1631, 
     "market": false, 
-    "typeName": "Large Drone Application and Projection II"
+    "typeName": "Large Drone Hitpoints and Speed II"
   }, 
   {
     "volume": 20.0, 
@@ -156787,28 +156612,14 @@
     "typeID": 37274, 
     "groupID": 1642, 
     "market": false, 
-    "typeName": "X-Large Doomsday Application and Projection I"
+    "typeName": "X-Large Doomsday Application, Projection and Targeting I"
   }, 
   {
     "volume": 40.0, 
     "typeID": 37275, 
     "groupID": 1642, 
     "market": false, 
-    "typeName": "X-Large Doomsday Application and Projection II"
-  }, 
-  {
-    "volume": 40.0, 
-    "typeID": 37276, 
-    "groupID": 1643, 
-    "market": false, 
-    "typeName": "X-Large Targeting and Sensor Resolution I"
-  }, 
-  {
-    "volume": 40.0, 
-    "typeID": 37277, 
-    "groupID": 1643, 
-    "market": false, 
-    "typeName": "X-Large Targeting and Sensor Resolution II"
+    "typeName": "X-Large Doomsday Application, Projection and Targeting II"
   }, 
   {
     "volume": 40.0, 
@@ -157386,20 +157197,6 @@
   }, 
   {
     "volume": 0.01, 
-    "typeID": 37362, 
-    "groupID": 1520, 
-    "market": false, 
-    "typeName": "Large Tech II Ship Research I Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37363, 
-    "groupID": 1520, 
-    "market": false, 
-    "typeName": "Large Tech II Ship Research II Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
     "typeID": 37364, 
     "groupID": 1520, 
     "market": false, 
@@ -157557,28 +157354,28 @@
     "typeID": 37386, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Medium Drone Application I Blueprint"
+    "typeName": "Medium Drone Hitpoints I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37387, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Medium Drone Application II Blueprint"
+    "typeName": "Medium Drone Hitpoints II Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37388, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Medium Drone Projection I Blueprint"
+    "typeName": "Medium Drone Speed I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37389, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Medium Drone Projection II Blueprint"
+    "typeName": "Medium Drone Speed II Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -157753,14 +157550,14 @@
     "typeID": 37415, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Large Drone Application and Projection I Blueprint"
+    "typeName": "Large Drone Hitpoints and Speed I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37416, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "Large Drone Application and Projection II Blueprint"
+    "typeName": "Large Drone Hitpoints and Speed II Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -157907,28 +157704,14 @@
     "typeID": 37437, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "X-Large Doomsday Application and Projection I Blueprint"
+    "typeName": "X-Large Doomsday Application, Projection and Targeting I Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37438, 
     "groupID": 1521, 
     "market": false, 
-    "typeName": "X-Large Doomsday Application and Projection II Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37439, 
-    "groupID": 1521, 
-    "market": false, 
-    "typeName": "X-Large Targeting and Sensor Resolution I Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37440, 
-    "groupID": 1521, 
-    "market": false, 
-    "typeName": "X-Large Targeting and Sensor Resolution II Blueprint"
+    "typeName": "X-Large Doomsday Application, Projection and Targeting II Blueprint"
   }, 
   {
     "volume": 0.01, 
@@ -158600,7 +158383,7 @@
     "typeID": 37541, 
     "groupID": 1536, 
     "market": false, 
-    "typeName": "Signal Amplifier Blueprint"
+    "typeName": "Structure Signal Amplifier Blueprint"
   }, 
   {
     "volume": 20.0, 
@@ -158992,7 +158775,7 @@
     "typeID": 37599, 
     "groupID": 1537, 
     "market": false, 
-    "typeName": "SupportCatAmarr"
+    "typeName": "Cenobite I"
   }, 
   {
     "volume": 0.1, 
@@ -159020,35 +158803,35 @@
     "typeID": 37603, 
     "groupID": 1088, 
     "market": false, 
-    "typeName": "ArmorSuitCF01_SOERed.type"
+    "typeName": "Sisters of EVE Advanced Combat Suit (f)"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 19500000.0, 
     "typeID": 37604, 
     "groupID": 1538, 
     "market": true, 
-    "typeName": "Amarr Force Auxiliary"
+    "typeName": "Apostle"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 17250000.0, 
     "typeID": 37605, 
     "groupID": 1538, 
     "market": true, 
-    "typeName": "Caldari Force Auxiliary"
+    "typeName": "Minokawa"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 16500000.0, 
     "typeID": 37606, 
     "groupID": 1538, 
     "market": true, 
-    "typeName": "Minmatar Force Auxiliary"
+    "typeName": "Lif"
   }, 
   {
-    "volume": 1.0, 
+    "volume": 18550000.0, 
     "typeID": 37607, 
     "groupID": 1538, 
     "market": true, 
-    "typeName": "Gallente Force Auxiliary"
+    "typeName": "Ninazu"
   }, 
   {
     "volume": 50.0, 
@@ -159121,7 +158904,7 @@
     "typeName": "Bifrost Blueprint"
   }, 
   {
-    "volume": 0.0, 
+    "volume": 0.01, 
     "typeID": 37621, 
     "groupID": 1543, 
     "market": true, 
@@ -160321,28 +160104,28 @@
     "volume": 0.01, 
     "typeID": 37796, 
     "groupID": 1545, 
-    "market": false, 
-    "typeName": "Structure Offensive Systems"
+    "market": true, 
+    "typeName": "Structure Missile Systems"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37797, 
     "groupID": 1545, 
-    "market": false, 
+    "market": true, 
     "typeName": "Structure Defensive Systems"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37798, 
     "groupID": 1545, 
-    "market": false, 
+    "market": true, 
     "typeName": "Structure Electronic Systems"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37799, 
     "groupID": 1545, 
-    "market": false, 
+    "market": true, 
     "typeName": "Structure Engineering Systems"
   }, 
   {
@@ -160399,7 +160182,7 @@
     "typeID": 37815, 
     "groupID": 1088, 
     "market": false, 
-    "typeName": "ArmorSuitMM01_SOERed.type"
+    "typeName": "Sisters of EVE Advanced Combat Suit (m)"
   }, 
   {
     "volume": 0.1, 
@@ -160493,20 +160276,6 @@
     "typeName": "Structure Thermal Resistance Script"
   }, 
   {
-    "volume": 1.0, 
-    "typeID": 37830, 
-    "groupID": 1550, 
-    "market": false, 
-    "typeName": "Structure Long Range Stasis Webifier Script"
-  }, 
-  {
-    "volume": 1.0, 
-    "typeID": 37831, 
-    "groupID": 1550, 
-    "market": false, 
-    "typeName": "Structure Short Range Stasis Webifier Script"
-  }, 
-  {
     "volume": 0.01, 
     "typeID": 37833, 
     "groupID": 912, 
@@ -160563,144 +160332,130 @@
     "typeName": "Structure Thermal Resistance Script Blueprint"
   }, 
   {
-    "volume": 0.01, 
-    "typeID": 37841, 
-    "groupID": 912, 
-    "market": false, 
-    "typeName": "Structure Long Range Stasis Webifier Script Blueprint"
-  }, 
-  {
-    "volume": 0.01, 
-    "typeID": 37842, 
-    "groupID": 912, 
-    "market": false, 
-    "typeName": "Structure Short Range Stasis Webifier Script Blueprint"
-  }, 
-  {
     "volume": 0.5, 
     "typeID": 37843, 
     "groupID": 1546, 
     "market": false, 
-    "typeName": "Structure Long Range Anti-Ship Missile"
+    "typeName": "Structure Long Range Anticapital Missile"
   }, 
   {
     "volume": 0.5, 
     "typeID": 37844, 
     "groupID": 1546, 
     "market": false, 
-    "typeName": "Structure Medium Range Anti-Ship Missile"
+    "typeName": "Structure Medium Range Anticapital Missile"
   }, 
   {
     "volume": 0.5, 
     "typeID": 37845, 
     "groupID": 1546, 
     "market": false, 
-    "typeName": "Structure Short Range Anti-Ship Missile"
+    "typeName": "Structure Short Range Anticapital Missile"
   }, 
   {
     "volume": 0.5, 
     "typeID": 37846, 
     "groupID": 1547, 
     "market": false, 
-    "typeName": "Structure Long Range Flak Missile"
+    "typeName": "Structure Long Range Antisubcapital Missile"
   }, 
   {
     "volume": 0.5, 
     "typeID": 37847, 
     "groupID": 1547, 
     "market": false, 
-    "typeName": "Structure Medium Range Flak Missile"
+    "typeName": "Structure Medium Range Antisubcapital Missile"
   }, 
   {
     "volume": 0.5, 
     "typeID": 37848, 
     "groupID": 1547, 
     "market": false, 
-    "typeName": "Structure Short Range Flak Missile"
+    "typeName": "Structure Short Range Antisubcapital Missile"
   }, 
   {
     "volume": 25.0, 
     "typeID": 37849, 
     "groupID": 1548, 
     "market": false, 
-    "typeName": "Structure Long Range AoE Missile"
+    "typeName": "Structure Antibattleship Guided Bomb"
   }, 
   {
     "volume": 25.0, 
     "typeID": 37850, 
     "groupID": 1548, 
     "market": false, 
-    "typeName": "Structure Short Range AoE Missile"
+    "typeName": "Structure Antifrigate Guided Bomb"
   }, 
   {
     "volume": 25.0, 
     "typeID": 37851, 
     "groupID": 1548, 
     "market": false, 
-    "typeName": "Structure Capacitor AoE Missile"
+    "typeName": "Structure Capacitor Draining Guided Bomb"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37852, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Long Range Anti-Ship Missile Blueprint"
+    "typeName": "Structure Long Range Anticapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37853, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Medium Range Anti-Ship Missile Blueprint"
+    "typeName": "Structure Medium Range Anticapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37854, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Short Range Anti-Ship Missile Blueprint"
+    "typeName": "Structure Short Range Anticapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37855, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Long Range Flak Missile Blueprint"
+    "typeName": "Structure Long Range Antisubcapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37856, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Medium Range Flak Missile Blueprint"
+    "typeName": "Structure Medium Range Antisubcapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37857, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Short Range Flak Missile Blueprint"
+    "typeName": "Structure Short Range Antisubcapital Missile Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37858, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Long Range AoE Missile Blueprint"
+    "typeName": "Structure Antibattleship Guided Bomb Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37859, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Short Range AoE Missile Blueprint"
+    "typeName": "Structure Antifrigate Guided Bomb Blueprint"
   }, 
   {
     "volume": 0.01, 
     "typeID": 37860, 
     "groupID": 166, 
     "market": false, 
-    "typeName": "Structure Capacitor AoE Missile Blueprint"
+    "typeName": "Structure Capacitor Draining Guided Bomb Blueprint"
   }, 
   {
     "volume": 27500.0, 
@@ -177827,9 +177582,9 @@
   {
     "volume": 4000.0, 
     "typeID": 40340, 
-    "groupID": 1320, 
+    "groupID": 1656, 
     "market": false, 
-    "typeName": "X-Large Posh Citadel"
+    "typeName": "Upwell Palatine Keepstar"
   }, 
   {
     "volume": 0.1, 
@@ -177843,73 +177598,73 @@
     "typeID": 40345, 
     "groupID": 1537, 
     "market": false, 
-    "typeName": "SupportCatCaldari"
+    "typeName": "Scarab I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40346, 
     "groupID": 1537, 
     "market": false, 
-    "typeName": "SupportCatGallente"
+    "typeName": "Siren I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40347, 
     "groupID": 1537, 
     "market": false, 
-    "typeName": "SupportCatMinmatar"
+    "typeName": "Dromi I"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 4000.0, 
     "typeID": 40348, 
     "groupID": 329, 
-    "market": false, 
-    "typeName": "6400mm Steel Plates I"
+    "market": true, 
+    "typeName": "25000mm Steel Plates I"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 4000.0, 
     "typeID": 40349, 
     "groupID": 329, 
-    "market": false, 
-    "typeName": "6400mm Crystalline Carbonide Restrained Plates"
+    "market": true, 
+    "typeName": "25000mm Crystalline Carbonide Restrained Plates"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 4000.0, 
     "typeID": 40350, 
     "groupID": 329, 
-    "market": false, 
-    "typeName": "6400mm Rolled Tungsten Compact Plates"
+    "market": true, 
+    "typeName": "25000mm Rolled Tungsten Compact Plates"
   }, 
   {
-    "volume": 5.0, 
+    "volume": 4000.0, 
     "typeID": 40351, 
     "groupID": 329, 
-    "market": false, 
-    "typeName": "6400mm Steel Plates II"
+    "market": true, 
+    "typeName": "25000mm Steel Plates II"
   }, 
   {
-    "volume": 2.5, 
+    "volume": 4000.0, 
     "typeID": 40354, 
     "groupID": 38, 
     "market": false, 
     "typeName": "Capital Shield Extender I"
   }, 
   {
-    "volume": 2.5, 
+    "volume": 4000.0, 
     "typeID": 40355, 
     "groupID": 38, 
     "market": false, 
     "typeName": "Capital Azeotropic Restrained Shield Extender"
   }, 
   {
-    "volume": 2.5, 
+    "volume": 4000.0, 
     "typeID": 40356, 
     "groupID": 38, 
     "market": false, 
     "typeName": "Capital F-S9 Regolith Compact Shield Extender"
   }, 
   {
-    "volume": 2.5, 
+    "volume": 4000.0, 
     "typeID": 40357, 
     "groupID": 38, 
     "market": false, 
@@ -177918,58 +177673,58 @@
   {
     "volume": 1000.0, 
     "typeID": 40358, 
-    "groupID": 1537, 
+    "groupID": 1652, 
     "market": false, 
-    "typeName": "LightCatAmarr"
+    "typeName": "Equite I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40359, 
-    "groupID": 1537, 
+    "groupID": 1652, 
     "market": false, 
-    "typeName": "LightCatCaldari"
+    "typeName": "Locust I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40360, 
-    "groupID": 1537, 
+    "groupID": 1652, 
     "market": false, 
-    "typeName": "LightCatGallente"
+    "typeName": "Satyr I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40361, 
-    "groupID": 1537, 
+    "groupID": 1652, 
     "market": false, 
-    "typeName": "LightCatMinmatar"
+    "typeName": "Gram I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40362, 
-    "groupID": 1537, 
+    "groupID": 1653, 
     "market": false, 
-    "typeName": "HeavyCatAmarr"
+    "typeName": "Ametat I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40363, 
-    "groupID": 1537, 
+    "groupID": 1653, 
     "market": false, 
-    "typeName": "HeavyCatCaldari"
+    "typeName": "Termite I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40364, 
-    "groupID": 1537, 
+    "groupID": 1653, 
     "market": false, 
-    "typeName": "HeavyCatGallente"
+    "typeName": "Antaeus I"
   }, 
   {
     "volume": 1000.0, 
     "typeID": 40365, 
-    "groupID": 1537, 
+    "groupID": 1653, 
     "market": false, 
-    "typeName": "HeavyCatMinmatar"
+    "typeName": "Gungnir I"
   }, 
   {
     "volume": 0.01, 
@@ -178609,6 +178364,69 @@
     "typeName": "Research Component"
   }, 
   {
+    "volume": 0.1, 
+    "typeID": 40457, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Sisters of EVE Analysis Coat (f)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40458, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatF01_Cyan.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40459, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatF01_Green.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40460, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatF01_Orange.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40461, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "Sisters of EVE Analysis Coat (m)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40462, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatM01_Cyan.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40463, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatM01_Green.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40464, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "LabCoatM01_Orange"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40466, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Astrahus Construction"
+  }, 
+  {
     "volume": 0.01, 
     "typeID": 40467, 
     "groupID": 1311, 
@@ -178950,6 +178768,3030 @@
     "groupID": 1311, 
     "market": true, 
     "typeName": "Bifrost Tronhadar Ink SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40519, 
+    "groupID": 1301, 
+    "market": true, 
+    "typeName": "Skill Extractor"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40520, 
+    "groupID": 1301, 
+    "market": true, 
+    "typeName": "Skill Injector"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40521, 
+    "groupID": 1462, 
+    "market": false, 
+    "typeName": "Upwell Palatine Keepstar Blueprint"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40522, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "JacketMilM02_upwell.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40523, 
+    "groupID": 1088, 
+    "market": false, 
+    "typeName": "JacketMilF01_upwell.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40524, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "PantsMilM01_upwell.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40525, 
+    "groupID": 1090, 
+    "market": false, 
+    "typeName": "PantsMilF01_upwell.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40526, 
+    "groupID": 1089, 
+    "market": false, 
+    "typeName": "shirtqm01_upwell.type"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40527, 
+    "groupID": 1089, 
+    "market": false, 
+    "typeName": "shirtqf01_upwell.type"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40531, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Sisters of EVE Stratios"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40532, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Sisters of EVE Astero"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40533, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Sisters of EVE Nestor"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40535, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Amarr Force Auxiliary"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40536, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Caldari Force Auxiliary"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40537, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Gallente Force Auxiliary"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40538, 
+    "groupID": 257, 
+    "market": true, 
+    "typeName": "Minmatar Force Auxiliary"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 40541, 
+    "groupID": 1314, 
+    "market": true, 
+    "typeName": "Jovian DNA Strand"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40542, 
+    "groupID": 952, 
+    "market": false, 
+    "typeName": "Sisters of EVE Cold Storage Unit"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40548, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Medium 'Astrahus' Citadel BPC Token"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40549, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Large 'Fortizar' Citadel BPC Token"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 40550, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Commercial Billboard"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40552, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Equite II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40553, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Gram II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40554, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Locust II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40555, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Satyr II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40556, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Templar II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40557, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Dragonfly II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40558, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Firbolg II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40559, 
+    "groupID": 1652, 
+    "market": false, 
+    "typeName": "Einherji II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40560, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Ametat II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40561, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Malleus II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40562, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Antaeus II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40563, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Cyclops II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40564, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Gungnir II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40565, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Tyrfing II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40566, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Termite II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40567, 
+    "groupID": 1653, 
+    "market": false, 
+    "typeName": "Mantis II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40568, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "Cenobite II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40569, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "Scarab II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40570, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "Siren II"
+  }, 
+  {
+    "volume": 1000.0, 
+    "typeID": 40571, 
+    "groupID": 1537, 
+    "market": false, 
+    "typeName": "Dromi II"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40572, 
+    "groupID": 273, 
+    "market": true, 
+    "typeName": "Light Fighters"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40573, 
+    "groupID": 273, 
+    "market": true, 
+    "typeName": "Support Fighters"
+  }, 
+  {
+    "volume": 5000.0, 
+    "typeID": 40574, 
+    "groupID": 818, 
+    "market": false, 
+    "typeName": "Tom's Shuttle"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40576, 
+    "groupID": 226, 
+    "market": false, 
+    "typeName": "Theology Council Listening Post"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40579, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Bantam Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40580, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Condor Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40581, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Griffin Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40582, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Heron Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40583, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Kestrel Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40584, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Merlin Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40585, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Harpy Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40586, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Hawk Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40587, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Buzzard Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40588, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Manticore Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40589, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Kitsune Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40590, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Crow Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40591, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Raptor Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40592, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Kirin Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40593, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Corax Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40594, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Cormorant Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40595, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Stork Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40596, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Flycatcher Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40597, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Blackbird Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40598, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Caracal Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40599, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Moa Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40600, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Osprey Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40601, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Cerberus Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40602, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Eagle Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40603, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Onyx Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40604, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Basilisk Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40605, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Falcon Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40606, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rook Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40607, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Drake Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40608, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Ferox Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40609, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Naga Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40610, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Nighthawk Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40611, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Vulture Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40612, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Raven Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40613, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rokh Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40614, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Scorpion Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40615, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Widow Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40616, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Golem Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40617, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Phoenix Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40618, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Chimera Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40619, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Wyvern Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40620, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Leviathan Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40621, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Badger Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40622, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Tayra Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40623, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Crane Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40624, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Bustard Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40625, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Charon Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40626, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Rhea Matigu Seabeast SKIN (Permanent)"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40631, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Doomsday_Beam"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40632, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Doomsday_Slash"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40633, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Doomsday_Cone"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40634, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Doomsday_HOG"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40635, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Superweapon_AOEWeb"
+  }, 
+  {
+    "volume": 8000.0, 
+    "typeID": 40636, 
+    "groupID": 588, 
+    "market": true, 
+    "typeName": "Superweapon_AOENeut"
+  }, 
+  {
+    "volume": 0.0, 
+    "typeID": 40637, 
+    "groupID": 816, 
+    "market": false, 
+    "typeName": "Puss in Boots"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40639, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Amarr Force Auxiliary Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40640, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Caldari Force Auxiliary Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40641, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Gallente Force Auxiliary Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40642, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Minmatar Force Auxiliary Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40644, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Astrahus Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40645, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Fortizar Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40646, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Keepstar Wreck"
+  }, 
+  {
+    "volume": 27500.0, 
+    "typeID": 40647, 
+    "groupID": 186, 
+    "market": false, 
+    "typeName": "Upwell Palatine Keepstar Wreck"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40690, 
+    "groupID": 80, 
+    "market": true, 
+    "typeName": "Sentient Burst Jammer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40691, 
+    "groupID": 80, 
+    "market": true, 
+    "typeName": "Unit D-34343's Modified Burst Jammer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40692, 
+    "groupID": 80, 
+    "market": true, 
+    "typeName": "Unit F-435454's Modified Burst Jammer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40693, 
+    "groupID": 80, 
+    "market": true, 
+    "typeName": "Unit P-343554's Modified Burst Jammer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 40694, 
+    "groupID": 80, 
+    "market": true, 
+    "typeName": "Unit W-634's Modified Burst Jammer"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40695, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Typhoon IGC Victory SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40701, 
+    "groupID": 314, 
+    "market": true, 
+    "typeName": "Subcompact TEBS Interface"
+  }, 
+  {
+    "volume": 20250.0, 
+    "typeID": 40725, 
+    "groupID": 1664, 
+    "market": false, 
+    "typeName": "Guristas Frigate"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 40726, 
+    "groupID": 1665, 
+    "market": false, 
+    "typeName": "Guristas Cruiser"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 40727, 
+    "groupID": 1666, 
+    "market": false, 
+    "typeName": "Guristas Battlecruiser"
+  }, 
+  {
+    "volume": 22000000.0, 
+    "typeID": 40728, 
+    "groupID": 1667, 
+    "market": false, 
+    "typeName": "Guristas Battleship"
+  }, 
+  {
+    "volume": 101000.0, 
+    "typeID": 40729, 
+    "groupID": 1665, 
+    "market": false, 
+    "typeName": "Guristas Cruiser"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40770, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Bantam Guristas SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40771, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Merlin Guristas SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40772, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Moa Guristas SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40773, 
+    "groupID": 1311, 
+    "market": true, 
+    "typeName": "Scorpion Guristas SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40774, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cormorant Guristas SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40778, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40779, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40780, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40781, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40782, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Breacher Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40783, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40784, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40785, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40786, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40787, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Burst Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40788, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40789, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40790, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40791, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40792, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Probe Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40793, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40794, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40795, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40796, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40797, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rifter Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40798, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40799, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40800, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40801, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40802, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Slasher Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40803, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40804, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40805, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40806, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40807, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vigil Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40808, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Jaguar Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40809, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Jaguar Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40810, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Jaguar Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40811, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Jaguar Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40812, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Jaguar Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40813, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wolf Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40814, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wolf Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40815, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wolf Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40816, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wolf Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40817, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wolf Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40818, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cheetah Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40819, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cheetah Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40820, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cheetah Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40821, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cheetah Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40822, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cheetah Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40823, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hound Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40824, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hound Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40825, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hound Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40826, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hound Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40827, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hound Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40828, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyena Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40829, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyena Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40830, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyena Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40831, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyena Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40832, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hyena Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40833, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claw Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40834, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claw Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40835, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claw Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40836, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claw Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40837, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claw Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40838, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stiletto Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40839, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stiletto Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40840, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stiletto Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40841, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stiletto Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40842, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stiletto Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40843, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40844, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40845, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40846, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40847, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Talwar Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40848, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40849, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40850, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40851, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40852, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Thrasher Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40853, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sabre Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40854, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sabre Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40855, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sabre Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40856, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sabre Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40857, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sabre Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40858, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40859, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40860, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40861, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40862, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bellicose Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40863, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40864, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40865, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40866, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40867, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rupture Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40868, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40869, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40870, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40871, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40872, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scythe Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40873, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40874, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40875, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40876, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40877, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Stabber Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40878, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40879, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40880, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40881, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40882, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Muninn Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40883, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40884, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40885, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40886, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40887, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vagabond Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40888, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40889, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40890, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40891, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40892, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Broadsword Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40893, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40894, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40895, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40896, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40897, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scimitar Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40898, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40899, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40900, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40901, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40902, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Huginn Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40903, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40904, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40905, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40906, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40907, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Rapier Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40908, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40909, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40910, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40911, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40912, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Cyclone Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40913, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40914, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40915, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40916, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40917, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hurricane Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40918, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40919, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40920, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40921, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40922, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tornado Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40923, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40924, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40925, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40926, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40927, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Claymore Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40928, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40929, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40930, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40931, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40932, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Sleipnir Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40933, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40934, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40935, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40936, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40937, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Maelstrom Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40938, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40939, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40940, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40941, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40942, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Tempest Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40943, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40944, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40945, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40946, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40947, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Typhoon Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40948, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40949, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40950, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40951, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40952, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Panther Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40953, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vargur Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40954, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vargur Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40955, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vargur Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40956, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vargur Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40957, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Vargur Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40958, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Naglfar Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40959, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Naglfar Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40960, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Naglfar Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40961, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Naglfar Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40962, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Naglfar Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40963, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40964, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40965, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40966, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40967, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nidhoggur Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40968, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40969, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40970, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40971, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40972, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hel Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40973, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40974, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40975, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40976, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40977, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Ragnarok Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40978, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40979, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40980, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40981, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40982, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Hoarder Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40983, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40984, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40985, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40986, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40987, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mammoth Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40988, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40989, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40990, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40991, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40992, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Wreathe Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40993, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40994, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40995, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40996, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40997, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Prowler Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40998, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 40999, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41000, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41001, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41002, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Mastodon Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41003, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41004, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41005, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41006, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41007, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Fenrir Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41008, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41009, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41010, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41011, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41012, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Nomad Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41013, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41014, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41015, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41016, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41017, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Scalpel Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41018, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Tronhadar Ink Serenity Only SKIN (Permanent)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41019, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Tronhadar Ink Serenity Only SKIN (7 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41020, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Tronhadar Ink Serenity Only SKIN (30 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41021, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Tronhadar Ink Serenity Only SKIN (90 Days)"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41022, 
+    "groupID": 1311, 
+    "market": false, 
+    "typeName": "Bifrost Tronhadar Ink Serenity Only SKIN (365 Days)"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41023, 
+    "groupID": 280, 
+    "market": true, 
+    "typeName": "Convoy Hawk 6 Escort Roster"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41027, 
+    "groupID": 280, 
+    "market": true, 
+    "typeName": "Secure Comms Uplink ALPHA-6"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41031, 
+    "groupID": 646, 
+    "market": true, 
+    "typeName": "AML Compact Omnidirectional Tracking Link"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41032, 
+    "groupID": 646, 
+    "market": true, 
+    "typeName": "Denny Enduring Omnidirectional Tracking Link"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41033, 
+    "groupID": 1292, 
+    "market": true, 
+    "typeName": "N-JM Compact Omnidirectional Tracking Enhancer"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41034, 
+    "groupID": 645, 
+    "market": true, 
+    "typeName": "AE-K Compact Drone Damage Amplifier"
+  }, 
+  {
+    "volume": 3.0, 
+    "typeID": 41035, 
+    "groupID": 1194, 
+    "market": true, 
+    "typeName": "???????"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41036, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Boneweld' Facial Augmentation"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41038, 
+    "groupID": 65, 
+    "market": true, 
+    "typeName": "Republic Fleet Stasis Webifier"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41040, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Stasis Grappler I"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41043, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Wirepoise' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41044, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Circuitrun' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41045, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Twinswitch' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41046, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Setcouple' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41047, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Men's 'Bridgestat' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41048, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Tripoint' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41049, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Crossgrid' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41050, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Guidemask' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41051, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Waveform' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41052, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Sparkgap' Facial Augmentation"
+  }, 
+  {
+    "volume": 0.1, 
+    "typeID": 41053, 
+    "groupID": 1670, 
+    "market": true, 
+    "typeName": "Women's 'Openyagi' Facial Augmentation"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41054, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Gunnar Compact Stasis Grappler"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41055, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Karelin Scoped Stasis Grappler"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41056, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Jigoro Enduring Stasis Grappler"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41057, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Stasis Grappler II"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41058, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Shadow Serpentis Stasis Grappler"
+  }, 
+  {
+    "volume": 50.0, 
+    "typeID": 41059, 
+    "groupID": 1672, 
+    "market": true, 
+    "typeName": "Heavy Domination Stasis Grappler"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41061, 
+    "groupID": 52, 
+    "market": true, 
+    "typeName": "Federation Navy Warp Scrambler"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41062, 
+    "groupID": 52, 
+    "market": true, 
+    "typeName": "Federation Navy Warp Disruptor"
+  }, 
+  {
+    "volume": 1.0, 
+    "typeID": 41155, 
+    "groupID": 910, 
+    "market": true, 
+    "typeName": "ECCM Script"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41191, 
+    "groupID": 212, 
+    "market": true, 
+    "typeName": "Sentient Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41192, 
+    "groupID": 212, 
+    "market": true, 
+    "typeName": "Unit D-34343's Modified Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41193, 
+    "groupID": 212, 
+    "market": true, 
+    "typeName": "Unit F-435454's Modified Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41194, 
+    "groupID": 212, 
+    "market": true, 
+    "typeName": "Unit P-343554's Modified Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41195, 
+    "groupID": 212, 
+    "market": true, 
+    "typeName": "Unit W-634's Modified Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41196, 
+    "groupID": 210, 
+    "market": true, 
+    "typeName": "Sentient Signal Amplifier"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41197, 
+    "groupID": 210, 
+    "market": true, 
+    "typeName": "Syndicate Signal Amplifier"
+  }, 
+  {
+    "volume": 25.0, 
+    "typeID": 41198, 
+    "groupID": 290, 
+    "market": true, 
+    "typeName": "Sentient Remote Sensor Booster"
+  }, 
+  {
+    "volume": 25.0, 
+    "typeID": 41199, 
+    "groupID": 290, 
+    "market": true, 
+    "typeName": "Shadow Serpentis Remote Sensor Booster"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41200, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Shadow Serpentis Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41201, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Syndicate Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41202, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Sentient Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41203, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Brynn's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41204, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Unit D-34343's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41205, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Tuvan's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41206, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Unit F-435454's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41207, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Setele's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41208, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Unit P-343554's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41210, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Cormack's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41211, 
+    "groupID": 60, 
+    "market": true, 
+    "typeName": "Unit W-634's Modified Damage Control"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41212, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Republic Fleet Small Cap Battery"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41213, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Domination Small Cap Battery"
+  }, 
+  {
+    "volume": 5.0, 
+    "typeID": 41214, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Thukker Small Cap Battery"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 41215, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Republic Fleet Medium Cap Battery"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 41216, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Domination Medium Cap Battery"
+  }, 
+  {
+    "volume": 10.0, 
+    "typeID": 41217, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Thukker Medium Cap Battery"
+  }, 
+  {
+    "volume": 15.0, 
+    "typeID": 41218, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Republic Fleet Large Cap Battery"
+  }, 
+  {
+    "volume": 15.0, 
+    "typeID": 41219, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Domination Large Cap Battery"
+  }, 
+  {
+    "volume": 15.0, 
+    "typeID": 41220, 
+    "groupID": 61, 
+    "market": true, 
+    "typeName": "Thukker Large Cap Battery"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41221, 
+    "groupID": 145, 
+    "market": true, 
+    "typeName": "Heavy Stasis Grappler I Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41222, 
+    "groupID": 145, 
+    "market": false, 
+    "typeName": "Heavy Stasis Grappler II Blueprint"
+  }, 
+  {
+    "volume": 0.01, 
+    "typeID": 41230, 
+    "groupID": 912, 
+    "market": true, 
+    "typeName": "ECCM Script Blueprint"
   }, 
   {
     "volume": 0.01, 
