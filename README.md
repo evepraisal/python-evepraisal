@@ -1,3 +1,5 @@
+> This repo is not the code that is currently used by evepraisal.com. For that code, go to https://github.com/evepraisal/go-evepraisal
+
 Evepraisal
 ==========
 This is a tool for Eve Online aimed at being able to quickly price check items. [Shown here](http://evepraisal.com).
